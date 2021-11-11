@@ -1,0 +1,16 @@
+tree:
+  -
+    title: Practics
+    url: /practics
+  -
+    title: Poetics
+    url: /poetics
+  -
+    title: Didactics
+    url: /didactics
+  -
+    title: Theoretics
+    url: /theoretics
+  -
+    title: Toetics
+    url: /toetics

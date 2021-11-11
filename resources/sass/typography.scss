@@ -1,0 +1,33 @@
+$book: 'Gill Sans MT W03 Book';
+$medium: 'Gill Sans MT W00 Medium';
+$heavy: 'Gill Sans MT W03 Heavy';
+
+body {
+    font-family: $book;
+    color: $charcoal;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: $cream;
+}
+
+a {
+    color: $cream;
+}
+
+h1 {
+    font-family: $heavy;
+}
+
+.blockquote {
+    border-left: solid $charcoal thin;
+}
+blockquote {
+    font-family: $medium;
+    font-size: 36px;
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+.attribution {
+    font-size: 24px;
+    margin-left: 40px;
+}

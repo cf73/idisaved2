@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title ?? site:name }}</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/idi.css">
+        <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/e359cc54-0583-408a-9c92-df9fbc98eb86.css"/>
+    </head>
+    <body>
+        <div class="navigation">
+            <a href="/" style="font-size: 36px; margin-bottom: 60px;">idi</a>
+            <ul>
+                {{ nav :from="/" }}
+                   <li>
+                      <a href="{{ url }}"{{ if is_current || is_parent }} class="on"{{ /if }}>{{ title }}</a>
+                      {{ if is_current || is_parent }}
+                         {{ if children }}
+                            <ul>{{ *recursive children* }}</ul>
+                         {{ /if }}
+                      {{ /if }}
+                   </li>
+                {{ /nav }}
+             </ul>
+            <!-- <ul class="simpleList">
+                {{ nav:sectionsnav }}
+                    <li>
+                        <a href="{{ url }}"{{ if is_current || is_parent }} class="on"{{ /if }}>{{ title }}</a>
+                    </li>
+                {{ /nav:sectionsnav }}
+            </ul> -->
+        </div>
+        <div class="mainContentArea">
+            <div class="container-fluid">
+                <div class="quote" style="margin-bottom: 60px; margin-top: 30px;">
+                    {{collection:quotes sort="random" limit="1" }}
+                        {{quote}}
+                        — {{attribution}}
+                    {{/collection:quotes}}
+                </div>
+                {{ template_content }}
+            </div>
+        </div>
+        <script src="{{ mix src='/js/site.js' }}"></script>
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/bs-init.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-12" style="margin-bottom: 30px;">
+        {{if intro_movie}}
+        <video autoplay loop width="96%" src="{{intro_movie}}"></video>
+        {{/if}}
+    </div>
+    
+    
+    <div class="col-md-9">
+        <h1>
+            {{title}}
+        </h1>
+    
+        {{main_content}}
+        
+        {{ if type == "text" }}
+
+        <div class="text" style="max-width: 600px;">
+        {{ text }}
+        </div>
+
+        {{ elseif type == "quote" }}
+
+        <div class="blockquote">
+            <blockquote>{{ quote }}</blockquote>
+            <p class="attribution">— {{ attribution }}</p>
+        </div>
+        
+        {{ elseif type == "image" }}
+    
+        <figure>
+            <img src="{{ photo }}" width="800px" alt="{{ caption }}" />
+            <figcaption>{{ caption }}</figcaption>
+        </figure>
+    
+        {{ /if }}
+
+        {{/main_content}}
+    </div>
+    
+    <div class="col-md-3">
+        Related content:<br>
+        {{related_content}}
+            <a href="{{url}}">{{title}}</a>
+        {{/related_content}}
+    </div>
+</div>

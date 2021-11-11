@@ -1,0 +1,10 @@
+name: Conrad
+super: true
+roles:
+  - editor
+id: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+password_hash: $2y$10$EqSXJbkXby/ZhCSJykD7bePgYOfHiRMnUyVmvqbu7T6pc.ITaAh9i
+preferences:
+  assets:
+    assets:
+      mode: table
