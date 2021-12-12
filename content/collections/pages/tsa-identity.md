@@ -1,4 +1,6 @@
 ---
+id: 3ee5e983-99a5-4c52-bcc7-a52f78508efb
+blueprint: projects
 title: 'Theosophical Society in America Identity'
 template: project
 main_content:
@@ -259,13 +261,11 @@ main_content:
     image: dalailama_ts.jpg
     type: image
     enabled: true
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1622594234
-blueprint: projects
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1639340182
 related_content:
   - be421847-9999-4bce-bd7c-6c232e089044
   - abbabc97-d9ba-4835-ab66-406bdf431333
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
-intro_movie: 21_TSA_SHORT-3.00.m4v
-id: 3ee5e983-99a5-4c52-bcc7-a52f78508efb
+intro_movie: 2005_TSA_BRAND_201023c.m4v
 ---

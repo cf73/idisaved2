@@ -29,6 +29,9 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+          instructions_position: above
+          container: movies
+          show_filename: true
       -
         handle: main_content
         field:
@@ -77,6 +80,9 @@ sections:
                     type: assets
                     icon: assets
                     listable: hidden
+                    instructions_position: above
+                    container: assets
+                    show_filename: true
             movie:
               display: Movie
               fields:
@@ -91,6 +97,9 @@ sections:
                     type: assets
                     icon: assets
                     listable: hidden
+                    instructions_position: above
+                    container: movies
+                    show_filename: true
             quote:
               display: Quote
               fields:
@@ -115,6 +124,7 @@ sections:
           type: replicator
           icon: replicator
           listable: hidden
+          instructions_position: above
   sidebar:
     display: Sidebar
     fields:

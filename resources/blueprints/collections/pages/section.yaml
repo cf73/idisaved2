@@ -30,6 +30,9 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+          instructions_position: above
+          container: movies
+          show_filename: true
   sidebar:
     display: Sidebar
     fields:
