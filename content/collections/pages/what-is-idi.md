@@ -5,7 +5,7 @@ title: 'WHAT IS IDI?'
 template: project
 parent: 81dfc095-ce2f-476b-94ac-2819c9d4b97a
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1639336399
+updated_at: 1640744643
 main_content:
   -
     text:
@@ -144,5 +144,4 @@ main_content:
             text: ": represents self-published books and documentations to share work that conventional outlets (publishers, galleries, etc.) found inappropriate.\L"
     type: text
     enabled: true
-intro_movie: mobi.mp4
 ---
