@@ -14,6 +14,7 @@ namespace Composer\Installer;
 
 use Composer\IO\IOInterface;
 use Composer\Package\PackageInterface;
+use Composer\Pcre\Preg;
 use Composer\Util\Filesystem;
 use Composer\Util\Platform;
 use Composer\Util\ProcessExecutor;
@@ -36,19 +37,23 @@ class BinaryInstaller
     protected $io;
     /** @var Filesystem */
     protected $filesystem;
+    /** @var string|null */
+    private $vendorDir;
 
     /**
      * @param IOInterface $io
      * @param string      $binDir
      * @param string      $binCompat
      * @param Filesystem  $filesystem
+     * @param string|null $vendorDir
      */
-    public function __construct(IOInterface $io, $binDir, $binCompat, Filesystem $filesystem = null)
+    public function __construct(IOInterface $io, $binDir, $binCompat, Filesystem $filesystem = null, $vendorDir = null)
     {
         $this->binDir = $binDir;
         $this->binCompat = $binCompat;
         $this->io = $io;
         $this->filesystem = $filesystem ?: new Filesystem();
+        $this->vendorDir = $vendorDir;
     }
 
     /**
@@ -72,38 +77,37 @@ class BinaryInstaller
                 $this->io->writeError('    <warning>Skipped installation of bin '.$bin.' for package '.$package->getName().': file not found in package</warning>');
                 continue;
             }
-
-            // in case a custom installer returned a relative path for the
-            // $package, we can now safely turn it into a absolute path (as we
-            // already checked the binary's existence). The following helpers
-            // will require absolute paths to work properly.
-            $binPath = realpath($binPath);
-
+            if (!$this->filesystem->isAbsolutePath($binPath)) {
+                // in case a custom installer returned a relative path for the
+                // $package, we can now safely turn it into a absolute path (as we
+                // already checked the binary's existence). The following helpers
+                // will require absolute paths to work properly.
+                $binPath = realpath($binPath);
+            }
             $this->initializeBinDir();
             $link = $this->binDir.'/'.basename($bin);
             if (file_exists($link)) {
-                if (is_link($link)) {
-                    // likely leftover from a previous install, make sure
-                    // that the target is still executable in case this
-                    // is a fresh install of the vendor.
-                    Silencer::call('chmod', $link, 0777 & ~umask());
+                if (!is_link($link)) {
+                    if ($warnOnOverwrite) {
+                        $this->io->writeError('    Skipped installation of bin '.$bin.' for package '.$package->getName().': name conflicts with an existing file');
+                    }
+                    continue;
                 }
-                if ($warnOnOverwrite) {
-                    $this->io->writeError('    Skipped installation of bin '.$bin.' for package '.$package->getName().': name conflicts with an existing file');
+                if (realpath($link) === realpath($binPath)) {
+                    // It is a linked binary from a previous installation, which can be replaced with a proxy file
+                    $this->filesystem->unlink($link);
                 }
-                continue;
             }
 
-            if ($this->binCompat === "auto") {
-                if (Platform::isWindows() || Platform::isWindowsSubsystemForLinux()) {
-                    $this->installFullBinaries($binPath, $link, $bin, $package);
-                } else {
-                    $this->installSymlinkBinaries($binPath, $link);
-                }
-            } elseif ($this->binCompat === "full") {
+            $binCompat = $this->binCompat;
+            if ($binCompat === "auto" && (Platform::isWindows() || Platform::isWindowsSubsystemForLinux())) {
+                $binCompat = 'full';
+            }
+
+            if ($binCompat === "full") {
                 $this->installFullBinaries($binPath, $link, $bin, $package);
-            } elseif ($this->binCompat === "symlink") {
-                $this->installSymlinkBinaries($binPath, $link);
+            } else {
+                $this->installUnixyProxyBinaries($binPath, $link);
             }
             Silencer::call('chmod', $binPath, 0777 & ~umask());
         }
@@ -122,10 +126,10 @@ class BinaryInstaller
         }
         foreach ($binaries as $bin) {
             $link = $this->binDir.'/'.basename($bin);
-            if (is_link($link) || file_exists($link)) {
+            if (is_link($link) || file_exists($link)) { // still checking for symlinks here for legacy support
                 $this->filesystem->unlink($link);
             }
-            if (file_exists($link.'.bat')) {
+            if (is_file($link.'.bat')) {
                 $this->filesystem->unlink($link.'.bat');
             }
         }
@@ -150,7 +154,7 @@ class BinaryInstaller
         $handle = fopen($bin, 'r');
         $line = fgets($handle);
         fclose($handle);
-        if (preg_match('{^#!/(?:usr/bin/env )?(?:[^/]+/)*(.+)$}m', $line, $match)) {
+        if (Preg::isMatch('{^#!/(?:usr/bin/env )?(?:[^/]+/)*(.+)$}m', $line, $match)) {
             return trim($match[1]);
         }
 
@@ -194,19 +198,6 @@ class BinaryInstaller
      *
      * @return void
      */
-    protected function installSymlinkBinaries($binPath, $link)
-    {
-        if (!$this->filesystem->relativeSymlink($binPath, $link)) {
-            $this->installUnixyProxyBinaries($binPath, $link);
-        }
-    }
-
-    /**
-     * @param string $binPath
-     * @param string $link
-     *
-     * @return void
-     */
     protected function installUnixyProxyBinaries($binPath, $link)
     {
         file_put_contents($link, $this->generateUnixyProxyCode($binPath, $link));
@@ -233,6 +224,16 @@ class BinaryInstaller
         $binPath = $this->filesystem->findShortestPath($link, $bin);
         $caller = self::determineBinaryCaller($bin);
 
+        // if the target is a php file, we run the unixy proxy file
+        // to ensure that _composer_autoload_path gets defined, instead
+        // of running the binary directly
+        if ($caller === 'php') {
+            return "@ECHO OFF\r\n".
+                "setlocal DISABLEDELAYEDEXPANSION\r\n".
+                "SET BIN_TARGET=%~dp0/".trim(ProcessExecutor::escape(basename($link, '.bat')), '"\'')."\r\n".
+                "{$caller} \"%BIN_TARGET%\" %*\r\n";
+        }
+
         return "@ECHO OFF\r\n".
             "setlocal DISABLEDELAYEDEXPANSION\r\n".
             "SET BIN_TARGET=%~dp0/".trim(ProcessExecutor::escape($binPath), '"\'')."\r\n".
@@ -255,28 +256,18 @@ class BinaryInstaller
         $binContents = file_get_contents($bin);
         // For php files, we generate a PHP proxy instead of a shell one,
         // which allows calling the proxy with a custom php process
-        if (preg_match('{^(#!.*\r?\n)?<\?php}', $binContents, $match)) {
+        if (Preg::isMatch('{^(#!.*\r?\n)?<\?php}', $binContents, $match)) {
             // carry over the existing shebang if present, otherwise add our own
             $proxyCode = empty($match[1]) ? '#!/usr/bin/env php' : trim($match[1]);
-
-            $binPathExported = var_export($binPath, true);
-
-            return $proxyCode . "\n" . <<<PROXY
-<?php
-
-/**
- * Proxy PHP file generated by Composer
- *
- * This file includes the referenced bin path ($binPath) using ob_start to remove the shebang if present
- * to prevent the shebang from being output on PHP<8
- *
- * @generated
- */
-
-namespace Composer;
-
-\$binPath = __DIR__ . "/" . $binPathExported;
-
+            $binPathExported = $this->filesystem->findShortestPathCode($link, $bin, false, true);
+            $autoloadPathCode = $streamProxyCode = $streamHint = '';
+            // Don't expose autoload path when vendor dir was not set in custom installers
+            if ($this->vendorDir) {
+                $autoloadPathCode = '$GLOBALS[\'_composer_autoload_path\'] = ' . $this->filesystem->findShortestPathCode($link, $this->vendorDir . '/autoload.php', false, true).";\n";
+            }
+            if (trim($match[0]) !== '<?php') {
+                $streamHint = ' using a stream wrapper to prevent the shebang from being output on PHP<8'."\n *";
+                $streamProxyCode = <<<STREAMPROXY
 if (PHP_VERSION_ID < 80000) {
     if (!class_exists('Composer\BinProxyWrapper')) {
         /**
@@ -352,12 +343,30 @@ if (PHP_VERSION_ID < 80000) {
     }
 
     if (function_exists('stream_wrapper_register') && stream_wrapper_register('composer-bin-proxy', 'Composer\BinProxyWrapper')) {
-        include("composer-bin-proxy://" . \$binPath);
+        include("composer-bin-proxy://" . $binPathExported);
         exit(0);
     }
 }
 
-include \$binPath;
+STREAMPROXY;
+            }
+
+            return $proxyCode . "\n" . <<<PROXY
+<?php
+
+/**
+ * Proxy PHP file generated by Composer
+ *
+ * This file includes the referenced bin path ($binPath)
+ *$streamHint
+ * @generated
+ */
+
+namespace Composer;
+
+$autoloadPathCode
+$streamProxyCode
+include $binPathExported;
 
 PROXY;
         }
