@@ -1,10 +1,20 @@
 ---
+id: 047d5974-4926-44ab-8289-b9e0a086deca
+blueprint: projects
 title: 'BFA Degree Projects'
-template: project
 intro_movie: 21BFA_DP1-SHORT-2.75.m4v
 main_content:
   -
     text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: '[small test update]'
       -
         type: paragraph
         content:
@@ -53,8 +63,6 @@ main_content:
             text: "• to take responsibility for all phases and aspects of the project with professional care.\_"
     type: text
     enabled: true
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1622070052
-blueprint: projects
-id: 047d5974-4926-44ab-8289-b9e0a086deca
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1640818883
 ---

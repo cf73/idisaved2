@@ -1,6 +1,7 @@
 ---
-title: 'Senior Studio'
-template: project
+id: 4d035f20-e053-4546-a497-78775c43ca2e
+blueprint: projects
+title: 'Senior Studioo'
 intro_movie: 21SenSTUD_SHORT-2.50.m4v
 main_content:
   -
@@ -31,8 +32,6 @@ main_content:
             text: "” driven projects. This approach requires analysis of informational content, the context in which this will function, and explores options for re-telling the content in visually meaningful and engaging ways.\_"
     type: text
     enabled: true
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1622942061
-blueprint: projects
-id: 4d035f20-e053-4546-a497-78775c43ca2e
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1640819099
 ---

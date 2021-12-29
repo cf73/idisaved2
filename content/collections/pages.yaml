@@ -1,5 +1,5 @@
 title: Pages
-template: section
+template: '@blueprint'
 layout: layout
 revisions: false
 route: '{parent_uri}/{slug}'
