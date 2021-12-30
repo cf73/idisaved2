@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Barbara Louise Skelly, 1998: Removing the Dust on the Mirror: a new understanding of women''s imagery'
-template: project
 intro_movie: 98_SkellyBarb-1.75.m4v
 main_content:
   -

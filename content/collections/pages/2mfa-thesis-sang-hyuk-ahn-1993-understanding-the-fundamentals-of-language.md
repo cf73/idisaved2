@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Sang-Hyuk Ahn, 1993: Understanding the Fundamentals of Language'
-template: project
 intro_movie: '-93_AHN,Sanghyuk-2.50-1623425134.m4v'
 main_content:
   -

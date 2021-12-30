@@ -1,6 +1,5 @@
 ---
 title: 'FETZER: Dynamic Mapping: an interactive experience'
-template: project
 intro_movie: 21Fetzer-2.00.m4v
 main_content:
   -

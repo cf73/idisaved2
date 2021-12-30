@@ -1,6 +1,5 @@
 ---
 title: 'Design as Contemplative Practice'
-template: project
 intro_movie: '21Des&ContPr-SHORT-2.00.m4v'
 main_content:
   -

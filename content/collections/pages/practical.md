@@ -1,6 +1,5 @@
 ---
 title: PRACTICS
-template: project
 intro_movie: PRACTICS_SHORT-0.70-1621816794.m4v
 main_content:
   -

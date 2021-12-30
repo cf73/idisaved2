@@ -1,6 +1,5 @@
 ---
 title: 'HUMANITY Design'
-template: project
 intro_movie: 21Humanity-SHORT-2.25.m4v
 main_content:
   -

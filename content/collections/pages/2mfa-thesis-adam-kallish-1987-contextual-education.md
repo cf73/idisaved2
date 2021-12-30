@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Adam Kallish, 1987: Contextual Education'
-template: project
 intro_movie: 87Kallish_Adam-201208-2.00-1623423196.m4v
 main_content:
   -

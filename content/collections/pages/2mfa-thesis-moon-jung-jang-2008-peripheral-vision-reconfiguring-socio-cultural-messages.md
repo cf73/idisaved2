@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Moon Jung Jang, 2008: Peripheral Vision: Reconfiguring Socio-Cultural Messages'
-template: project
 intro_movie: 08Moon_ED2-SHORT-1.50-1623419411.m4v
 main_content:
   -

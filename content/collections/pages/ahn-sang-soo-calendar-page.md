@@ -1,6 +1,5 @@
 ---
 title: 'Ahn Sang Soo Calendar Page'
-template: project
 main_content:
   -
     text:

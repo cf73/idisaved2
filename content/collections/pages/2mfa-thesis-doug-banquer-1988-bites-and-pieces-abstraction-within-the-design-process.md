@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Doug Banquer, 1988: Bites and Pieces: Abstraction within the Design Process'
-template: project
 intro_movie: '-88_Banquer-D_WIDE-2.00-1623423307.m4v'
 main_content:
   -

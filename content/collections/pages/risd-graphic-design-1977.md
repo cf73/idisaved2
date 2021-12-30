@@ -1,6 +1,5 @@
 ---
 title: 'RISD Graphic Design 1977'
-template: project
 intro_movie: 21_GDbk77_SHORT-3.00.m4v
 main_content:
   -

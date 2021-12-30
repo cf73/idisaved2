@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Michelle St. Jean, 2005: Object Moments: materials of presence and essence'
-template: project
 intro_movie: '05_StJean,Michelle-4.00-1623419747.m4v'
 main_content:
   -

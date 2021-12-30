@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Criswell Lappin, 1997: What Comes Between "Us" and "Them"?'
-template: project
 intro_movie: 97_LappinCriswell-3.00-1623426377.m4v
 main_content:
   -

@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Shalotte Sugathan, 2002: Invisible: a visual treatise of seeing and knowing the numbers 1–10'
-template: project
 intro_movie: '-02_Sugathan3-2.00-1623421190.m4v'
 main_content:
   -

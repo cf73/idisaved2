@@ -2,7 +2,6 @@
 id: 023b7c79-2328-4f7c-ae01-ab71f3f42391
 blueprint: projects
 title: 'sample project to trigger git'
-template: project
 main_content:
   -
     text:

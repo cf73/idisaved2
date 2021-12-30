@@ -1,6 +1,5 @@
 ---
 title: 'RIHT Identity'
-template: project
 main_content:
   -
     text:

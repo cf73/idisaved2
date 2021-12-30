@@ -1,6 +1,5 @@
 ---
 title: 'CONTEMPLATIVE DESIGN'
-template: project
 intro_movie: '-21TH-CONT_SHORT-2.00.m4v'
 main_content:
   -

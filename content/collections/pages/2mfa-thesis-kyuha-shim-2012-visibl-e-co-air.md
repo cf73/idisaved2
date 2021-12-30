@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Kyuha Shim, 2012: Visibl[e]co: AIR'
-template: project
 main_content:
   -
     text:

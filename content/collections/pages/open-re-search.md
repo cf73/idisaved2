@@ -1,6 +1,5 @@
 ---
 title: 'Open Re/Search'
-template: project
 intro_movie: '21OpenRe:Search4-SHORT-3.00.m4v'
 main_content:
   -

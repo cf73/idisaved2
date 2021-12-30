@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Cynthia Frawley, 1988: An Eye for Detail'
-template: project
 intro_movie: '-88Frawley_Cynthia-Shoprt-1.25-1623423497.m4v'
 main_content:
   -

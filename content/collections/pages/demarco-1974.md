@@ -1,6 +1,5 @@
 ---
 title: 'DEMARCO GALLERY 1974'
-template: project
 intro_movie: EdinbARTS_181220.m4v
 main_content:
   -

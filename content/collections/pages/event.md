@@ -1,6 +1,5 @@
 ---
 title: EVENTS
-template: project
 main_content:
   -
     text:

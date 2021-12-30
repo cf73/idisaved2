@@ -1,6 +1,5 @@
 ---
 title: 'Stamp Collages (1967-78)'
-template: project
 intro_movie: '-21STAMpsTO3_SHORT-2.75.m4v'
 main_content:
   -

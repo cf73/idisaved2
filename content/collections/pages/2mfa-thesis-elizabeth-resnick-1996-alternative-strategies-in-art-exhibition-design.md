@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Elizabeth Resnick, 1996: Alternative Strategies in Art Exhibition Design'
-template: project
 intro_movie: 96_ResnickEliz-1.50-1623426253.m4v
 main_content:
   -

@@ -2,7 +2,6 @@
 id: 3ee5e983-99a5-4c52-bcc7-a52f78508efb
 blueprint: projects
 title: 'Theosophical Society in America Identity'
-template: project
 main_content:
   -
     text:

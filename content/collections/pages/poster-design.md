@@ -1,6 +1,5 @@
 ---
 title: POSTERS
-template: project
 intro_movie: 21POSTEWRS_short-1.75.m4v
 main_content:
   -

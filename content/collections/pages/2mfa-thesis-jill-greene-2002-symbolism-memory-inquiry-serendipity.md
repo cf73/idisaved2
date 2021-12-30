@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Jill Greene, 2002: Symbolism: Memory, Inquiry, Serendipity.'
-template: project
 intro_movie: 02_GreeneJill-Short-1.50-1623421461.m4v
 main_content:
   -

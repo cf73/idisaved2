@@ -1,6 +1,5 @@
 ---
 title: 'Printed Matter'
-template: project
 intro_movie: 21PMDocuTr_SHORT-1.50.m4v
 main_content:
   -

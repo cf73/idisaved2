@@ -1,6 +1,5 @@
 ---
 title: 'RIGHT ACTION (Yucca Plant)'
-template: project
 parent: 8c235853-3ad0-4543-9e10-e9054bbad3bd
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
 updated_at: 1625940616

@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Hyun-Mee Kim, 1996: Poetic Use of Visual Language: Creating an Awareness in Time, Space and Mind'
-template: project
 intro_movie: '96_Kim,Hyunmee-1.50-1623426146.m4v'
 main_content:
   -

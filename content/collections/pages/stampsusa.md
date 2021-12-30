@@ -1,6 +1,5 @@
 ---
 title: stamPSusa
-template: project
 intro_movie: 21_STAMPS-USA_SHORT-1.75.m4v
 main_content:
   -

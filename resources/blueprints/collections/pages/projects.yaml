@@ -11,14 +11,6 @@ sections:
           validate:
             - required
       -
-        handle: template
-        field:
-          hide_partials: true
-          display: Template
-          type: hidden
-          listable: hidden
-          default: project
-      -
         handle: intro_movie
         field:
           mode: grid

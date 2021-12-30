@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: David Bull, 1994: Metalanguage: Typography'
-template: project
 intro_movie: '-94_Bull,David_BK1-2.00-1623425634.m4v'
 main_content:
   -

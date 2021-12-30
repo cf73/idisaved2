@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Gunta Kaza, 2001: MUTE-MUSE-MUTINY'
-template: project
 intro_movie: 01_KazaGunta-4-2.50-1623422025.m4v
 main_content:
   -

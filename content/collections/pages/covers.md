@@ -1,6 +1,5 @@
 ---
 title: Covers
-template: project
 intro_movie: 21COVERS_short-1.50-1621987185.m4v
 main_content:
   -

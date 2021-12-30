@@ -1,6 +1,5 @@
 ---
 title: 'IPI (Interchem Printing Inks) Identity'
-template: project
 main_content:
   -
     text:

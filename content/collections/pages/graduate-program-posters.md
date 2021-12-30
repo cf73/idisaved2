@@ -1,6 +1,5 @@
 ---
 title: 'Graduate Program Posters'
-template: project
 intro_movie: 21GRADPosters_SHORT-1.75.m4v
 main_content:
   -

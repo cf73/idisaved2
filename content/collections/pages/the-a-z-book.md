@@ -1,6 +1,5 @@
 ---
 title: 'The A-Z Book'
-template: project
 intro_movie: 21AZBk_SHORT-0.25.m4v
 main_content:
   -

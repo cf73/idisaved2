@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Alice MacKenzie, 2005: Working From the Poem'
-template: project
 intro_movie: 05_MacKenzieAlice-4.00-1623419882.m4v
 main_content:
   -

@@ -1,6 +1,5 @@
 ---
 title: 'Stamp Collages PMM (1974, 1977, 1980)'
-template: project
 intro_movie: 21PMM_colSHORT-3.75.m4v
 main_content:
   -

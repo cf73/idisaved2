@@ -1,6 +1,5 @@
 ---
 title: BRANDING
-template: project
 intro_movie: 21_DENTintro_SHORT-1.75-1621980254.m4v
 main_content:
   -

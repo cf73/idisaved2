@@ -1,6 +1,5 @@
 ---
 title: PRINT
-template: project
 main_content:
   -
     text:

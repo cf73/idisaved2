@@ -1,6 +1,5 @@
 ---
 title: TOETICS
-template: project
 main_content:
   -
     text:

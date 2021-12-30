@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Kristin Cullen, 2000: The Typography of Sound'
-template: project
 intro_movie: 00_CullenKristin-1.50-1623422416.m4v
 main_content:
   -

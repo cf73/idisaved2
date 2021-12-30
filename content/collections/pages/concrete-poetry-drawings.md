@@ -1,6 +1,5 @@
 ---
 title: 'Concrete Poetry: Drawings'
-template: project
 intro_movie: 21CPDraw_SHORT-2.00.m4v
 main_content:
   -

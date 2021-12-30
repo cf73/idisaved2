@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Soo Hyun Shin, 2015: Something Between Us: Visual Play as Social Exchange'
-template: project
 intro_movie: 15_SooSHIN-Ed1-SHORT-3.00-1623420187.m4v
 main_content:
   -

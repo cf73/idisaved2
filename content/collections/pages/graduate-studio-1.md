@@ -1,6 +1,5 @@
 ---
 title: 'Graduate Studio 1: Unfolding Meaning'
-template: project
 intro_movie: 21GRADStu1_SHORT-2.00.m4v
 main_content:
   -

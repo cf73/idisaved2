@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Danniel Gaidula, 2004: Desperately See(k)ing Systems'
-template: project
 intro_movie: 04_GaidulaDan-3.00.m4v
 main_content:
   -

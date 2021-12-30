@@ -1,6 +1,5 @@
 ---
 title: 'Aperture Magazine Issue #93'
-template: project
 intro_movie: 21_AP93_SHORT-1.25.m4v
 main_content:
   -

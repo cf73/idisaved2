@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Stephany Grey, 2004: Stir: Evoking Sensory Awareness'
-template: project
 intro_movie: 04_Grey_Stephanie2.00-1623420518.m4v
 main_content:
   -

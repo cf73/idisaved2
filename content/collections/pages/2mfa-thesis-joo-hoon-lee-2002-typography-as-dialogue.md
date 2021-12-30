@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Joo Hoon Lee, 2002: Typography as Dialogue'
-template: project
 intro_movie: 02_LeeJoo-Short-1.50-1623421330.m4v
 main_content:
   -

@@ -1,6 +1,5 @@
 ---
 title: MAILED
-template: project
 intro_movie: MAILED_intro-1.50.m4v
 main_content:
   -

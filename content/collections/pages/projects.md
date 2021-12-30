@@ -1,6 +1,5 @@
 ---
 title: PROJECTS
-template: project
 main_content:
   -
     text:

@@ -1,6 +1,5 @@
 ---
 title: PUBLICATIONS
-template: project
 intro_movie: 21PUBLICA2-SHORT-2.00.m4v
 main_content:
   -

@@ -1,6 +1,5 @@
 ---
 title: 'Ferens Gallery Poster'
-template: project
 intro_movie: 1981_Fehrens_SHORT-2.50.m4v
 main_content:
   -

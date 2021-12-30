@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Amy Eisenfeld, 2001: Worth Remembering: Story and Materiality'
-template: project
 intro_movie: 01_EisenfeldAmy-edFin-Short-1.50-1623422239.m4v
 main_content:
   -

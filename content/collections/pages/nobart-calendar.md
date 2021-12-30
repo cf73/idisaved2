@@ -1,6 +1,5 @@
 ---
 title: 'Nobart Calendar'
-template: project
 intro_movie: 21NOBARTcal_SHORT-1.75.m4v
 main_content:
   -

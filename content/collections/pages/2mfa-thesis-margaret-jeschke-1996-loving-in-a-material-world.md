@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Margaret Jeschke, 1996: Loving in a Material World.'
-template: project
 intro_movie: '96_Jeschke,-Margaret-3.00-1623426045.m4v'
 main_content:
   -

@@ -1,6 +1,5 @@
 ---
 title: ABSTRACT
-template: project
 intro_movie: 21ABSTRACTcp-SHORT-1.50.m4v
 main_content:
   -

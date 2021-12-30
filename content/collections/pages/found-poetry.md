@@ -1,6 +1,5 @@
 ---
 title: FOUND
-template: project
 main_content:
   -
     text:

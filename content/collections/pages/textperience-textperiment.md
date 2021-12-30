@@ -1,6 +1,5 @@
 ---
 title: TexTperience/TexTperiment
-template: project
 intro_movie: 21TEXTperim_SHORT-2.00.m4v
 main_content:
   -

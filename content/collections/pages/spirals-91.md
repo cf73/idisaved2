@@ -1,6 +1,5 @@
 ---
 title: 'SPIRALS 91'
-template: project
 intro_movie: 21SPIRALS91_SHORT-2.00.m4v
 main_content:
   -

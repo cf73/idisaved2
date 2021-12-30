@@ -1,6 +1,5 @@
 ---
 title: SEMIOTICS
-template: project
 intro_movie: 21VisSEMIOTICS-SHORT-3.00.m4v
 main_content:
   -

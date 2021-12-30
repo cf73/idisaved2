@@ -1,6 +1,5 @@
 ---
 title: 'Diagram: the history of numbers'
-template: project
 intro_movie: 21HistNumb_SHORT-3.00-1621987379.m4v
 main_content:
   -

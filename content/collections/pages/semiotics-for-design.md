@@ -1,6 +1,5 @@
 ---
 title: 'Semiotics for Design'
-template: project
 intro_movie: '21Semio&DES_SHORT-2.50.m4v'
 main_content:
   -

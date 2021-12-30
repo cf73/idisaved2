@@ -1,6 +1,5 @@
 ---
 title: 'SP-VII and CHANCE'
-template: project
 intro_movie: 21SPVII_Chance-1.25.m4v
 parent: 8f3b5563-9b2b-4217-a1ea-ded5450d2706
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0

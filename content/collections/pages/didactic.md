@@ -1,6 +1,5 @@
 ---
 title: 'DIDACTICS: results of teaching communication design'
-template: project
 main_content:
   -
     text:

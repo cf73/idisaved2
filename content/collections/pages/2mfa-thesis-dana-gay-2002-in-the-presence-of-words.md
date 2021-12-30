@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Dana Gay, 2002: In the Presence of Words'
-template: project
 intro_movie: '-02_GayDana-edit4-1.25-1623421733.m4v'
 main_content:
   -

@@ -1,6 +1,5 @@
 ---
 title: 'Son of Fury'
-template: project
 intro_movie: 21_SonOfFury_SHORT-3.25.m4v
 main_content:
   -

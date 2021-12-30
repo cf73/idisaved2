@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Sharyn O''Mara, 1992: A Sense of Presence and An Echo: Materials, Touch and Physicality'
-template: project
 intro_movie: '92_Omara,Sharyn-Short-B1.50-1623424881.m4v'
 main_content:
   -

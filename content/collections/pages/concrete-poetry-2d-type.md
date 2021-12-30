@@ -1,6 +1,5 @@
 ---
 title: 'Concrete Poetry: 2D Type'
-template: project
 intro_movie: 21CP2d-SHORT-1.50.m4v
 main_content:
   -

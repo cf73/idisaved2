@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Chang-Ho Han, 2001: Star.Site'
-template: project
 intro_movie: '01_Han,Changho-b-edited-Short-0.90-1623421881.m4v'
 main_content:
   -

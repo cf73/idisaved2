@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Katie Salen, 1992: The Changing Face of Meaning'
-template: project
 intro_movie: '-92_SalenKatie-1.75-1623424983.m4v'
 main_content:
   -

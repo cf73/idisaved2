@@ -1,6 +1,5 @@
 ---
 title: 'Graduate Thesis: 1979 to 1992'
-template: project
 intro_movie: 21THOv1_1979>92-SHORT-1.25.m4v
 main_content:
   -

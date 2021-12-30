@@ -1,6 +1,5 @@
 ---
 title: SILHOUETTES
-template: project
 intro_movie: 21KiSILH_SHORT2-1.5.m4v
 main_content:
   -

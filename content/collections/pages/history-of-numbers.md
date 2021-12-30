@@ -1,6 +1,5 @@
 ---
 title: 'History of Numbers'
-template: project
 intro_movie: HistNumb_SHORT-2.50-1619907595.m4v
 main_content:
   -

@@ -1,6 +1,5 @@
 ---
 title: 'Space Window'
-template: project
 intro_movie: 21SPWind_SHORT-2.75.m4v
 main_content:
   -

@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Peter Smith, 1998: Searching For Wholeness'
-template: project
 intro_movie: 98_SmithPeter-Short-1.75-1623426642.m4v
 main_content:
   -

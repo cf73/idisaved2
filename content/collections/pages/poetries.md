@@ -1,6 +1,5 @@
 ---
 title: POETICS
-template: project
 intro_movie: '-21POETICS_Short-0.90.m4v'
 main_content:
   -

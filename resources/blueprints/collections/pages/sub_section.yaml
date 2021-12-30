@@ -20,14 +20,6 @@ sections:
           icon: textarea
           listable: hidden
       -
-        handle: template
-        field:
-          hide_partials: true
-          display: Template
-          type: hidden
-          listable: hidden
-          default: subsection
-      -
         handle: overview_movie
         field:
           mode: grid

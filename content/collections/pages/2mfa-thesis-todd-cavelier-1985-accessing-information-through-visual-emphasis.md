@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Todd Cavelier, 1985: Accessing Information Through Visual Emphasis'
-template: project
 intro_movie: '--85Cavelier_Todd-4.00-1623422760.m4v'
 parent: bfd7aa75-69b8-4507-b7e5-444d4b1f702f
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0

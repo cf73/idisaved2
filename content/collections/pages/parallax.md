@@ -1,6 +1,5 @@
 ---
 title: PARALLAX
-template: project
 intro_movie: 21PARALLAX-SHORT-1.75.m4v
 main_content:
   -

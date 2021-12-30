@@ -1,6 +1,5 @@
 ---
 title: THEORETICS
-template: project
 intro_movie: TH_Intro3-SHORT-1.75.m4v
 main_content:
   -

@@ -1,6 +1,5 @@
 ---
 title: 'Visual Systems'
-template: project
 intro_movie: 21VSystems3_SHORT-2.50.m4v
 main_content:
   -

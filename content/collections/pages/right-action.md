@@ -1,6 +1,5 @@
 ---
 title: 'RIGHT ACTION'
-template: project
 intro_movie: '-21PROC_RightAction-2.50.m4v'
 main_content:
   -

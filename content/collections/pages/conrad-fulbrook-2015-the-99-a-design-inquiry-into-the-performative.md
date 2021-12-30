@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Conrad Fulbrook, 2015: The 99%: A Design Inquiry Into the PerFORMative'
-template: project
 intro_movie: 15_CFullbrook_Edit2-SHORT-2.50-1623418575.m4v
 main_content:
   -

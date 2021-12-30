@@ -1,6 +1,5 @@
 ---
 title: 'Design Studio 1'
-template: project
 intro_movie: 21DesSt1-SHORT-1.75.m4v
 main_content:
   -

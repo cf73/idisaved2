@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Susan Evans, 1987: Who Owns the Interpretation?'
-template: project
 intro_movie: '-87_Evand,Susan-2.00+4.00-1623422974.m4v'
 main_content:
   -

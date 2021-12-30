@@ -1,6 +1,5 @@
 ---
 title: CHaoniCE
-template: project
 intro_movie: 21_CHaoniCE-SHORT-2.75.m4v
 main_content:
   -

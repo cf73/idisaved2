@@ -1,6 +1,5 @@
 ---
 title: 'Connecting 2007'
-template: project
 intro_movie: 21CONN_SHORT-2.75.m4v
 main_content:
   -

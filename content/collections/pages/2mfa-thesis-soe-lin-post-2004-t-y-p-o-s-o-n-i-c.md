@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Soe Lin Post, 2004: T Y P O S O N I C'
-template: project
 intro_movie: '04_Lin,SoeLin-2.50-1623420361.m4v'
 main_content:
   -

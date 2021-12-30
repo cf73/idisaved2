@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Eva Anderson, 1989: Synthesis: Design & Technology'
-template: project
 intro_movie: '-89_AndersonEva-4.50-1623423900.m4v'
 main_content:
   -

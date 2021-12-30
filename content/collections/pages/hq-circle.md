@@ -1,6 +1,5 @@
 ---
 title: CIRCLE
-template: project
 intro_movie: 21HQCircle_SHORT-1.15.m4v
 main_content:
   -

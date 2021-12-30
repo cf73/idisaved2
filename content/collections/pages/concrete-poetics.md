@@ -1,6 +1,5 @@
 ---
 title: VERBIVISUAL
-template: project
 main_content:
   -
     text:

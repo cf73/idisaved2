@@ -1,6 +1,5 @@
 ---
 title: 'Relational Design'
-template: project
 intro_movie: 21RelatDes_SHORT-3.50.m4v
 main_content:
   -

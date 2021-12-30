@@ -1,6 +1,5 @@
 ---
 title: 'Graduate Thesis: 1993 to 2001'
-template: project
 intro_movie: 21THOv2_1993>01-SHORT-1.25-1622072374.m4v
 main_content:
   -

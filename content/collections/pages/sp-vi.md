@@ -1,6 +1,5 @@
 ---
 title: SP-VI
-template: project
 intro_movie: 21SPVIsq_SHORT-1.75.m4v
 main_content:
   -

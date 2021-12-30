@@ -1,6 +1,5 @@
 ---
 title: 'MAF Thesis: Matthew Monk, 1991: Embracing Imperfection: Communication and the Realities of Our Material Universe.'
-template: project
 intro_movie: 91_Monk_Matt-3.00-1623424777.m4v
 main_content:
   -

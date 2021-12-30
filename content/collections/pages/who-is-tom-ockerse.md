@@ -1,6 +1,5 @@
 ---
 title: 'Who is Tom Ockerse?'
-template: project
 intro_movie: 19TomOckerse.jpg
 main_content:
   -

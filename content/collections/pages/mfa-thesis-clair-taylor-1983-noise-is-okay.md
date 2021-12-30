@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Clair Taylor, 1983: Noise is Okay'
-template: project
 intro_movie: 83_Taylor_Noise-1622934799.m4v
 main_content:
   -

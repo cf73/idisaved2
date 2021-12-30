@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Kate Weese, 1979: The Book'
-template: project
 intro_movie: 201207_WeeseKate1.m4v
 main_content:
   -

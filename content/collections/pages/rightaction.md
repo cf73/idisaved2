@@ -1,6 +1,5 @@
 ---
 title: 'INSEEING Krotona'
-template: project
 parent: 614baba2-8922-43cb-bb4a-07aa02e06ab0
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
 updated_at: 1623861481

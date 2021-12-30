@@ -1,6 +1,5 @@
 ---
 title: SYSTEMS
-template: project
 intro_movie: 21-SYSTEMS_SHORT-2-1.25.m4v
 main_content:
   -

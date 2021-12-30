@@ -1,6 +1,5 @@
 ---
 title: TIME
-template: project
 intro_movie: 21BK_TIMEDoc_SHORT-2.25.m4v
 main_content:
   -

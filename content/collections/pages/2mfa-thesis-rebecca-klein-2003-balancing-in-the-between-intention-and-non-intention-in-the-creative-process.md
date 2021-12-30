@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Rebecca Klein, 2003: Balancing in the Between: intention and non-intention in the creative process'
-template: project
 main_content:
   -
     text:

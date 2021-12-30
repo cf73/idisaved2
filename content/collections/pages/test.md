@@ -2,7 +2,6 @@
 id: ccc99476-9e5d-4429-b547-0c5151d493be
 blueprint: projects
 title: 'test push from local mac'
-template: project
 main_content:
   -
     text:

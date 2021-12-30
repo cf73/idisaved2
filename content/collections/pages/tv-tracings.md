@@ -1,6 +1,5 @@
 ---
 title: 'TV Documentracings'
-template: project
 intro_movie: 21TVDocuTr_SHORT-2.00.m4v
 main_content:
   -

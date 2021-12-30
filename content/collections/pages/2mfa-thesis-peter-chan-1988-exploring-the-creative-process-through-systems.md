@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Peter Chan, 1988: Exploring the Creative Process Through Systems'
-template: project
 intro_movie: '-88_Chan_Peter-2.25.m4v'
 main_content:
   -

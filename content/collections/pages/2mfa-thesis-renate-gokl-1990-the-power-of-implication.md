@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Renate Gokl, 1990: The Power of Implication'
-template: project
 intro_movie: '--90-Gokl,-Renate-3.00-1623424216.m4v'
 main_content:
   -

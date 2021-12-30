@@ -1,6 +1,5 @@
 ---
 title: CONCRETISM
-template: project
 intro_movie: CONCR_SHORT_4-B-1.00.m4v
 main_content:
   -

@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Raphael Fajardo, 1993: Your Courage: Representing the Complexity of a Contemporary Sense of Identity.'
-template: project
 intro_movie: '-93_FajardoRaph-2.00+5.00-1623425458.m4v'
 main_content:
   -

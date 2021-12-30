@@ -1,6 +1,5 @@
 ---
 title: LANGUAGE
-template: project
 intro_movie: 21_LANG_SHORT-1.75.m4v
 main_content:
   -

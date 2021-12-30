@@ -1,6 +1,5 @@
 ---
 title: 'Light of Hope'
-template: project
 intro_movie: 21_LHopeIndon_Short-2.50.m4v
 main_content:
   -

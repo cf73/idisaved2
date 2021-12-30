@@ -1,6 +1,5 @@
 ---
 title: 'Unfolding + Enfolding Meaning'
-template: project
 intro_movie: 21UnEnMEANi_SHORT-3.00.m4v
 main_content:
   -

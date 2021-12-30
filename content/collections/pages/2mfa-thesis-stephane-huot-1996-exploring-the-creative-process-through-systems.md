@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Stephane Huot, 1996: Exploring the Creative Process through Systems?'
-template: project
 intro_movie: '-96_Huot,Steph-3.00-1623425928.m4v'
 main_content:
   -

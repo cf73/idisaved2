@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Seung Chan Lim, 2011: If resonance is the answer, what is the question?'
-template: project
 intro_movie: 11SLIM_Thes2-SHORT2-3.00-1623419257.m4v
 main_content:
   -

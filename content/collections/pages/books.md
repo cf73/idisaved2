@@ -1,6 +1,5 @@
 ---
 title: 'Concrete Books'
-template: project
 intro_movie: 21CBks_intro_SHORT-2.75.m4v
 main_content:
   -

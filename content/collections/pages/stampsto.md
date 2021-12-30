@@ -1,6 +1,5 @@
 ---
 title: STAMpsTO
-template: project
 main_content:
   -
     type: text

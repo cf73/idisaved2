@@ -1,6 +1,5 @@
 ---
 title: 'MFA Thesis: Eliza Cain, 1995: Embedded Within the Context: Recognizing Opportunity'
-template: project
 intro_movie: 96_Cain_Eliza-1.50-1623425773.m4v
 main_content:
   -
