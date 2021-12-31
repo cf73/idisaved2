@@ -32,20 +32,33 @@ body {
   left: 0;
   top: 0;
   height: 100vh;
-  width: 30vw;
-  overflow: scroll;
-  background-color: #1c1223;
-  padding-left: 20px; }
+  width: 20%;
+  overflow: scroll; }
   .navigation a {
-    color: #c5c2ca; }
+    color: #c5c2ca;
+    display: block;
+    transition: all .75s; }
+    .navigation a:hover {
+      background-color: #64667a;
+      transition: all .75s;
+      text-decoration: none; }
 
-.simpleList {
-  list-style-type: none;
-  margin-left: -40px; }
+.main-content {
+  width: auto;
+  position: absolute;
+  left: 28%;
+  right: 30px;
+  padding: 120px 60px; }
 
-.mainContentArea {
-  margin-left: calc(30vw + 20px);
-  padding-right: 20px; }
+.project-title {
+  position: fixed;
+  top: 0;
+  left: 28%;
+  right: 30px;
+  padding: 24px 30px;
+  z-index: 999;
+  background-color: #0e1025e1;
+  border-bottom: solid 1px cornsilk; }
 
 .on {
   text-decoration: underline; }

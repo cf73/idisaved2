@@ -11,47 +11,15 @@
         <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/e359cc54-0583-408a-9c92-df9fbc98eb86.css"/>
     </head>
     <body>
-        <div class="navigation">
-           
-            <i class="fas fa-arrow-left"></i>
-            <a href="{{parent:uri}}">{{ parent:title }}</a>
-            <ul>
-                {{ nav :from="parent:uri" }}
-                   <li style="list-style-type: none;">
-                      <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: red; padding: 30px;" {{/if }}>
-                        {{if intro_movie}}
-        <video autoplay loop width="96%" src="{{intro_movie}}"></video>
-        {{/if}}
-                        {{ title }}
-                    
-                    </a>
-                      {{ if is_current || is_parent }}
-                         {{ if children }}
-                            <ul>{{ *recursive children* }}</ul>
-                         {{ /if }}
-                      {{ /if }}
-                   </li>
-                {{ /nav }}
-             </ul>
-            <!-- <ul class="simpleList">
-                {{ nav:sectionsnav }}
-                    <li>
-                        <a href="{{ url }}"{{ if is_current || is_parent }} class="on"{{ /if }}>{{ title }}</a>
-                    </li>
-                {{ /nav:sectionsnav }}
-            </ul> -->
-        </div>
-        <div class="mainContentArea">
             <div class="container-fluid">
-                <div class="quote" style="margin-bottom: 60px; margin-top: 30px;">
+                <!-- <div class="quote" style="margin-bottom: 60px; margin-top: 30px;">
                     {{collection:quotes sort="random" limit="1" }}
                         {{quote}}
                         — {{attribution}}
                     {{/collection:quotes}}
-                </div>
+                </div> -->
                 {{ template_content }}
             </div>
-        </div>
         <script src="{{ mix src='/js/site.js' }}"></script>
 
         <script src="/js/jquery.min.js"></script>
