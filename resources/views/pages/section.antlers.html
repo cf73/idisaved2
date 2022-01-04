@@ -20,11 +20,11 @@
 <div class="main-content">
     <h1>{{title}}</h1>
     
-    {{if overview_movie}}
-        <video autoplay loop width="100%" src="{{overview_movie}}"></video>
-    {{/if}}
-    
     <div class="text" style="max-width: 833px; margin: 0 auto;">
-        {{ summary }}
+        {{ section_summary }}
     </div>
+
+    {{collection from="{last_segment}"}}
+        <li><a href="{{url}}">{{title}}</a></li>
+    {{/collection}}
 </div>
