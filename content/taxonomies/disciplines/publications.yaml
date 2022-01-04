@@ -1,0 +1,20 @@
+title: Publications
+description:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "A variety of publications designed by Tom Ockerse since 1965. These include: the J.K. Fogleman Design Studio brochure, 1965; the 1983 issues for Aperture, #93; the 1974 Demarco Gallery Catalogue, Edinburgh, Scotland; the 1977 RISD Graphic Design Department booklet; the journal\_"
+      -
+        type: text
+        marks:
+          -
+            type: italic
+        text: humanity
+      -
+        type: text
+        text: '(3 issues, 1991 - 1997); and SPIRALS 1991.'
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641318021
+blueprint: disciplines

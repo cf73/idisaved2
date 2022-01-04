@@ -1,4 +1,5 @@
 ---
+id: a308f346-bb39-4765-8236-d5d125e22f02
 title: 'Ferens Gallery Poster'
 intro_movie: 1981_Fehrens_SHORT-2.50.m4v
 main_content:
@@ -31,9 +32,7 @@ main_content:
   -
     type: image
     enabled: true
-parent: 444c3868-8548-4ebd-980d-411b63db2085
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1622164328
-blueprint: projects
-id: a308f346-bb39-4765-8236-d5d125e22f02
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641319224
+discipline: posters
 ---

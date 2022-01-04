@@ -1,4 +1,5 @@
 ---
+id: 2e7605bd-cbb8-4a86-bc74-76ee972cd260
 title: 'RIHT Identity'
 main_content:
   -
@@ -105,14 +106,13 @@ main_content:
             text: 'Soon after all this was done, the company changed hands again, using a new name.... and the whole identity design effort went out the window.'
     type: text
     enabled: true
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1622594479
-blueprint: projects
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641318790
 intro_movie: 20RIHT_SHORT-1.25.m4v
 related_content:
   - be421847-9999-4bce-bd7c-6c232e089044
   - ec56bea4-f984-4e05-b716-14ab230bd9d6
   - 3a4a20a8-e175-45b9-8541-585f250c0189
   - 3ee5e983-99a5-4c52-bcc7-a52f78508efb
-id: 2e7605bd-cbb8-4a86-bc74-76ee972cd260
+discipline: branding
 ---

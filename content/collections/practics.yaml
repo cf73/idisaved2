@@ -1,5 +1,9 @@
 title: Practics
+template: '@blueprint'
+layout: layout
 revisions: false
+route: '/practics/{discipline}/{slug}'
+sort_dir: asc
 date_behavior:
   past: public
   future: private

@@ -1,4 +1,5 @@
 ---
+id: c84833aa-0fe5-4317-81ba-b3cc1a883386
 title: SILHOUETTES
 intro_movie: 21KiSILH_SHORT2-1.5.m4v
 main_content:
@@ -257,8 +258,7 @@ main_content:
     photo: Silhouettes_cover.jpg
     type: image
     enabled: true
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1622316424
-blueprint: projects
-id: c84833aa-0fe5-4317-81ba-b3cc1a883386
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641319533
+discipline: publications
 ---

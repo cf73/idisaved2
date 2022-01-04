@@ -1,4 +1,5 @@
 ---
+id: a3fb15e7-a5ef-4d8c-b9bd-b49fb86698ce
 title: 'Diagram: the history of numbers'
 intro_movie: 21HistNumb_SHORT-3.00-1621987379.m4v
 main_content:
@@ -67,15 +68,13 @@ main_content:
   -
     type: image
     enabled: true
-parent: f09960c7-480f-4529-bd80-c71e54fea522
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1622594770
-blueprint: projects
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641318894
 related_content:
   - b7499782-447f-4181-988f-f1a5578c2dff
   - e0bc1ef8-7df9-4258-858f-01d6f292eb81
   - 614baba2-8922-43cb-bb4a-07aa02e06ab0
   - ec56bea4-f984-4e05-b716-14ab230bd9d6
   - 54b268c4-9450-4202-b758-c27cf2c84e9e
-id: a3fb15e7-a5ef-4d8c-b9bd-b49fb86698ce
+discipline: print
 ---

@@ -1,4 +1,5 @@
 ---
+id: d294b3d6-33a2-476e-af28-a2209743d548
 title: 'FETZER: Dynamic Mapping: an interactive experience'
 intro_movie: 21Fetzer-2.00.m4v
 main_content:
@@ -96,8 +97,7 @@ main_content:
     movie: HOPE_ProjectorScreenSnapz002.mov
     type: movie
     enabled: true
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1622058026
-blueprint: projects
-id: d294b3d6-33a2-476e-af28-a2209743d548
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641318620
+discipline: projects
 ---

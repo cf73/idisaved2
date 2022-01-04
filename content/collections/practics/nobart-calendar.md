@@ -1,4 +1,5 @@
 ---
+id: 93c6c121-1633-404d-a05b-71f9a20afb79
 title: 'Nobart Calendar'
 intro_movie: 21NOBARTcal_SHORT-1.75.m4v
 main_content:
@@ -143,12 +144,10 @@ main_content:
     photo: NCal29.jpg
     type: image
     enabled: true
-parent: f09960c7-480f-4529-bd80-c71e54fea522
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1622594833
-blueprint: projects
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641318902
 related_content:
   - b7499782-447f-4181-988f-f1a5578c2dff
   - d03cb039-6fe6-4786-91db-2a39af6fce0d
-id: 93c6c121-1633-404d-a05b-71f9a20afb79
+discipline: print
 ---
