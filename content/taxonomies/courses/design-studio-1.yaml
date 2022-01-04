@@ -1,0 +1,11 @@
+title: 'Design Studio 1'
+description:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Design Studio 1, a sophomore level course, envisions graphic designers as inquirers, observers, poets, editors, curators, analysts, researchers, commentators, and critics. It encourages students to experiment, discover, and play with the tools, materials, and processes of design toward self-directed ends.'
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641320125
+blueprint: courses
