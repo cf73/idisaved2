@@ -1,4 +1,6 @@
 ---
+id: 22bb2a27-882f-4120-be5c-57c7f3a1028b
+blueprint: projects
 title: 'MFA Thesis: Sang-Hyuk Ahn, 1993: Understanding the Fundamentals of Language'
 intro_movie: '-93_AHN,Sanghyuk-2.50-1623425134.m4v'
 main_content:
@@ -30,9 +32,7 @@ main_content:
             text: 'Language events have their own purposes. Likewise, graphic design takes on different forms according to the different needs of society. The axiom “Form follows Function” designates a far more complex process than the “commercial art” of earlier generations.'
     type: text
     enabled: true
-parent: 7b7186cf-7e5b-47be-95e8-9355f12614e0
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510199
-blueprint: projects
-id: 22bb2a27-882f-4120-be5c-57c7f3a1028b
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271553
+course: graduate-thesis-1993-to-2001
 ---

@@ -1,4 +1,6 @@
 ---
+id: a7725357-b189-4945-8994-c1183db5eb6a
+blueprint: projects
 title: 'MFA Thesis: Criswell Lappin, 1997: What Comes Between "Us" and "Them"?'
 intro_movie: 97_LappinCriswell-3.00-1623426377.m4v
 main_content:
@@ -30,9 +32,7 @@ main_content:
             text: 'My exploration fits under the heading of language; specifically, the language of graphic design. Within this document I question the connotations and relevance of certain words, explore our means of communication, and look at the relationship between designer and audience.'
     type: text
     enabled: true
-parent: f75b930c-d82b-43fb-b24a-fb3846da2e53
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510309
-blueprint: projects
-id: a7725357-b189-4945-8994-c1183db5eb6a
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271182
+course: graduate-thesis-1993-to-2001
 ---

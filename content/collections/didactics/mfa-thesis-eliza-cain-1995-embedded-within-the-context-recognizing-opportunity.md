@@ -1,4 +1,6 @@
 ---
+id: db157eb6-690b-43b3-a005-21e860cda172
+blueprint: projects
 title: 'MFA Thesis: Eliza Cain, 1995: Embedded Within the Context: Recognizing Opportunity'
 intro_movie: 96_Cain_Eliza-1.50-1623425773.m4v
 main_content:
@@ -54,9 +56,7 @@ main_content:
             text: 'In this sense, I have no “product” to present; no “object” to represent. I seek to deconstruct the hierarchical model in which an object is given to the designer, who then creates a product that is received by the viewer. I hope in this way to teach not propositional knowledge, or knowing “that;” but rather an understanding of the process of creating meaning–a form of knowing “how.”'
     type: text
     enabled: true
-parent: 7bcca7ad-c025-447a-8a17-e04ceb4481bf
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510237
-blueprint: projects
-id: db157eb6-690b-43b3-a005-21e860cda172
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271905
+course: graduate-thesis-1993-to-2001
 ---

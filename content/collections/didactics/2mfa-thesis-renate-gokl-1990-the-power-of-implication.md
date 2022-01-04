@@ -1,4 +1,6 @@
 ---
+id: ea0caa53-2fb5-4892-9937-6130e4d33f3d
+blueprint: projects
 title: 'MFA Thesis: Renate Gokl, 1990: The Power of Implication'
 intro_movie: '--90-Gokl,-Renate-3.00-1623424216.m4v'
 main_content:
@@ -42,9 +44,7 @@ main_content:
             text: "Studies investigating these principles culminated in the document for this thesis which combined the author’s own text by means of its content. It relies on an interaction with the viewer, as the complete message does not expose itself through simple observation, nor does the entire mes-sage arise through a straightforward reading of the manuscript version.\_"
     type: text
     enabled: true
-parent: cc452c7a-c43f-410c-b52c-739908ab70cc
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510141
-blueprint: projects
-id: ea0caa53-2fb5-4892-9937-6130e4d33f3d
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271544
+course: graduate-thesis-1979-to-1992
 ---

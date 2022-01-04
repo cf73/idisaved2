@@ -1,4 +1,6 @@
 ---
+id: 09200912-68e7-4b59-b67e-c37c1673ed19
+blueprint: projects
 title: 'MFA Thesis: Katie Salen, 1992: The Changing Face of Meaning'
 intro_movie: '-92_SalenKatie-1.75-1623424983.m4v'
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'Altering the relationship between the interpreter and the message, through a set of visual operations that displace and transform, imposes a critical way of seeing that releases the work from the bonds which previously claimed to define and circumscribe it.'
     type: text
     enabled: true
-parent: edf032e1-2f5d-418c-89cb-81207a04b9bd
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510156
-blueprint: projects
-id: 09200912-68e7-4b59-b67e-c37c1673ed19
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271399
+course: graduate-thesis-1979-to-1992
 ---

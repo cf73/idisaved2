@@ -1,4 +1,6 @@
 ---
+id: e5d90273-d695-4d73-a21a-73ec217f7dc4
+blueprint: projects
 title: 'MFA Thesis: Gunta Kaza, 2001: MUTE-MUSE-MUTINY'
 intro_movie: 01_KazaGunta-4-2.50-1623422025.m4v
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'Mutiny... I trust this awareness as a transformative experience. There are no words. No explanations  are necessary. It is the beginning of a new vocabulary, the beginning of learning. It is the presence  of silence.'
     type: text
     enabled: true
-parent: e854d092-2af7-448d-b81f-c336f3a23dc2
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510420
-blueprint: projects
-id: e5d90273-d695-4d73-a21a-73ec217f7dc4
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271271
+course: graduate-thesis-2001-to-2015
 ---

@@ -1,4 +1,6 @@
 ---
+id: d15383b4-9d73-4265-b1aa-34b96c379710
+blueprint: projects
 title: 'MFA Thesis: Susan Evans, 1987: Who Owns the Interpretation?'
 intro_movie: '-87_Evand,Susan-2.00+4.00-1623422974.m4v'
 main_content:
@@ -42,9 +44,7 @@ main_content:
             text: '“Who owns the interpretation?” At the beginning, Epstein owns the interpretation. The artist interprets his subject - the children - and creates the work - the portrait. The designer interprets the interpretation, the Epstein. In the end the interpretation is never possessed, it is open for re - and re - and re - interpretation. The aesthetic value makes the work open to infinite interpretations. The artist gives up his subjective interpretation to the creation of the object - the work. The work of art is the objectification of the artist’s subjective experience. The designer, on the other hand, accepts to act as mediator; to communicate certain messages in respect to specific functions and goals. The designer must define the function or functions to be expressed and identify the value of the subject in relation to these goals. The designer is never free in his interpretation of the subject. The designer interprets the subject from a critical perspective. Through this interpretation the designer brings his subject to expression.'
     type: text
     enabled: true
-parent: 35fe64f1-ca6c-490b-b876-2001ce0538bc
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510047
-blueprint: projects
-id: d15383b4-9d73-4265-b1aa-34b96c379710
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271632
+course: graduate-thesis-1979-to-1992
 ---

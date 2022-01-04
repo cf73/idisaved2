@@ -1,4 +1,6 @@
 ---
+id: 50529542-0a56-4d78-a9f6-186583551697
+blueprint: projects
 title: 'MFA Thesis: David Bull, 1994: Metalanguage: Typography'
 intro_movie: '-94_Bull,David_BK1-2.00-1623425634.m4v'
 main_content:
@@ -42,9 +44,7 @@ main_content:
             text: 'This thesis offers a point of view that merges content of a message with its visual form in an effort to communicate an idea clearly. The meta approach to typography aids in directing the form through the object language in a manner that attempts to make possibilities aware to the designer without leading to serendipitous temptations. It becomes an umbrella under which the designer is kept aware of the path taken with the user as the primary focus.'
     type: text
     enabled: true
-parent: bfe9ac98-c057-46fa-9146-58c4b269abdc
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510224
-blueprint: projects
-id: 50529542-0a56-4d78-a9f6-186583551697
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271220
+course: graduate-thesis-1993-to-2001
 ---

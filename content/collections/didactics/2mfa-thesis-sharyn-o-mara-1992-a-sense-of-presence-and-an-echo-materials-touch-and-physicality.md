@@ -1,4 +1,6 @@
 ---
+id: 62901576-0a68-4da5-a51d-fa97c67b6bef
+blueprint: projects
 title: 'MFA Thesis: Sharyn O''Mara, 1992: A Sense of Presence and An Echo: Materials, Touch and Physicality'
 intro_movie: '92_Omara,Sharyn-Short-B1.50-1623424881.m4v'
 main_content:
@@ -24,9 +26,7 @@ main_content:
             text: "What is the nature of those qualities which break through the visual sameness from which we suffer? It investigates what it is about certain materials and forms—in direct relation to the message—that engage people, that cause them to interrupt their paths and take a critical moment to consider, process, and think. \tThis engagement is based upon the associations the viewer brings to the piece and their experience of the piece. This thesis proposes that the sense of touch plays a critical role in the experiential; when you touch something, you connect with it. And when a connection is made, the message can be communicated."
     type: text
     enabled: true
-parent: 106c0fe5-63f3-440a-807d-d132397f0507
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510184
-blueprint: projects
-id: 62901576-0a68-4da5-a51d-fa97c67b6bef
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271576
+course: graduate-thesis-1979-to-1992
 ---

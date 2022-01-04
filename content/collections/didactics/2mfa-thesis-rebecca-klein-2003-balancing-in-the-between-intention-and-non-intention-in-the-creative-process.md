@@ -1,4 +1,6 @@
 ---
+id: 2cf64b81-66f6-431f-b1af-d237a74884b6
+blueprint: projects
 title: 'MFA Thesis: Rebecca Klein, 2003: Balancing in the Between: intention and non-intention in the creative process'
 main_content:
   -
@@ -29,10 +31,8 @@ main_content:
             text: 'The “between” is explored as a means to establish a connective harmony from an emerging, creative center.'
     type: text
     enabled: true
-parent: 62211830-4037-4645-af32-0eb7fd9b47cf
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510504
-blueprint: projects
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271536
 intro_movie: '-03_Klein,Reb-Edit1-1.50-1623421050.m4v'
-id: 2cf64b81-66f6-431f-b1af-d237a74884b6
+course: graduate-thesis-2001-to-2015
 ---

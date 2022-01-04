@@ -1,4 +1,6 @@
 ---
+id: 324378a7-d3b8-4c74-88fa-4ff411700742
+blueprint: projects
 title: 'MFA Thesis: Soe Lin Post, 2004: T Y P O S O N I C'
 intro_movie: '04_Lin,SoeLin-2.50-1623420361.m4v'
 main_content:
@@ -42,9 +44,7 @@ main_content:
             text: 'Typosonic is the designer’s documentation of the unexpected moments and results that arise from inquiry, process and practice of listening mindfully.'
     type: text
     enabled: true
-parent: ce729557-64b6-4ecd-a3f8-6453ae8a9f58
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510562
-blueprint: projects
-id: 324378a7-d3b8-4c74-88fa-4ff411700742
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271589
+course: graduate-thesis-2001-to-2015
 ---

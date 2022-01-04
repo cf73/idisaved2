@@ -1,4 +1,6 @@
 ---
+id: 1695781f-2e9b-48b6-9de3-e0724c13ba56
+blueprint: projects
 title: 'MFA Thesis: Conrad Fulbrook, 2015: The 99%: A Design Inquiry Into the PerFORMative'
 intro_movie: 15_CFullbrook_Edit2-SHORT-2.50-1623418575.m4v
 main_content:
@@ -60,9 +62,7 @@ main_content:
             text: '• feasibility factors'
     type: text
     enabled: true
-parent: 09cf5170-5b1d-4570-a0f7-6925f099ce42
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623418945
-blueprint: projects
-id: 1695781f-2e9b-48b6-9de3-e0724c13ba56
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271877
+course: graduate-thesis-2001-to-2015
 ---

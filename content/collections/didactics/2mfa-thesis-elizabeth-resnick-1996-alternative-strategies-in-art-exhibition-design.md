@@ -1,4 +1,6 @@
 ---
+id: 8eb37d31-21ad-4f66-a08a-24dd6e7972c7
+blueprint: projects
 title: 'MFA Thesis: Elizabeth Resnick, 1996: Alternative Strategies in Art Exhibition Design'
 intro_movie: 96_ResnickEliz-1.50-1623426253.m4v
 main_content:
@@ -30,9 +32,7 @@ main_content:
             text: 'To accomplish this goal, I have selected as my subject an investigation of the innovative ideas and mass communication strategies used by the historical Avant-Garde movements of Futurism, Dada, and Constructivism. Further I will present evidence of the legacy of these ideas and strategies where it exists in American art and communications design of the 1980s and 1990s.'
     type: text
     enabled: true
-parent: 3e091025-1ed5-4682-aef7-13a1e223581d
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510296
-blueprint: projects
-id: 8eb37d31-21ad-4f66-a08a-24dd6e7972c7
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271248
+course: graduate-thesis-1993-to-2001
 ---

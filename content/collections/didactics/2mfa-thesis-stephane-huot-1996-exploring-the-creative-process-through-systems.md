@@ -1,4 +1,6 @@
 ---
+id: 099d2554-6d4f-4c65-bbe9-b69c90428f3e
+blueprint: projects
 title: 'MFA Thesis: Stephane Huot, 1996: Exploring the Creative Process through Systems?'
 intro_movie: '-96_Huot,Steph-3.00-1623425928.m4v'
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'Ultimately, systems help the designer focus on the process instead of the end result, and work without the burden of expectation - thereby enhancing creativity.'
     type: text
     enabled: true
-parent: 2838dcf2-4582-4b62-987c-a817835a6b11
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510252
-blueprint: projects
-id: 099d2554-6d4f-4c65-bbe9-b69c90428f3e
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271602
+course: graduate-thesis-1993-to-2001
 ---

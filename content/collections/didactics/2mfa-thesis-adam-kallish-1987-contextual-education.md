@@ -1,4 +1,6 @@
 ---
+id: f7f91ace-eb3f-40e0-a684-dd2735897152
+blueprint: projects
 title: 'MFA Thesis: Adam Kallish, 1987: Contextual Education'
 intro_movie: 87Kallish_Adam-201208-2.00-1623423196.m4v
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'These can be categorized as: The Philosophy- a creed or value system that mediates the perceptions of, in this case, graphic design. The Curriculum- structures that order a set of viable experiences to achieve goals and objectives. The Taxonomy- a system for understanding how educational experiences work from the vantage point of structuring information, how we perceive it and act on it. The core of this thesis goes into detail to map out the interactive and complex “fugue” between the constituent elements. It avoids questions of value as it is a fluid decision based on context. What it does try to do is tackle what in essence is an abstraction by trying to make it visible and in doing so increase the awareness of both the individual educator and the field. In the end, we empower ourselves to better understand the educational process.'
     type: text
     enabled: true
-parent: db0c3767-f0d9-45ac-866f-d11b4444e021
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510060
-blueprint: projects
-id: f7f91ace-eb3f-40e0-a684-dd2735897152
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271043
+course: graduate-thesis-1979-to-1992
 ---

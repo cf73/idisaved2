@@ -1,4 +1,6 @@
 ---
+id: 35dd5ea4-a87b-4178-a8b0-f3c6876ccb9f
+blueprint: projects
 title: 'MFA Thesis: Jill Greene, 2002: Symbolism: Memory, Inquiry, Serendipity.'
 intro_movie: 02_GreeneJill-Short-1.50-1623421461.m4v
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'Serendipity. The kaleidoscope represents my interest in art and science, clear yet ambiguous, chaotic and orderly, simple but complex, a single object employing light and geometry, a representation of multiplicity. I trust my intuition and embrace its paradox as a metaphor symbolic of my journey.'
     type: text
     enabled: true
-parent: caafabf3-cc10-4d88-a5ec-805b77422718
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510445
-blueprint: projects
-id: 35dd5ea4-a87b-4178-a8b0-f3c6876ccb9f
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271306
+course: graduate-thesis-2001-to-2015
 ---

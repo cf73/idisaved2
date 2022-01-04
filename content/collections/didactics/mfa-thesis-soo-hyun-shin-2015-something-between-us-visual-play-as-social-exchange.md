@@ -1,4 +1,6 @@
 ---
+id: 5c9d05c0-8aa9-4a0c-b780-7433eca25f04
+blueprint: projects
 title: 'MFA Thesis: Soo Hyun Shin, 2015: Something Between Us: Visual Play as Social Exchange'
 intro_movie: 15_SooSHIN-Ed1-SHORT-3.00-1623420187.m4v
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'I light the fire to an infinite response loop for breaking the hierarchy between the designer and the user, communicator and the viewer, the world and my perceptions. It is an ongoing search to understand continuously our temporary existence.'
     type: text
     enabled: true
-parent: 1695781f-2e9b-48b6-9de3-e0724c13ba56
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510013
-blueprint: projects
-id: 5c9d05c0-8aa9-4a0c-b780-7433eca25f04
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271919
+course: graduate-thesis-2001-to-2015
 ---

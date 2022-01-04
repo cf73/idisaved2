@@ -1,4 +1,6 @@
 ---
+id: dec8a44e-c507-4a09-89f2-e55e293cb703
+blueprint: projects
 title: 'MFA Thesis: Shalotte Sugathan, 2002: Invisible: a visual treatise of seeing and knowing the numbers 1–10'
 intro_movie: '-02_Sugathan3-2.00-1623421190.m4v'
 main_content:
@@ -30,9 +32,7 @@ main_content:
             text: 'Using present number figures (1,2,3...) and number words (in English - one, two, three...) this thesis investigates possibilities to bring to a visual consciousness the metaphysical phenomena of an unconscious numerical knowing. It demystifies the hidden exquisite structure of numbers and unravels glimpses of an inner beauty (nature) to communicate a qualitative sense of a numerical experience — thus, visually explaining how 5 can mean ''fiveness'' besides being merely five things.'
     type: text
     enabled: true
-parent: 864a4d08-e636-40ad-b041-e70ab1b1000f
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510477
-blueprint: projects
-id: dec8a44e-c507-4a09-89f2-e55e293cb703
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271567
+course: graduate-thesis-2001-to-2015
 ---

@@ -1,4 +1,6 @@
 ---
+id: 80fa6434-b103-4d08-9e06-6417f48c308d
+blueprint: projects
 title: 'MFA Thesis: Cynthia Frawley, 1988: An Eye for Detail'
 intro_movie: '-88Frawley_Cynthia-Shoprt-1.25-1623423497.m4v'
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'The conclusion of this thesis explores the problems of contemporary design. The referential qualities of ornament can be a means of reducing the bland conformity of present day design. By acquiring an eye for detail a designer can achieve a sense of context and give his or her work meaning and character.'
     type: text
     enabled: true
-parent: 2796f23c-0291-4106-ba8f-354547fe0879
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510093
-blueprint: projects
-id: 80fa6434-b103-4d08-9e06-6417f48c308d
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271190
+course: graduate-thesis-1979-to-1992
 ---

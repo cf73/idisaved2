@@ -1,4 +1,6 @@
 ---
+id: b1ba04ce-c789-4cd3-a2f2-bca5fbe7d4cf
+blueprint: projects
 title: 'MFA Thesis: Danniel Gaidula, 2004: Desperately See(k)ing Systems'
 intro_movie: 04_GaidulaDan-3.00.m4v
 main_content:
@@ -42,9 +44,7 @@ main_content:
             text: 'Principles of the course, Concrete Books, taught by Thomas Ockerse at the Rhode Island School of Design were employed in the creation of a game. This game is concrete in that its forms and modes of play are derived from the findings of this study and form a parallel ‘text’ comprised of the dialog between its constituent parts, rules, modes of play and those that interact with it.'
     type: text
     enabled: true
-parent: 314d7252-92ab-40c4-9fb1-870373769b99
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510520
-blueprint: projects
-id: b1ba04ce-c789-4cd3-a2f2-bca5fbe7d4cf
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271210
+course: graduate-thesis-2001-to-2015
 ---

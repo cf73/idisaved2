@@ -1,4 +1,6 @@
 ---
+id: 52dac084-488c-496b-bcf1-4a9f17e60ea4
+blueprint: projects
 title: 'MFA Thesis: Doug Banquer, 1988: Bites and Pieces: Abstraction within the Design Process'
 intro_movie: '-88_Banquer-D_WIDE-2.00-1623423307.m4v'
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'The final results of this investigation suggest that abstraction is not a code to be deciphered but an experience that awaits the sensitized eye.'
     type: text
     enabled: true
-parent: d6a9010e-1920-4124-92d1-3ea0f6b9e262
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510077
-blueprint: projects
-id: 52dac084-488c-496b-bcf1-4a9f17e60ea4
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271233
+course: graduate-thesis-1979-to-1992
 ---

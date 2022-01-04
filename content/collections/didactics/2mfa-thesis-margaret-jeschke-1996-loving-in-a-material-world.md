@@ -1,4 +1,6 @@
 ---
+id: c79dd358-668d-4f0c-99d9-7ea33307f1b2
+blueprint: projects
 title: 'MFA Thesis: Margaret Jeschke, 1996: Loving in a Material World.'
 intro_movie: '96_Jeschke,-Margaret-3.00-1623426045.m4v'
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'The context for this thesis is contemporary North American culture - more specifically the mainstream extended middle class.'
     type: text
     enabled: true
-parent: dec03080-3fea-433d-bfa2-222c0eeb8c78
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510266
-blueprint: projects
-id: c79dd358-668d-4f0c-99d9-7ea33307f1b2
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271480
+course: graduate-thesis-1993-to-2001
 ---

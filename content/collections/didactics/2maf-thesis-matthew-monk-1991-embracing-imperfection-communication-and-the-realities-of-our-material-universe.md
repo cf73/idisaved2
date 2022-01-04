@@ -1,4 +1,6 @@
 ---
+id: b8f79f8e-bea3-4011-9e32-ea73bd80780c
+blueprint: projects
 title: 'MAF Thesis: Matthew Monk, 1991: Embracing Imperfection: Communication and the Realities of Our Material Universe.'
 intro_movie: 91_Monk_Matt-3.00-1623424777.m4v
 main_content:
@@ -42,9 +44,7 @@ main_content:
             text: 'design can incorporate such elements as limitation, distortion, appropriation, accident, arbitrariness, entropy, chaos, fragmentation, simultaneity and decay to express the world of which it is an integral part. If communication is going to exist within and communicate about this imperfect world, then it can benefit from understanding and working together with these powerful, inevitable forces.'
     type: text
     enabled: true
-parent: 049f8d1f-6ad1-4f7e-abb7-9e223f9492db
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510170
-blueprint: projects
-id: b8f79f8e-bea3-4011-9e32-ea73bd80780c
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271032
+course: graduate-thesis-1979-to-1992
 ---

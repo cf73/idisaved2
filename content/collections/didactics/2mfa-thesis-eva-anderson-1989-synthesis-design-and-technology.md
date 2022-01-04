@@ -1,4 +1,6 @@
 ---
+id: 67e14f92-5df4-4834-a8d0-2307620db6ae
+blueprint: projects
 title: 'MFA Thesis: Eva Anderson, 1989: Synthesis: Design & Technology'
 intro_movie: '-89_AndersonEva-4.50-1623423900.m4v'
 main_content:
@@ -38,9 +40,7 @@ main_content:
         type: paragraph
     type: text
     enabled: true
-parent: d5be10ab-2d17-4fc5-9e34-40dc3ffcbbae
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510119
-blueprint: projects
-id: 67e14f92-5df4-4834-a8d0-2307620db6ae
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271261
+course: graduate-thesis-1979-to-1992
 ---

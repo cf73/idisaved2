@@ -1,4 +1,6 @@
 ---
+id: 9f3d8c42-0048-492a-bd75-0b410e5fa735
+blueprint: projects
 title: 'MFA Thesis: Moon Jung Jang, 2008: Peripheral Vision: Reconfiguring Socio-Cultural Messages'
 intro_movie: 08Moon_ED2-SHORT-1.50-1623419411.m4v
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'My research methodology is built in stages. First, I seek to understand socio-cultural systems through participant observation, introspection, and dialogue(interview). Second, through strategies of re-contextualization and memorialization, I reassert the hidden voices, slipping them from the margin into full view. This re-configuration of visual language investigates modes of representation: juxtaposition, de- centering, transposition, palimpsest, and mirroring. I seek to shift the traditional hierarchies out of focus, to disturb the given array of visual facts, and generate alternative actions that reconfigure the placement of the marginal.'
     type: text
     enabled: true
-parent: 5134368c-bd3f-42c7-8012-91801dfaa60a
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623510535
-blueprint: projects
-id: 9f3d8c42-0048-492a-bd75-0b410e5fa735
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271496
+course: graduate-thesis-2001-to-2015
 ---

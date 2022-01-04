@@ -1,4 +1,6 @@
 ---
+id: 43c34e6c-e6f6-4ace-9dde-d03cb14c6781
+blueprint: projects
 title: 'MFA Thesis: Seung Chan Lim, 2011: If resonance is the answer, what is the question?'
 intro_movie: 11SLIM_Thes2-SHORT2-3.00-1623419257.m4v
 main_content:
@@ -36,9 +38,7 @@ main_content:
             text: 'In the context of my thesis work at RISD, I would like to utilize my background as a Computer Scientist to re-imagine the personal computer, such that its design aims to aide in the development of our empathic capabilities.'
     type: text
     enabled: true
-parent: 09cf5170-5b1d-4570-a0f7-6925f099ce42
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1623419261
-id: 43c34e6c-e6f6-4ace-9dde-d03cb14c6781
-blueprint: projects
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641271940
+course: graduate-thesis-2001-to-2015
 ---
