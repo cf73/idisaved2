@@ -63,4 +63,16 @@ body {
 .on {
   text-decoration: underline; }
 
+.work {
+  width: 350px;
+  padding: 30px;
+  border: solid 1px lightblue; }
+
+.pill {
+  border: solid 1px white;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-size: 14px;
+  display: inline-block; }
+
 /*# sourceMappingURL=idi.css.map */

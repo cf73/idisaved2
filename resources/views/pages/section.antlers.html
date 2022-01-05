@@ -24,7 +24,24 @@
         {{ section_summary }}
     </div>
 
-    {{collection from="{last_segment}"}}
-        <li><a href="{{url}}">{{title}}</a></li>
-    {{/collection}}
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+        {{collection from="{last_segment}"}}
+            <a href="{{url}}">
+                <div class="work">
+                    <video src="{{intro_movie}}" width="320" height="auto" autoplay></video>
+                    <h3>{{title}}</h3>
+                    {{if last_segment === "didactics"}}
+                    <div class="pill">{{course:title}}</div>
+                    {{elseif last_segment === "poetics"}}
+                    <div class="pill">{{experiments:title}}</div>
+                    {{elseif last_segment === "practics"}}
+                    <div class="pill">{{discipline:title}}</div>
+                    {{elseif last_segment === "theoretics"}}
+                    <div class="pill">{{theme:title}}</div>
+                    {{/if}}
+                </div>
+            </a>   
+        {{/collection}}
+    </div>
+    
 </div>
