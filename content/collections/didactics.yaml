@@ -1,6 +1,8 @@
 title: Didactics
 template: '@blueprint'
 layout: layout
+taxonomies:
+  - courses
 revisions: false
 route: '/didactics/{course}/{slug}'
 sort_dir: asc

@@ -1,6 +1,6 @@
 <div class="navigation">
     <a href="{{parent:uri}}" style="padding-left: 30px; padding-top: 30px;"><i class="fas fa-arrow-left"></i> {{ parent:title }}</a>
-    <ul style="margin-left: -40px;">
+    <ul style="margin-left: -40px; display: flex; flex-direction: row;">
         {{ nav :from="parent:uri" }}
             <li style="list-style-type: none;">
                 <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #64667a;" {{/if }}>
@@ -22,6 +22,38 @@
     
     <div class="text" style="max-width: 833px; margin: 0 auto;">
         {{ section_summary }}
+    </div>
+
+
+
+    <div>
+        <ul>
+            {{if last_segment === "didactics"}}
+                {{taxonomy:courses}}
+                    <a href="{{url}}">
+                        <li>{{title}}</li>
+                    </a>
+                {{/taxonomy:courses}}
+            {{elseif last_segment === "poetics"}}
+                {{taxonomy:explorations}}
+                    <a href="{{url}}">
+                        <li>{{title}}</li>
+                    </a>
+                {{/taxonomy:explorations}}
+            {{elseif last_segment === "practics"}}
+                {{taxonomy:disciplines}}
+                    <a href="{{url}}">
+                        <li>{{title}}</li>
+                    </a>
+                {{/taxonomy:disciplines}}
+            {{elseif last_segment === "theoretics"}}
+                {{taxonomy:themes}}
+                    <a href="{{url}}">
+                        <li>{{title}}</li>
+                    </a>
+                {{/taxonomy:themes}}
+            {{/if}}
+        </ul>
     </div>
 
     <div style="display: flex; flex-direction: row; flex-wrap: wrap">
