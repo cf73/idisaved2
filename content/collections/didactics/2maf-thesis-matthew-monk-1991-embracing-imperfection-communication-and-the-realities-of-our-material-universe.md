@@ -45,6 +45,6 @@ main_content:
     type: text
     enabled: true
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641271032
-course: graduate-thesis-1979-to-1992
+updated_at: 1641417445
+courses: graduate-thesis-1979-to-1992
 ---

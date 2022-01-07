@@ -76,5 +76,5 @@ related_content:
   - 614baba2-8922-43cb-bb4a-07aa02e06ab0
   - ec56bea4-f984-4e05-b716-14ab230bd9d6
   - 54b268c4-9450-4202-b758-c27cf2c84e9e
-discipline: print
+disciplines: print
 ---

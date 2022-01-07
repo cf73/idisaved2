@@ -25,5 +25,5 @@ main_content:
             text: .
     type: text
     enabled: true
-experiments: abstract
+explorations: abstract
 ---

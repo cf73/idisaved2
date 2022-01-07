@@ -11,19 +11,6 @@ sections:
           validate:
             - required
       -
-        handle: course
-        field:
-          max_items: 1
-          mode: select
-          create: true
-          taxonomies:
-            - courses
-          display: Course
-          type: terms
-          icon: taxonomy
-          listable: hidden
-          instructions_position: above
-      -
         handle: intro_movie
         field:
           mode: grid
@@ -150,3 +137,15 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: courses
+        field:
+          type: terms
+          taxonomies:
+            - courses
+          display: Course
+          mode: select
+          instructions_position: above
+          listable: hidden
+          max_items: 1
+          create: true

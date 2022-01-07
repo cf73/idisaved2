@@ -42,5 +42,5 @@ main_content:
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
 updated_at: 1641321296
 intro_movie: 21STAMpsTO-3.25.m4v
-experiments: found
+explorations: found
 ---

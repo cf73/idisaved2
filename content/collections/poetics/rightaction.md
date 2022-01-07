@@ -380,5 +380,5 @@ main_content:
     movie: K-INSEEING.mp4
     type: movie
     enabled: true
-experiments: events
+explorations: events
 ---

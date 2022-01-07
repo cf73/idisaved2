@@ -190,5 +190,5 @@ related_content:
   - e86f5c72-1fe1-45c3-bcc0-ecbf9ec2ce7e
   - d03cb039-6fe6-4786-91db-2a39af6fce0d
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
-discipline: posters
+disciplines: posters
 ---

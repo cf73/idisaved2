@@ -1,6 +1,8 @@
 title: Practics
 template: '@blueprint'
 layout: layout
+taxonomies:
+  - disciplines
 revisions: false
 route: '/practics/{discipline}/{slug}'
 sort_dir: asc

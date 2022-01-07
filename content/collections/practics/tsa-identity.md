@@ -266,5 +266,5 @@ related_content:
   - abbabc97-d9ba-4835-ab66-406bdf431333
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
 intro_movie: 2005_TSA_BRAND_201023c.m4v
-discipline: branding
+disciplines: branding
 ---

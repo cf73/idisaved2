@@ -16,5 +16,5 @@ main_content:
     enabled: true
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
 updated_at: 1641271405
-course: graduate-thesis-2001-to-2015
+courses: graduate-thesis-2001-to-2015
 ---

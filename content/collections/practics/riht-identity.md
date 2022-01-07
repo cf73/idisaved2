@@ -114,5 +114,5 @@ related_content:
   - ec56bea4-f984-4e05-b716-14ab230bd9d6
   - 3a4a20a8-e175-45b9-8541-585f250c0189
   - 3ee5e983-99a5-4c52-bcc7-a52f78508efb
-discipline: branding
+disciplines: branding
 ---

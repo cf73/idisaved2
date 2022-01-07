@@ -5,5 +5,5 @@ title: 'MFA Thesis: Todd Cavelier, 1985: Accessing Information Through Visual Em
 intro_movie: '--85Cavelier_Todd-4.00-1623422760.m4v'
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
 updated_at: 1641271641
-course: graduate-thesis-1979-to-1992
+courses: graduate-thesis-1979-to-1992
 ---

@@ -143,5 +143,5 @@ related_content:
   - fb8db3ac-96ab-43ac-818e-7f9494239f94
   - 614baba2-8922-43cb-bb4a-07aa02e06ab0
   - 71b196fd-bde8-4d6b-905e-87da7c7dd9c5
-experiments: events
+explorations: events
 ---

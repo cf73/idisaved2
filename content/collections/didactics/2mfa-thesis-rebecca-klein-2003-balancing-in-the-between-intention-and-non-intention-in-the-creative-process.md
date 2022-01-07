@@ -34,5 +34,5 @@ main_content:
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
 updated_at: 1641271536
 intro_movie: '-03_Klein,Reb-Edit1-1.50-1623421050.m4v'
-course: graduate-thesis-2001-to-2015
+courses: graduate-thesis-2001-to-2015
 ---

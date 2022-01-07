@@ -33,5 +33,5 @@ main_content:
     enabled: true
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
 updated_at: 1641319416
-discipline: publications
+disciplines: publications
 ---

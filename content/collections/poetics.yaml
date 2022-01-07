@@ -1,6 +1,8 @@
 title: Poetics
 template: default
 layout: layout
+taxonomies:
+  - explorations
 revisions: false
 route: '/poetics/{explorations}/{slug}'
 sort_dir: asc

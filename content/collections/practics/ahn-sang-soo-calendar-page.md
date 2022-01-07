@@ -1,5 +1,6 @@
 ---
 id: 24d6e32b-18bc-4902-b796-11b5f9a08e9c
+blueprint: projects
 title: 'Ahn Sang Soo Calendar Page'
 main_content:
   -
@@ -618,11 +619,11 @@ main_content:
     type: image
     enabled: true
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641319211
+updated_at: 1641419355
 intro_movie: 21AHNCal2-SHORT-2.25-1622048949.m4v
 related_content:
   - 71b196fd-bde8-4d6b-905e-87da7c7dd9c5
   - 5f25dfc2-fa72-412d-85f0-9863c667647a
   - c501188b-9a1b-47a1-9b82-6ceaf8758999
-discipline: posters
+disciplines: posters
 ---

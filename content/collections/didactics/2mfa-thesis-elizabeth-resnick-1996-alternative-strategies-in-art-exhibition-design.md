@@ -34,5 +34,5 @@ main_content:
     enabled: true
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
 updated_at: 1641271248
-course: graduate-thesis-1993-to-2001
+courses: graduate-thesis-1993-to-2001
 ---

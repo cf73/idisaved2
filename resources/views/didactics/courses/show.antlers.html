@@ -2,10 +2,16 @@
 
 {{description}}
 
-{{ entries paginate="5" }}
-  <ul>
+{{ entries paginate="50" }}
+<div style="display: flex; flex-direction: row; flex-wrap: wrap">
   {{ results }}
-    <li><a href="{{ url }}">{{ title }}</a></li>
+    <a href="{{url}}">
+      <div class="work">
+        <video src="{{intro_movie}}" width="320" height="auto" autoplay></video>
+        <h3>{{title}}</h3>
+        <div class="pill">{{courses:title}}</div>
+      </div>
+    </a>
   {{ /results }}
-  </ul>
+</div>
 {{ /entries }}

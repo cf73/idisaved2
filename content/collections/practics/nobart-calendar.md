@@ -149,5 +149,5 @@ updated_at: 1641318902
 related_content:
   - b7499782-447f-4181-988f-f1a5578c2dff
   - d03cb039-6fe6-4786-91db-2a39af6fce0d
-discipline: print
+disciplines: print
 ---
