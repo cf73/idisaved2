@@ -11,18 +11,19 @@ sections:
           validate:
             - required
       -
-        handle: experiments
+        handle: thumbnail_slides
         field:
-          max_items: 1
-          mode: select
-          create: true
-          display: Experiments
-          type: terms
-          icon: taxonomy
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 7
+          display: 'Thumbnail Slides'
+          type: assets
+          icon: assets
           listable: hidden
           instructions_position: above
-          taxonomies:
-            - explorations
       -
         handle: intro_movie
         field:

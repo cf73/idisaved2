@@ -5,11 +5,13 @@
 {{ entries paginate="50" }}
 <div style="display: flex; flex-direction: row; flex-wrap: wrap">
   {{ results }}
-    <div class="work">
-      <video src="{{intro_movie}}" width="320" height="auto" autoplay></video>
-      <h3>{{title}}</h3>
-      <div class="pill">{{disciplines:title}}</div>
-    </div>
+    <a href="{{url}}">
+      <div class="work">
+        <video src="{{intro_movie}}" width="320" height="auto" autoplay></video>
+        <h3>{{title}}</h3>
+        <div class="pill">{{disciplines:title}}</div>
+      </div>
+    </a>
   {{ /results }}
 </div>
 {{ /entries }}

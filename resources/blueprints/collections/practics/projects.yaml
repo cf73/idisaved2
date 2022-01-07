@@ -11,16 +11,17 @@ sections:
           validate:
             - required
       -
-        handle: discipline
+        handle: thumbnail_slides
         field:
-          max_items: 1
-          mode: select
-          create: true
-          taxonomies:
-            - disciplines
-          display: Discipline
-          type: terms
-          icon: taxonomy
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 7
+          display: 'Thumbnail Slides'
+          type: assets
+          icon: assets
           listable: hidden
           instructions_position: above
       -

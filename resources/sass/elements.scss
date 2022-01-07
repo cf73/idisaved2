@@ -13,3 +13,19 @@
     font-size: 14px;
     display: inline-block;
 }
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    height: 200px; 
+    width: 200px;
+    background-color: red;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+.subslide {
+    height: 70vh;
+}

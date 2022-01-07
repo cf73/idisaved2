@@ -1,5 +1,6 @@
 ---
 id: 3ee5e983-99a5-4c52-bcc7-a52f78508efb
+blueprint: projects
 title: 'Theosophical Society in America Identity'
 main_content:
   -
@@ -260,11 +261,18 @@ main_content:
     type: image
     enabled: true
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641318801
+updated_at: 1641576924
 related_content:
   - be421847-9999-4bce-bd7c-6c232e089044
   - abbabc97-d9ba-4835-ab66-406bdf431333
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
 intro_movie: 2005_TSA_BRAND_201023c.m4v
 disciplines: branding
+thumbnail_slides:
+  - TSA_identity_02-1641576920.jpg
+  - TSA_identity_03-1641576920.jpg
+  - TSA_identity_04-1641576921.jpg
+  - TSA_identity_06-1641576921.jpg
+  - TSA_identity_10-1641576921.jpg
+  - TSA_identity_14-1641576921.jpg
 ---
