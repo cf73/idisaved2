@@ -1,5 +1,5 @@
 title: Poetics
-template: default
+template: '@blueprint'
 layout: layout
 taxonomies:
   - explorations

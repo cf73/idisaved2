@@ -1,71 +1,40 @@
-<!-- <div class="navigation">
-    
-    <a href="{{parent:uri}}" style="padding-left: 30px; padding-top: 30px;"><i class="fas fa-arrow-left"></i> {{ parent:title }}</a>
-    <ul style="margin-left: -40px;">
-        {{ nav :from="parent:uri" }}
-            <li style="list-style-type: none;">
-                <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #64667a;" {{/if }}>
-                    {{if intro_movie}}
-                        <video autoplay loop width="100%" style="padding: 18px 24px 0px 75px;" src="{{intro_movie}}"></video>
-                    {{/if}}
-                    <p style="padding: 0px 24px 30px 75px; margin-bottom: 0;">{{ title }}</p>
-                </a>
-                {{ if is_current || is_parent }}
-                    {{ if children }}
-                        <ul>{{ *recursive children* }}</ul>
-                    {{ /if }}
-                {{ /if }}
-            </li>
-        {{ /nav }}
-        </ul>
-</div> -->
+<h4><a href="/didactics">Poetics</a> / {{explorations}}
+    <a href="{{url}}">{{title}}</a>
+    {{/explorations}}</h4>
 
 
-<div class="main-content">
-    <div style="position: relative;">
-     
-                <h2 class="project-title">
-                    {{title}}
-                </h2>
+<h2 class="project-title">
+    {{title}}
+</h2>
 
-    
-            <div style="margin-bottom: 60px;">
-                {{if intro_movie}}
-                <video autoplay loop width="100%" src="{{intro_movie}}"></video>
-                {{/if}}
-            </div>
-    
-    
-    
-                {{main_content}}
-    
-                {{ if type == "text" }}
-    
-                <div class="text" style="max-width: 833px; margin: 0 auto;">
-                {{ text }}
-                </div>
-    
-                {{ elseif type == "quote" }}
-    
-                <div class="blockquote">
-                    <blockquote>{{ quote }}</blockquote>
-                    <p class="attribution">— {{ attribution }}</p>
-                </div>
-    
-                {{ elseif type == "image" }}
-    
-                <figure style="margin: 60px 0;">
-                    <img src="{{ photo }}" width="100%" alt="{{ caption }}" />
-                    <figcaption>{{ caption }}</figcaption>
-                </figure>
-    
-                {{ /if }}
-    
-                {{/main_content}}
-    
-
-    
-    </div>
-    
-    
+<div style="margin-bottom: 60px;">
+    {{if intro_movie}}
+    <video autoplay loop width="100%" src="{{intro_movie}}"></video>
+    {{/if}}
 </div>
+
+{{main_content}}
+
+    {{ if type == "text" }}
+
+        <div class="text" style="max-width: 833px; margin: 0 auto;">
+            {{ text }}
+        </div>
+
+    {{ elseif type == "quote" }}
+
+        <div class="blockquote">
+            <blockquote>{{ quote }}</blockquote>
+            <p class="attribution">— {{ attribution }}</p>
+        </div>
+
+    {{ elseif type == "image" }}
+
+        <figure style="margin: 60px 0;">
+            <img src="{{ photo }}" width="100%" alt="{{ caption }}" />
+            <figcaption>{{ caption }}</figcaption>
+        </figure>
+
+    {{ /if }}
+
+{{/main_content}}
