@@ -1,24 +1,27 @@
 body {
-    background-color: $midnightaqua;
+    background-color: #ebeef1;
 }
 .navigation {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 30vw;
-    background-color: $grape;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 130px;
+    background-color: red;
+    height: 70px;
+    z-index: 999;
     & a {
         color: $cream;
+        transition: all .75s;
+        margin: 0;
+        padding: 30px;
+        &:hover {
+            background-color: #9195b4;
+            transition: all .75s;
+            text-decoration: none;
+        }
     }
 }
-.simpleList {
-    list-style-type: none;
-    margin-left: -40px;
-
-}
-.mainContentArea {
-    margin-left: calc(30vw + 20px);
-    padding-right: 20px;
+.main-content {
+    width: auto;
+    padding: 95px 30px;
 }

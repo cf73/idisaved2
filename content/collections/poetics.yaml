@@ -1,0 +1,11 @@
+title: Poetics
+template: '@blueprint'
+layout: layout
+taxonomies:
+  - explorations
+revisions: false
+route: '/poetics/{explorations}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

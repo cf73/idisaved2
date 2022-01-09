@@ -1,0 +1,26 @@
+title: 'Open Re/Search'
+description:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "The course\_"
+      -
+        type: text
+        marks:
+          -
+            type: italic
+        text: 'Open Re/Search'
+      -
+        type: text
+        text: "\_offers students the opportunity to pursue a project or topic of personal interest related to visual design and communication.\_This may be an interest or activity not offered in other courses, a personal ideal, a unique circumstance, a collaboration of two or more individuals, the groundwork or supplement for one’s degree or thesis project, etc.\_"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'The work can involve a broad range of curiosities like sustainability, sociocultural activism, public service, criticism, spirituality; the nature of theory; practice and experiment; methodology; technology; interactivity. Course objectives are to offer a dynamic learning experience in which various topics of common relevance are introduced to the group to help stimulate interdisciplinary and inter-level interaction among students.'
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1641320435
+blueprint: courses

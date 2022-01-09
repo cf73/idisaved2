@@ -19,28 +19,6 @@ sections:
           type: textarea
           icon: textarea
           listable: hidden
-      -
-        handle: template
-        field:
-          hide_partials: true
-          display: Template
-          type: hidden
-          listable: hidden
-          default: subsection
-      -
-        handle: overview_movie
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          max_files: 1
-          display: 'Overview Movie'
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          container: movies
-          show_filename: true
   sidebar:
     display: Sidebar
     fields:
@@ -48,7 +26,6 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
           validate:
             - required

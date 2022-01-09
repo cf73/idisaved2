@@ -12,14 +12,15 @@ sections:
           validate:
             - required
       -
-        handle: description_of_site
+        handle: description
         field:
           character_limit: '333'
           antlers: false
-          display: 'Description of site'
+          display: Description
           type: textarea
           icon: textarea
           listable: hidden
+          instructions_position: above
   sidebar:
     display: Sidebar
     fields:
@@ -27,7 +28,6 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
           validate:
             - required

@@ -1,5 +1,5 @@
 title: Pages
-template: section
+template: '@blueprint'
 layout: layout
 revisions: false
 route: '{parent_uri}/{slug}'
@@ -8,4 +8,5 @@ date_behavior:
   past: public
   future: private
 structure:
-  root: false
+  root: true
+  max_depth: 2

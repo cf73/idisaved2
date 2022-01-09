@@ -7,17 +7,31 @@ body {
     color: $charcoal;
     font-size: 18px;
     letter-spacing: 0.02em;
-    color: $cream;
+    color: #1f223e;
 }
 
 a {
-    color: $cream;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 h1 {
     font-family: $heavy;
 }
-
+.meta {
+    font-size: 14px;
+    text-transform: lowercase;
+    letter-spacing: 0.06em;
+    font-family: $medium;
+    &::before {
+        content: "";
+        display: block;
+        width: 45px;
+        padding-top: 2px;
+        border-top: solid 2px rgb(216, 150, 29);
+    }
+}
 .blockquote {
     border-left: solid $charcoal thin;
 }

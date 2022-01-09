@@ -258,19 +258,26 @@ class BinaryInstaller
         $binContents = file_get_contents($bin);
         // For php files, we generate a PHP proxy instead of a shell one,
         // which allows calling the proxy with a custom php process
-        if (Preg::isMatch('{^(#!.*\r?\n)?<\?php}', $binContents, $match)) {
+        if (Preg::isMatch('{^(#!.*\r?\n)?[\r\n\t ]*<\?php}', $binContents, $match)) {
             // carry over the existing shebang if present, otherwise add our own
             $proxyCode = empty($match[1]) ? '#!/usr/bin/env php' : trim($match[1]);
             $binPathExported = $this->filesystem->findShortestPathCode($link, $bin, false, true);
             $streamProxyCode = $streamHint = '';
             $globalsCode = '$GLOBALS[\'_composer_bin_dir\'] = __DIR__;'."\n";
+            $phpunitHack1 = $phpunitHack2 = '';
             // Don't expose autoload path when vendor dir was not set in custom installers
             if ($this->vendorDir) {
                 $globalsCode .= '$GLOBALS[\'_composer_autoload_path\'] = ' . $this->filesystem->findShortestPathCode($link, $this->vendorDir . '/autoload.php', false, true).";\n";
             }
-            // Add workaround for PHPUnit process isolation on PHPUnit 6+
+            // Add workaround for PHPUnit process isolation
             if ($this->filesystem->normalizePath($bin) === $this->filesystem->normalizePath($this->vendorDir.'/phpunit/phpunit/phpunit')) {
+                // workaround issue on PHPUnit 6.5+ running on PHP 8+
                 $globalsCode .= '$GLOBALS[\'__PHPUNIT_ISOLATION_EXCLUDE_LIST\'] = $GLOBALS[\'__PHPUNIT_ISOLATION_BLACKLIST\'] = array(realpath('.$binPathExported.'));'."\n";
+                // workaround issue on all PHPUnit versions running on PHP <8
+                $phpunitHack1 = "'phpvfscomposer://'.";
+                $phpunitHack2 = '
+                $data = str_replace(\'__DIR__\', var_export(dirname($this->realpath), true), $data);
+                $data = str_replace(\'__FILE__\', var_export($this->realpath, true), $data);';
             }
             if (trim($match[0]) !== '<?php') {
                 $streamHint = ' using a stream wrapper to prevent the shebang from being output on PHP<8'."\n *";
@@ -284,17 +291,16 @@ if (PHP_VERSION_ID < 80000) {
         {
             private \$handle;
             private \$position;
+            private \$realpath;
 
             public function stream_open(\$path, \$mode, \$options, &\$opened_path)
             {
-                // get rid of composer-bin-proxy:// prefix for __FILE__ & __DIR__ resolution
-                \$opened_path = substr(\$path, 21);
-                \$opened_path = realpath(\$opened_path) ?: \$opened_path;
-                \$this->handle = fopen(\$opened_path, \$mode);
+                // get rid of phpvfscomposer:// prefix for __FILE__ & __DIR__ resolution
+                \$opened_path = substr(\$path, 17);
+                \$this->realpath = realpath(\$opened_path) ?: \$opened_path;
+                \$opened_path = $phpunitHack1\$this->realpath;
+                \$this->handle = fopen(\$this->realpath, \$mode);
                 \$this->position = 0;
-
-                // remove all traces of this stream wrapper once it has been used
-                stream_wrapper_unregister('composer-bin-proxy');
 
                 return (bool) \$this->handle;
             }
@@ -305,7 +311,7 @@ if (PHP_VERSION_ID < 80000) {
 
                 if (\$this->position === 0) {
                     \$data = preg_replace('{^#!.*\\r?\\n}', '', \$data);
-                }
+                }$phpunitHack2
 
                 \$this->position += strlen(\$data);
 
@@ -339,18 +345,28 @@ if (PHP_VERSION_ID < 80000) {
 
             public function stream_stat()
             {
-                return fstat(\$this->handle);
+                return array();
             }
 
             public function stream_set_option(\$option, \$arg1, \$arg2)
             {
                 return true;
             }
+
+            public function url_stat(\$path, \$flags)
+            {
+                \$path = substr(\$path, 17);
+                if (file_exists(\$path)) {
+                    return stat(\$path);
+                }
+
+                return false;
+            }
         }
     }
 
-    if (function_exists('stream_wrapper_register') && stream_wrapper_register('composer-bin-proxy', 'Composer\BinProxyWrapper')) {
-        include("composer-bin-proxy://" . $binPathExported);
+    if (function_exists('stream_wrapper_register') && stream_wrapper_register('phpvfscomposer', 'Composer\BinProxyWrapper')) {
+        include("phpvfscomposer://" . $binPathExported);
         exit(0);
     }
 }
@@ -381,7 +397,13 @@ PROXY;
         return <<<PROXY
 #!/usr/bin/env sh
 
-dir=\$(cd "\${0%[/\\\\]*}" > /dev/null; cd $binDir && pwd)
+self=\$(realpath \$0 >/dev/null 2>&1)
+if [ -z "\$self" ]
+then
+    self="\$0"
+fi
+
+dir=\$(cd "\${self%[/\\\\]*}" > /dev/null; cd $binDir && pwd)
 
 if [ -d /proc/cygdrive ]; then
     case \$(which php) in
@@ -392,7 +414,7 @@ if [ -d /proc/cygdrive ]; then
     esac
 fi
 
-export COMPOSER_BIN_DIR=\$(cd "\${0%[/\\\\]*}" > /dev/null; pwd)
+export COMPOSER_BIN_DIR=\$(cd "\${self%[/\\\\]*}" > /dev/null; pwd)
 
 "\${dir}/$binFile" "\$@"
 
