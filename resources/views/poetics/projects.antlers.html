@@ -1,4 +1,4 @@
-<h4><a href="/didactics">Poetics</a> / {{explorations}}
+<h4><a href="/poetics">Poetics</a> / {{explorations}}
     <a href="{{url}}">{{title}}</a>
     {{/explorations}}</h4>
 
@@ -38,3 +38,54 @@
     {{ /if }}
 
 {{/main_content}}
+
+<div class="drawer">
+    <a href="/poetics">Poetics</a>
+    <h3>{{explorations:title}}</h3>
+    <p>{{explorations:description}}</p>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; overflow-x: auto; flex-wrap: nowrap;">
+        {{ collection:poetics explorations:is="{explorations:title}" }}
+            <a href="{{url}}">
+                <div class="work">
+                    <div class="splide">
+                        <div class="splide__track">
+                              <div class="splide__list">
+                                {{thumbnail_slides}}
+                                    <div class="splide__slide slide" style="background-image: url('{{url}}');"></div>
+                                {{/thumbnail_slides}}
+                              </div>
+                        </div>
+                    </div>
+        
+                    <p>{{title}}</p>
+                    {{if last_segment === "didactics"}}
+                    <div class="pill">{{courses:title}}</div>
+                    {{elseif last_segment === "poetics"}}
+                    <div class="pill">{{explorations:title}}</div>
+                    {{elseif last_segment === "practics"}}
+                    <div class="pill">{{disciplines:title}}</div>
+                    {{elseif last_segment === "theoretics"}}
+                    <div class="pill">{{themes:title}}</div>
+                    {{/if}}
+                </div>
+            </a>
+        {{ /collection:poetics }}
+    </div>
+</div>
+
+<script>
+    var elms = document.getElementsByClassName( 'splide' );
+
+    for ( var i = 0; i < elms.length; i++ ) {
+    new Splide( elms[ i ], {
+        type  : 'fade',
+        rewind: true,
+        autoplay: true,
+        pauseOnHover: false,
+        arrows: false,
+        pagination: false,
+        interval: 2000,
+        speed: 3000,
+    } ).mount();
+    }
+</script>

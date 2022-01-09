@@ -5,11 +5,23 @@ body {
   letter-spacing: 0.02em;
   color: #1f223e; }
 
-a {
-  color: #c5c2ca; }
+a:hover {
+  text-decoration: none; }
 
 h1 {
   font-family: "Gill Sans MT W03 Heavy"; }
+
+.meta {
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: 0.06em;
+  font-family: "Gill Sans MT W00 Medium"; }
+  .meta::before {
+    content: "";
+    display: block;
+    width: 45px;
+    padding-top: 2px;
+    border-top: solid 2px #d8961d; }
 
 .blockquote {
   border-left: solid #5d5d5d thin; }
@@ -54,8 +66,23 @@ body {
 
 .work {
   width: 350px;
-  padding: 30px;
-  border: solid 1px lightblue; }
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 15px 51px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 15px 51px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 15px 51px rgba(0, 0, 0, 0.1);
+  transition: all .3s; }
+  .work:hover {
+    transform: translateY(-2px);
+    transition: all .3s;
+    box-shadow: 0 15px 51px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 15px 51px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 15px 51px rgba(0, 0, 0, 0.2); }
+
+.project-card-movie {
+  border-radius: 3px; }
 
 .pill {
   border: solid 1px white;
@@ -83,5 +110,16 @@ body {
   z-index: 999;
   padding-bottom: 12px;
   border-bottom: solid 1px #17105a; }
+
+.drawer {
+  position: fixed;
+  bottom: 20px;
+  left: 70px;
+  right: 70px;
+  overflow-y: auto;
+  border-radius: 30px;
+  height: 300px;
+  background-color: rgba(252, 251, 246, 0.952);
+  padding: 30px; }
 
 /*# sourceMappingURL=idi.css.map */
