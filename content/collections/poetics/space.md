@@ -174,7 +174,15 @@ main_content:
             text: "\_event!"
     type: text
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641321433
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660517003
 explorations: mailed
+thumbnail_slides:
+  - 22SPWind.001.jpeg
+  - 22SPWind.002.jpeg
+  - 22SPWind.003.jpeg
+  - 22SPWind.004.jpeg
+  - 22SPWind.005.jpeg
+  - 22SPWind.006.jpeg
+  - 22SPWind.007.jpeg
 ---

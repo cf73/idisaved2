@@ -1,5 +1,6 @@
 ---
 id: 528f49f9-62e8-41e1-91e6-bbb717e4bea9
+blueprint: projects
 title: 'IPI (Interchem Printing Inks) Identity'
 main_content:
   -
@@ -103,12 +104,20 @@ main_content:
     photo: Tom_JKF8-1621981789.jpeg
     type: image
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641318795
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660511476
 intro_movie: 21IPI_SHORT-2.50.m4v
 related_content:
   - be421847-9999-4bce-bd7c-6c232e089044
   - abbabc97-d9ba-4835-ab66-406bdf431333
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
 disciplines: branding
+thumbnail_slides:
+  - 22IPI_pages.001.jpeg
+  - 22IPI_pages.002.jpeg
+  - 22IPI_pages.003.jpeg
+  - 22IPI_pages.004.jpeg
+  - 22IPI_pages.005.jpeg
+  - 22IPI_pages.006.jpeg
+  - 22IPI_pages.007.jpeg
 ---

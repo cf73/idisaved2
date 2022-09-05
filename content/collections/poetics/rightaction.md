@@ -1,8 +1,9 @@
 ---
 id: 5f25dfc2-fa72-412d-85f0-9863c667647a
+blueprint: projects
 title: 'INSEEING Krotona'
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641322169
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660515561
 intro_movie: 21_K-INSEEING-2.50.m4v
 main_content:
   -
@@ -381,4 +382,10 @@ main_content:
     type: movie
     enabled: true
 explorations: events
+thumbnail_slides:
+  - 22INSEEINGKpages.001.jpeg
+  - 22INSEEINGKpages.002.jpeg
+  - 22INSEEINGKpages.003.jpeg
+  - 22INSEEINGKpages.004.jpeg
+  - 22INSEEINGKpages.005.jpeg
 ---

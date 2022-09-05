@@ -1,5 +1,6 @@
 ---
 id: 93cad847-ff8f-401c-bbb2-17c615597258
+blueprint: projects
 title: 'History of Numbers'
 main_content:
   -
@@ -12,7 +13,11 @@ main_content:
             text: 'A graphic interpretation of the history of numbers was originally designed to accompany the article by Ramon Cardenas, published in the 1971 issue of the quarterly magazine by Peat, Marwick, Mitchell & Co. The image for the article caused a demand for extra copies; and when none were left PMM decided to publish a poster version of it.'
     type: text
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641319241
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660511171
 disciplines: posters
+thumbnail_slides:
+  - '--22HistNumPAGES.001-1660511115.jpeg'
+  - '--22HistNumPAGES.002-1660511147.jpeg'
+  - '--22HistNumPAGES.003-1660511169.jpeg'
 ---

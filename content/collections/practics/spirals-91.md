@@ -1,5 +1,6 @@
 ---
 id: 20e4b1f3-34d7-48a5-9438-d42de54f4d20
+blueprint: projects
 title: 'SPIRALS 91'
 intro_movie: 21SPIRALS91_SHORT-2.00.m4v
 main_content:
@@ -43,7 +44,15 @@ main_content:
             text: 'grew out of a need to share the department’s rich learning experience in the education of future designers.'
     type: text
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641319540
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660512371
 disciplines: publications
+thumbnail_slides:
+  - 22SPIRALSpages.001.jpeg
+  - 22SPIRALSpages.002.jpeg
+  - 22SPIRALSpages.003.jpeg
+  - 22SPIRALSpages.004.jpeg
+  - 22SPIRALSpages.005.jpeg
+  - 22SPIRALSpages.006.jpeg
+  - 22SPIRALSpages.007.jpeg
 ---

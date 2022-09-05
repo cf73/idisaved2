@@ -43,7 +43,15 @@ main_content:
             text: 'The color xerox machine did not always work that well and presented glitches in the printing—but these “mistakes” were then embraced as added value and became an integral part of the book, which after all was a kind of “PS” (postscript) result caused by “chance” operations. Hence the book’s title.'
     type: text
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641322742
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660517919
 explorations: booked
+thumbnail_slides:
+  - 22stamPSusa.001.jpeg
+  - 22stamPSusa.002.jpeg
+  - 22stamPSusa.003.jpeg
+  - 22stamPSusa.004.jpeg
+  - 22stamPSusa.005.jpeg
+  - 22stamPSusa.006.jpeg
+  - 22stamPSusa.007.jpeg
 ---

@@ -49,7 +49,15 @@ main_content:
   -
     type: text
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641321171
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660516628
 explorations: abstract
+thumbnail_slides:
+  - 22SPVI.001-1660516481.jpeg
+  - 22SPVI.002-1660516493.jpeg
+  - 22SPVI.003-1660516508.jpeg
+  - 22SPVI.004-1660516540.jpeg
+  - 22SPVI.005-1660516570.jpeg
+  - 22SPVI.006-1660516601.jpeg
+  - 22SPVI.007-1660516624.jpeg
 ---

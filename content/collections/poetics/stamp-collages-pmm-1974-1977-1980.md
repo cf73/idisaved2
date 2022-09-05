@@ -1,7 +1,7 @@
 ---
 id: 98d4aba9-8614-4ae3-b7e8-0b74d2c7bbfc
 blueprint: projects
-title: 'Stamp Collages PMM (1974, 1977, 1980)'
+title: 'PMM Collages (1974, 1977, 1980)'
 intro_movie: 21PMM_colSHORT-3.75.m4v
 main_content:
   -
@@ -32,7 +32,14 @@ main_content:
             text: .
     type: text
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641321289
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660517493
 explorations: found
+thumbnail_slides:
+  - 22PMM.001.jpeg
+  - 22PMM.002.jpeg
+  - 22PMM.003.jpeg
+  - 22PMM.004.jpeg
+  - 22PMM.005.jpeg
+  - 22PMM.006.jpeg
 ---

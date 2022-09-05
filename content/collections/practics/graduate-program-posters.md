@@ -1,5 +1,6 @@
 ---
 id: 9125c3e7-5135-4a8b-a579-746d1576015c
+blueprint: projects
 title: 'Graduate Program Posters'
 intro_movie: 21GRADPosters_SHORT-1.75.m4v
 main_content:
@@ -93,7 +94,13 @@ main_content:
     photo: 19.black-background-1622052567.jpg
     type: image
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641319235
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660511074
 disciplines: posters
+thumbnail_slides:
+  - 22GRADPostPAGE.001.jpeg
+  - 22GRADPostPAGE.002.jpeg
+  - 22GRADPostPAGE.003.jpeg
+  - 22GRADPostPAGE.004.jpeg
+  - 22GRADPostPAGE.005.jpeg
 ---

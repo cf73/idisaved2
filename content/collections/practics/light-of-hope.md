@@ -1,5 +1,6 @@
 ---
 id: 31deeab0-d4d8-46ce-80c1-cb5c40f2ac23
+blueprint: projects
 title: 'Light of Hope'
 intro_movie: 21_LHopeIndon_Short-2.50.m4v
 main_content:
@@ -183,12 +184,18 @@ main_content:
     photo: 26LoH.jpg
     type: image
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641319248
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660520967
 related_content:
   - b7499782-447f-4181-988f-f1a5578c2dff
   - e86f5c72-1fe1-45c3-bcc0-ecbf9ec2ce7e
   - d03cb039-6fe6-4786-91db-2a39af6fce0d
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
 disciplines: posters
+thumbnail_slides:
+  - 22LofHPAGE.001-1660520802.jpeg
+  - 22LofHPAGE.002-1660520838.jpeg
+  - 22LofHPAGE.003-1660520886.jpeg
+  - 22LofHPAGE.004-1660520914.jpeg
+  - 22LofHPAGE.005-1660520927.jpeg
 ---

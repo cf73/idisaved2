@@ -1,5 +1,6 @@
 ---
 id: 73f6851a-8333-4cf5-aec9-64ceb7b740d7
+blueprint: projects
 title: 'HUMANITY Design'
 intro_movie: 21Humanity-SHORT-2.25.m4v
 main_content:
@@ -150,7 +151,15 @@ main_content:
             text: "\_in 1998, concentrating instead on other initiatives, such as the challenge of building this web site (www.humanity.org), launched in\_1994"
     type: text
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641319446
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660511336
 disciplines: publications
+thumbnail_slides:
+  - 22HumanPages.001.jpeg
+  - 22HumanPages.002.jpeg
+  - 22HumanPages.003.jpeg
+  - 22HumanPages.004.jpeg
+  - 22HumanPages.005.jpeg
+  - 22HumanPages.006.jpeg
+  - 22HumanPages.007.jpeg
 ---

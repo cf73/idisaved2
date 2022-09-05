@@ -25,7 +25,15 @@ main_content:
             text: "\_is a bookwork made for the 1988 exhibit “Universal/unique” held at the University of the Arts, Philadelphia. The bookwork documents the process to produce work for this exhibit and its theme."
     type: text
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641418717
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660512817
 explorations: booked
+thumbnail_slides:
+  - 22CHaoniCEpages.001.jpeg
+  - 22CHaoniCEpages.002.jpeg
+  - 22CHaoniCEpages.003.jpeg
+  - 22CHaoniCEpages.004.jpeg
+  - 22CHaoniCEpages.005.jpeg
+  - 22CHaoniCEpages.006.jpeg
+  - 22CHaoniCEpages.007.jpeg
 ---

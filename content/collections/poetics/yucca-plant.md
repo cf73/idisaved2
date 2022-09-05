@@ -2,8 +2,8 @@
 id: e9da143c-a712-46fa-afad-7c97d84d4fa4
 blueprint: projects
 title: 'RIGHT ACTION (Yucca Plant)'
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641322162
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660515975
 intro_movie: 21YuccaRtACTION_SHORT-2.5.m4v
 main_content:
   -
@@ -144,4 +144,12 @@ related_content:
   - 614baba2-8922-43cb-bb4a-07aa02e06ab0
   - 71b196fd-bde8-4d6b-905e-87da7c7dd9c5
 explorations: events
+thumbnail_slides:
+  - 22YuccaPAGES-.001.jpeg
+  - 22YuccaPAGES-.002.jpeg
+  - 22YuccaPAGES-.003.jpeg
+  - 22YuccaPAGES-.004.jpeg
+  - 22YuccaPAGES-.005.jpeg
+  - 22YuccaPAGES-.006.jpeg
+  - 22YuccaPAGES-.007.jpeg
 ---

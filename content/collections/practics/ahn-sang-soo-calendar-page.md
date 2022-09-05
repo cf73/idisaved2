@@ -26,7 +26,7 @@ main_content:
         content:
           -
             type: text
-            text: "I embraced the project as an opportunity\_to link my sabbatical interests—reflecting on my design/teaching/theory work—with a creative experience. Questions were: How to create a verbivisual text to express the process and theory for making this page? How to use visual form as content to create a visual “text”? How to apply systems to confront indeterminacy, to collect and organize parts into a whole for\_their relational significance?"
+            text: "He embraced the project as an opportunity\_to link my sabbatical interests—reflecting on his design/teaching/theory work—with a creative experience. Questions for Tom were: How to create a verbivisual text to express the process and theory for making this page? How to use visual form as content to create a visual “text”? How to apply systems to confront indeterminacy, to collect and organize parts into a whole for\_their relational significance?"
     type: text
     enabled: true
   -
@@ -203,7 +203,7 @@ main_content:
         content:
           -
             type: text
-            text: "For content, I used a course assignment for my graduate students. As an inquiry into the nature of\_meaning\_kindled by design, the course explores how a designer might\_"
+            text: "For content, Tom used a course assignment for my graduate students. As an inquiry into the nature of\_meaning\_kindled by design, the course explores how a designer might\_"
           -
             type: text
             marks:
@@ -212,7 +212,7 @@ main_content:
             text: 'awaken awareness'
           -
             type: text
-            text: "\_(vs. merely instruct). This student assignment also paralleled my design process for the calendar page:\_"
+            text: "\_(vs. merely instruct). This student assignment also paralleled his design process for the calendar page:\_"
       -
         type: paragraph
         content:
@@ -236,7 +236,7 @@ main_content:
         content:
           -
             type: text
-            text: 'Thus, I intuitively decided to make something via my hands and materials (versus the computer), to use student work for a'
+            text: 'Thus, Tom intuitively decided to make something via his hands and materials (versus the computer), to use student work for a'
           -
             type: text
             marks:
@@ -251,7 +251,7 @@ main_content:
             text: collage
           -
             type: text
-            text: "! I took close-up photographs from the students’ reflective process documents and selected fragments for no other reason than their subjective, isolated and momentary interests. Since the calendar was limited to black and white, the collage images were also b/w.\_"
+            text: "! He took close-up photographs from the students’ reflective process documents and selected fragments for no other reason than their subjective, isolated and momentary interests. Since the calendar was limited to black and white, the collage images were also b/w.\_"
       -
         type: paragraph
         content:
@@ -499,7 +499,7 @@ main_content:
         content:
           -
             type: text
-            text: "After I had decided on the generative means for the page itself, more aspects became reflected in the layout and proportional format (of two squares and their sub-grids of 18 squares).\_"
+            text: "After Tom had decided on the generative means for the page itself, more aspects became reflected in the layout and proportional format (of two squares and their sub-grids of 18 squares).\_"
       -
         type: paragraph
         content:
@@ -585,7 +585,7 @@ main_content:
             text: abstract
           -
             type: text
-            text: "\_domains or reality. However, in the eastern wisdom tradition\_what we call the concrete reality (versus the abstract sense of reality) is actually known as a\_false (illusionistic) reality called Maya; while on the other hand, what we consider the\_illusive, abstract sense of “knowing” is actually the deeper and True “Reality”—which in our human evolution we will gradually unfold into our conscious awareness. I mention this only since these wisdom teachings became the very basis for\_Theo van Doesburg to declare (in 1930) that what had been labeled as “Abstract Art” should really be called “Concrete Art”, or Concretism. From that developed the idea of Concrete Poetry."
+            text: "\_domains or reality. However, in the eastern wisdom tradition\_what we call the concrete reality (versus the abstract sense of reality) is actually known as a\_false (illusionistic) reality called Maya; while on the other hand, what we consider the\_illusive, abstract sense of “knowing” is actually the deeper and True “Reality”—which in our human evolution we will gradually unfold into our conscious awareness. Tom mentions this only since these wisdom teachings became the very basis for\_Theo van Doesburg to declare (in 1930) that what had been labeled as “Abstract Art” should really be called “Concrete Art”, or Concretism. From that developed the idea of Concrete Poetry."
     type: text
     enabled: true
   -
@@ -607,7 +607,7 @@ main_content:
         content:
           -
             type: text
-            text: 'In summary, this project became an amazing experience, as it made me dive deeply into the nature of the “creative” as a contemplative practice coming from the inner fountain of being and “all-knowing”, versus the more conventional design process that relies on mental projections for constructs that come from the limited source of memory and conditioned response.'
+            text: 'In summary, this project became an amazing experience Tom, as it made him dive deeply into the nature of the “creative” as a contemplative practice coming from the inner fountain of being and “all-knowing”, versus the more conventional design process that relies on mental projections for constructs that come from the limited source of memory and conditioned response.'
     type: text
     enabled: true
   -
@@ -618,12 +618,19 @@ main_content:
     photo: AhnCALMoonFinal.jpg
     type: image
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641419355
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660319242
 intro_movie: 21AHNCal2-SHORT-2.25-1622048949.m4v
 related_content:
   - 71b196fd-bde8-4d6b-905e-87da7c7dd9c5
   - 5f25dfc2-fa72-412d-85f0-9863c667647a
   - c501188b-9a1b-47a1-9b82-6ceaf8758999
 disciplines: posters
+thumbnail_slides:
+  - '-22AHNCalPAGE.001.jpeg'
+  - '-22AHNCalPAGE.002.jpeg'
+  - '-22AHNCalPAGE.003-1660319183.jpeg'
+  - '-22AHNCalPAGE.004-1660319195.jpeg'
+  - '-22AHNCalPAGE.005-1660319214.jpeg'
+  - '-22AHNCalPAGE.006-1660319231.jpeg'
 ---

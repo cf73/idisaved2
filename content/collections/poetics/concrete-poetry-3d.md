@@ -1,5 +1,6 @@
 ---
 id: 6e55c77c-4d0f-4fb6-916d-55e673d2735b
+blueprint: projects
 title: 'Concrete Poetry: 3D Type'
 intro_movie: 21CP3d_SHORT-1.75.m4v
 main_content:
@@ -42,7 +43,15 @@ main_content:
             text: "When the experiencer becomes truly one with a “concrete poem” this experience naturally draws out a full sense of being with a depth of awareness that is both externally aware yet also implicitly one with the Spirit within the poem and the person. This “atomization of meaning” derives from a total awareness of the smallest parts within its own “world” of constituent aspects, the values brought out by seeing their relationships to the ever growing dynamic for interconnection and relational values based on the doctrine of shells.\_"
     type: text
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641321093
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660513137
 explorations: verbivisual
+thumbnail_slides:
+  - 21CP3d-PAGES.001.jpeg
+  - 21CP3d-PAGES.002.jpeg
+  - 21CP3d-PAGES.003.jpeg
+  - 21CP3d-PAGES.004.jpeg
+  - 21CP3d-PAGES.005.jpeg
+  - 21CP3d-PAGES.006.jpeg
+  - 21CP3d-PAGES.007.jpeg
 ---

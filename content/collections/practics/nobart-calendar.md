@@ -1,5 +1,6 @@
 ---
 id: 93c6c121-1633-404d-a05b-71f9a20afb79
+blueprint: projects
 title: 'Nobart Calendar'
 intro_movie: 21NOBARTcal_SHORT-1.75.m4v
 main_content:
@@ -144,10 +145,16 @@ main_content:
     photo: NCal29.jpg
     type: image
     enabled: true
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641318902
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660511745
 related_content:
   - b7499782-447f-4181-988f-f1a5578c2dff
   - d03cb039-6fe6-4786-91db-2a39af6fce0d
 disciplines: print
+thumbnail_slides:
+  - 22NOBARTcalPAGES.002.jpeg
+  - 22NOBARTcalPAGES.003.jpeg
+  - 22NOBARTcalPAGES.004.jpeg
+  - 22NOBARTcalPAGES.005.jpeg
+  - 22NOBARTcalPAGES.006.jpeg
 ---

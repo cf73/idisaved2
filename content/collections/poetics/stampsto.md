@@ -39,8 +39,15 @@ main_content:
           -
             type: text
             text: "The poetic results range from the humorous to the revolting. In most cases the subject matter used our country’s representations of symbols—which creates the ironic note that the combined graphic elements were actually created by one of our governmental offices. That said, imagine for a moment the reality that our government “promotes” the very idea that “war is better business”, or decided to shoot holes through our national flag, or made a Duchamp’s Mona Lisa out of Eleanor Roosevelt!\_"
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641321296
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1660517686
 intro_movie: 21STAMpsTO-3.25.m4v
 explorations: found
+thumbnail_slides:
+  - 22STAMpsTO-.001.jpeg
+  - 22STAMpsTO-.002.jpeg
+  - 22STAMpsTO-.003.jpeg
+  - 22STAMpsTO-.004.jpeg
+  - 22STAMpsTO-.005.jpeg
+  - 22STAMpsTO-.006.jpeg
 ---
