@@ -5,13 +5,13 @@ title: 'Open Re/Search'
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
 updated_at: 1664043173
 thumbnail_slides:
-  - '21OpenRe:Search4.001.jpeg'
-  - '21OpenRe:Search4.002.jpeg'
-  - '21OpenRe:Search4.003.jpeg'
-  - '21OpenRe:Search4.004.jpeg'
-  - '21OpenRe:Search4.005.jpeg'
-  - '21OpenRe:Search4.007.jpeg'
-  - '21OpenRe:Search4.010.jpeg'
+  - 'sdfsdfsdfsdfsdf (1).jpeg'
+  - 'qqweff (1).jpeg'
+  - asfsaf.jpeg
+  - 'sdfsdfsf (1).jpeg'
+  - sacsacsc.jpeg
+  - 'sdcvs scv.jpeg'
+  - sfsfsf.jpeg
 main_content:
   -
     text:
