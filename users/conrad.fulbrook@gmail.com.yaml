@@ -8,3 +8,4 @@ preferences:
   assets:
     assets:
       mode: table
+      per_page: 500

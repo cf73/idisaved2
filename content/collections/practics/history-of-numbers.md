@@ -17,7 +17,7 @@ updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
 updated_at: 1660511171
 disciplines: posters
 thumbnail_slides:
-  - '--22HistNumPAGES.001-1660511115.jpeg'
-  - '--22HistNumPAGES.002-1660511147.jpeg'
+  - xgvxvxcv.jpeg
+  - sgfsvxdv.jpeg
   - '--22HistNumPAGES.003-1660511169.jpeg'
 ---
