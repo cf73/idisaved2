@@ -20,16 +20,6 @@ class ModelProperties extends EndpointProvider
         'hidden'        => 'array',
     ];
 
-    protected function getHandlerMethod($signature, $args)
-    {
-        return collect($this->propertyMap)->keys()->contains($signature) ? $signature : false;
-    }
-
-    public function getEndpoints()
-    {
-        return collect($this->propertyMap)->keys();
-    }
-
     public function __call($property, $args)
     {
         $defaultType = $this->propertyMap[$property];

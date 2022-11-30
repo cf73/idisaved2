@@ -1,120 +1,110 @@
 <?php
 
-declare(strict_types=1);
-
+declare(strict_types = 1);
 namespace Rebing\GraphQL;
 
-use Exception;
-use Illuminate\Container\Container;
+use GraphQL\Server\OperationParams as BaseOperationParams;
+use Illuminate\Contracts\Config\Repository;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Str;
+use Laragraph\Utils\RequestParser;
+use Rebing\GraphQL\Support\OperationParams;
 
 class GraphQLController extends Controller
 {
-    /** @var Container */
-    protected $app;
-
-    public function __construct(Container $app)
+    public function query(Request $request, RequestParser $parser, Repository $config, GraphQL $graphql): JsonResponse
     {
-        $this->app = $app;
-    }
+        $routePrefix = $config->get('graphql.route.prefix', 'graphql');
+        $schemaName = $this->findSchemaNameInRequest($request, "/$routePrefix") ?: $config->get('graphql.default_schema', 'default');
 
-    public function query(Request $request, string $schema = null): JsonResponse
-    {
-        $middleware = new GraphQLUploadMiddleware();
-        $request = $middleware->processRequest($request);
+        $operations = $parser->parseRequest($request);
 
-        // If there are multiple route params we can expect that there
-        // will be a schema name that has to be built
-        $routeParameters = $this->getRouteParameters($request);
-        if (count($routeParameters) > 1) {
-            $schema = implode('/', $routeParameters);
+        $headers = $config->get('graphql.headers', []);
+        $jsonOptions = $config->get('graphql.json_encoding_options', 0);
+
+        $isBatch = \is_array($operations);
+
+        $supportsBatching = $config->get('graphql.batching.enable', true);
+
+        if ($isBatch && !$supportsBatching) {
+            $data = $this->createBatchingNotSupportedResponse($request->input());
+
+            return response()->json($data, 200, $headers, $jsonOptions);
         }
 
-        if (! $schema) {
-            $schema = config('graphql.default_schema');
-        }
+        $data = Helpers::applyEach(
+            function (BaseOperationParams $baseOperationParams) use ($schemaName, $graphql): array {
+                $operationParams = new OperationParams($baseOperationParams);
 
-        // If a singular query was not found, it means the queries are in batch
-        $isBatch = ! $request->has('query');
-        $inputs = $isBatch ? $request->input() : [$request->input()];
-
-        $completedQueries = [];
-
-        // Complete each query in order
-        foreach ($inputs as $input) {
-            $completedQueries[] = $this->executeQuery($schema, $input ?: []);
-        }
-
-        $data = $isBatch ? $completedQueries : $completedQueries[0];
-
-        $headers = config('graphql.headers', []);
-        $jsonOptions = config('graphql.json_encoding_options', 0);
+                return $graphql->execute($schemaName, $operationParams);
+            },
+            $operations
+        );
 
         return response()->json($data, 200, $headers, $jsonOptions);
     }
 
-    protected function executeQuery(string $schema, array $input): array
+    public function graphiql(Request $request, Repository $config, Factory $viewFactory): View
     {
-        $query = $input['query'] ?? '';
+        $routePrefix = $config->get('graphql.graphiql.prefix', 'graphiql');
+        $schemaName = $this->findSchemaNameInRequest($request, "/$routePrefix");
 
-        $paramsKey = config('graphql.params_key', 'variables');
-        $params = $input[$paramsKey] ?? null;
-        if (is_string($params)) {
-            $params = json_decode($params, true);
+        $graphqlPath = '/' . $config->get('graphql.route.prefix', 'graphql');
+
+        if ($schemaName) {
+            $graphqlPath .= '/' . $schemaName;
         }
 
-        return $this->app->make('graphql')->query(
-            $query,
-            $params,
-            [
-                'context' => $this->queryContext($query, $params, $schema),
-                'schema' => $schema,
-                'operationName' => $input['operationName'] ?? null,
-            ]
-        );
-    }
+        $graphqlPath = '/' . trim($graphqlPath, '/');
 
-    protected function queryContext(string $query, ?array $params, string $schema)
-    {
-        try {
-            return $this->app->make('auth')->user();
-        } catch (Exception $e) {
-            return null;
-        }
-    }
+        $view = $config->get('graphql.graphiql.view', 'graphql::graphiql');
 
-    public function graphiql(Request $request, string $schema = null): View
-    {
-        $graphqlPath = '/'.config('graphql.prefix');
-        if ($schema) {
-            $graphqlPath .= '/'.$schema;
-        }
-
-        $view = config('graphql.graphiql.view', 'graphql::graphiql');
-
-        return view($view, [
-            'graphql_schema' => 'graphql_schema',
+        return $viewFactory->make($view, [
             'graphqlPath' => $graphqlPath,
-            'schema' => $schema,
+            'schema' => $schemaName,
         ]);
     }
 
     /**
-     * @param  Request  $request
-     * @return array<string,string>
+     * In case batching is not supported, send an error back for each batch
+     * (with a hardcoded limit of 100).
+     *
+     * The returned format still matches the GraphQL specs
+     *
+     * @param array<string,mixed> $input
+     * @return array<array{errors:array<array{message:string}>}>
      */
-    protected function getRouteParameters(Request $request): array
+    protected function createBatchingNotSupportedResponse(array $input): array
     {
-        if (Helpers::isLumen()) {
-            /** @var array<int,mixed> $route */
-            $route = $request->route();
+        $count = min(\count($input), 100);
 
-            return $route[2] ?? [];
+        $data = [];
+
+        for ($i = 0; $i < $count; $i++) {
+            $data[] = [
+                'errors' => [
+                    [
+                        'message' => 'Batch request received but batching is not supported',
+                    ],
+                ],
+            ];
         }
 
-        return $request->route()->parameters;
+        return $data;
+    }
+
+    protected function findSchemaNameInRequest(Request $request, string $routePrefix): ?string
+    {
+        $path = $request->getPathInfo();
+
+        if (!Str::startsWith($path, $routePrefix)) {
+            return null;
+        }
+
+        return trim(Str::after($path, $routePrefix), '/');
     }
 }

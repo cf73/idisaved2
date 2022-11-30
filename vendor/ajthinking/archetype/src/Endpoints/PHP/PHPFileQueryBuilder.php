@@ -2,28 +2,21 @@
 
 namespace Archetype\Endpoints\PHP;
 
-use Illuminate\Support\Str;
 use Archetype\Endpoints\EndpointProvider;
-use Archetype\Support\PSR2PrettyPrinter;
 use Archetype\Support\RecursiveFileSearch;
-use PhpParser\ParserFactory;
-use Illuminate\Support\Facades\Storage;
-use Error;
-use UnexpectedValueException;
 use Archetype\Traits\HasOperators;
-use ReflectionClass;
-use ReflectionMethod;
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
-use RecursiveCallbackFilterIterator;
+use Illuminate\Support\Collection;
 use InvalidArgumentException;
-use LaravelFile;
 
 class PHPFileQueryBuilder extends EndpointProvider
 {
     use HasOperators;
 
     const PHPSignature = '/\.php$/';
+
+	public $result;
+
+	public string $baseDir;
     
     public function __construct($file = null)
     {
@@ -35,7 +28,7 @@ class PHPFileQueryBuilder extends EndpointProvider
      * @example Get a QueryBuilder instance
      * @source PHPFile::query()
      */
-    public function query()
+    public function query(): self
     {
         return $this;
     }
@@ -53,7 +46,7 @@ class PHPFileQueryBuilder extends EndpointProvider
      * @example Query files in directory
      * @source PHPFile::in('app/HTTP')
      */
-    public function in($directory)
+    public function in(string $directory): self
     {
         $this->baseDir = $directory;
 
@@ -79,7 +72,7 @@ class PHPFileQueryBuilder extends EndpointProvider
      * @example Where callback returns true
      * @source PHPFile::where(fn($file) => $file->canUseReflection())
      */
-    public function where($arg1, $arg2 = null, $arg3 = null)
+    public function where($arg1, $arg2 = null, $arg3 = null): self
     {
         // Ensure we are in a directory context - default to base path
         if (!isset($this->baseDir)) {
@@ -126,7 +119,7 @@ class PHPFileQueryBuilder extends EndpointProvider
      * @example andWhere is an alias to where
      * @source PHPFile::where(...)->andWhere(...)->get()
      */
-    public function andWhere(...$args)
+    public function andWhere(...$args): self
     {
         return $this->where(...$args);
     }
@@ -135,7 +128,7 @@ class PHPFileQueryBuilder extends EndpointProvider
      * @example Get a collection with results
      * @source PHPFile::where(...)->get()
      */
-    public function get()
+    public function get(): Collection
     {
         // Ensure we are in a directory context - default to base path
         if (!isset($this->baseDir)) {
@@ -153,7 +146,7 @@ class PHPFileQueryBuilder extends EndpointProvider
         return $this->get()->first();
     }
 
-    public function recursiveFileSearch($directory)
+    public function recursiveFileSearch(string $directory)
     {
         $directory = base_path($directory);
 
@@ -161,13 +154,5 @@ class PHPFileQueryBuilder extends EndpointProvider
             ->matching(static::PHPSignature)
             ->ignore(config('archetype.ignored_paths'))
             ->get();
-    }
-
-    /** this is kept probably because of some inheritance issue */
-    protected function getHandlerMethod($signature, $args)
-    {
-        $reflection = new ReflectionClass(static::class);
-        $methods = collect($reflection->getMethods(ReflectionMethod::IS_PUBLIC))->pluck('name');
-        return collect($methods)->contains($signature) ? $signature : false;
     }
 }

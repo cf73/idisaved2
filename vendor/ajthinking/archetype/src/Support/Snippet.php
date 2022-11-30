@@ -2,20 +2,17 @@
 
 namespace Archetype\Support;
 
+use Archetype\Facades\PHPFile;
 use PhpParser\Node\Stmt\ClassMethod;
-use PhpParser\Node\Stmt\Property;
 use PhpParser\NodeFinder;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Name\FullyQualified;
-use PhpParser\Node\Name;
 use PhpParser\JsonDecoder;
 
-use PHPFile;
-use InvalidArgumentException;
 use Archetype\Support\AST\Visitors\FormattingRemover;
 
 class Snippet
 {
+	public $file;
+
     public static function __callStatic($name, $args)
     {
         $replacementPairs = $args ? $args[0] : [];
@@ -74,10 +71,8 @@ class Snippet
 
         return $node;
     }
-
-
     
-    private function getNodeByName($name)
+    protected function getNodeByName($name)
     {
         return collect([
             $this->getMethodByName($name)
@@ -91,7 +86,7 @@ class Snippet
             $this->file->ast(),
             ClassMethod::class
         ))->filter(function ($node) use ($requestedName) {
-            return $node->name->name == $requestedName;
+            return $node->name->name === $requestedName;
         })->first();
     }
 }

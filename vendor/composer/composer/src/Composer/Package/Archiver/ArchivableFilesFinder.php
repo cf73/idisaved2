@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 /*
  * This file is part of Composer.
@@ -40,25 +40,25 @@ class ArchivableFilesFinder extends \FilterIterator
      * @param string[] $excludes Composer's own exclude rules from composer.json
      * @param bool $ignoreFilters Ignore filters when looking for files
      */
-    public function __construct($sources, array $excludes, $ignoreFilters = false)
+    public function __construct(string $sources, array $excludes, bool $ignoreFilters = false)
     {
         $fs = new Filesystem();
 
         $sources = $fs->normalizePath(realpath($sources));
 
         if ($ignoreFilters) {
-            $filters = array();
+            $filters = [];
         } else {
-            $filters = array(
+            $filters = [
                 new GitExcludeFilter($sources),
                 new ComposerExcludeFilter($sources, $excludes),
-            );
+            ];
         }
 
         $this->finder = new Finder();
 
-        $filter = function (\SplFileInfo $file) use ($sources, $filters, $fs) {
-            if ($file->isLink() && strpos($file->getRealPath(), $sources) !== 0) {
+        $filter = static function (\SplFileInfo $file) use ($sources, $filters, $fs): bool {
+            if ($file->isLink() && ($file->getRealPath() === false || strpos($file->getRealPath(), $sources) !== 0)) {
                 return false;
             }
 
@@ -90,8 +90,7 @@ class ArchivableFilesFinder extends \FilterIterator
         parent::__construct($this->finder->getIterator());
     }
 
-    #[\ReturnTypeWillChange]
-    public function accept()
+    public function accept(): bool
     {
         /** @var SplFileInfo $current */
         $current = $this->getInnerIterator()->current();
@@ -100,7 +99,7 @@ class ArchivableFilesFinder extends \FilterIterator
             return true;
         }
 
-        $iterator = new FilesystemIterator($current, FilesystemIterator::SKIP_DOTS);
+        $iterator = new FilesystemIterator((string) $current, FilesystemIterator::SKIP_DOTS);
 
         return !$iterator->valid();
     }

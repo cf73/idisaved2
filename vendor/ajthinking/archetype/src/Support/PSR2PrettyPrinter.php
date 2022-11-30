@@ -10,7 +10,6 @@ use PhpParser\Node\Expr\Array_;
 
 class PSR2PrettyPrinter extends StandardPrettyPrinter
 {
-
     public function __construct($options = [])
     {
         $defaults = ['shortArraySyntax' => true];
@@ -21,17 +20,13 @@ class PSR2PrettyPrinter extends StandardPrettyPrinter
     // Fix empty line before class definition
     protected function pStmt_Class(Class_ $node)
     {
-        return PHP_EOL . $this->pClassCommon($node, ' ' . $node->name); // $this->pStmts($node->stmts)
+        return $this->pClassCommon($node, ' ' . $node->name);
     }
 
     // Fix empty line before class definition
     protected function pStmt_ClassMethod(ClassMethod $node)
     {
-        $comments = $node->getComments();
-
-        $ln = $comments ? '' : $this->nl;
-
-        return $ln . $this->pAttrGroups($node->attrGroups)
+        return $this->pAttrGroups($node->attrGroups)
              . $this->pModifiers($node->flags)
              . 'function ' . ($node->byRef ? '&' : '') . $node->name
              . '(' . $this->pMaybeMultiline($node->params) . ')'
@@ -52,15 +47,14 @@ class PSR2PrettyPrinter extends StandardPrettyPrinter
      * Ensure spacing between class stmts
      *
      * @param [type] $nodes
-     * @return void
      */
     protected function pClassCommon(Class_ $node, $afterClassToken)
     {
         return $this->pModifiers($node->flags)
-        . 'class' . $afterClassToken
-        . (null !== $node->extends ? ' extends ' . $this->p($node->extends) : '')
-        . (!empty($node->implements) ? ' implements ' . $this->pCommaSeparated($node->implements) : '')
-        . $this->nl . '{' . $this->pSeparatedStmts($node->stmts) . $this->nl . '}';
+			. 'class' . $afterClassToken
+			. (null !== $node->extends ? ' extends ' . $this->p($node->extends) : '')
+			. (!empty($node->implements) ? ' implements ' . $this->pCommaSeparated($node->implements) : '')
+			. $this->nl . '{' . $this->pSeparatedStmts($node->stmts) . $this->nl . '}';
     }
 
     protected function implementsSeparated($nodes)
@@ -81,7 +75,6 @@ class PSR2PrettyPrinter extends StandardPrettyPrinter
      */
     protected function pSeparatedStmts(array $nodes, bool $indent = true) : string
     {
-
         if ($indent) {
             $this->indent();
         }

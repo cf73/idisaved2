@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 /*
  * This file is part of Composer.
@@ -41,13 +41,9 @@ class BinaryInstaller
     private $vendorDir;
 
     /**
-     * @param IOInterface $io
-     * @param string      $binDir
-     * @param string      $binCompat
      * @param Filesystem  $filesystem
-     * @param string|null $vendorDir
      */
-    public function __construct(IOInterface $io, $binDir, $binCompat, Filesystem $filesystem = null, $vendorDir = null)
+    public function __construct(IOInterface $io, string $binDir, string $binCompat, ?Filesystem $filesystem = null, ?string $vendorDir = null)
     {
         $this->binDir = $binDir;
         $this->binCompat = $binCompat;
@@ -56,13 +52,7 @@ class BinaryInstaller
         $this->vendorDir = $vendorDir;
     }
 
-    /**
-     * @param string $installPath
-     * @param bool $warnOnOverwrite
-     *
-     * @return void
-     */
-    public function installBinaries(PackageInterface $package, $installPath, $warnOnOverwrite = true)
+    public function installBinaries(PackageInterface $package, string $installPath, bool $warnOnOverwrite = true): void
     {
         $binaries = $this->getBinaries($package);
         if (!$binaries) {
@@ -75,6 +65,10 @@ class BinaryInstaller
             $binPath = $installPath.'/'.$bin;
             if (!file_exists($binPath)) {
                 $this->io->writeError('    <warning>Skipped installation of bin '.$bin.' for package '.$package->getName().': file not found in package</warning>');
+                continue;
+            }
+            if (is_dir($binPath)) {
+                $this->io->writeError('    <warning>Skipped installation of bin '.$bin.' for package '.$package->getName().': found a directory at that path</warning>');
                 continue;
             }
             if (!$this->filesystem->isAbsolutePath($binPath)) {
@@ -113,10 +107,7 @@ class BinaryInstaller
         }
     }
 
-    /**
-     * @return void
-     */
-    public function removeBinaries(PackageInterface $package)
+    public function removeBinaries(PackageInterface $package): void
     {
         $this->initializeBinDir();
 
@@ -140,12 +131,7 @@ class BinaryInstaller
         }
     }
 
-    /**
-     * @param string $bin
-     *
-     * @return string
-     */
-    public static function determineBinaryCaller($bin)
+    public static function determineBinaryCaller(string $bin): string
     {
         if ('.bat' === substr($bin, -4) || '.exe' === substr($bin, -4)) {
             return 'call';
@@ -164,19 +150,12 @@ class BinaryInstaller
     /**
      * @return string[]
      */
-    protected function getBinaries(PackageInterface $package)
+    protected function getBinaries(PackageInterface $package): array
     {
         return $package->getBinaries();
     }
 
-    /**
-     * @param string $binPath
-     * @param string $link
-     * @param string $bin
-     *
-     * @return void
-     */
-    protected function installFullBinaries($binPath, $link, $bin, PackageInterface $package)
+    protected function installFullBinaries(string $binPath, string $link, string $bin, PackageInterface $package): void
     {
         // add unixy support for cygwin and similar environments
         if ('.bat' !== substr($binPath, -4)) {
@@ -192,34 +171,19 @@ class BinaryInstaller
         }
     }
 
-    /**
-     * @param string $binPath
-     * @param string $link
-     *
-     * @return void
-     */
-    protected function installUnixyProxyBinaries($binPath, $link)
+    protected function installUnixyProxyBinaries(string $binPath, string $link): void
     {
         file_put_contents($link, $this->generateUnixyProxyCode($binPath, $link));
         Silencer::call('chmod', $link, 0777 & ~umask());
     }
 
-    /**
-     * @return void
-     */
-    protected function initializeBinDir()
+    protected function initializeBinDir(): void
     {
         $this->filesystem->ensureDirectoryExists($this->binDir);
         $this->binDir = realpath($this->binDir);
     }
 
-    /**
-     * @param string $bin
-     * @param string $link
-     *
-     * @return string
-     */
-    protected function generateWindowsProxyCode($bin, $link)
+    protected function generateWindowsProxyCode(string $bin, string $link): string
     {
         $binPath = $this->filesystem->findShortestPath($link, $bin);
         $caller = self::determineBinaryCaller($bin);
@@ -231,24 +195,18 @@ class BinaryInstaller
             return "@ECHO OFF\r\n".
                 "setlocal DISABLEDELAYEDEXPANSION\r\n".
                 "SET BIN_TARGET=%~dp0/".trim(ProcessExecutor::escape(basename($link, '.bat')), '"\'')."\r\n".
-                "SET COMPOSER_BIN_DIR=%~dp0\r\n".
+                "SET COMPOSER_RUNTIME_BIN_DIR=%~dp0\r\n".
                 "{$caller} \"%BIN_TARGET%\" %*\r\n";
         }
 
         return "@ECHO OFF\r\n".
             "setlocal DISABLEDELAYEDEXPANSION\r\n".
             "SET BIN_TARGET=%~dp0/".trim(ProcessExecutor::escape($binPath), '"\'')."\r\n".
-            "SET COMPOSER_BIN_DIR=%~dp0\r\n".
+            "SET COMPOSER_RUNTIME_BIN_DIR=%~dp0\r\n".
             "{$caller} \"%BIN_TARGET%\" %*\r\n";
     }
 
-    /**
-     * @param string $bin
-     * @param string $link
-     *
-     * @return string
-     */
-    protected function generateUnixyProxyCode($bin, $link)
+    protected function generateUnixyProxyCode(string $bin, string $link): string
     {
         $binPath = $this->filesystem->findShortestPath($link, $bin);
 
@@ -333,6 +291,16 @@ if (PHP_VERSION_ID < 80000) {
                 return \$operation ? flock(\$this->handle, \$operation) : true;
             }
 
+            public function stream_seek(\$offset, \$whence)
+            {
+                if (0 === fseek(\$this->handle, \$offset, \$whence)) {
+                    \$this->position = ftell(\$this->handle);
+                    return true;
+                }
+
+                return false;
+            }
+
             public function stream_tell()
             {
                 return \$this->position;
@@ -365,7 +333,10 @@ if (PHP_VERSION_ID < 80000) {
         }
     }
 
-    if (function_exists('stream_wrapper_register') && stream_wrapper_register('phpvfscomposer', 'Composer\BinProxyWrapper')) {
+    if (
+        (function_exists('stream_get_wrappers') && in_array('phpvfscomposer', stream_get_wrappers(), true))
+        || (function_exists('stream_wrapper_register') && stream_wrapper_register('phpvfscomposer', 'Composer\BinProxyWrapper'))
+    ) {
         include("phpvfscomposer://" . $binPathExported);
         exit(0);
     }
@@ -397,10 +368,16 @@ PROXY;
         return <<<PROXY
 #!/usr/bin/env sh
 
-self=\$(realpath \$0 >/dev/null 2>&1)
-if [ -z "\$self" ]
-then
-    self="\$0"
+# Support bash to support `source` with fallback on $0 if this does not run with bash
+# https://stackoverflow.com/a/35006505/6512
+selfArg="\$BASH_SOURCE"
+if [ -z "\$selfArg" ]; then
+    selfArg="\$0"
+fi
+
+self=\$(realpath \$selfArg 2> /dev/null)
+if [ -z "\$self" ]; then
+    self="\$selfArg"
 fi
 
 dir=\$(cd "\${self%[/\\\\]*}" > /dev/null; cd $binDir && pwd)
@@ -414,7 +391,16 @@ if [ -d /proc/cygdrive ]; then
     esac
 fi
 
-export COMPOSER_BIN_DIR=\$(cd "\${self%[/\\\\]*}" > /dev/null; pwd)
+export COMPOSER_RUNTIME_BIN_DIR="\$(cd "\${self%[/\\\\]*}" > /dev/null; pwd)"
+
+# If bash is sourcing this file, we have to source the target as well
+bashSource="\$BASH_SOURCE"
+if [ -n "\$bashSource" ]; then
+    if [ "\$bashSource" != "\$0" ]; then
+        source "\${dir}/$binFile" "\$@"
+        return
+    fi
+fi
 
 "\${dir}/$binFile" "\$@"
 

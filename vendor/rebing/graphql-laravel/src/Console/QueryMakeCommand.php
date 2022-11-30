@@ -1,7 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
+declare(strict_types = 1);
 namespace Rebing\GraphQL\Console;
 
 use Illuminate\Console\GeneratorCommand;
@@ -14,12 +13,12 @@ class QueryMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/stubs/query.stub';
+        return __DIR__ . '/stubs/query.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\GraphQL\Queries';
+        return $rootNamespace . '\GraphQL\Queries';
     }
 
     protected function buildClass($name)
@@ -32,7 +31,7 @@ class QueryMakeCommand extends GeneratorCommand
     protected function replaceGraphqlName(string $stub): string
     {
         $graphqlName = lcfirst($this->getNameInput());
-        $graphqlName = preg_replace('/Query$/', '', $graphqlName);
+        $graphqlName = \Safe\preg_replace('/Query$/', '', $graphqlName);
 
         return str_replace(
             'DummyGraphqlName',

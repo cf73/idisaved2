@@ -2,31 +2,19 @@
 
 namespace Archetype\Support;
 
-use Illuminate\Support\Str;
-use Archetype\Endpoints\EndpointProvider;
-use Archetype\Support\PSR2PrettyPrinter;
-use PhpParser\ParserFactory;
-use Illuminate\Support\Facades\Storage;
-use Error;
-use UnexpectedValueException;
-use Archetype\Traits\HasOperators;
-use ReflectionClass;
-use ReflectionMethod;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RecursiveCallbackFilterIterator;
-use InvalidArgumentException;
-use LaravelFile;
 
 class RecursiveFileSearch
 {
     protected $ignore = [];
 
-    protected $pattern;
+    protected string $pattern;
 
-    protected $directory;
+    protected string $directory;
 
-    public function __construct($directory)
+    final public function __construct(string $directory)
     {
         $this->directory = $directory;
     }

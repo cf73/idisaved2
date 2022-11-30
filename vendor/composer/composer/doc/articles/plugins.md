@@ -39,7 +39,7 @@ requirements:
 The required version of the `composer-plugin-api` follows the same [rules][7]
 as a normal package's rules.
 
-The current Composer plugin API version is `2.1.0`.
+The current Composer plugin API version is `2.3.0`.
 
 An example of a valid plugin `composer.json` file (with the autoloading
 part omitted and an optional require-dev dependency on `composer/composer` for IDE auto completion):
@@ -263,12 +263,12 @@ class CommandProvider implements CommandProviderCapability
 
 class Command extends BaseCommand
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName('custom-plugin-command');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln('Executing');
     }
@@ -323,6 +323,41 @@ hint to Composer that the plugin should be installed on its own before proceedin
 the rest of the package downloads. This slightly slows down the overall installation
 process however, so do not use it in plugins which do not absolutely require it.
 
+### plugin-modifies-install-path
+
+Some special plugins modify the install path of packages.
+
+As of Composer 2.2.9, you can specify `{"extra": {"plugin-modifies-install-path": true}}`
+in your composer.json to hint to Composer that the plugin should be activated as soon
+as possible to prevent any bad side-effects from Composer assuming packages are installed
+in another location than they actually are.
+
+## Plugin Autoloading
+
+Due to plugins being loaded by Composer at runtime, and to ensure that plugins which
+depend on other packages can function correctly, a runtime autoloader is created whenever
+a plugin is loaded. That autoloader is only configured to load with the plugin dependencies,
+so you may not have access to all the packages which are installed.
+
+## Static Analysis support
+
+As of Composer 2.3.7 we ship a `phpstan/rules.neon` PHPStan config file, which provides additional error checking when working on Composer plugins.
+
+### Usage with [PHPStan Extension Installer][13]
+
+The necessary configuration files are automatically loaded, in case your plugin projects declares a dependency to `phpstan/extension-installer`.
+
+### Alternative manual installation
+
+To make use of it, your Composer plugin project needs a [PHPStan config file][12], which includes the `phpstan/rules.neon` file:
+
+```neon
+includes:
+	- vendor/composer/composer/phpstan/rules.neon
+
+// your remaining config..
+```
+
 [1]: ../04-schema.md#type
 [2]: ../04-schema.md#extra
 [3]: https://github.com/composer/composer/blob/main/src/Composer/Plugin/PluginInterface.php
@@ -334,3 +369,5 @@ process however, so do not use it in plugins which do not absolutely require it.
 [9]: https://github.com/composer/composer/blob/main/src/Composer/Plugin/Capability/CommandProvider.php
 [10]: https://symfony.com/doc/current/components/console.html
 [11]: https://github.com/composer/composer/blob/main/src/Composer/Util/SyncHelper.php
+[12]: https://phpstan.org/config-reference#multiple-files
+[13]: https://github.com/phpstan/extension-installer#usage

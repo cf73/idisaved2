@@ -3,16 +3,15 @@
 namespace Archetype\Support\AST\Visitors;
 
 use PhpParser\Node;
-use PhpParser\NodeFinder;
-use PhpParser\Node\Stmt\Use_;
 use PhpParser\NodeVisitorAbstract;
-use PhpParser\BuilderFactory;
 use PhpParser\NodeTraverser;
 
 class NodeInserter extends NodeVisitorAbstract
 {
-    
-    public function __construct($id, $newNode)
+	public string $id;
+	public $newNode;
+
+    final public function __construct($id, $newNode)
     {
         $this->id = $id;
         $this->newNode = $newNode;
@@ -20,12 +19,7 @@ class NodeInserter extends NodeVisitorAbstract
 
     public function leaveNode(Node $node)
     {
-        return $node->__object_hash == $this->id ? [$this->newNode, $node] : $node;
-    }
-
-    public function beforeTraverse(array $nodes)
-    {
-        //
+        return $node->__object_hash === $this->id ? [$this->newNode, $node] : $node;
     }
 
     public function afterTraverse(array $nodes)

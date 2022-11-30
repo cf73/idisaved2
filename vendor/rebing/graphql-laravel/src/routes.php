@@ -1,137 +1,99 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
-use Illuminate\Support\Arr;
+use Illuminate\Container\Container;
+use Illuminate\Contracts\Config\Repository;
+use Illuminate\Routing\Router;
+use Rebing\GraphQL\GraphQL;
 use Rebing\GraphQL\GraphQLController;
-use Rebing\GraphQL\Helpers;
 
-$router = app('router');
-$schemaParameterPattern = '/\{\s*graphql\_schema\s*\?\s*\}/';
+/** @var Repository $config */
+$config = Container::getInstance()->make(Repository::class);
 
-$router->group(array_merge([
-    'prefix' => config('graphql.prefix'),
-    'middleware' => config('graphql.middleware', []),
-], config('graphql.route_group_attributes', [])), function ($router) use ($schemaParameterPattern): void {
-    /** @var \Illuminate\Routing\Router|\Laravel\Lumen\Routing\Router $router */
+$routeConfig = $config->get('graphql.route');
 
-    // Routes and controllers
-    $routes = config('graphql.routes');
-    $controllers = config('graphql.controllers', GraphQLController::class.'@query');
+if ($routeConfig) {
+    /** @var Router $router */
+    $router = app('router');
 
-    $queryTypesMap = [
-        'query' => [],
-        'mutation' => [],
-    ];
-
-    /** @var array $queryTypesMap */
-    $queryTypesMap = array_combine(
-        array_keys($queryTypesMap),
-        array_map(function (string $type) use ($routes, $controllers, $queryTypesMap) {
-            $row = $queryTypesMap[$type];
-            $row['route'] = is_array($routes) ? Arr::get($routes, $type) : $routes;
-            $row['controller'] = is_array($controllers) ? Arr::get($controllers, $type) : $controllers;
-
-            return $row;
-        }, array_keys($queryTypesMap))
+    $routeGroupAttributes = array_merge(
+        [
+            'prefix' => $routeConfig['prefix'] ?? 'graphql',
+            'middleware' => $routeConfig['middleware'] ?? [],
+        ],
+        $routeConfig['group_attributes'] ?? []
     );
 
-    // Specific query type routes
-    $queryTypesMapWithRoutes = array_filter($queryTypesMap, function (array $row, string $type) use ($queryTypesMap) {
-        if ($type === 'mutation' && $queryTypesMap['mutation']['route'] === $queryTypesMap['query']['route']) {
-            return;
-        }
+    $router->group(
+        $routeGroupAttributes,
+        function (Router $router) use ($config, $routeConfig): void {
+            $schemas = GraphQL::getNormalizedSchemasConfiguration();
+            $defaultSchema = $config->get('graphql.default_schema', 'default');
 
-        return $row['route'] !== null;
-    }, ARRAY_FILTER_USE_BOTH);
+            foreach ($schemas as $schemaName => $schemaConfig) {
+                $method = $schemaConfig['method'] ?? ['GET', 'POST'];
+                $actions = array_filter([
+                    'uses' => $schemaConfig['controller'] ?? $routeConfig['controller'] ?? GraphQLController::class . '@query',
+                    'middleware' => $schemaConfig['middleware'] ?? $routeConfig['middleware'] ?? null,
+                ]);
 
-    if ($queryTypesMapWithRoutes) {
-        $schemaConfig = Rebing\GraphQL\GraphQL::getNormalizedSchemasConfiguration();
+                // Support array syntax: `[Some::class, 'method']`
+                if (\is_array($actions['uses']) && isset($actions['uses'][0], $actions['uses'][1])) {
+                    $actions['uses'] = $actions['uses'][0] . '@' . $actions['uses'][1];
+                }
 
-        $defaultConfig = Arr::get($schemaConfig, config('graphql.default_schema'), []);
-        $defaultMiddleware = $defaultConfig['middleware'] ?? [];
-        $defaultMethod = $defaultConfig['method'] ?? ['get', 'post'];
+                // Add route for each schema…
+                $router->addRoute(
+                    $method,
+                    $schemaName,
+                    $actions + ['as' => "graphql.$schemaName"]
+                );
 
-        foreach ($queryTypesMapWithRoutes as $type => $info) {
-            if (preg_match($schemaParameterPattern, $info['route'])) {
-                foreach ($defaultMethod as $method) {
-                    $routeName = "graphql.{$type}";
-                    if ($method !== 'get') {
-                        $routeName .= ".$method";
-                    }
-                    $router->{$method}(
-                        preg_replace($schemaParameterPattern, '', $info['route']),
-                        [
-                            'uses' => $info['controller'],
-                            'middleware' => $defaultMiddleware,
-                            'as' => $routeName,
-                        ]
+                // … and the default schema against the group itself
+                if ($schemaName === $defaultSchema) {
+                    $router->addRoute(
+                        $method,
+                        '',
+                        $actions + ['as' => 'graphql']
                     );
                 }
-
-                foreach ($schemaConfig as $name => $schema) {
-                    foreach (Arr::get($schema, 'method', ['get', 'post']) as $method) {
-                        $routeName = "graphql.$name";
-                        if ($method !== 'get') {
-                            $routeName .= ".$method";
-                        }
-                        $route = $router->{$method}(
-                            Rebing\GraphQL\GraphQL::routeNameTransformer($name, $schemaParameterPattern, $info['route']),
-                            [
-                                'uses' => $info['controller'],
-                                'middleware' => Arr::get($schema, 'middleware', []),
-                                'as' => $routeName,
-                            ]
-                        );
-
-                        if (! Helpers::isLumen()) {
-                            $route->where($name, $name);
-                        }
-                    }
-                }
-            } else {
-                $router->get($info['route'], [
-                    'uses' => $info['controller'],
-                    'as' => "graphql.{$type}",
-                ]);
-                $router->post($info['route'], [
-                    'uses' => $info['controller'],
-                    'as' => "graphql.{$type}.post",
-                ]);
             }
         }
-    }
-});
+    );
+}
 
-if (config('graphql.graphiql.display', true)) {
-    $router->group([
-        'prefix' => config('graphql.graphiql.prefix', 'graphiql'),
-        'middleware' => config('graphql.graphiql.middleware', []),
-    ], function ($router) use ($schemaParameterPattern): void {
-        /** @var \Illuminate\Routing\Router|\Laravel\Lumen\Routing\Router $router */
-        $graphiqlController = config('graphql.graphiql.controller', GraphQLController::class.'@graphiql');
+if ($config->get('graphql.graphiql.display', true)) {
+    /** @var Router $router */
+    $router = app('router');
+    $graphiqlConfig = $config->get('graphql.graphiql');
 
-        $graphiqlAction = ['uses' => $graphiqlController];
-
-        foreach (config('graphql.schemas') as $name => $schema) {
-            $route = $router->get(
-                Rebing\GraphQL\GraphQL::routeNameTransformer($name, $schemaParameterPattern, '{graphql_schema?}'),
-                $graphiqlAction + ['as' => "graphql.graphiql.$name"]
-            );
-            if (! Helpers::isLumen()) {
-                $route->where($name, $name);
+    $router->group(
+        [
+            'prefix' => $graphiqlConfig['prefix'] ?? 'graphiql',
+            'middleware' => $graphiqlConfig['middleware'] ?? [],
+        ],
+        function (Router $router) use ($config, $graphiqlConfig): void {
+            // Support array syntax: `[Some::class, 'method']`
+            if (\is_array($graphiqlConfig['controller']) && isset($graphiqlConfig['controller'][0], $graphiqlConfig['controller'][1])) {
+                $graphiqlConfig['controller'] = $graphiqlConfig['controller'][0] . '@' . $graphiqlConfig['controller'][1];
             }
 
-            $route = $router->post(
-                Rebing\GraphQL\GraphQL::routeNameTransformer($name, $schemaParameterPattern, '{graphql_schema?}'),
-                $graphiqlAction + ['as' => "graphql.graphiql.$name.post"]
-            );
-            if (! Helpers::isLumen()) {
-                $route->where($name, $name);
+            $actions = [
+                'uses' => $graphiqlConfig['controller'] ?? GraphQLController::class . '@graphiql',
+            ];
+
+            // A graphiql route for each schema…
+            /** @var string $schemaName */
+            foreach (array_keys($config->get('graphql.schemas', [])) as $schemaName) {
+                $router->get(
+                    $schemaName,
+                    $actions + ['as' => "graphql.graphiql.$schemaName"]
+                );
             }
+
+            // … and one for the default schema against the group itself
+            $router->get('/', $actions + ['as' => 'graphql.graphiql']);
         }
-
-        $router->get('/', $graphiqlAction + ['as' => 'graphql.graphiql']);
-        $router->post('/', $graphiqlAction + ['as' => 'graphql.graphiql.post']);
-    });
+    );
 }

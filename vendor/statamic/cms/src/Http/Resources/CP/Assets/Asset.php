@@ -10,7 +10,7 @@ class Asset extends JsonResource
 {
     public function toArray($request)
     {
-        return [
+        $data = [
             'id' => $this->id(),
             'path' => $this->path(),
             'filename' => $this->filename(),
@@ -27,9 +27,11 @@ class Asset extends JsonResource
             'isSvg' => $this->isSvg(),
             'isAudio' => $this->isAudio(),
             'isVideo' => $this->isVideo(),
+            'isMedia' => $this->isMedia(),
+            'isPdf' => $this->isPdf(),
             'isPreviewable' => $this->isPreviewable(),
 
-            $this->mergeWhen($this->isImage(), function () {
+            $this->mergeWhen($this->isImage() || $this->isSvg(), function () {
                 return [
                     'width' => $this->width(),
                     'height' => $this->height(),
@@ -38,14 +40,25 @@ class Asset extends JsonResource
                 ];
             }),
 
+            $this->mergeWhen($this->isPdf(), function () {
+                return [
+                    'pdfUrl' => $this->pdfUrl(),
+                ];
+            }),
+
             $this->merge($this->publishFormData()),
 
             'allowDownloading' => $this->container()->allowDownloading(),
             'actionUrl' => cp_route('assets.actions.run'),
-            'actions' => Action::for($this->resource, ['container' => $this->container()->handle()]),
+            'actions' => Action::for($this->resource, [
+                'container' => $this->container()->handle(),
+                'folder' => $this->folder(),
+            ]),
 
             'blueprint' => $this->blueprint()->toPublishArray(),
         ];
+
+        return ['data' => $data];
     }
 
     protected function previewUrl()

@@ -2,6 +2,7 @@
 
 namespace Archetype\Factories;
 
+use Archetype\Endpoints\PHP\Make;
 use Archetype\PHPFile;
 
 class PHPFileFactory
@@ -10,21 +11,22 @@ class PHPFileFactory
 
     public function __call($method, $args)
     {
-        return self::__makeFileInstance()->$method(...$args);
+        return static::__makeFileInstance()->$method(...$args);
     }
 
     public static function __callStatic($method, $args)
     {
-        return self::__makeFileInstance()->$method(...$args);
+        return static::__makeFileInstance()->$method(...$args);
     }
 
     protected static function __makeFileInstance()
     {
         $class = static::FILE_TYPE;
-        $instance = new $class;
-        $instance->inputDriver(self::__driver('input'));
-
-        $instance->outputDriver(self::__driver('output'));
+        $instance = new $class(
+			static::__driver('input'),
+			static::__driver('output'),
+			new Make()			
+		);
 
         return $instance;
     }

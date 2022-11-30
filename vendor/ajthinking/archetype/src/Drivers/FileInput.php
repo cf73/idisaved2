@@ -5,57 +5,59 @@ namespace Archetype\Drivers;
 use Archetype\Drivers\InputInterface;
 use Illuminate\Support\Str;
 use Archetype\Support\PHPFileStorage;
+use Archetype\Support\URI;
 
 class FileInput implements InputInterface
 {
-    public $filename;
+    public ?string $filename = '';
 
-    public $extension;
+    public ?string $extension = '';
 
-    public $relativeDir;
+    public ?string $relativeDir = '';
 
-    public $absoluteDir;
+    public ?string $absoluteDir = '';
 
-    public $root;
+    public array $root;
 
-    public function __construct()
+    final public function __construct()
     {
         $this->root = config('archetype')['roots']['input'];
     }
 
-    public function readPath($path = null)
+    public function readPath($path = null): self
     {
         $this->extractPathProperties($path);
         return $this;
     }
 
-    public function load(string $path = null)
+    public function load(string $location = null)
     {
-        $this->extractPathProperties($path);
+        $this->extractPathProperties($location);
 
         return (new PHPFileStorage)->get($this->absolutePath());
     }
 
-    public function fileExists($path)
+    public function fileExists($path): bool
     {
         $checker = new static;
         $checker->extractPathProperties($path);
         return is_file($checker->absolutePath());
     }
 
-    public function absolutePath()
+    public function absolutePath(): string
     {
         return "$this->absoluteDir/$this->filename" . ($this->extension ? ".$this->extension" : "");
     }
 
-    public function filename()
+    public function filename(): string
     {
         return $this->filename;
     }
 
-    protected function extractPathProperties($path)
+    protected function extractPathProperties(string $location): void
     {
-        preg_match('/(.*)\..*/', basename($path), $matches);
+		$path = URI::make($location)->path();
+		
         $this->filename = $path ? basename($path, '.php') : null;
         
         preg_match('/.*\.(.*)/', basename($path), $matches);

@@ -1,7 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
+declare(strict_types = 1);
 namespace Rebing\GraphQL\Support;
 
 use Closure;
@@ -9,7 +8,6 @@ use GraphQL\Type\Definition\ResolveInfo;
 use GraphQL\Type\Definition\Type as GraphQLType;
 use Illuminate\Contracts\Validation\Validator as ValidatorContract;
 use Illuminate\Pipeline\Pipeline;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Validator;
 use InvalidArgumentException;
 use Rebing\GraphQL\Error\AuthorizationError;
@@ -22,13 +20,7 @@ use ReflectionMethod;
  */
 abstract class Field
 {
-    /**
-     * The depth the SelectField and ResolveInfoFieldsAndArguments classes traverse.
-     *
-     * @var int
-     */
-    protected $depth = 5;
-
+    /** @var array<string,mixed> */
     protected $attributes = [];
 
     /** @var string[] */
@@ -38,12 +30,8 @@ abstract class Field
      * Override this in your queries or mutations
      * to provide custom authorization.
      *
-     * @param  mixed  $root
-     * @param  array  $args
-     * @param  mixed  $ctx
-     * @param  ResolveInfo|null  $resolveInfo
-     * @param  Closure|null  $getSelectFields
-     * @return bool
+     * @param mixed $root
+     * @param mixed $ctx
      */
     public function authorize($root, array $args, $ctx, ResolveInfo $resolveInfo = null, Closure $getSelectFields = null): bool
     {
@@ -58,7 +46,7 @@ abstract class Field
     abstract public function type(): GraphQLType;
 
     /**
-     * @return array<string,array>
+     * @return array<string,array<string,mixed>>
      */
     public function args(): array
     {
@@ -69,10 +57,19 @@ abstract class Field
      * Define custom Laravel Validator messages as per Laravel 'custom error messages'.
      *
      * @param array $args submitted arguments
-     *
-     * @return array
      */
     public function validationErrorMessages(array $args = []): array
+    {
+        return [];
+    }
+
+    /**
+     * Define custom Laravel Validator attributes as per Laravel 'custom attributes'.
+     *
+     * @param array<string,mixed> $args submitted arguments
+     * @return array<string,string>
+     */
+    public function validationAttributes(array $args = []): array
     {
         return [];
     }
@@ -99,17 +96,33 @@ abstract class Field
     }
 
     /**
+     * @param array<string,mixed> $arguments
+     * @param array<string,mixed> $rules
+     */
+    protected function validateArguments(array $arguments, array $rules): void
+    {
+        $validator = $this->getValidator($arguments, $rules);
+
+        if ($validator->fails()) {
+            throw new ValidationError('validation', $validator);
+        }
+    }
+
+    /**
      * @param array<string,mixed> $fieldsAndArgumentsSelection
-     * @return void
      */
     public function validateFieldArguments(array $fieldsAndArgumentsSelection): void
     {
         $argsRules = (new RulesInFields($this->type(), $fieldsAndArgumentsSelection))->get();
-        if (count($argsRules)) {
-            $validator = $this->getValidator($fieldsAndArgumentsSelection, $argsRules);
-            if ($validator->fails()) {
-                throw new ValidationError('validation', $validator);
-            }
+
+        if (!$argsRules) {
+            return;
+        }
+
+        $validator = $this->getValidator($fieldsAndArgumentsSelection, $argsRules);
+
+        if ($validator->fails()) {
+            throw new ValidationError('validation', $validator);
         }
     }
 
@@ -118,7 +131,10 @@ abstract class Field
         // allow our error messages to be customised
         $messages = $this->validationErrorMessages($args);
 
-        return Validator::make($args, $rules, $messages);
+        // allow our attributes to be customized
+        $attributes = $this->validationAttributes($args);
+
+        return Validator::make($args, $rules, $messages, $attributes);
     }
 
     /**
@@ -133,7 +149,7 @@ abstract class Field
     {
         $resolver = $this->originalResolver();
 
-        if (! $resolver) {
+        if (!$resolver) {
             return null;
         }
 
@@ -145,15 +161,15 @@ abstract class Field
                 ->through($middleware)
                 ->via('resolve')
                 ->then(function ($arguments) use ($middleware, $resolver, $root) {
-                    $result = $resolver($root, ...array_slice($arguments, 1));
+                    $result = $resolver($root, ...\array_slice($arguments, 1));
 
                     foreach ($middleware as $name) {
                         /** @var Middleware $instance */
                         $instance = app()->make($name);
 
                         if (method_exists($instance, 'terminate')) {
-                            app()->terminating(function () use ($arguments, $instance, $result) {
-                                $instance->terminate($this, ...array_slice($arguments, 1), ...[$result]);
+                            app()->terminating(function () use ($arguments, $instance, $result): void {
+                                $instance->terminate($this, ...\array_slice($arguments, 1), ...[$result]);
                             });
                         }
                     }
@@ -165,7 +181,7 @@ abstract class Field
 
     protected function originalResolver(): ?Closure
     {
-        if (! method_exists($this, 'resolve')) {
+        if (!method_exists($this, 'resolve')) {
             return null;
         }
 
@@ -178,21 +194,18 @@ abstract class Field
             // 2 - the "GraphQL query context" (see \Rebing\GraphQL\GraphQLController::queryContext)
             // 3 - \GraphQL\Type\Definition\ResolveInfo as provided by the underlying GraphQL PHP library
             // 4 (!) - added by this library, encapsulates creating a `SelectFields` instance
-            $arguments = func_get_args();
+            $arguments = \func_get_args();
 
             // Validate mutation arguments
             $args = $arguments[1];
 
             $rules = $this->getRules($args);
 
-            if (count($rules)) {
-                $validator = $this->getValidator($args, $rules);
-                if ($validator->fails()) {
-                    throw new ValidationError('validation', $validator);
-                }
+            if ($rules) {
+                $this->validateArguments($args, $rules);
             }
 
-            $fieldsAndArguments = (new ResolveInfoFieldsAndArguments($arguments[3]))->getFieldsAndArgumentsSelection($this->depth);
+            $fieldsAndArguments = $arguments[3]->lookAhead()->queryPlan();
 
             // Validate arguments in fields
             $this->validateFieldArguments($fieldsAndArguments);
@@ -200,31 +213,31 @@ abstract class Field
             $arguments[1] = $this->getArgs($arguments);
 
             // Authorize
-            if (true != call_user_func_array($authorize, $arguments)) {
+            if (true != \call_user_func_array($authorize, $arguments)) {
                 throw new AuthorizationError($this->getAuthorizationMessage());
             }
 
             $method = new ReflectionMethod($this, 'resolve');
 
-            $additionalParams = array_slice($method->getParameters(), 3);
+            $additionalParams = \array_slice($method->getParameters(), 3);
 
             $additionalArguments = array_map(function ($param) use ($arguments, $fieldsAndArguments) {
                 $paramType = $param->getType();
 
                 if ($paramType->isBuiltin()) {
-                    throw new InvalidArgumentException("'{$param->name}' could not be injected");
+                    throw new InvalidArgumentException("'$param->name' could not be injected");
                 }
 
-                $className = $param->getType()->getName();
+                $className = $paramType->getName();
 
                 if (Closure::class === $className) {
-                    return function (int $depth = null) use ($arguments, $fieldsAndArguments): SelectFields {
-                        return $this->instanciateSelectFields($arguments, $fieldsAndArguments, $depth);
+                    return function () use ($arguments, $fieldsAndArguments) {
+                        return $this->instanciateSelectFields($arguments, $fieldsAndArguments);
                     };
                 }
 
-                if (SelectFields::class === $className) {
-                    return $this->instanciateSelectFields($arguments, $fieldsAndArguments, null);
+                if ($this->selectFieldClass() === $className) {
+                    return $this->instanciateSelectFields($arguments, $fieldsAndArguments);
                 }
 
                 if (ResolveInfo::class === $className) {
@@ -234,7 +247,7 @@ abstract class Field
                 return app()->make($className);
             }, $additionalParams);
 
-            return call_user_func_array($resolver, array_merge(
+            return \call_user_func_array($resolver, array_merge(
                 [$arguments[0], $arguments[1], $arguments[2]],
                 $additionalArguments
             ));
@@ -243,20 +256,23 @@ abstract class Field
 
     /**
      * @param array<int,mixed> $arguments
-     * @param int $depth
      * @param array<string,mixed> $fieldsAndArguments
-     * @return SelectFields
      */
-    private function instanciateSelectFields(array $arguments, array $fieldsAndArguments, int $depth = null): SelectFields
+    protected function instanciateSelectFields(array $arguments, array $fieldsAndArguments): SelectFields
     {
         $ctx = $arguments[2] ?? null;
 
-        if ($depth !== null && $depth !== $this->depth) {
-            $fieldsAndArguments = (new ResolveInfoFieldsAndArguments($arguments[3]))
-                ->getFieldsAndArgumentsSelection($depth);
-        }
+        $selectFieldsClass = $this->selectFieldClass();
 
-        return new SelectFields($this->type(), $arguments[1], $ctx, $fieldsAndArguments);
+        return new $selectFieldsClass($this->type(), $arguments[1], $ctx, $fieldsAndArguments);
+    }
+
+    /**
+     * @return class-string<SelectFields>
+     */
+    protected function selectFieldClass(): string
+    {
+        return SelectFields::class;
     }
 
     protected function aliasArgs(array $arguments): array
@@ -271,8 +287,6 @@ abstract class Field
 
     /**
      * Get the attributes from the container.
-     *
-     * @return array
      */
     public function getAttributes(): array
     {
@@ -287,6 +301,7 @@ abstract class Field
         $attributes['type'] = $this->type();
 
         $resolver = $this->getResolver();
+
         if (isset($resolver)) {
             $attributes['resolve'] = $resolver;
         }
@@ -300,9 +315,7 @@ abstract class Field
     }
 
     /**
-     * Convert the Fluent instance to an array.
-     *
-     * @return array
+     * @return array<string,mixed>
      */
     public function toArray(): array
     {

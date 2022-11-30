@@ -97,10 +97,10 @@ gets installed with a Composer version supporting the feature.
 
 As of Composer 2.2.2, a new `$_composer_bin_dir` global variable
 is defined by the bin proxy file, so that when your binary gets executed
-it can use it to easily locate the project's autoloader.
+it can use it to easily locate the project's Composer bin directory.
 
-For non-PHP binaries, the bin proxy sets a `COMPOSER_BIN_DIR` environment
-variable.
+For non-PHP binaries, as of Composer 2.2.6, the bin proxy sets a
+`COMPOSER_RUNTIME_BIN_DIR` environment variable.
 
 This global variable will not be available however when running binaries defined
 by the root package itself, so you need to have a fallback in place.
@@ -116,10 +116,10 @@ $binDir = $_composer_bin_dir ?? __DIR__ . '/../vendor/bin';
 ```php
 #!/bin/bash
 
-if [[ -z "$COMPOSER_BIN_DIR" ]]; then
+if [[ -z "$COMPOSER_RUNTIME_BIN_DIR" ]]; then
   BIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 else
-  BIN_DIR="$COMPOSER_BIN_DIR"
+  BIN_DIR="$COMPOSER_RUNTIME_BIN_DIR"
 fi
 ```
 

@@ -5,13 +5,15 @@ namespace League\Glide\Manipulators;
 use Intervention\Image\Image;
 
 /**
- * @property string $gam
+ * @property string|null $gam
  */
 class Gamma extends BaseManipulator
 {
     /**
      * Perform gamma image manipulation.
-     * @param  Image $image The source image.
+     *
+     * @param Image $image The source image.
+     *
      * @return Image The manipulated image.
      */
     public function run(Image $image)
@@ -27,11 +29,12 @@ class Gamma extends BaseManipulator
 
     /**
      * Resolve gamma amount.
+     *
      * @return string The resolved gamma amount.
      */
     public function getGamma()
     {
-        if (!preg_match('/^[0-9]\.*[0-9]*$/', $this->gam)) {
+        if (null === $this->gam || !preg_match('/^[0-9]\.*[0-9]*$/', $this->gam)) {
             return;
         }
 
@@ -39,6 +42,6 @@ class Gamma extends BaseManipulator
             return;
         }
 
-        return (double) $this->gam;
+        return (float) $this->gam;
     }
 }

@@ -4,8 +4,7 @@ namespace Archetype\Traits;
 
 use Archetype\Support\Exceptions\FileParseError;
 use Archetype\Support\PSR2PrettyPrinter;
-use PHPParser\Error as PHPParserError;
-use PhpParser\ParserFactory;
+use PhpParser\Error as PHPParserError;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitor\CloningVisitor;
 
@@ -33,18 +32,13 @@ trait HasIO
         return $this;
     }
 
-    public function find($path)
+    public function load(string $location)
     {
-        return $this->load($path);
-    }
-
-    public function load($path)
-    {
-        $content = $this->input->load($path);
+        $content = $this->input->load($location);
 
         $this->output->setDefaultsFrom($this->input);
 
-        $this->contents($content);
+        $this->contents = $content;
 
         $this->ast($this->parse());
 
@@ -57,7 +51,9 @@ trait HasIO
 
     public function fromString($code)
     {
-        $this->contents($code);
+		$code = $this->prepareCode($code);
+		
+        $this->contents = $code;
 
         $this->ast($this->parse());
 
@@ -86,6 +82,8 @@ trait HasIO
     public function preview()
     {
         echo $this->render();
+
+		return $this;
     }
 
     public function parse()
@@ -113,7 +111,7 @@ trait HasIO
         }
 
         $ast = $traverser->traverse($this->originalAst);
-        
+
         return $ast;
     }
 
@@ -147,10 +145,10 @@ trait HasIO
         );
     }
 
-    public function contents($contents = false)
+    public function contents()
     {
-        return $contents ? $this->contents = $contents : $this->contents;
-    }
+		return $this->contents;
+    }	
 
     public function ast($ast = null)
     {
@@ -162,4 +160,19 @@ trait HasIO
 
         return $this;
     }
+
+	protected function prepareCode($code)
+	{		
+		if(!$this->directive('addMissingTags')) return $code;
+
+		if(!str_contains($code, '<?php')) {
+			$code = '<?php ' . PHP_EOL . PHP_EOL . $code;
+		}
+
+		if(!preg_match_all("/[\};]\s*$/", $code)) {
+			$code .= ';';
+		}
+
+		return $code;
+	}
 }

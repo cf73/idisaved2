@@ -1,7 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
+declare(strict_types = 1);
 namespace Rebing\GraphQL\Console;
 
 use Illuminate\Console\GeneratorCommand;
@@ -14,12 +13,12 @@ class MutationMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/stubs/mutation.stub';
+        return __DIR__ . '/stubs/mutation.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\GraphQL\Mutations';
+        return $rootNamespace . '\GraphQL\Mutations';
     }
 
     protected function buildClass($name)
@@ -32,7 +31,7 @@ class MutationMakeCommand extends GeneratorCommand
     protected function replaceGraphqlName(string $stub): string
     {
         $graphqlName = lcfirst($this->getNameInput());
-        $graphqlName = preg_replace('/Mutation$/', '', $graphqlName);
+        $graphqlName = \Safe\preg_replace('/Mutation$/', '', $graphqlName);
 
         return str_replace(
             'DummyGraphqlName',

@@ -19,14 +19,18 @@ trait Routable
     {
         return $this->fluentlyGetOrSet('slug')->getter(function ($slug) {
             if ($slug instanceof Closure) {
+                $this->slug = null;
                 $slug = $slug($this);
+                $this->slug = $slug;
             }
 
             if (! $slug) {
                 return null;
             }
 
-            return Str::slug($slug);
+            $lang = method_exists($this, 'site') ? $this->site()->lang() : null;
+
+            return Str::slug($slug, '-', $lang);
         })->args(func_get_args());
     }
 

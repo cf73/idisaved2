@@ -3,24 +3,26 @@
 namespace Archetype\Support\AST\Visitors;
 
 use PhpParser\Node;
-use PhpParser\NodeFinder;
-use PhpParser\Node\Stmt\Use_;
 use PhpParser\NodeVisitorAbstract;
-use PhpParser\BuilderFactory;
 use PhpParser\NodeTraverser;
 
 class StmtInserter extends NodeVisitorAbstract
 {
     protected $finished = false;
 
+	protected ?string $id;
+	protected $newNode;
+	protected $position;
+
     const priority = [
-        'PhpParser\Node\Stmt\Namespace_',
-        'PhpParser\Node\Stmt\TraitUse',
-        'PhpParser\Node\Stmt\Property',
-        'PhpParser\Node\Stmt\ClassMethod',
+		\PhpParser\Node\Stmt\Namespace_::class,
+		\PhpParser\Node\Stmt\TraitUse::class,
+		\PhpParser\Node\Stmt\ClassConst::class,
+        \PhpParser\Node\Stmt\Property::class,
+        \PhpParser\Node\Stmt\ClassMethod::class,
     ];
 
-    public function __construct($id, $newNode)
+    final public function __construct($id, $newNode)
     {
         $this->id = $id;
         $this->newNode = $newNode;
@@ -55,11 +57,6 @@ class StmtInserter extends NodeVisitorAbstract
 
         return $nodes;
     }
-
-    public function afterTraverse(array $nodes)
-    {
-        //
-    }
     
     public static function insertStmt($id, $newNode, $ast)
     {
@@ -70,7 +67,7 @@ class StmtInserter extends NodeVisitorAbstract
 
     protected function isTarget($node)
     {
-        return isset($node->__object_hash) &&  $node->__object_hash == $this->id;
+        return isset($node->__object_hash) && $node->__object_hash === $this->id;
     }
 
     protected function priority($node)

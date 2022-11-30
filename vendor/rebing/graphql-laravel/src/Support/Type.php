@@ -1,12 +1,9 @@
 <?php
 
-declare(strict_types=1);
-
+declare(strict_types = 1);
 namespace Rebing\GraphQL\Support;
 
-use GraphQL\Type\Definition\EnumType;
 use GraphQL\Type\Definition\FieldDefinition;
-use GraphQL\Type\Definition\InputObjectType;
 use GraphQL\Type\Definition\ObjectType;
 use GraphQL\Type\Definition\Type as GraphqlType;
 use Illuminate\Support\Str;
@@ -17,35 +14,28 @@ use Rebing\GraphQL\Support\Contracts\TypeConvertible;
  */
 abstract class Type implements TypeConvertible
 {
+    /** @var array<string,mixed> */
     protected $attributes = [];
-    /**
-     * Set to `true` in your type when it should reflect an InputObject.
-     * @var bool
-     * @deprecated Use InputType instead
-     * @see InputType
-     */
-    protected $inputObject = false;
-    /**
-     * Set to `true` in your type when it should reflect an Enum.
-     * @var bool
-     * @deprecated Use EnumType instead
-     * @see EnumType
-     */
-    protected $enumObject = false;
 
+    /**
+     * @return array<string,mixed>
+     */
     public function attributes(): array
     {
         return [];
     }
 
     /**
-     * @return array<int|string,array|string|FieldDefinition|Field>
+     * @return array<int|string,array<string,mixed>|string|FieldDefinition|Field>
      */
     public function fields(): array
     {
         return [];
     }
 
+    /**
+     * @return array<GraphqlType|callable>
+     */
     public function interfaces(): array
     {
         return [];
@@ -57,19 +47,19 @@ abstract class Type implements TypeConvertible
             return $field['resolve'];
         }
 
-        $resolveMethod = 'resolve'.Str::studly($name).'Field';
+        $resolveMethod = 'resolve' . Str::studly($name) . 'Field';
 
         if (method_exists($this, $resolveMethod)) {
             $resolver = [$this, $resolveMethod];
 
             return function () use ($resolver) {
-                $args = func_get_args();
+                $args = \func_get_args();
 
-                return call_user_func_array($resolver, $args);
+                return \call_user_func_array($resolver, $args);
             };
         }
 
-        if (isset($field['alias']) && is_string($field['alias'])) {
+        if (isset($field['alias']) && \is_string($field['alias'])) {
             $alias = $field['alias'];
 
             return function ($type) use ($alias) {
@@ -80,12 +70,16 @@ abstract class Type implements TypeConvertible
         return null;
     }
 
+    /**
+     * @return array<string,mixed>
+     */
     public function getFields(): array
     {
         $fields = $this->fields();
         $allFields = [];
+
         foreach ($fields as $name => $field) {
-            if (is_string($field)) {
+            if (\is_string($field)) {
                 $field = app($field);
                 $field->name = $name;
                 $allFields[$name] = $field->toArray();
@@ -96,6 +90,7 @@ abstract class Type implements TypeConvertible
                 $allFields[$field->name] = $field;
             } else {
                 $resolver = $this->getFieldResolver($name, $field);
+
                 if ($resolver) {
                     $field['resolve'] = $resolver;
                 }
@@ -108,31 +103,24 @@ abstract class Type implements TypeConvertible
 
     /**
      * Get the attributes from the container.
-     *
-     * @return array
+     * @return array<string,mixed>
      */
     public function getAttributes(): array
     {
         $attributes = $this->attributes();
-        $interfaces = $this->interfaces();
 
-        $attributes = array_merge($this->attributes, [
+        return array_merge($this->attributes, [
             'fields' => function () {
                 return $this->getFields();
             },
+            'interfaces' => function () {
+                return $this->interfaces();
+            },
         ], $attributes);
-
-        if (count($interfaces)) {
-            $attributes['interfaces'] = $interfaces;
-        }
-
-        return $attributes;
     }
 
     /**
-     * Convert the Fluent instance to an array.
-     *
-     * @return array
+     * @return array<string,mixed>
      */
     public function toArray(): array
     {
@@ -141,13 +129,6 @@ abstract class Type implements TypeConvertible
 
     public function toType(): GraphqlType
     {
-        if ($this->inputObject) {
-            return new InputObjectType($this->toArray());
-        }
-        if ($this->enumObject) {
-            return new EnumType($this->toArray());
-        }
-
         return new ObjectType($this->toArray());
     }
 
@@ -165,6 +146,9 @@ abstract class Type implements TypeConvertible
         return $attributes[$key] ?? null;
     }
 
+    /**
+     * @param mixed $value
+     */
     public function __set(string $key, $value): void
     {
         $this->attributes[$key] = $value;

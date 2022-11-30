@@ -8,9 +8,9 @@ class URI
 {
     public $input;
     public $path;
-    public $name;
+    public string $name;
 
-    public function __construct($input)
+    final public function __construct($input)
     {
         $this->input = $input;
 

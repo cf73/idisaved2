@@ -2,9 +2,8 @@
 
 namespace Archetype\Endpoints\Laravel;
 
-use LaravelFile;
-
 use Archetype\Endpoints\PHP\PHPFileQueryBuilder;
+use Archetype\Facades\LaravelFile;
 
 class LaravelFileQueryBuilder extends PHPFileQueryBuilder
 {
@@ -32,7 +31,7 @@ class LaravelFileQueryBuilder extends PHPFileQueryBuilder
      * @example Query migrations
      * @source LaravelFile::migrations()
      */
-    public function migrations()
+    public function migrations(): self
     {
         return $this->in('database/migrations');
     }
@@ -41,7 +40,7 @@ class LaravelFileQueryBuilder extends PHPFileQueryBuilder
      * @example Query models
      * @source LaravelFile::models()
      */
-    public function models()
+    public function models(): self
     {
         $this->instanceof('Illuminate\Database\Eloquent\Model');
         $this->isNotAbstract();
@@ -53,7 +52,7 @@ class LaravelFileQueryBuilder extends PHPFileQueryBuilder
      * @example Query models
      * @source LaravelFile::models()
      */
-    public function exceptUser()
+    public function exceptUser(): self
     {
         $this->isNotUser();
 
@@ -64,7 +63,7 @@ class LaravelFileQueryBuilder extends PHPFileQueryBuilder
      * @example Query controllers
      * @source LaravelFile::controllers()
      */
-    public function controllers()
+    public function controllers(): self
     {
         return $this->instanceof('Illuminate\Routing\Controller');
     }
@@ -73,12 +72,12 @@ class LaravelFileQueryBuilder extends PHPFileQueryBuilder
      * @example Query serviceProviders
      * @source LaravelFile::serviceProviders()
      */
-    public function serviceProviders()
+    public function serviceProviders(): self
     {
         return $this->instanceof('Illuminate\Support\ServiceProvider');
     }
 
-    protected function instanceof($class)
+    protected function instanceof($class): self
     {
         // Ensure we are in a directory context - default to base path
         if (!isset($this->baseDir)) {
@@ -93,7 +92,7 @@ class LaravelFileQueryBuilder extends PHPFileQueryBuilder
         return $this;
     }
 
-    protected function isNotAbstract()
+    protected function isNotAbstract(): self
     {
         $this->result = $this->result->filter(function ($file) {
             $reflection = $file->getReflection();
@@ -103,12 +102,12 @@ class LaravelFileQueryBuilder extends PHPFileQueryBuilder
         return $this;
     }
 
-    protected function isNotUser()
+    protected function isNotUser(): self
     {
         $this->result = $this->result->filter(function ($file) {
             return $file->className() != 'User';
         });
 
         return $this;
-    }
+    }	
 }

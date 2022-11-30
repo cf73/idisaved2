@@ -6,7 +6,10 @@ use Illuminate\Support\Str;
 
 class Path
 {
-    public function __construct($inputPath)
+	public ?string $path;
+	public ?string $root;
+
+    final public function __construct($inputPath)
     {
         $this->path = $this->normalize($inputPath);
         $this->root = null;

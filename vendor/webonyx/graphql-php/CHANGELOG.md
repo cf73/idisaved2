@@ -2,6 +2,31 @@
 
 #### Unreleased
 
+#### 14.11.8
+
+Fixed:
+- Correct the broken 14.11.7 release - see https://github.com/webonyx/graphql-php/issues/1221
+
+#### 14.11.7
+
+Fixed:
+- Fix PHP 8.2 deprecation of "static" in callables
+
+#### 14.11.6
+
+Fixed:
+- Fix validation of modified sparse ASTs
+
+#### 14.11.5
+
+Fixed:
+- Fix `extend()` to preserve `repeatable` (#931)
+
+#### 14.11.4
+
+Fixed:
+- Fix repeatable directive validation for AST
+
 #### 14.11.3
 
 Fixed:

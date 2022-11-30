@@ -1,7 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
+declare(strict_types = 1);
 namespace Rebing\GraphQL\Console;
 
 use Illuminate\Console\GeneratorCommand;
@@ -14,12 +13,12 @@ class InputMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/stubs/input.stub';
+        return __DIR__ . '/stubs/input.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\GraphQL\Inputs';
+        return $rootNamespace . '\GraphQL\Inputs';
     }
 
     protected function buildClass($name)
@@ -33,7 +32,7 @@ class InputMakeCommand extends GeneratorCommand
     {
         $graphqlName = $this->getNameInput();
         $graphqlName = str_replace('InputObject', 'Input', $graphqlName);
-        $graphqlName = preg_replace('/Type$/', '', $graphqlName);
+        $graphqlName = \Safe\preg_replace('/Type$/', '', $graphqlName);
 
         return str_replace(
             'DummyGraphqlName',

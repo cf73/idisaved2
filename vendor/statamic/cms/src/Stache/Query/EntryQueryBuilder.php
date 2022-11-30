@@ -23,11 +23,6 @@ class EntryQueryBuilder extends Builder implements QueryBuilder
         return parent::where($column, $operator, $value, $boolean);
     }
 
-    public function orWhere($column, $operator = null, $value = null)
-    {
-        return $this->where($column, $operator, $value, 'or');
-    }
-
     public function whereIn($column, $values, $boolean = 'and')
     {
         if (in_array($column, ['collection', 'collections'])) {
@@ -39,14 +34,14 @@ class EntryQueryBuilder extends Builder implements QueryBuilder
         return parent::whereIn($column, $values, $boolean);
     }
 
-    public function orWhereIn($column, $values)
-    {
-        return $this->whereIn($column, $values, 'or');
-    }
-
     protected function collect($items = [])
     {
         return EntryCollection::make($items);
+    }
+
+    protected function getItems($keys)
+    {
+        return Facades\Entry::applySubstitutions(parent::getItems($keys));
     }
 
     protected function getFilteredKeys()
@@ -124,5 +119,16 @@ class EntryQueryBuilder extends Builder implements QueryBuilder
 
             return $carry;
         }, collect());
+    }
+
+    protected function getWhereColumnKeyValuesByIndex($column)
+    {
+        $collections = empty($this->collections)
+            ? Facades\Collection::handles()
+            : $this->collections;
+
+        return collect($collections)->flatMap(function ($collection) use ($column) {
+            return $this->getWhereColumnKeysFromStore($collection, ['column' => $column]);
+        });
     }
 }

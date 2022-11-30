@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 /*
  * This file is part of Composer.
@@ -18,13 +18,12 @@ use PharData;
 class ArchivableFilesFilter extends FilterIterator
 {
     /** @var string[] */
-    private $dirs = array();
+    private $dirs = [];
 
     /**
      * @return bool true if the current element is acceptable, otherwise false.
      */
-    #[\ReturnTypeWillChange]
-    public function accept()
+    public function accept(): bool
     {
         $file = $this->getInnerIterator()->current();
         if ($file->isDir()) {
@@ -36,12 +35,7 @@ class ArchivableFilesFilter extends FilterIterator
         return true;
     }
 
-    /**
-     * @param string $sources
-     *
-     * @return void
-     */
-    public function addEmptyDir(PharData $phar, $sources)
+    public function addEmptyDir(PharData $phar, string $sources): void
     {
         foreach ($this->dirs as $filepath) {
             $localname = str_replace($sources . "/", '', $filepath);

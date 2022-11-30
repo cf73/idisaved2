@@ -84,3 +84,5 @@ class AbstractCommand extends Command
     }
 }
 ```
+
+More info on our Statamic blog: <https://statamic.com/blog/partyline>

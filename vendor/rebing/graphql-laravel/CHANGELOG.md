@@ -1,8 +1,207 @@
 CHANGELOG
 =========
 
-[Next release](https://github.com/rebing/graphql-laravel/compare/6.5.0...master)
+[Next release](https://github.com/rebing/graphql-laravel/compare/8.3.0...master)
 --------------
+
+2022-06-11, 8.3.0
+-----------------
+### Added
+- Add support to use array in `controller` param in config [\#906 / viktorruskai](https://github.com/rebing/graphql-laravel/pull/906)
+- Add support for laravel validation attributes [\#901 / jacobdekeizer](https://github.com/rebing/graphql-laravel/pull/901)
+
+### Fixed
+- Allow 'always' to work on object types [\#473 / tinyoverflow \#369 / zjbarg](https://github.com/rebing/graphql-laravel/pull/892)
+- Allow using addSelect() in relationship query scopes [\#875 / codercms](https://github.com/rebing/graphql-laravel/pull/806)
+
+### Removed
+- Support for PHP 7.2, PHP 7.3 and Laravel 7.0 (all EOL) [\#914 / mfn](https://github.com/rebing/graphql-laravel/pull/914)
+
+2022-01-30, 8.2.1
+-----------------
+### Fixed
+- Fix schema parsing issue when route prefix is empty string [\#890 / hello-liang-shan](https://github.com/rebing/graphql-laravel/pull/890)\
+  Note: this is a follow-up fix to #888
+
+2022-01-27, 8.2.0
+-----------------
+### Fixed
+- Fix "No configuration for schema '' found" when route prefix is empty string [\#888 / hello-liang-shan](https://github.com/rebing/graphql-laravel/pull/888)
+
+2022-01-15, 8.1.0
+-----------------
+### Added
+- Support for Laravel 9 [\#879 / mfn](https://github.com/rebing/graphql-laravel/pull/879)
+
+2021-11-15, 8.0.0
+-----------------
+
+## Breaking changes
+- Rewrite and simplify how schemas are handled
+  - `\Rebing\GraphQL\GraphQL::$schemas` now only holds `Schema`s and not a
+    mixture of strings or arrays
+  - `\Rebing\GraphQL\GraphQL::schema()` now only accepts a "schema name", but no
+    ad hoc `Schema` or "schema configs". To use ad hoc schemas, use
+    `\Rebing\GraphQL\GraphQL::buildSchemaFromConfig()` and
+    `\Rebing\GraphQL\GraphQL::addSchema()`
+  - `\Rebing\GraphQL\GraphQL::queryAndReturnResult()` (and thus also
+    `\Rebing\GraphQL\GraphQL::query()`) does not accept ad hoc schemas via
+    `$opts['schema']` anymore; it now only can reference a schema via its name.
+  - `\Rebing\GraphQL\GraphQL::addSchema()` now only accept `Schema` objects,
+    where before it would support ad hoc schemas via array configuration.
+    Use `\Rebing\GraphQL\GraphQL::buildSchemaFromConfig()` for that now.
+  - `\Rebing\GraphQL\GraphQL::getSchemaConfiguration()` has been removed due to
+    the simplifications.
+  - `\Rebing\GraphQL\GraphQL::getNormalizedSchemaConfiguration()` does not
+    support ad hoc schemas anymore and only accepts the schema name.
+  - `\Rebing\GraphQL\GraphQLServiceProvider::bootSchemas()` has been removed due
+    to the simplifications.
+    
+- The following methods now take a `\Illuminate\Contracts\Config\Repository` as
+  second argument:
+  - `\Rebing\GraphQL\GraphQL::__construct`
+  - `\Rebing\GraphQL\GraphQLServiceProvider::applySecurityRules`
+- As part of moving the architecture to an execution based middleware approach,
+  the following methods have been removed:
+  - `\Rebing\GraphQL\GraphQLController::handleAutomaticPersistQueries` has been
+    replaced by the `AutomaticPersistedQueriesMiddleware` middleware
+  - `\Rebing\GraphQL\GraphQLController::queryContext` has been
+    replaced by the `AddAuthUserContextValueMiddleware` middleware\
+    If you relied on overriding `queryContext` to inject a custom context, you
+    now need to create your own execution middleware and add to your
+    configuration
+  - `\Rebing\GraphQL\GraphQLController::executeQuery` has become obsolete, no
+    direct replacement.
+
+- Routing has been rewritten and simplified [\#757 / mfn](https://github.com/rebing/graphql-laravel/pull/757)
+  - All routing related configuration is now within the top level `route`
+    configuration key
+  - The following configuration options have been removed:
+    - `graphql.routes`\
+      It's therefore also not possible anymore to register different routes for
+      queries and mutations within a schema. Each schema gets only one route
+      (except for the default schema, which is registered for the global prefix
+      route as well as under its name).\
+      If necessary, this can be emulated with different schemas and multi-level
+      paths
+  - The following configuration options have been moved/renamed:
+    - `graphql.prefix` => `graphql.route.prefix`
+    - `graphql.controllers` => `graphql.route.controller`\
+      Further, providing a controller action for `query` or `mutation` is not
+      supported anymore.
+    - `graphql.middleware` => `graphql.route.middleware`
+    - `graphql.route_group_attributes` => `graphql.route.group_attributes`
+  - The actual routes defined have changed:
+    - No more separate routes for the HTTP methods
+    - 1 route for each schema + 1 route for the group prefix (default schema)
+    - If GraphiQL is enabled: 1 route graphiql route for each schema + 1 for the
+      graphiql group prefix (default schema)
+    - If provided, the `'method'` argument **must** provide the HTTP method
+      verbs in uppercase like `POST` or `GET`, `post` or `get` will **not** work.
+  - It's now possible to prevent the registering of any routes by making the top
+    level `route` an empty array or null
+  - `\Rebing\GraphQL\GraphQL::routeNameTransformer` has been removed
+  - It's now possible to register schemas with a `-` in their name
+  - Routes are now properly cacheable
+
+- Remove the `\Rebing\GraphQL\GraphQLController::$app`  property [\#755 / mfn](https://github.com/rebing/graphql-laravel/pull/755)\
+  Injecting the application container early is incompatible when running within
+  an application server like laravel/octane, as it's not guaranteed that the
+  container received contains all the bindings. If you relied on this property
+  when extending the classes, invoke the container directly via
+  `Container::getInstance()`.
+  
+- Remove deprecated `\Rebing\GraphQL\Support\Type::$inputObject` and `\Rebing\GraphQL\Support\Type::$enumObject` properties [\#752 / mfn](https://github.com/rebing/graphql-laravel/pull/752)\
+  Instead in your code, extend `\Rebing\GraphQL\Support\InputType` and `\Rebing\GraphQL\Support\EnumType` directly 
+  
+- Support for Lumen has been removed
+  
+- Integrate laragraph/utils RequestParser [\#739 / mfn](https://github.com/rebing/graphql-laravel/pull/739)\
+  The parsing of GraphQL requests is now more strict:
+  - if you send a `GET` request, the GraphQL query has to be in the query parameters
+  - if you send a `POST` request, the GraphQL query needs to be in the body\
+    Mixing of either isn't possible anymore
+  - batched queries will only work with `POST` requests
+    This is due to `RequestParser` using `\GraphQL\Server\Helper::parseRequestParams` which includes this check
+  Further:  
+  - Drop support for configuration the name of the variable for the variables (`params_key`)
+  - `GraphQLUploadMiddleware` has been removed (`RequestParser` includes this functionality)
+  - Empty GraphQL queries now return a proper validated GraphQL error
+      
+- In `\Rebing\GraphQL\GraphQL`, renamed remaining instances of `$params` to `$variables`    
+  After switching to `RequestParser`, the support for changing the variable name
+  what was supposed to `params_key` has gone and thus the name isn't fitting anymore.
+  Also, the default value for `$variables` has been changed to `null` to better
+  fit the how `OperationParams` works:
+  - old: `public function query(string $query, ?array $params = [], array $opts = []): array`
+    new: `public function query(string $query, ?array $variables = null, array $opts = []): array`
+  - old: `public function queryAndReturnResult(string $query, ?array $params = [], array $opts = []): ExecutionResult`
+    new: `public function queryAndReturnResult(string $query, ?array $variables = null, array $opts = []): ExecutionResult`
+
+  - `\Rebing\GraphQL\Support\ResolveInfoFieldsAndArguments` has been removed
+  - `$getSelectFields` closure no longer takes a depth parameter
+
+- The `$args` argument, of the `handle` method of the execution middlewares requires `array` as type.  
+
+### Added
+- Command to make an execution middleware [\#772 / mfn](https://github.com/rebing/graphql-laravel/pull/772)
+- Command to make a schema configuration [\#830 / matsn0w](https://github.com/rebing/graphql-laravel/pull/830)
+- The primary execution of the GraphQL request is now piped through middlewares [\#762 / crissi and mfn](https://github.com/rebing/graphql-laravel/pull/762)\
+  This allows greater flexibility for enabling/disabling certain functionality
+  as well as bringing in new features without having to open up the library.
+- Primarily register \Rebing\GraphQL\GraphQL as service and keep `'graphql'` as alias [\#768 / mfn](https://github.com/rebing/graphql-laravel/pull/768)
+- Automatic Persisted Queries (APQ) now cache the parsed query [\#740 / mfn](https://github.com/rebing/graphql-laravel/pull/740)\
+  This avoids having to re-parse the same queries over and over again.
+- Add ability to detect unused GraphQL variables [\#660 / mfn](https://github.com/rebing/graphql-laravel/pull/660)
+- Laravel's `ValidationException` is now formatted the same way as a `ValidationError` [\#748 / mfn](https://github.com/rebing/graphql-laravel/pull/748)
+- A few missing typehints (mostly array related) [\#849 / mfn](https://github.com/rebing/graphql-laravel/pull/849)
+
+### Changed
+- Internally webonyx query plan feature is now used for retrieving information about a query [\#793 / crissi](https://github.com/rebing/graphql-laravel/pull/793))
+- Rewrite and simplify how schemas are handled [\#779 / mfn](https://github.com/rebing/graphql-laravel/pull/779)
+- Internally stop using the global `config()` function and preferable use the repository or the Facade otherwise [\#774 / mfn](https://github.com/rebing/graphql-laravel/pull/774)
+- Don't silence broken schemas when normalizing them for generating routes [\#766 / mfn](https://github.com/rebing/graphql-laravel/pull/766)
+- Lazy loading types has been enabled by default [\#758 / mfn](https://github.com/rebing/graphql-laravel/pull/758)
+- Make it easier to extend select fields [\#799 / crissi](https://github.com/rebing/graphql-laravel/pull/799)
+- The `$args` argument, of the `handle` method of the execution middlewares requires `array` as type [\#843 / sforward](https://github.com/rebing/graphql-laravel/pull/843)
+- Embrace thecodingmachine/safe and use thecodingmachine/phpstan-safe-rule to enforce it [\#851 / mfn](https://github.com/rebing/graphql-laravel/pull/851)
+- Don't require a return value for the query option of fields [\#856 / sforward](https://github.com/rebing/graphql-laravel/pull/856)
+
+### Fixed
+- Fix `TypeNotFound` when an interface defined after another type where it is used [\#828 / kasian-sergeev](https://github.com/rebing/graphql-laravel/pull/828)
+
+### Removed
+- The method `\Rebing\GraphQL\GraphQLServiceProvider::provides` was removed [\#769 / mfn](https://github.com/rebing/graphql-laravel/pull/769)\
+  It's only relevant for deferred providers which ours however isn't (and can't
+  be made into with the current Laravel architecture).
+
+2021-04-10, 7.2.0
+-----------------
+### Added
+- Allow disabling batched requests [\#738 / mfn](https://github.com/rebing/graphql-laravel/pull/738)
+
+2021-04-08, 7.1.0
+-----------------
+### Added
+- Basic Automatic Persisted Queries (APQ) support [\#701 / illambo](https://github.com/rebing/graphql-laravel/pull/701)
+
+2021-04-03, 7.0.1
+-----------------
+### Added
+- Support Laravels simple pagination [\#715 / lamtranb](https://github.com/rebing/graphql-laravel/pull/715)
+
+2021-04-03, 7.0.0
+-----------------
+## Breaking changes
+- Signature of `\Rebing\GraphQL\Support\Privacy::validate` changed, now it accepts both query/mutation arguments and the query/mutation context.
+  Update your existing privacy policies this way:
+  ```diff
+  -public function validate(array $queryArgs): bool
+  +public function validate(array $queryArgs, $queryContext = null): bool
+  ```
+
+### Added
+- Ability to pass query/mutation context to the field privacy handler (both closure and class) [\#727 / torunar](https://github.com/rebing/graphql-laravel/pull/727)
 
 2021-04-03, 6.5.0
 -----------------
@@ -49,7 +248,7 @@ Same as 6.1.0-rc1!
   Be sure to read up on breaking changes in graphql-php => https://github.com/webonyx/graphql-php/releases/tag/v14.0.0
 - Remove support for Laravel < 6.0 [\#651 / mfn](https://github.com/rebing/graphql-laravel/pull/651)
   This also bumps the minimum required version to PHP 7.2
-  
+
 ### Added
 - Support for Laravel 8 [\#672 / mfn](https://github.com/rebing/graphql-laravel/pull/672)
 

@@ -28,11 +28,6 @@ class TermQueryBuilder extends Builder
         return parent::where($column, $operator, $value, $boolean);
     }
 
-    public function orWhere($column, $operator = null, $value = null)
-    {
-        return $this->where($column, $operator, $value, 'or');
-    }
-
     public function whereIn($column, $values, $boolean = 'and')
     {
         if (in_array($column, ['taxonomy', 'taxonomies'])) {
@@ -50,14 +45,14 @@ class TermQueryBuilder extends Builder
         return parent::whereIn($column, $values, $boolean);
     }
 
-    public function orWhereIn($column, $values)
-    {
-        return $this->whereIn($column, $values, 'or');
-    }
-
     protected function collect($items = [])
     {
         return TermCollection::make($items);
+    }
+
+    protected function getItems($keys)
+    {
+        return Facades\Term::applySubstitutions(parent::getItems($keys));
     }
 
     protected function getFilteredKeys()
@@ -167,5 +162,22 @@ class TermQueryBuilder extends Builder
                     return $taxonomy.'::'.$item['slug'];
                 });
         })->all());
+    }
+
+    protected function getWhereColumnKeyValuesByIndex($column)
+    {
+        $taxonomies = empty($this->taxonomies)
+            ? Facades\Taxonomy::handles()
+            : $this->taxonomies;
+
+        if ($this->collections) {
+            $this->filterUsagesWithinCollections($taxonomies);
+        }
+
+        $items = collect($taxonomies)->flatMap(function ($taxonomy) use ($column) {
+            return $this->getWhereColumnKeysFromStore($taxonomy, ['column' => $column]);
+        });
+
+        return $items;
     }
 }

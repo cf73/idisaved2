@@ -4,69 +4,166 @@ namespace Archetype;
 
 use Archetype\Drivers\InputInterface;
 use Archetype\Drivers\OutputInterface;
-use Archetype\Traits\DelegatesAPICalls;
-use Archetype\Traits\HasDirectiveDefaults;
+use Archetype\Endpoints\PHP\AstQuery;
+use Archetype\Endpoints\PHP\ClassConstant;
+use Archetype\Endpoints\PHP\ClassName;
+use Archetype\Endpoints\PHP\Extends_;
+use Archetype\Endpoints\PHP\Implements_;
+use Archetype\Endpoints\Maker;
+use Archetype\Endpoints\PHP\MethodNames;
+use Archetype\Endpoints\PHP\Namespace_;
+use Archetype\Endpoints\PHP\Property;
+use Archetype\Endpoints\PHP\ReflectionProxy;
+use Archetype\Endpoints\PHP\Use_;
+use Archetype\Endpoints\PHP\UseTrait;
+use Archetype\Support\AST\ASTQueryBuilder;
+use Archetype\Support\Types;
+use Archetype\Traits\HasDirectives;
 use Archetype\Traits\HasDirectiveHandlers;
 use Archetype\Traits\HasIO;
+use Archetype\Traits\HasSyntacticSweeteners;
 
 class PHPFile
 {
-    use HasIO;
-    use DelegatesAPICalls;
-    use HasDirectiveDefaults;
-    use HasDirectiveHandlers;
+	use HasIO;
+	use HasDirectives;
+	use HasDirectiveHandlers;
+	use HasSyntacticSweeteners;
 
-    protected $input;
+	public InputInterface $input;
 
-    protected $output;
+	public OutputInterface $output;
 
-    protected $contents;
+	protected string $contents;
 
-    protected $fileQueryBuilder = Endpoints\PHP\PHPFileQueryBuilder::class;
+	protected string $fileQueryBuilder = Endpoints\PHP\PHPFileQueryBuilder::class;
 
-    protected $ast;
+	protected Maker $maker;
 
-    protected $initialModificationHash;
+	public string $astQueryBuilder = ASTQueryBuilder::class;
 
-    protected $originalAst;
+	protected $ast;
 
-    protected $tokens;
+	protected string $initialModificationHash;
 
-    protected $lexer;
+	protected $originalAst;
 
-    protected $directives = [];
+	protected $tokens;
 
-    protected const endpointProviders = [
-        // Utilities
-        Endpoints\SyntacticSweetener::class,
-        Endpoints\PHP\AstQuery::class,
-        Endpoints\PHP\ReflectionProxy::class,
+	protected $lexer;
 
-        // Resources
-        Endpoints\PHP\Maker::class,
-        Endpoints\PHP\Property::class,
-        Endpoints\PHP\ClassConstant::class,
-        Endpoints\PHP\MethodNames::class,
-        Endpoints\PHP\Namespace_::class,
-        Endpoints\PHP\Use_::class,
-        Endpoints\PHP\ClassName::class,
-        Endpoints\PHP\Extends_::class,
-        Endpoints\PHP\Implements_::class,
-        Endpoints\PHP\TraitUse::class,
-    ];
+	protected $directives = [];
 
-    public function __construct(
-        string $input = \Archetype\Drivers\FileInput::class,
-        string $output = \Archetype\Drivers\FileOutput::class
-    ) {
-        $this->input = $input;
-        $this->output = $output;
-    }
+	public function __construct(
+		InputInterface $input,
+		OutputInterface $output,
+		Maker $maker
+	) {
+		$this->input = $input;
+		$this->output = $output;
+		$this->maker = $maker;
+	}
 
-    public function endpointProviders()
-    {
-        return collect(self::endpointProviders)->push(
-            $this->fileQueryBuilder
-        );
-    }
+	public function query()
+	{
+		return new $this->fileQueryBuilder($this);
+	}
+
+	public function all(...$args)
+	{
+		return $this->query()->all(...$args);
+	}
+
+	public function in(...$args)
+	{
+		return $this->query()->in(...$args);
+	}
+
+	public function where(...$args)
+	{
+		return $this->query()->where(...$args);
+	}
+
+	public function astQuery()
+	{
+		$handler = new AstQuery($this);
+		return $handler->astQuery();
+	}
+
+	public function getReflection()
+	{
+		$handler = new ReflectionProxy($this);
+		return $handler->getReflection();
+	}
+
+	public function make()
+	{
+		return $this->maker->withFile($this);
+	}
+
+	public function property($key, $value = Types::NO_VALUE)
+	{
+		$handler = new Property($this);
+		return $handler->property($key, $value);
+	}
+
+	public function setProperty($key, $value = Types::NO_VALUE)
+	{
+		$handler = new Property($this);
+		return $handler->setProperty($key, $value);
+	}
+
+	public function use($value = null)
+	{
+		$handler = new Use_($this);
+		return $handler->use($value);
+	}
+
+	public function useTrait($value = null)
+	{
+		$handler = new UseTrait($this);
+		return $handler->useTrait($value);
+	}
+
+	public function namespace(string $value = null)
+	{
+		$handler = new Namespace_($this);
+		return $handler->namespace($value);
+	}
+
+	public function methodNames()
+	{
+		$handler = new MethodNames($this);
+		return $handler->methodNames();
+	}
+
+	public function implements($name = null)
+	{
+		$handler = new Implements_($this);
+		return $handler->implements($name);
+	}
+
+	public function extends($name = null)
+	{
+		$handler = new Extends_($this);
+		return $handler->extends($name);
+	}
+
+	public function className($name = null)
+	{
+		$handler = new ClassName($this);
+		return $handler->className($name);
+	}
+
+	public function classConstant($key, $value = Types::NO_VALUE)
+	{
+		$handler = new ClassConstant($this);
+		return $handler->classConstant($key, $value);
+	}
+
+	public function setClassConstant($key, $value = Types::NO_VALUE)
+	{
+		$handler = new ClassConstant($this);
+		return $handler->setClassConstant($key, $value);
+	}
 }
