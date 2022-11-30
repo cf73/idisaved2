@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+
+{{description}}
+
+{{ collection:student_work courses:is="{last_segment}" }}
+    {{if no_results}}
+      <h1 style="color: red; margin-top:90px;">no student work has been added yet!</h1>
+    {{else}}
+     <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+        <a href="{{url}}">
+          {{partial:project-card}}
+        </a>
+      </div>
+  {{/if}}
+{{ /collection:student_work }}

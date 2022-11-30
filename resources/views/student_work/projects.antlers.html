@@ -1,0 +1,101 @@
+<h4><a href="/didactics">Didactics</a> / {{courses}}
+    <a href="{{url}}">{{title}}</a>
+    {{/courses}}</h4>
+
+
+<h2 class="project-title">
+    {{title}}
+</h2>
+
+<div style="margin-bottom: 60px;">
+    {{if intro_movie}}
+    <video autoplay loop width="100%" src="{{intro_movie}}"></video>
+    {{/if}}
+
+    <div class="splide">
+        <div class="splide__track">
+              <div class="splide__list">
+                {{thumbnail_slides}}                            
+                    <div class="splide__slide slide" style="background-image: url('{{url}}'); height: 50vh;"></div>
+                {{/thumbnail_slides}}
+              </div>
+        </div>
+    </div>
+</div>
+
+{{main_content}}
+
+    {{ if type == "text" }}
+
+        <div class="text" style="max-width: 833px; margin: 0 auto;">
+            {{ text }}
+        </div>
+
+    {{ elseif type == "quote" }}
+
+        <div class="blockquote">
+            <blockquote>{{ quote }}</blockquote>
+            <p class="attribution">— {{ attribution }}</p>
+        </div>
+
+    {{ elseif type == "image" }}
+
+        <figure style="margin: 60px 0;">
+            <img src="{{ photo }}" width="100%" alt="{{ caption }}" />
+            <figcaption>{{ caption }}</figcaption>
+        </figure>
+
+    {{ /if }}
+
+{{/main_content}}
+
+<div class="drawer">
+    <a href="/practics">Didactics</a>
+    <h3>{{disciplines:title}}</h3>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; overflow-x: auto; flex-wrap: nowrap;">
+        {{ collection:student_work courses:is="{page:courses}" }}
+            <a href="{{url}}">
+                <div class="work">
+                    <div class="splide">
+                        <div class="splide__track">
+                              <div class="splide__list">
+                                {{thumbnail_slides}}
+                                    <div class="splide__slide slide" style="background-image: url('{{url}}');"></div>
+                                {{/thumbnail_slides}}
+                              </div>
+                        </div>
+                    </div>
+        
+                    <p>{{title}}</p>
+                    {{if last_segment === "didactics"}}
+                    <div class="pill">{{courses:title}}</div>
+                    {{elseif last_segment === "poetics"}}
+                    <div class="pill">{{explorations:title}}</div>
+                    {{elseif last_segment === "practics"}}
+                    <div class="pill">{{disciplines:title}}</div>
+                    {{elseif last_segment === "theoretics"}}
+                    <div class="pill">{{themes:title}}</div>
+                    {{/if}}
+                </div>
+            </a>
+        {{ /collection:student_work }}
+    </div>
+    <p>{{disciplines:description}}</p>
+</div>
+
+<script>
+    var elms = document.getElementsByClassName( 'splide' );
+
+    for ( var i = 0; i < elms.length; i++ ) {
+    new Splide( elms[ i ], {
+        type  : 'fade',
+        rewind: true,
+        autoplay: true,
+        pauseOnHover: false,
+        arrows: false,
+        pagination: false,
+        interval: 2000,
+        speed: 3000,
+    } ).mount();
+    }
+</script>

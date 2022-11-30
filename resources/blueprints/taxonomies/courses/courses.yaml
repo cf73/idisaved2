@@ -11,6 +11,22 @@ sections:
           validate:
             - required
       -
+        handle: thumbnail_slides
+        field:
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 7
+          display: 'Thumbnail Slides'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          container: movies
+      -
         handle: description
         field:
           always_show_set_button: false

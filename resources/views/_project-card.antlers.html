@@ -1,5 +1,30 @@
 <div class="work">
-    <video src="{{intro_movie}}" width="100%" height="auto" autoplay class="project-card-movie"></video>
+    <div class="splide">
+        <div class="splide__track">
+              <div class="splide__list">
+                {{thumbnail_slides}}                            
+                    <div class="splide__slide slide" style="background-image: url('{{url}}');"></div>
+                {{/thumbnail_slides}}
+              </div>
+        </div>
+    </div>
     <h3 style="margin-bottom: 30px;">{{title}}</h3>
     <div class="subsection"><span class="meta">{{disciplines:title}}</span></div>
 </div>
+
+<script>
+    var elms = document.getElementsByClassName( 'splide' );
+
+    for ( var i = 0; i < elms.length; i++ ) {
+    new Splide( elms[ i ], {
+        type  : 'fade',
+        rewind: true,
+        autoplay: true,
+        pauseOnHover: false,
+        arrows: false,
+        pagination: false,
+        interval: 2000,
+        speed: 3000,
+    } ).mount();
+    }
+</script>
