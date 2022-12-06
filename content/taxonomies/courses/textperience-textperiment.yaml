@@ -1,4 +1,4 @@
-title: TexTperience/TexTperiment
+title: 'TexTperience TexTperiment'
 description:
   -
     type: paragraph
@@ -96,6 +96,13 @@ description:
       -
         type: text
         text: 'As a studio course making and visual thinking are emphasized. Topics for inquiry can range from the practical to the poetical to the pure experimental. Course work can supplement other course interests (such as thesis work and degree projects). Not forgetting that letters serve the purpose to make words visible, we consider how the visual form can serve that purpose to help frame, engage, narrate and inspire the depth and breadth of meaning. The focus is on in-depth inquiry and experimentation to liberate & empower our interests.'
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641320377
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1670098755
 blueprint: courses
+thumbnail_slides:
+  - 22textperim01.jpeg
+  - 22textperim02.jpeg
+  - 22textperim03.jpeg
+  - 22textperim05.jpeg
+  - 22textperim06.jpeg
+  - 22textperim07.jpeg
