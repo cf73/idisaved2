@@ -16,5 +16,8 @@ main_content:
     enabled: true
 courses: concrete-books
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1670336074
+updated_at: 1672688630
+thumbnail_slides:
+  - _dsc4942_1-1.jpg
+  - _dsc4668_1-1.jpg
 ---
