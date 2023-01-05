@@ -40,16 +40,22 @@
 
     {{ elseif type == "image" }}
 
-        <figure style="margin: 60px 0;">
-            <img src="{{ photo }}" width="100%" alt="{{ caption }}" />
-            <figcaption>{{ caption }}</figcaption>
-        </figure>
+    <div class="row">
+        {{photo}}
+        <div class="col">
+            <figure style="margin: 60px 0;">
+                <img src="{{ url }}" width="100%" alt="{{ caption }}" />
+                <figcaption>{{ caption }}</figcaption>
+            </figure>
+        </div>
+        {{/photo}}
+    </div>
 
     {{ /if }}
 
 {{/main_content}}
 
-<div class="drawer">
+<!-- <div class="drawer">
     <a href="/practics">Didactics</a>
     <h3>{{disciplines:title}}</h3>
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; overflow-x: auto; flex-wrap: nowrap;">
@@ -81,7 +87,7 @@
         {{ /collection:student_work }}
     </div>
     <p>{{disciplines:description}}</p>
-</div>
+</div> -->
 
 <script>
     var elms = document.getElementsByClassName( 'splide' );
