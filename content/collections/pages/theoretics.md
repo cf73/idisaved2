@@ -1,6 +1,7 @@
 ---
 id: dbd1153f-3f19-41bb-b311-8d6df1059f80
 blueprint: section
+template: theoreticstemplate
 title: Theoretics
 section_summary:
   -
