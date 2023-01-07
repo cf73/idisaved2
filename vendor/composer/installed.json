@@ -180,17 +180,17 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.255.7",
-            "version_normalized": "3.255.7.0",
+            "version": "3.255.11",
+            "version_normalized": "3.255.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "50585058d65fd676ba689783c437d341b1198554"
+                "reference": "e851af4d7d2d95b131db344430384ae7cc04758e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/50585058d65fd676ba689783c437d341b1198554",
-                "reference": "50585058d65fd676ba689783c437d341b1198554",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e851af4d7d2d95b131db344430384ae7cc04758e",
+                "reference": "e851af4d7d2d95b131db344430384ae7cc04758e",
                 "shasum": ""
             },
             "require": {
@@ -230,7 +230,7 @@
                 "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
                 "ext-sockets": "To use client-side monitoring"
             },
-            "time": "2022-12-30T19:22:02+00:00",
+            "time": "2023-01-06T19:22:07+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -271,7 +271,7 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.255.7"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.255.11"
             },
             "install-path": "../aws/aws-sdk-php"
         },
@@ -4292,17 +4292,17 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.64.1",
-            "version_normalized": "2.64.1.0",
+            "version": "2.65.0",
+            "version_normalized": "2.65.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "f2e59963f4c4f4fdfb9fcfd752e8d2e2b79a4e2c"
+                "reference": "09acf64155c16dc6f580f36569ae89344e9734a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f2e59963f4c4f4fdfb9fcfd752e8d2e2b79a4e2c",
-                "reference": "f2e59963f4c4f4fdfb9fcfd752e8d2e2b79a4e2c",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/09acf64155c16dc6f580f36569ae89344e9734a3",
+                "reference": "09acf64155c16dc6f580f36569ae89344e9734a3",
                 "shasum": ""
             },
             "require": {
@@ -4325,7 +4325,7 @@
                 "phpunit/phpunit": "^7.5.20 || ^8.5.26 || ^9.5.20",
                 "squizlabs/php_codesniffer": "^3.4"
             },
-            "time": "2023-01-01T23:17:36+00:00",
+            "time": "2023-01-06T15:55:01+00:00",
             "bin": [
                 "bin/carbon"
             ],
@@ -6220,17 +6220,17 @@
         },
         {
             "name": "rebing/graphql-laravel",
-            "version": "8.3.0",
-            "version_normalized": "8.3.0.0",
+            "version": "8.4.0",
+            "version_normalized": "8.4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rebing/graphql-laravel.git",
-                "reference": "11f470c2c4f070deb0c613d8ad117133281ee1f6"
+                "reference": "9b2f2c7597212a2ba805baab70a678597e685f20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rebing/graphql-laravel/zipball/11f470c2c4f070deb0c613d8ad117133281ee1f6",
-                "reference": "11f470c2c4f070deb0c613d8ad117133281ee1f6",
+                "url": "https://api.github.com/repos/rebing/graphql-laravel/zipball/9b2f2c7597212a2ba805baab70a678597e685f20",
+                "reference": "9b2f2c7597212a2ba805baab70a678597e685f20",
                 "shasum": ""
             },
             "require": {
@@ -6244,21 +6244,21 @@
             },
             "require-dev": {
                 "ext-pdo_sqlite": "*",
-                "friendsofphp/php-cs-fixer": "^3",
+                "friendsofphp/php-cs-fixer": "3.11.0",
                 "laravel/legacy-factories": "^1.0",
                 "mfn/php-cs-fixer-config": "^2",
                 "mockery/mockery": "^1.2",
-                "nunomaduro/larastan": "^1",
+                "nunomaduro/larastan": "1.0.3",
                 "orchestra/testbench": "4.0.*|5.0.*|^6.0|^7.0",
-                "phpstan/phpstan": "^1",
+                "phpstan/phpstan": "1.8.4",
                 "phpunit/phpunit": "~7.0|~8.0|^9",
                 "thecodingmachine/phpstan-safe-rule": "^1"
             },
-            "time": "2022-06-11T20:38:16+00:00",
+            "time": "2023-01-06T10:14:47+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "8.3-dev"
+                    "dev-master": "8.4-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -6317,7 +6317,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rebing/graphql-laravel/issues",
-                "source": "https://github.com/rebing/graphql-laravel/tree/8.3.0"
+                "source": "https://github.com/rebing/graphql-laravel/tree/8.4.0"
             },
             "funding": [
                 {
@@ -7588,17 +7588,17 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.3.63",
-            "version_normalized": "3.3.63.0",
+            "version": "v3.3.64",
+            "version_normalized": "3.3.64.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "a5e86ad754bb5a965fd0735f715309d169f11491"
+                "reference": "969e4932d854f9cab79739ce0c0e5d76b95fd4b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/a5e86ad754bb5a965fd0735f715309d169f11491",
-                "reference": "a5e86ad754bb5a965fd0735f715309d169f11491",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/969e4932d854f9cab79739ce0c0e5d76b95fd4b6",
+                "reference": "969e4932d854f9cab79739ce0c0e5d76b95fd4b6",
                 "shasum": ""
             },
             "require": {
@@ -7634,7 +7634,7 @@
                 "mockery/mockery": "^1.2.3",
                 "orchestra/testbench": "^6.18 || ^7.0"
             },
-            "time": "2022-12-21T18:20:27+00:00",
+            "time": "2023-01-06T21:07:04+00:00",
             "type": "library",
             "extra": {
                 "download-dist": [
@@ -7679,7 +7679,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.3.63"
+                "source": "https://github.com/statamic/cms/tree/v3.3.64"
             },
             "funding": [
                 {
@@ -10623,17 +10623,17 @@
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
-            "version": "2.2.5",
-            "version_normalized": "2.2.5.0",
+            "version": "2.2.6",
+            "version_normalized": "2.2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
-                "reference": "4348a3a06651827a27d989ad1d13efec6bb49b19"
+                "reference": "c42125b83a4fa63b187fdf29f9c93cb7733da30c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/4348a3a06651827a27d989ad1d13efec6bb49b19",
-                "reference": "4348a3a06651827a27d989ad1d13efec6bb49b19",
+                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/c42125b83a4fa63b187fdf29f9c93cb7733da30c",
+                "reference": "c42125b83a4fa63b187fdf29f9c93cb7733da30c",
                 "shasum": ""
             },
             "require": {
@@ -10645,7 +10645,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0 || ^7.5 || ^8.5.21 || ^9.5.10"
             },
-            "time": "2022-09-12T13:28:28+00:00",
+            "time": "2023-01-03T09:29:04+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -10673,7 +10673,7 @@
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "support": {
                 "issues": "https://github.com/tijsverkoyen/CssToInlineStyles/issues",
-                "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.5"
+                "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.6"
             },
             "install-path": "../tijsverkoyen/css-to-inline-styles"
         },
@@ -11016,17 +11016,17 @@
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v14.11.8",
-            "version_normalized": "14.11.8.0",
+            "version": "v14.11.9",
+            "version_normalized": "14.11.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "04a48693acd785330eefd3b0e4fa67df8dfee7c3"
+                "reference": "ff91c9f3cf241db702e30b2c42bcc0920e70ac70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/04a48693acd785330eefd3b0e4fa67df8dfee7c3",
-                "reference": "04a48693acd785330eefd3b0e4fa67df8dfee7c3",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/ff91c9f3cf241db702e30b2c42bcc0920e70ac70",
+                "reference": "ff91c9f3cf241db702e30b2c42bcc0920e70ac70",
                 "shasum": ""
             },
             "require": {
@@ -11053,7 +11053,7 @@
                 "psr/http-message": "To use standard GraphQL server",
                 "react/promise": "To leverage async resolving on React PHP platform"
             },
-            "time": "2022-09-21T15:35:03+00:00",
+            "time": "2023-01-06T12:12:50+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -11073,7 +11073,7 @@
             ],
             "support": {
                 "issues": "https://github.com/webonyx/graphql-php/issues",
-                "source": "https://github.com/webonyx/graphql-php/tree/v14.11.8"
+                "source": "https://github.com/webonyx/graphql-php/tree/v14.11.9"
             },
             "funding": [
                 {

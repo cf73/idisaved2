@@ -1,6 +1,19 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
+            <ul>
+                {{ nav :from="uri" }}
+                    {{ unless no_results }}
+                        <li>
+                            <a href="{{ url }}">{{ title }}</a>
+                        </li>
+                    {{ /unless }}
+                {{ /nav }}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
             <h1>{{title}}</h1>
             <p>{{section_summary}}</p>
             {{taxonomy:themes}}

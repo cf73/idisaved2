@@ -8,6 +8,10 @@ body {
     padding: 12px 130px;
     background-color: red;
     height: 70px;
+    transform: rotate(-90deg);
+    position: fixed;
+    left: 0;
+    top: 0;
     z-index: 999;
     & a {
         color: $cream;
