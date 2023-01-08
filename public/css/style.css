@@ -1,0 +1,154 @@
+body {
+  font-family: "Gill Sans MT W03 Book";
+  color: #5d5d5d;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #1f223e;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Gill Sans MT W03 Heavy";
+}
+
+.meta {
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: 0.06em;
+  font-family: "Gill Sans MT W00 Medium";
+}
+
+.meta::before {
+  content: "";
+  display: block;
+  width: 45px;
+  padding-top: 2px;
+  border-top: solid 2px rgb(216, 150, 29);
+}
+
+.blockquote {
+  border-left: solid #5d5d5d thin;
+}
+
+blockquote {
+  font-family: "Gill Sans MT W00 Medium";
+  font-size: 36px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+
+.attribution {
+  font-size: 24px;
+  margin-left: 40px;
+}
+
+body {
+  background-color: #ebeef1;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 130px;
+  background-color: red;
+  height: 70px;
+  transform: rotate(-90deg);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.navigation a {
+  color: #c5c2ca;
+  transition: all 0.75s;
+  margin: 0;
+  padding: 30px;
+}
+
+.navigation a:hover {
+  background-color: #9195b4;
+  transition: all 0.75s;
+  text-decoration: none;
+}
+
+.main-content {
+  width: auto;
+  padding: 95px 30px;
+}
+
+.on {
+  text-decoration: underline;
+}
+
+.work {
+  width: 350px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 15px 51px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 15px 51px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 15px 51px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.work:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s;
+  box-shadow: 0 15px 51px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 15px 51px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 15px 51px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-movie {
+  border-radius: 3px;
+}
+
+.pill {
+  border: solid 1px white;
+  border-radius: 50%;
+  padding: 5px 15px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.subslide {
+  height: 70vh;
+}
+
+.project-title {
+  z-index: 999;
+  padding-bottom: 12px;
+  border-bottom: solid 1px rgb(23, 16, 90);
+}
+
+.drawer {
+  position: fixed;
+  bottom: 20px;
+  left: 70px;
+  right: 70px;
+  overflow-y: auto;
+  border-radius: 30px;
+  height: 300px;
+  background-color: rgba(252, 251, 246, 0.952);
+  padding: 30px;
+}
+
