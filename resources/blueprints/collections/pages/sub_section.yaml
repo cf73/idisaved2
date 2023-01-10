@@ -10,15 +10,6 @@ sections:
           required: true
           validate:
             - required
-      -
-        handle: summary
-        field:
-          character_limit: '333'
-          antlers: false
-          display: Summary
-          type: textarea
-          icon: textarea
-          listable: hidden
   sidebar:
     display: Sidebar
     fields:
@@ -27,9 +18,6 @@ sections:
         field:
           type: slug
           localizable: true
-          validate:
-            - required
-            - 'unique_entry_value:{collection},{id},{site}'
       -
         handle: parent
         field:

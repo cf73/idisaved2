@@ -1,5 +1,4 @@
-hide: true
-title: Section
+title: Index
 sections:
   main:
     display: Main
@@ -12,9 +11,11 @@ sections:
           validate:
             - required
       -
-        handle: section_summary
+        handle: summary
         field:
+          collapse: false
           always_show_set_button: false
+          previews: true
           buttons:
             - bold
             - italic
@@ -23,6 +24,7 @@ sections:
             - removeformat
             - quote
             - anchor
+            - image
           save_html: false
           toolbar_mode: fixed
           link_noopener: false
@@ -34,11 +36,16 @@ sections:
           enable_input_rules: true
           enable_paste_rules: true
           antlers: false
-          display: 'Section Summary'
+          remove_empty_nodes: false
+          display: Summary
           type: bard
           icon: bard
           listable: hidden
           instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - required
   sidebar:
     display: Sidebar
     fields:
@@ -47,9 +54,6 @@ sections:
         field:
           type: slug
           localizable: true
-          validate:
-            - required
-            - 'unique_entry_value:{collection},{id},{site}'
       -
         handle: parent
         field:
