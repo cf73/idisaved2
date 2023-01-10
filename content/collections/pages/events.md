@@ -13,6 +13,13 @@ summary:
         type: text
         marks:
           -
+            type: link
+            attrs:
+              href: 'statamic://entry::f92fbaa8-5913-498a-918a-9c7a54622ea5'
+              rel: null
+              target: null
+              title: null
+          -
             type: bold
           -
             type: italic
@@ -31,5 +38,5 @@ summary:
         text: ') fragments or parts from larger wholes, the approach of “right action” to determine what was to be extracted (according to some systemic principle), and the objective extractions themselves (versus our usual subjective tendency to achieve projected results).'
 parent: bc97c317-41c8-4472-83ce-73b65e3355f6
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673323726
+updated_at: 1673332570
 ---
