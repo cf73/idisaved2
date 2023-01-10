@@ -178,3 +178,13 @@ body {
   padding-bottom: 40vh;
 }
 
+.dimmed {
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+
+.dimmed:hover {
+  opacity: 1;
+  transition: all 0.5s;
+}
+

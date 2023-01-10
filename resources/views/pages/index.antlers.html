@@ -6,7 +6,7 @@
     {{ nav :from="parent:uri" }}
         <div>
             <a href="{{ url }}"{{ if is_current || is_parent }} style="display: none;" {{/if }}>
-                <h3 style="opacity: .4;">{{ title }}</h3>
+                <h3 class="dimmed">{{ title }}</h3>
             </a>
             {{ if is_current || is_parent }}
             <ul>

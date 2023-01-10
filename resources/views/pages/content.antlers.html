@@ -46,6 +46,19 @@
         </h2>
     
         <div style="margin-bottom: 60px;">
+
+            <!-- {{if thumbnail_slides}}
+            <div class="splide">
+                <div class="splide__track">
+                      <div class="splide__list">
+                        {{thumbnail_slides}}                            
+                            <div class="splide__slide slide" style="background-image: url('{{url}}');"></div>
+                        {{/thumbnail_slides}}
+                      </div>
+                </div>
+            </div>
+            {{/if}} -->
+
             {{if intro_movie}}
             <video autoplay loop width="100%" src="{{intro_movie}}"></video>
             {{/if}}
