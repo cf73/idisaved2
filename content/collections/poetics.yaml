@@ -4,7 +4,7 @@ layout: layout
 taxonomies:
   - explorations
 revisions: false
-route: '/poetics/{explorations}/{slug}'
+route: '/poetics//{slug}'
 sort_dir: asc
 date_behavior:
   past: public

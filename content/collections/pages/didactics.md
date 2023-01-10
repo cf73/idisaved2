@@ -1,7 +1,6 @@
 ---
 id: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
 blueprint: section
-template: didacticstemplate
 title: Didactics
 section_summary:
   -
