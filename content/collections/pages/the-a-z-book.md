@@ -4,10 +4,11 @@ blueprint: content
 title: 'The A-Z Book'
 parent: fb6f64d1-d0ba-4e5a-8f12-43c59625ce42
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673325374
+updated_at: 1673330016
 intro_movie: 21AZBk_SHORT-0.25.m4v
 main_content:
   -
+    id: ovdg4n9p
     text:
       -
         type: paragraph
@@ -19,13 +20,20 @@ main_content:
             type: text
             marks:
               -
+                type: link
+                attrs:
+                  href: 'statamic://entry::527c2a88-2aff-4b2e-b473-e622795b84d3'
+                  rel: null
+                  target: null
+                  title: null
+              -
                 type: bold
               -
                 type: italic
             text: Concretism
           -
             type: text
-            text: "\_using the Latin alphabet as content for the experience of the bookwork. Letters, partly printed or constituted in relations to other parts, reveal themselves in the concrete experience from turning pages and page fragments."
+            text: ' using the Latin alphabet as content for the experience of the bookwork. Letters, partly printed or constituted in relations to other parts, reveal themselves in the concrete experience from turning pages and page fragments.'
     type: text
     enabled: true
 thumbnail_slides:

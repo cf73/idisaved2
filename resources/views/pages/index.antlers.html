@@ -1,7 +1,7 @@
 <div class="left-col">
-    <a href="{{parent:url}}">
+    <!-- <a href="{{parent:url}}">
         <p class="meta">{{parent:title}}</p>
-    </a>    
+    </a>     -->
 
     {{ nav :from="parent:uri" }}
         <div>
@@ -19,7 +19,7 @@
 <div class="right-col">
     {{ nav :from="uri" }}
         {{ unless no_results }}
-                <a href="{{ url }}"><h1 class="title">{{ title }}</h1></a>
+                <a href="{{ url }}"><h1>{{ title }}</h1></a>
         {{ /unless }}
     {{ /nav }}
 </div>

@@ -1,11 +1,25 @@
 <div style="background-color: green; position: relative;">
     <div class="left-col">
-        <a href="{{parent:parent:url}}">
+        <!-- <a href="{{parent:parent:url}}">
             <p class="meta">{{parent:parent:title}}</p>
-        </a>
-        <h1>{{parent:title}}</h1>
-        <p>{{parent:summary}}</p>
-        {{ nav :from="parent:uri" }}
+        </a> -->
+
+        {{ nav :from="parent:parent:uri" }}
+            <div>
+                <a href="{{ url }}"{{ if is_current || is_parent }} style="display: none;" {{/if }}>
+                    <h3>{{ title }}</h3>
+                </a>
+                {{ if is_current || is_parent }}
+                <h1 style="margin-bottom: 0;">{{title}}</h1>
+                <p>{{summary}}</p>
+                {{ /if }}
+            </div>
+        {{ /nav }}
+    </div>
+
+    <div class="right-col">
+        <div style="position: fixed; bottom: 0; width: 100%; background-color: black;">
+            {{ nav :from="parent:uri" }}
             <div style="display: flex; align-items: center;">
                 <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #515261;" {{/if }}>
                     
@@ -16,9 +30,7 @@
                 {{ /if }}
             </div>
         {{ /nav }}
-    </div>
-
-    <div class="right-col">
+        </div>
         <h2 class="project-title">
             {{title}}
         </h2>
