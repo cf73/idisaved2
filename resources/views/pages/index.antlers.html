@@ -17,6 +17,13 @@
 </div>
 
 <div class="right-col">
+
+    {{if intro_movie}}
+    <video autoplay loop width="100%" src="{{intro_movie}}"></video>
+    {{else}}
+    <div style="background-color: grey; height: 30vh; width: 100%; margin-bottom: 120px; text-align: center; color:white;">[intro movie should show here]</div>
+    {{/if}}
+
     {{ nav :from="uri" }}
         {{ unless no_results }}
                 <a href="{{ url }}"><h1>{{ title }}</h1></a>

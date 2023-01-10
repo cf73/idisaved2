@@ -3,7 +3,7 @@ id: bc97c317-41c8-4472-83ce-73b65e3355f6
 blueprint: section
 title: Poetics
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641333964
+updated_at: 1673331603
 section_summary:
   -
     type: paragraph
@@ -14,6 +14,13 @@ section_summary:
       -
         type: text
         marks:
+          -
+            type: link
+            attrs:
+              href: 'statamic://entry::f92fbaa8-5913-498a-918a-9c7a54622ea5'
+              rel: null
+              target: null
+              title: null
           -
             type: bold
           -
@@ -172,6 +179,13 @@ section_summary:
         type: text
         marks:
           -
+            type: link
+            attrs:
+              href: 'statamic://entry::f92fbaa8-5913-498a-918a-9c7a54622ea5'
+              rel: null
+              target: null
+              title: null
+          -
             type: bold
         text: CONCRETISM
       -
@@ -199,6 +213,13 @@ section_summary:
         type: text
         marks:
           -
+            type: link
+            attrs:
+              href: 'statamic://entry::dbd1153f-3f19-41bb-b311-8d6df1059f80'
+              rel: null
+              target: null
+              title: null
+          -
             type: bold
         text: THEORETICS
       -
@@ -207,6 +228,13 @@ section_summary:
       -
         type: text
         marks:
+          -
+            type: link
+            attrs:
+              href: 'statamic://entry::f92fbaa8-5913-498a-918a-9c7a54622ea5'
+              rel: null
+              target: null
+              title: null
           -
             type: bold
         text: Concretism
