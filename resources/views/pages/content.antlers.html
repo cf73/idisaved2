@@ -4,33 +4,43 @@
             <p class="meta">{{parent:parent:title}}</p>
         </a> -->
 
+
+
         {{ nav :from="parent:parent:uri" }}
-            <div>
-                <a href="{{ url }}"{{ if is_current || is_parent }} style="display: none;" {{/if }}>
-                    <h3>{{ title }}</h3>
+        <div>
+            <a href="{{ url }}"{{ if is_current || is_parent }} style="display: none;" {{/if }}>
+                <h3 style="opacity: .4;">{{ title }}</h3>
+            </a>
+            {{ if is_current || is_parent }}
+            <ul>
+                <a href="{{parent:url}}">
+                    <h1>{{title}}</h1>
                 </a>
-                {{ if is_current || is_parent }}
-                <h1 style="margin-bottom: 0;">{{title}}</h1>
-                <p>{{summary}}</p>
-                {{ /if }}
-            </div>
-        {{ /nav }}
+                {{children}}
+                    <h4><a href="{{url}}" {{ if is_current || is_parent }} style="background-color: red;" {{/if }}>{{title}}</a></h4>
+                    <hr>
+                {{/children}}
+                <p style="margin-top: 30px;">{{summary}}</p>
+            </ul>
+            {{ /if }}
+        </div>
+    {{ /nav }}
     </div>
 
     <div class="right-col">
-        <div style="position: fixed; bottom: 0; width: 100%; background-color: black;">
+        <!-- <div style="position: fixed; bottom: 0; width: 100%; background-color: black;">
             {{ nav :from="parent:uri" }}
-            <div style="display: flex; align-items: center;">
-                <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #515261;" {{/if }}>
-                    
-                    {{ title }}
-                </a>
-                {{ if is_current || is_parent }}
-                    
-                {{ /if }}
-            </div>
-        {{ /nav }}
-        </div>
+                <div style="display: flex; align-items: center;">
+                    <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #515261;" {{/if }}>
+                        
+                        {{ title }}
+                    </a>
+                    {{ if is_current || is_parent }}
+                        
+                    {{ /if }}
+                </div>
+            {{ /nav }}
+        </div> -->
         <h2 class="project-title">
             {{title}}
         </h2>

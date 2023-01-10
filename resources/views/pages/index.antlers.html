@@ -6,11 +6,19 @@
     {{ nav :from="parent:uri" }}
         <div>
             <a href="{{ url }}"{{ if is_current || is_parent }} style="display: none;" {{/if }}>
-                <h3>{{ title }}</h3>
+                <h3 style="opacity: .4;">{{ title }}</h3>
             </a>
             {{ if is_current || is_parent }}
-            <h1 style="margin-bottom: 0;">{{title}}</h1>
-            <p>{{summary}}</p>
+            <ul>
+                <a href="{{parent:url}}">
+                    <h1>{{title}}</h1>
+                </a>
+                {{children}}
+                    <h4><a href="{{url}}" {{ if is_current || is_parent }} style="background-color: red;" {{/if }}>{{title}}</a></h4>
+                    <hr>
+                {{/children}}
+                <p style="margin-top: 30px;">{{summary}}</p>
+            </ul>
             {{ /if }}
         </div>
     {{ /nav }}
