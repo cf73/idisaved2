@@ -1,11 +1,28 @@
-<h1>{{title}}</h1>
+<div class="left-col">
+    <h1>{{title}}</h1>
+    <h2>{{summary}}</h2>
 
-<ul>
-    {{ nav :from="uri" }}
-        {{ unless no_results }}
-            <li>
-                <a href="{{ url }}">{{ title }}</a>
-            </li>
-        {{ /unless }}
+    {{ nav :from="parent:uri" }}
+        <div style="display: flex; align-items: center;">
+            <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #515261;" {{/if }}>
+                
+                {{ title }}
+            </a>
+            {{ if is_current || is_parent }}
+                
+            {{ /if }}
+        </div>
     {{ /nav }}
-</ul>
+</div>
+
+<div class="right-col">
+    <ul>
+        {{ nav :from="uri" }}
+            {{ unless no_results }}
+                <li>
+                    <a href="{{ url }}">{{ title }}</a>
+                </li>
+            {{ /unless }}
+        {{ /nav }}
+    </ul>
+</div>
