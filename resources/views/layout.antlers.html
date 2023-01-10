@@ -6,25 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title ?? site:name }}</title>
         <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/idi.css">
+        <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/splide.min.css">
         <script src="https://kit.fontawesome.com/4481495b8f.js" crossorigin="anonymous"></script>
         <script src="/js/splide.min.js"></script>
         <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/e359cc54-0583-408a-9c92-df9fbc98eb86.css"/>
     </head>
     <body>
-            <div class="container-fluid">
                 <!-- <div class="quote" style="margin-bottom: 60px; margin-top: 30px;">
                     {{collection:quotes sort="random" limit="1" }}
                         {{quote}}
                         — {{attribution}}
                     {{/collection:quotes}}
                 </div> -->
-                <h1 style="transform: rotate(-90deg); position:fixed; display: inline-block; top: 20px;">idi</h1>
+                <a href="/" style="z-index: 9999999999; position: relative;">
+                    <h1 style="transform: rotate(-90deg); position:fixed; display: inline-block; top: 20px;">idi</h1>
+                </a>
 
                 <div class="navigation">
                     <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                        {{ nav :from="parent:uri" }}
+                        {{ nav :from="/" }}
                             <div style="display: flex; align-items: center;">
                                 <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #515261;" {{/if }}>
                                     
@@ -37,8 +38,7 @@
                         {{ /nav }}
                     </div>
                 </div>
-                <div class="main-content">{{ template_content }}</div>
-            </div>
+                <div>{{ template_content }}</div>
         <script src="{{ mix src='/js/site.js' }}"></script>
 
         <script src="/js/jquery.min.js"></script>

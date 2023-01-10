@@ -14,6 +14,10 @@ h1 {
   font-family: "Gill Sans MT W03 Heavy";
 }
 
+.title {
+  font-size: 4em;
+}
+
 .meta {
   font-size: 14px;
   text-transform: lowercase;
@@ -47,19 +51,20 @@ blockquote {
 
 body {
   background-color: #ebeef1;
+  padding-left: 100px;
 }
 
 .navigation {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 12px 130px;
-  background-color: red;
-  height: 70px;
+  justify-content: space-between;
+  background-color: #7c7091;
   transform: rotate(-90deg);
+  transform-origin: 0 0;
   position: fixed;
   left: 0;
-  top: 0;
+  top: 100vh;
+  width: 100vh;
   z-index: 999;
 }
 
@@ -150,5 +155,26 @@ body {
   height: 300px;
   background-color: rgba(252, 251, 246, 0.952);
   padding: 30px;
+}
+
+.left-col {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 30%;
+  padding: 120px 60px;
+  margin-left: 70px;
+  height: 100vh;
+  overflow-x: auto;
+}
+
+.right-col {
+  background-color: #e1e1e1;
+  position: absolute;
+  left: calc(30% + 69px);
+  padding: 120px 60px;
+  width: calc(70% - 69px);
+  min-height: 100%;
+  padding-bottom: 40vh;
 }
 

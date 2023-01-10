@@ -1,3 +1,4 @@
+hide: true
 title: Section
 sections:
   main:
@@ -10,6 +11,22 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: intro_movie
+        field:
+          mode: list
+          container: movies
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Intro movie'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
       -
         handle: section_summary
         field:

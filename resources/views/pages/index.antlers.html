@@ -1,0 +1,32 @@
+<div class="left-col">
+    <!-- <a href="{{parent:url}}">
+        <p class="meta">{{parent:title}}</p>
+    </a>     -->
+
+    {{ nav :from="parent:uri" }}
+        <div>
+            <a href="{{ url }}"{{ if is_current || is_parent }} style="display: none;" {{/if }}>
+                <h3>{{ title }}</h3>
+            </a>
+            {{ if is_current || is_parent }}
+            <h1 style="margin-bottom: 0;">{{title}}</h1>
+            <p>{{summary}}</p>
+            {{ /if }}
+        </div>
+    {{ /nav }}
+</div>
+
+<div class="right-col">
+
+    {{if intro_movie}}
+    <video autoplay loop width="100%" src="{{intro_movie}}"></video>
+    {{else}}
+    <div style="background-color: grey; height: 30vh; width: 100%; margin-bottom: 120px; text-align: center; color:white;">[intro movie should show here]</div>
+    {{/if}}
+
+    {{ nav :from="uri" }}
+        {{ unless no_results }}
+                <a href="{{ url }}"><h1>{{ title }}</h1></a>
+        {{ /unless }}
+    {{ /nav }}
+</div>

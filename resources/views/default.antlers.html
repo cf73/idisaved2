@@ -1,13 +1,5 @@
-{{title}}
+<div class="text" style="max-width: 833px; margin: 20vh auto;">
+  <h1>{{title}}</h1>
+  <h2>{{description}}</h2>
+</div>
 
-{{description}}
-
-<ul>
-    {{ nav include_home="true" }}
-      <li>
-        <a href="{{ url }}"{{ if is_current || is_parent }} class="current"{{ /if }}>
-          {{ title }}
-        </a>
-      </li>
-    {{ /nav }}
-  </ul>
