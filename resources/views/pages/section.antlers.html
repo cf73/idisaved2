@@ -1,15 +1,19 @@
 <h1>{{title}}</h1>
 
-<ul>
-    {{ nav :from="uri" }}
-        {{ unless no_results }}
-            <li>
-                <a href="{{ url }}">{{ title }}</a>
-            </li>
-        {{ /unless }}
-    {{ /nav }}
-</ul>
+<div class="right-col">
+    <ul>
+        {{ nav :from="uri" }}
+            {{ unless no_results }}
+                <li>
+                    <a href="{{ url }}">{{ title }}</a>
+                </li>
+            {{ /unless }}
+        {{ /nav }}
+    </ul>
+</div>
 
-<div class="text" style="max-width: 833px; margin: 0 auto;">
-    {{ section_summary }}
+<div class="left-col">
+    <div class="text" style="max-width: 833px; margin: 0 auto;">
+        <h2>{{ section_summary }}</h2>
+    </div>
 </div>

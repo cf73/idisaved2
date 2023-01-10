@@ -1,31 +1,25 @@
 <div class="left-col">
     <a href="{{parent:url}}">
         <p class="meta">{{parent:title}}</p>
-    </a>
-    <h1>{{title}}</h1>
-    <h2>{{summary}}</h2>
+    </a>    
 
     {{ nav :from="parent:uri" }}
-        <div style="display: flex; align-items: center;">
-            <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #515261;" {{/if }}>
-                
-                {{ title }}
+        <div>
+            <a href="{{ url }}"{{ if is_current || is_parent }} style="display: none;" {{/if }}>
+                <h3>{{ title }}</h3>
             </a>
             {{ if is_current || is_parent }}
-                
+            <h1 style="margin-bottom: 0;">{{title}}</h1>
+            <p>{{summary}}</p>
             {{ /if }}
         </div>
     {{ /nav }}
 </div>
 
 <div class="right-col">
-    <ul>
-        {{ nav :from="uri" }}
-            {{ unless no_results }}
-                <li>
-                    <a href="{{ url }}">{{ title }}</a>
-                </li>
-            {{ /unless }}
-        {{ /nav }}
-    </ul>
+    {{ nav :from="uri" }}
+        {{ unless no_results }}
+                <a href="{{ url }}"><h1 class="title">{{ title }}</h1></a>
+        {{ /unless }}
+    {{ /nav }}
 </div>
