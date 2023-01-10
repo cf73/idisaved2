@@ -14,7 +14,14 @@ main_content:
             text: 'Text content here, etc.'
     type: text
     enabled: true
+  -
+    id: lcpvb0yb
+    photo:
+      - _dsc5470_1.jpg
+      - _dsc5380_1.jpg
+    type: image
+    enabled: true
 parent: f92fbaa8-5913-498a-918a-9c7a54622ea5
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673329903
+updated_at: 1673333621
 ---

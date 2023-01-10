@@ -81,7 +81,7 @@ sections:
                     mode: grid
                     restrict: false
                     allow_uploads: true
-                    max_files: 1
+                    max_files: 3
                     display: Image
                     type: assets
                     icon: assets
@@ -89,6 +89,8 @@ sections:
                     instructions_position: above
                     container: assets
                     show_filename: true
+                    visibility: visible
+                    always_save: false
             movie:
               display: Movie
               fields:
@@ -131,6 +133,9 @@ sections:
           icon: replicator
           listable: hidden
           instructions_position: above
+          visibility: visible
+          always_save: false
+          previews: true
   sidebar:
     display: Sidebar
     fields:
