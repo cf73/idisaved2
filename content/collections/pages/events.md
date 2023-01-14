@@ -35,8 +35,22 @@ summary:
         text: documentraced
       -
         type: text
-        text: ') fragments or parts from larger wholes, the approach of “right action” to determine what was to be extracted (according to some systemic principle), and the objective extractions themselves (versus our usual subjective tendency to achieve projected results).'
+        text: ') fragments or parts from larger wholes, the approach of “'
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'statamic://entry::2211bd74-89a6-4523-bc2a-8535f1464be8'
+              rel: null
+              target: null
+              title: null
+        text: 'right action'
+      -
+        type: text
+        text: '” to determine what was to be extracted (according to some systemic principle), and the objective extractions themselves (versus our usual subjective tendency to achieve projected results).'
 parent: bc97c317-41c8-4472-83ce-73b65e3355f6
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673332570
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1673383290
 ---

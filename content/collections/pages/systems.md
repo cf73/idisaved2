@@ -49,6 +49,7 @@ summary:
         type: text
         text: "In summary, systems thinking exists as a fundamental principle for all we do. While that may seem to instill in us some apprehension in appearing as a constraint, the truth that understanding the nature and possibilities of systems gives humanity a very liberating tool, becomes a way of looking at something that in return is also a way that tells us something, which can therefore influence and change one’s point of view.\_"
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673326367
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1673658652
+intro_movie: 21-systems_short-2-1.25-480.mov
 ---

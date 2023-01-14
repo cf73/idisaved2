@@ -82,6 +82,7 @@ summary:
         type: text
         text: 'Designers can therefore think of the design process that creates a stage setting wherein all aspects will cause the interpreter to become “set up” to think about meaning in a particular respect, and wherein interpretation become an “internal” stimulant for right action; i.e., a stage setting designed to as the framework for communication wherein all aspects become the acting vehicles for building insight and depth, both immediate and beyond that.'
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673326344
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1673656622
+intro_movie: '-21-semiotics-short-3.00-480.mov'
 ---

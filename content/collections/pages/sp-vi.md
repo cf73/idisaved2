@@ -3,11 +3,12 @@ id: 8ab57f26-c8c9-491e-8e22-b74272d1e883
 blueprint: content
 title: SP-VI
 parent: 778c2d3f-cb6f-4c72-8eb0-14ad98d4b863
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673324976
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1673382959
 intro_movie: 21SPVIsq_SHORT-1.75.m4v
 main_content:
   -
+    id: RuL7hu0H
     text:
       -
         type: paragraph
@@ -18,6 +19,13 @@ main_content:
           -
             type: text
             marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::f92fbaa8-5913-498a-918a-9c7a54622ea5'
+                  rel: null
+                  target: null
+                  title: null
               -
                 type: bold
               -
@@ -50,6 +58,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: 8C1DioAt
     type: text
     enabled: true
 thumbnail_slides:

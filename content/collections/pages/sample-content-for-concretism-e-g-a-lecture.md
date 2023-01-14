@@ -23,5 +23,6 @@ main_content:
     enabled: true
 parent: f92fbaa8-5913-498a-918a-9c7a54622ea5
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673333621
+updated_at: 1673496267
+intro_movie: img_0241.MOV
 ---
