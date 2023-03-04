@@ -101,6 +101,6 @@ summary:
         text: 'Theosophy presents a body of knowledge that provides theory, practice, and techniques to enable us to free ourselves from the limitations of ordinary life. This knowledge is the Ancient Wisdom, the perennial philosophy, the wisdom tradition. Being universally true, it is found all over the world in many different forms, depending upon the time and circumstances and the people it is addressing. Theosophy is one version of this Ancient Wisdom in recent times. Derived from Greek roots meaning “divine wisdom,” it reveals a body of knowledge that tells us about our place in the universe and why the world is the way it is. Although it agrees in many respects with scientific theories, it goes beyond them in addressing unseen realities that we all experience, but often do not understand.'
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1673565411
-intro_movie: concr4-b-2.0-1673565311.m4v
+updated_at: 1674856269
+intro_movie: concretism-1.5s.m4v
 ---

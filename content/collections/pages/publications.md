@@ -19,6 +19,7 @@ summary:
         type: text
         text: '(3 issues, 1991 - 1997); and SPIRALS 1991.'
 parent: 4805adfa-10e3-4dc1-938b-7444323a22f0
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673314853
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675108728
+intro_movie: 23publicaintro-1.5s0.m4v
 ---

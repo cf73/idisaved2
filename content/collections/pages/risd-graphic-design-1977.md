@@ -3,11 +3,12 @@ id: 9e023d3f-409e-4352-b1c2-899e33aeb83c
 blueprint: content
 title: 'RISD Graphic Design 1977'
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673323243
-intro_movie: 21_GDbk77_SHORT-3.00.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675109341
+intro_movie: 23gdbk77-2.5s.m4v
 main_content:
   -
+    id: BdIHieCV
     text:
       -
         type: paragraph
@@ -18,6 +19,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: UNSusdVa
     text:
       -
         type: paragraph
@@ -39,12 +41,4 @@ main_content:
             text: 'The booklet’s design was by Tom Ockerse, who led the philosophical and practical efforts for the department’s curriculum and continued to do so until he stepped down as department head in 1991.'
     type: text
     enabled: true
-thumbnail_slides:
-  - 21_GDbk77Pages.001.jpeg
-  - 21_GDbk77Pages.002.jpeg
-  - 21_GDbk77Pages.003.jpeg
-  - 21_GDbk77Pages.004.jpeg
-  - 21_GDbk77Pages.005.jpeg
-  - 21_GDbk77Pages.006.jpeg
-  - 21_GDbk77Pages.007.jpeg
 ---

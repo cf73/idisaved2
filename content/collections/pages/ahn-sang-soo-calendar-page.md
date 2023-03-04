@@ -4,6 +4,7 @@ blueprint: content
 title: 'Ahn Sang Soo Calendar Page'
 main_content:
   -
+    id: qVsPamAW
     text:
       -
         type: paragraph
@@ -14,6 +15,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: 4d4kQG0c
     text:
       -
         type: paragraph
@@ -30,10 +32,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: Ahnsketches---04-1622039777.jpg
+    id: CQ45VIfs
+    photo:
+      - Ahnsketches---04-1622039777.jpg
     type: image
     enabled: true
   -
+    id: 1hMvlETt
     text:
       -
         type: paragraph
@@ -86,18 +91,25 @@ main_content:
     type: text
     enabled: true
   -
-    photo: Ahnsketches---01-1622039827.jpg
+    id: Vyv5VTjj
+    photo:
+      - Ahnsketches---01-1622039827.jpg
     type: image
     enabled: true
   -
-    photo: Ahnsketches---02-1622039842.jpg
+    id: JiTOJULF
+    photo:
+      - Ahnsketches---02-1622039842.jpg
     type: image
     enabled: true
   -
-    photo: Ahnsketches---03-1622039860.jpg
+    id: JFU30MaM
+    photo:
+      - Ahnsketches---03-1622039860.jpg
     type: image
     enabled: true
   -
+    id: xHNgbEhD
     text:
       -
         type: paragraph
@@ -485,14 +497,19 @@ main_content:
     type: text
     enabled: true
   -
-    photo: HOPE-Diagram-1622049128.jpg
+    id: yJBhAyUe
+    photo:
+      - HOPE-Diagram-1622049128.jpg
     type: image
     enabled: true
   -
-    photo: GadSt_Fall2004_Projects_-page-2.6.jpg
+    id: dppzqQDG
+    photo:
+      - GadSt_Fall2004_Projects_-page-2.6.jpg
     type: image
     enabled: true
   -
+    id: avagRIlf
     text:
       -
         type: paragraph
@@ -533,34 +550,49 @@ main_content:
     type: text
     enabled: true
   -
-    photo: Calendar-Struct.png
+    id: wtK2iC1o
+    photo:
+      - Calendar-Struct.png
     type: image
     enabled: true
   -
-    photo: ahnCaldoct---02.jpg
+    id: eOjeu36l
+    photo:
+      - ahnCaldoct---02.jpg
     type: image
     enabled: true
   -
-    photo: ahnCaldoct---16.jpg
+    id: jw43TF9U
+    photo:
+      - ahnCaldoct---16.jpg
     type: image
     enabled: true
   -
-    photo: ahnCaldoct---18.jpg
+    id: KmET5TBe
+    photo:
+      - ahnCaldoct---18.jpg
     type: image
     enabled: true
   -
-    photo: ahnCaldoct---24.jpg
+    id: zyePKGo0
+    photo:
+      - ahnCaldoct---24.jpg
     type: image
     enabled: true
   -
-    photo: ahnCaldoct---35.jpg
+    id: hXaQR02o
+    photo:
+      - ahnCaldoct---35.jpg
     type: image
     enabled: true
   -
-    photo: ahnCaldoct---37.jpg
+    id: 63guOLVS
+    photo:
+      - ahnCaldoct---37.jpg
     type: image
     enabled: true
   -
+    id: ajJQ8MYj
     text:
       -
         type: paragraph
@@ -589,18 +621,25 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 21_AhnCadetails2-1622050515.png
+    id: rB08k2QY
+    photo:
+      - 21_AhnCadetails2-1622050515.png
     type: image
     enabled: true
   -
-    photo: 21_AhnCadetails3.png
+    id: Xj2byHYZ
+    photo:
+      - 21_AhnCadetails3.png
     type: image
     enabled: true
   -
-    photo: ahnCaldoct---37-1622050349.jpg
+    id: fvKNKqZ2
+    photo:
+      - ahnCaldoct---37-1622050349.jpg
     type: image
     enabled: true
   -
+    id: DNNM3DQi
     text:
       -
         type: paragraph
@@ -611,28 +650,24 @@ main_content:
     type: text
     enabled: true
   -
-    photo: tom_ahncalendar_finalweb.jpg
+    id: omECL9pf
+    photo:
+      - tom_ahncalendar_finalweb.jpg
     type: image
     enabled: true
   -
-    photo: AhnCALMoonFinal.jpg
+    id: pwEigBN9
+    photo:
+      - AhnCALMoonFinal.jpg
     type: image
     enabled: true
-intro_movie: 21AHNCal2-SHORT-2.25-1622048949.m4v
+intro_movie: '-23ahncalpages-2.0s.m4v'
 related_content:
   - 71b196fd-bde8-4d6b-905e-87da7c7dd9c5
   - 5f25dfc2-fa72-412d-85f0-9863c667647a
   - c501188b-9a1b-47a1-9b82-6ceaf8758999
 disciplines: posters
-thumbnail_slides:
-  - '-22AHNCalPAGE.001.jpeg'
-  - '-22AHNCalPAGE.002.jpeg'
-  - '-22AHNCalPAGE.003-1660319183.jpeg'
-  - '-22AHNCalPAGE.004-1660319195.jpeg'
-  - '-22AHNCalPAGE.005-1660319214.jpeg'
-  - '-22AHNCalPAGE.006-1660319231.jpeg'
-
 parent: 27805ab3-e794-4def-ac9d-86e555df719b
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673314971
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675028034
 ---

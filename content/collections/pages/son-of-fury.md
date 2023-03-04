@@ -3,11 +3,12 @@ id: 58450f6c-da72-4137-8520-c5c6d76e24f6
 blueprint: content
 title: 'Son of Fury'
 parent: fb6f64d1-d0ba-4e5a-8f12-43c59625ce42
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673324936
-intro_movie: 21_SonOfFury_SHORT-3.25.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675188631
+intro_movie: 23sonoffury.m4v
 main_content:
   -
+    id: msfZv5qJ
     text:
       -
         type: paragraph
@@ -58,12 +59,4 @@ main_content:
             text: ".\_"
     type: text
     enabled: true
-thumbnail_slides:
-  - 22SonOfFuryPages.001.jpeg
-  - 22SonOfFuryPages.002.jpeg
-  - 22SonOfFuryPages.003.jpeg
-  - 22SonOfFuryPages.004.jpeg
-  - 22SonOfFuryPages.005.jpeg
-  - 22SonOfFuryPages.006.jpeg
-  - 22SonOfFuryPages.007.jpeg
 ---

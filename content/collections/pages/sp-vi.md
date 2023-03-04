@@ -4,8 +4,8 @@ blueprint: content
 title: SP-VI
 parent: 778c2d3f-cb6f-4c72-8eb0-14ad98d4b863
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1673382959
-intro_movie: 21SPVIsq_SHORT-1.75.m4v
+updated_at: 1675118914
+intro_movie: 23spvi-1.5s.m4v
 main_content:
   -
     id: RuL7hu0H
@@ -61,12 +61,4 @@ main_content:
     id: 8C1DioAt
     type: text
     enabled: true
-thumbnail_slides:
-  - 22SPVI.001-1660516481.jpeg
-  - 22SPVI.002-1660516493.jpeg
-  - 22SPVI.003-1660516508.jpeg
-  - 22SPVI.004-1660516540.jpeg
-  - 22SPVI.005-1660516570.jpeg
-  - 22SPVI.006-1660516601.jpeg
-  - 22SPVI.007-1660516624.jpeg
 ---

@@ -3,10 +3,11 @@ id: 41e1ad63-a276-468e-9908-64fc9e22de63
 blueprint: content
 title: 'Theosophical Society in America Identity'
 parent: 1978f0df-de8c-4485-a491-39970172e573
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673323369
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675020171
 main_content:
   -
+    id: WZ9eqz6k
     text:
       -
         type: paragraph
@@ -17,6 +18,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: ljf8Zg0L
     text:
       -
         type: paragraph
@@ -27,6 +29,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: iCteN2oV
     text:
       -
         type: paragraph
@@ -37,20 +40,27 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 'TS-Emblem-Tom''s-Clean.jpg'
+    id: P5lDqwIl
+    photo:
+      - "TS-Emblem-Tom's-Clean.jpg"
     type: image
     enabled: true
   -
-    image: 'TS-Emblem-Tom''s-Clean.jpg'
+    id: 09qgfQq1
+    image: "TS-Emblem-Tom's-Clean.jpg"
     type: image
     enabled: true
-    photo: tsa-sketch1.jpg
+    photo:
+      - tsa-sketch1.jpg
   -
+    id: rpOvlNbV
     image: TSA_identity_01-copy.jpg
     type: image
     enabled: true
-    photo: TSA_identity_01-1621983254.jpg
+    photo:
+      - TSA_identity_01-1621983254.jpg
   -
+    id: Qqvfi14B
     text:
       -
         type: paragraph
@@ -72,11 +82,14 @@ main_content:
     type: text
     enabled: true
   -
+    id: Hvbv1LnD
     image: TSA-LOGO-REG.jpg
     type: image
     enabled: true
-    photo: TSA_identity_02.jpg
+    photo:
+      - TSA_identity_02.jpg
   -
+    id: hL3T41eu
     text:
       -
         type: paragraph
@@ -87,6 +100,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: xqZQoYPt
     text:
       -
         type: paragraph
@@ -97,6 +111,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: 9YpsDmmD
     text:
       -
         type: paragraph
@@ -122,56 +137,77 @@ main_content:
     type: text
     enabled: true
   -
+    id: 3dobl92S
     image: TSA_identity_03.jpg
     type: image
     enabled: true
-    photo: TSA_identity_02-1621983410.jpg
+    photo:
+      - TSA_identity_02-1621983410.jpg
   -
+    id: q4QiSfkj
     image: TSA_identity_04.jpg
     type: image
     enabled: true
-    photo: TSA_identity_03.jpg
+    photo:
+      - TSA_identity_03.jpg
   -
+    id: QEP6ZslL
     image: TSA_identity_06.jpg
     type: image
     enabled: true
-    photo: TSA_identity_04.jpg
+    photo:
+      - TSA_identity_04.jpg
   -
+    id: MABNAAcO
     image: TSA_identity_07.jpg
     type: image
     enabled: true
-    photo: TSA_identity_06.jpg
+    photo:
+      - TSA_identity_06.jpg
   -
+    id: IndadpWH
     image: TSA_identity_09.jpg
     type: image
     enabled: true
-    photo: TSA_identity_07.jpg
+    photo:
+      - TSA_identity_07.jpg
   -
+    id: OoXafcDQ
     image: TSA_identity_13.jpg
     type: image
     enabled: true
-    photo: TSA_identity_10.jpg
+    photo:
+      - TSA_identity_10.jpg
   -
+    id: 19gMvst5
     image: TSA_identity_14.jpg
     type: image
     enabled: true
-    photo: TSA_identity_13.jpg
+    photo:
+      - TSA_identity_13.jpg
   -
+    id: Ciip7vye
     image: TSA_identity_15.jpg
     type: image
     enabled: true
-    photo: TSA_identity_14.jpg
+    photo:
+      - TSA_identity_14.jpg
   -
+    id: 1KXqFism
     image: TSA_identity_16.jpg
     type: image
     enabled: true
-    photo: TSA_identity_16.jpg
+    photo:
+      - TSA_identity_16.jpg
   -
+    id: TvzPXspV
     image: TSA_identity_17.jpg
     type: image
     enabled: true
-    photo: TSA_identity_17.jpg
+    photo:
+      - TSA_identity_17.jpg
   -
+    id: mTrIYZ2d
     type: text
     enabled: true
     text:
@@ -256,10 +292,12 @@ main_content:
                 type: italic
             text: 'We hope you like our more current fashion. It is only the beginning of exploring iterations of our new look as it will soon be translated into mailings, advertisements, website, and more. Tom will evaluate each aspect of our visual image as it comes up for review, in order to apply this new visual language as it unfolds in our many applications. Soon we will have a whole new wardrobe with a unified look that we hope will attract positive attention from interested seekers.'
   -
+    id: nizcEY2H
     image: MarkR_TSA-Logo_Blue-Background.jpg
     type: image
     enabled: true
   -
+    id: fpUleCf6
     image: dalailama_ts.jpg
     type: image
     enabled: true
@@ -267,12 +305,5 @@ related_content:
   - be421847-9999-4bce-bd7c-6c232e089044
   - abbabc97-d9ba-4835-ab66-406bdf431333
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
-intro_movie: 2005_TSA_BRAND_201023c.m4v
-thumbnail_slides:
-  - 22TSA_Pages.001.jpeg
-  - 22TSA_Pages.002.jpeg
-  - 22TSA_Pages.003.jpeg
-  - 22TSA_Pages.004.jpeg
-  - 22TSA_Pages.005.jpeg
-  - 22TSA_Pages.006.jpeg
+intro_movie: 23tsa.m4v
 ---

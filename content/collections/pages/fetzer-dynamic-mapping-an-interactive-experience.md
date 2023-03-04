@@ -3,11 +3,12 @@ id: 03e465bc-c23e-4489-b43b-11ddb81bd961
 blueprint: content
 title: 'FETZER: Dynamic Mapping: an interactive experience'
 parent: 854b02bb-32ab-4aed-99ea-78c426a6e605
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673322129
-intro_movie: 21Fetzer-2.00.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675118879
+intro_movie: 23fetzer.m4v
 main_content:
   -
+    id: l1BAiMBW
     text:
       -
         type: paragraph
@@ -43,6 +44,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: TAEplLpA
     text:
       -
         type: paragraph
@@ -98,17 +100,9 @@ main_content:
     type: text
     enabled: true
   -
+    id: 6fshdLnE
     movie: HOPE_ProjectorScreenSnapz002.mov
     type: movie
     enabled: true
-thumbnail_slides:
-  - 21FetzerPAGES-2.001.jpeg
-  - 21FetzerPAGES-2.002.jpeg
-  - 21FetzerPAGES-2.003.jpeg
-  - 21FetzerPAGES-2.004.jpeg
-  - 21FetzerPAGES-2.005.jpeg
-  - 21FetzerPAGES-2.006.jpeg
-  - 21FetzerPAGES-2.007.jpeg
 ---
-
 ---

@@ -22,6 +22,7 @@ summary:
         type: text
         text: 'Mail art also proved itself a vital networking to connect with others around in the world—literally predating the internet web capacities we have today! As a communication system for this world community of the arts (without any boundaries of type as well) it was used by hundreds of artists around the world, with its results as valid as anything we have of that sort today.'
 parent: bc97c317-41c8-4472-83ce-73b65e3355f6
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673323778
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1674943534
+intro_movie: 23mailartintro-1.5s.m4v
 ---

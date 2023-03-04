@@ -50,6 +50,6 @@ summary:
         text: 'In other words, that practice of right action enables the Designer to generate a multi-centered intelligence for a consciousness free from the constraints of pre-conditioned expectations and limited perspectives. From this enlightened process, stemming from an illuminated state of being, endless possibilities are made possible as truly creative results and a depth of value, as objects that become truly POETIC enrichments for society and humanity.'
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1673654388
-intro_movie: rightaction1-2.25-0.7-480.mov
+updated_at: 1675135711
+intro_movie: 23rightact-2.25s.m4v
 ---

@@ -3,11 +3,12 @@ id: 9ca574f4-593b-476c-87d9-e607410727cf
 blueprint: content
 title: 'SPIRALS 91'
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673323328
-intro_movie: 21SPIRALS91_SHORT-2.00.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675124271
+intro_movie: 23spirals-2.75s.m4v
 main_content:
   -
+    id: Kb7b3P3i
     text:
       -
         type: paragraph
@@ -47,12 +48,4 @@ main_content:
             text: 'grew out of a need to share the department’s rich learning experience in the education of future designers.'
     type: text
     enabled: true
-thumbnail_slides:
-  - 22SPIRALSpages.001.jpeg
-  - 22SPIRALSpages.002.jpeg
-  - 22SPIRALSpages.003.jpeg
-  - 22SPIRALSpages.004.jpeg
-  - 22SPIRALSpages.005.jpeg
-  - 22SPIRALSpages.006.jpeg
-  - 22SPIRALSpages.007.jpeg
 ---

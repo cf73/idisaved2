@@ -64,6 +64,7 @@ summary:
         type: text
         text: 'This course helps not only to unpack the ideas and complexities involved in communication, but how to pack them into a meaningful design interface for communication. This includes to explore the depth of perception and how attention and awareness play critical roles in forming relationships for meaning; how to stimulate intuition and insight in our search for design innovation; and how to transform semiotic principles into practical methods for design. Lectures, case studies and practical studio assignments expand this semiotic landscape with intimately related issues that help create truly inspired design, including such theories as visual narrative, the parallax view, systems theory (pattern, wholeness, David Bohm’s implicate order, and the web of life), and why such principles as indeterminacy, chance, and continuity necessitate design as a contemplative practice vs. being understood as merely a rational, logical activity.'
 parent: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673326018
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1674847181
+intro_movie: 23semfdes-2.5s.m4v
 ---

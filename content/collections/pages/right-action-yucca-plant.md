@@ -3,11 +3,12 @@ id: 541df00a-8b33-4923-aacd-74daf195d861
 blueprint: content
 title: 'RIGHT ACTION (Yucca Plant)'
 parent: 96080c1f-5e62-4a12-951c-19c73f460c31
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673324811
-intro_movie: 21YuccaRtACTION_SHORT-2.5.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675190626
+intro_movie: 23yuccapages-1.5.m4v
 main_content:
   -
+    id: faxc0mTD
     text:
       -
         type: paragraph
@@ -27,6 +28,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: 8OM4uXYR
     text:
       -
         type: paragraph
@@ -61,14 +63,19 @@ main_content:
     type: text
     enabled: true
   -
-    photo: RA00.jpg
+    id: mhjqN4wP
+    photo:
+      - RA00.jpg
     type: image
     enabled: true
   -
-    photo: 01B.jpg
+    id: slMdiUDc
+    photo:
+      - 01B.jpg
     type: image
     enabled: true
   -
+    id: uzYqRfys
     text:
       -
         type: paragraph
@@ -136,6 +143,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: 6pEdHxrA
     movie: Living-leaves_Yucca_Leaves.mp4
     type: movie
     enabled: true
@@ -144,12 +152,4 @@ related_content:
   - fb8db3ac-96ab-43ac-818e-7f9494239f94
   - 614baba2-8922-43cb-bb4a-07aa02e06ab0
   - 71b196fd-bde8-4d6b-905e-87da7c7dd9c5
-thumbnail_slides:
-  - 22YuccaPAGES-.001.jpeg
-  - 22YuccaPAGES-.002.jpeg
-  - 22YuccaPAGES-.003.jpeg
-  - 22YuccaPAGES-.004.jpeg
-  - 22YuccaPAGES-.005.jpeg
-  - 22YuccaPAGES-.006.jpeg
-  - 22YuccaPAGES-.007.jpeg
 ---

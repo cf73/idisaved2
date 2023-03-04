@@ -49,6 +49,7 @@ summary:
         type: text
         text: 'Early studio work helps establish the common ground for the use of semiotic theory: as a tool for analysis and for critical making in design; to understand theory and practice as necessary partners; and to ultimately enable the application of theory to individualized interests.'
 parent: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673326102
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1674852803
+intro_movie: 23unfenfmeaning-3.5s.m4v
 ---

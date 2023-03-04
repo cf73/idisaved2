@@ -3,11 +3,12 @@ id: 560d1f23-2062-4462-baf1-bc0fad7d5026
 blueprint: content
 title: 'HUMANITY Design'
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673322594
-intro_movie: 21Humanity-SHORT-2.25.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675114069
+intro_movie: 23humanity-2.2s.m4v
 main_content:
   -
+    id: wp1KzFcE
     text:
       -
         type: paragraph
@@ -24,6 +25,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: JJYJLhPE
     text:
       -
         type: paragraph
@@ -43,10 +45,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: HUM_0.jpg
+    id: JWIIH2pJ
+    photo:
+      - HUM_0.jpg
     type: image
     enabled: true
   -
+    id: XTP8TyYu
     text:
       -
         type: paragraph
@@ -63,6 +68,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: xf2STUs3
     text:
       -
         type: paragraph
@@ -103,10 +109,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: HM1_PREVIEWissu4.jpg
+    id: bxxSCcWL
+    photo:
+      - HM1_PREVIEWissu4.jpg
     type: image
     enabled: true
   -
+    id: VSaybYFW
     text:
       -
         type: paragraph
@@ -132,10 +141,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: HUM_0hero1.jpg
+    id: RlBgibAn
+    photo:
+      - HUM_0hero1.jpg
     type: image
     enabled: true
   -
+    id: KPrwxWww
     text:
       -
         type: paragraph
@@ -154,12 +166,4 @@ main_content:
             text: "\_in 1998, concentrating instead on other initiatives, such as the challenge of building this web site (www.humanity.org), launched in\_1994"
     type: text
     enabled: true
-thumbnail_slides:
-  - 22HumanPages.001.jpeg
-  - 22HumanPages.002.jpeg
-  - 22HumanPages.003.jpeg
-  - 22HumanPages.004.jpeg
-  - 22HumanPages.005.jpeg
-  - 22HumanPages.006.jpeg
-  - 22HumanPages.007.jpeg
 ---

@@ -8,7 +8,7 @@ summary:
     content:
       -
         type: text
-        text: "Graduate Thesis\_is an in-depth personal inquiry into visual communication design. This introductory overview is of Thesis samples from 2001 through 2015, and of thesis projects wherein Tom Ockerse served as Primary Advisor."
+        text: "Graduate Thesis\_is an in-depth personal inquiry into visual communication design. This introductory overview is of Thesis samples from 2000 through 2007, wherein Tom Ockerse served as Primary Advisor."
   -
     type: paragraph
     content:
@@ -151,6 +151,7 @@ summary:
         type: text
         text: 'The Graduate Thesis is a RISD general requirement. Hence, as and MFA requirement in Graphic Design this reflects the thesis work from its beginning on, in 1979—when Tom Ockerse initiated and headed the program. Tom continued his leading role in that program until 2003, when he stepped down as Graduate Program Head. However, he continued to engage as Primary Thesis Advisor for many students until his retirement in 2018. While many students have attended the MFA program ever since 1979, this website only shares Graduate Thesis projects in which Tom Ockerse played the role as Primary Advisor. However, the Graduate Thesis always involves team of faculty as advisors, ranging from primary to general roles (including members from programs outside the major), and these teams are noted relative to the samples.'
 parent: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673325944
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1677854157
+intro_movie: 23grthc01-16-3.0s.m4v
 ---

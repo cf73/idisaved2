@@ -28,6 +28,7 @@ summary:
         type: text
         text: '” driven projects. This approach requires analysis of informational content, the context in which this will function, and explores options for re-telling the content in visually meaningful and engaging ways.'
 parent: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673326042
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1674852815
+intro_movie: senstudio-2.25s.m4v
 ---

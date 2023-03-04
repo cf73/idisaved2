@@ -3,11 +3,12 @@ id: 09275341-8020-4631-89d3-9668dbb38468
 blueprint: content
 title: SILHOUETTES
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673323287
-intro_movie: 21KiSILH_SHORT2-1.5.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675121528
+intro_movie: 23kisilhou-2.25s.m4v
 main_content:
   -
+    id: xdEaJQWd
     text:
       -
         type: paragraph
@@ -36,6 +37,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: ByvrUBsM
     text:
       -
         type: paragraph
@@ -76,6 +78,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: 0YcJaAZn
     text:
       -
         type: paragraph
@@ -104,10 +107,13 @@ main_content:
     type: text
     enabled: true
   -
+    id: PvN8lFad
     type: image
     enabled: true
-    photo: KirstenSil---4-1622314522.jpg
+    photo:
+      - KirstenSil---4-1622314522.jpg
   -
+    id: 9gQx9yrL
     text:
       -
         type: paragraph
@@ -136,10 +142,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: IMG_1857.jpeg
+    id: h86tTgWJ
+    photo:
+      - IMG_1857.jpeg
     type: image
     enabled: true
   -
+    id: k09MZ3XU
     text:
       -
         type: paragraph
@@ -183,10 +192,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: S2_content.jpeg
+    id: BdrxAUXM
+    photo:
+      - S2_content.jpeg
     type: image
     enabled: true
   -
+    id: zLjw1rBX
     text:
       -
         type: paragraph
@@ -212,10 +224,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: KirstenSil---2.jpg
+    id: JwB5P2U9
+    photo:
+      - KirstenSil---2.jpg
     type: image
     enabled: true
   -
+    id: XeBzGbLe
     text:
       -
         type: paragraph
@@ -235,10 +250,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: Silhouettes.JPG
+    id: vcE7lyVK
+    photo:
+      - Silhouettes.JPG
     type: image
     enabled: true
   -
+    id: PaKVFVxx
     text:
       -
         type: paragraph
@@ -255,19 +273,15 @@ main_content:
     type: text
     enabled: true
   -
-    photo: Silhouettes_coverCrop.jpg
+    id: frqYlhLR
+    photo:
+      - Silhouettes_coverCrop.jpg
     type: image
     enabled: true
   -
-    photo: Silhouettes_cover.jpg
+    id: C6YJPaVT
+    photo:
+      - Silhouettes_cover.jpg
     type: image
     enabled: true
-thumbnail_slides:
-  - 22KiSILHpages.001.jpeg
-  - 22KiSILHpages.002.jpeg
-  - 22KiSILHpages.003.jpeg
-  - 22KiSILHpages.004.jpeg
-  - 22KiSILHpages.005.jpeg
-  - 22KiSILHpages.006.jpeg
-  - 22KiSILHpages.007.jpeg
 ---

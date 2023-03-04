@@ -3,11 +3,12 @@ id: 25f11e75-fd4c-4a60-9227-842fc51ed7bc
 blueprint: content
 title: 'Ferens Gallery Poster'
 parent: 27805ab3-e794-4def-ac9d-86e555df719b
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673322043
-intro_movie: 1981_Fehrens_SHORT-2.50.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675103506
+intro_movie: 23ferens-2.0s.m4v
 main_content:
   -
+    id: Nq2gXJ7T
     text:
       -
         type: paragraph
@@ -18,31 +19,32 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 1981_FehrensPoster2.jpg
+    id: 6VdQ0lHf
+    photo:
+      - 1981_FehrensPoster2.jpg
     type: image
     enabled: true
   -
-    photo: 1981_FehrensPoster3.jpg
+    id: r1zR2xg7
+    photo:
+      - 1981_FehrensPoster3.jpg
     type: image
     enabled: true
   -
-    photo: 1981_FehrensPoster4.jpg
+    id: ZslorKme
+    photo:
+      - 1981_FehrensPoster4.jpg
     type: image
     enabled: true
   -
-    photo: FerensAG-exhibit2-1622054149.jpg
+    id: yRtVPVay
+    photo:
+      - FerensAG-exhibit2-1622054149.jpg
     type: image
     enabled: true
   -
+    id: B5wEpLgX
     type: image
     enabled: true
-thumbnail_slides:
-  - 22FERENSpage.001.jpeg
-  - 22FERENSpage.002.jpeg
-  - 22FERENSpage.003.jpeg
-  - 22FERENSpage.004.jpeg
-  - 22FERENSpage.005.jpeg
-  - 22FERENSpage.006.jpeg
 ---
-
 ---

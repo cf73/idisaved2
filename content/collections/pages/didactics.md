@@ -9,6 +9,7 @@ section_summary:
       -
         type: text
         text: "An overview of major courses taught by Tom Ockerse from the time he started teaching Graphic Design at Indiana University in 1967, followed by courses at the Rhode Island School of Design since 1971, until his retirement in 2018.\_"
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1641333990
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1676841994
+intro_movie: 23didacintro-1.5s.m4v
 ---

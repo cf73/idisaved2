@@ -82,6 +82,7 @@ summary:
         type: text
         text: '; and to inquire into wholeness and the poetics of design.'
 parent: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673325741
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1674843274
+intro_movie: 23cbks-2.0s.m4v
 ---

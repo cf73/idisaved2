@@ -3,10 +3,11 @@ id: 80e5ba23-251d-46a3-9789-e6f2928a1278
 blueprint: content
 title: 'RIHT Identity'
 parent: 1978f0df-de8c-4485-a491-39970172e573
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673323179
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675020135
 main_content:
   -
+    id: RN9QDaZU
     text:
       -
         type: paragraph
@@ -17,6 +18,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: dKkwG5W1
     text:
       -
         type: paragraph
@@ -27,6 +29,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: 4Jo0oOkE
     text:
       -
         type: paragraph
@@ -37,26 +40,37 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 01-RIHT.jpg
+    id: VkZQcOxl
+    photo:
+      - 01-RIHT.jpg
     type: image
     enabled: true
   -
-    photo: 02-RIHT.jpg
+    id: PqNCGJhZ
+    photo:
+      - 02-RIHT.jpg
     type: image
     enabled: true
   -
-    photo: 04-RIHT.jpg
+    id: U9TFx9rd
+    photo:
+      - 04-RIHT.jpg
     type: image
     enabled: true
   -
-    photo: 06-RIHT.jpg
+    id: beTBLQaZ
+    photo:
+      - 06-RIHT.jpg
     type: image
     enabled: true
   -
-    photo: 07-RIHT.jpg
+    id: 6St0px93
+    photo:
+      - 07-RIHT.jpg
     type: image
     enabled: true
   -
+    id: k9WkJE5M
     text:
       -
         type: paragraph
@@ -67,19 +81,26 @@ main_content:
     type: text
     enabled: true
   -
+    id: w1vH8p0l
     image: RIHT1.m4v
     type: image
     enabled: true
-    photo: _x_0004.jpg
+    photo:
+      - _x_0004.jpg
   -
-    photo: _x_0005.jpg
+    id: QqRiYgKz
+    photo:
+      - _x_0005.jpg
     type: image
     enabled: true
   -
-    photo: KIC-Image-0001.jpg
+    id: 0SS3OCx0
+    photo:
+      - KIC-Image-0001.jpg
     type: image
     enabled: true
   -
+    id: ho6G7IIG
     text:
       -
         type: paragraph
@@ -96,11 +117,14 @@ main_content:
     type: text
     enabled: true
   -
+    id: U8zk356b
     image: RIHT-brand-MGrear.jpg
     type: image
     enabled: true
-    photo: RIHT-brand-MGrear.jpg
+    photo:
+      - RIHT-brand-MGrear.jpg
   -
+    id: ZJ1aoMT0
     text:
       -
         type: paragraph
@@ -110,20 +134,11 @@ main_content:
             text: 'Soon after all this was done, the company changed hands again, using a new name.... and the whole identity design effort went out the window.'
     type: text
     enabled: true
-intro_movie: 20RIHT_SHORT-1.25.m4v
 related_content:
   - be421847-9999-4bce-bd7c-6c232e089044
   - ec56bea4-f984-4e05-b716-14ab230bd9d6
   - 3a4a20a8-e175-45b9-8541-585f250c0189
   - 3ee5e983-99a5-4c52-bcc7-a52f78508efb
-thumbnail_slides:
-  - '--22RIHTidentPAGES.001.jpeg'
-  - '--22RIHTidentPAGES.002.jpeg'
-  - '--22RIHTidentPAGES.003.jpeg'
-  - '--22RIHTidentPAGES.004.jpeg'
-  - '--22RIHTidentPAGES.005.jpeg'
-  - '--22RIHTidentPAGES.006.jpeg'
-  - '--22RIHTidentPAGES.007.jpeg'
+intro_movie: '-23riht-2-0.5.m4v'
 ---
-
 ---

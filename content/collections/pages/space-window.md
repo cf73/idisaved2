@@ -3,11 +3,12 @@ id: 7834b5ba-3364-4dd3-a08b-d6de0da78b2b
 blueprint: content
 title: 'Space Window'
 parent: 2f363af1-9821-4dfb-924b-c946454cd035
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673325061
-intro_movie: 21SPWind_SHORT-2.75.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1674948273
+intro_movie: 23spwind.m4v
 main_content:
   -
+    id: iaSAsN7O
     text:
       -
         type: paragraph
@@ -78,6 +79,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: uZw45oJv
     text:
       -
         type: paragraph
@@ -131,10 +133,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: SWCat_00_web.jpg
+    id: l0CjHKAe
+    photo:
+      - SWCat_00_web.jpg
     type: image
     enabled: true
   -
+    id: 8RtKkMqT
     text:
       -
         type: paragraph
@@ -145,18 +150,25 @@ main_content:
     type: text
     enabled: true
   -
-    photo: SWCat.jpg
+    id: RIB1rEF0
+    photo:
+      - SWCat.jpg
     type: image
     enabled: true
   -
-    photo: SWCat_02.jpg
+    id: BP373jk3
+    photo:
+      - SWCat_02.jpg
     type: image
     enabled: true
   -
-    photo: SWCat_03.jpg
+    id: GkDukuI6
+    photo:
+      - SWCat_03.jpg
     type: image
     enabled: true
   -
+    id: ORS4Yar0
     text:
       -
         type: paragraph
@@ -177,12 +189,4 @@ main_content:
             text: "\_event!"
     type: text
     enabled: true
-thumbnail_slides:
-  - 22SPWind.001.jpeg
-  - 22SPWind.002.jpeg
-  - 22SPWind.003.jpeg
-  - 22SPWind.004.jpeg
-  - 22SPWind.005.jpeg
-  - 22SPWind.006.jpeg
-  - 22SPWind.007.jpeg
 ---

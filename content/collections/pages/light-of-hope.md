@@ -3,11 +3,11 @@ id: e59c8bda-d8bb-48ab-bdb5-8cae34d4f3fe
 blueprint: content
 title: 'Light of Hope'
 parent: 27805ab3-e794-4def-ac9d-86e555df719b
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673322755
-intro_movie: 21_LHopeIndon_Short-2.50.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675187825
 main_content:
   -
+    id: q4HpNGVp
     text:
       -
         type: paragraph
@@ -53,10 +53,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 09LoH2.jpg
+    id: pDHwFgV7
+    photo:
+      - 09LoH2.jpg
     type: image
     enabled: true
   -
+    id: 6YbvIraL
     text:
       -
         type: paragraph
@@ -100,18 +103,25 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 00LoH.jpg
+    id: 14tdPakj
+    photo:
+      - 00LoH.jpg
     type: image
     enabled: true
   -
-    photo: 04LoH.jpg
+    id: Y4e6WK2y
+    photo:
+      - 04LoH.jpg
     type: image
     enabled: true
   -
-    photo: 08LoH.jpg
+    id: CbX7AVMY
+    photo:
+      - 08LoH.jpg
     type: image
     enabled: true
   -
+    id: VydNhGm5
     text:
       -
         type: paragraph
@@ -176,15 +186,21 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 23LoH.jpg
+    id: Ss2fhDwP
+    photo:
+      - 23LoH.jpg
     type: image
     enabled: true
   -
-    photo: 25LoH.jpg
+    id: 9dqp2Phh
+    photo:
+      - 25LoH.jpg
     type: image
     enabled: true
   -
-    photo: 26LoH.jpg
+    id: EJiuTET3
+    photo:
+      - 26LoH.jpg
     type: image
     enabled: true
 related_content:
@@ -192,10 +208,5 @@ related_content:
   - e86f5c72-1fe1-45c3-bcc0-ecbf9ec2ce7e
   - d03cb039-6fe6-4786-91db-2a39af6fce0d
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
-thumbnail_slides:
-  - 22LofHPAGE.001-1660520802.jpeg
-  - 22LofHPAGE.002-1660520838.jpeg
-  - 22LofHPAGE.003-1660520886.jpeg
-  - 22LofHPAGE.004-1660520914.jpeg
-  - 22LofHPAGE.005-1660520927.jpeg
+intro_movie: 23lofhope-1.25s.m4v
 ---

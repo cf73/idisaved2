@@ -25,6 +25,7 @@ summary:
         type: text
         text: 'The work can involve a broad range of curiosities like sustainability, sociocultural activism, public service, criticism, spirituality; the nature of theory; practice and experiment; methodology; technology; interactivity. Course objectives are to offer a dynamic learning experience in which various topics of common relevance are introduced to the group to help stimulate interdisciplinary and inter-level interaction among students.'
 parent: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673325968
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1674849598
+intro_movie: 23opres-4.0s.m4v
 ---

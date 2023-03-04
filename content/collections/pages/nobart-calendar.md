@@ -3,11 +3,12 @@ id: 8dd785cd-65c3-44bb-80ec-d3bc557c2c5b
 blueprint: content
 title: 'Nobart Calendar'
 parent: 85b88949-8012-4be5-87cd-1923c80e0bc4
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673322849
-intro_movie: 21NOBARTcal_SHORT-1.75.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675106388
+intro_movie: 23nobart-1.5.m4v
 main_content:
   -
+    id: cZT4kCD8
     text:
       -
         type: paragraph
@@ -18,6 +19,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: Ra88bg5m
     text:
       -
         type: paragraph
@@ -28,10 +30,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: NCal00.jpg
+    id: I7Fa2bOR
+    photo:
+      - NCal00.jpg
     type: image
     enabled: true
   -
+    id: LhUUC9th
     text:
       -
         type: paragraph
@@ -42,14 +47,19 @@ main_content:
     type: text
     enabled: true
   -
-    photo: NCal01.jpg
+    id: JFcuXGKD
+    photo:
+      - NCal01.jpg
     type: image
     enabled: true
   -
-    photo: NCal16.jpg
+    id: ufYBVXG4
+    photo:
+      - NCal16.jpg
     type: image
     enabled: true
   -
+    id: EAH4q7QJ
     text:
       -
         type: paragraph
@@ -60,14 +70,19 @@ main_content:
     type: text
     enabled: true
   -
-    photo: NCal02.jpg
+    id: I0VZmAhj
+    photo:
+      - NCal02.jpg
     type: image
     enabled: true
   -
-    photo: NCal03.jpg
+    id: LXACnRm1
+    photo:
+      - NCal03.jpg
     type: image
     enabled: true
   -
+    id: TMAgIjp3
     text:
       -
         type: paragraph
@@ -78,6 +93,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: 9lgV5rKw
     text:
       -
         type: paragraph
@@ -88,21 +104,29 @@ main_content:
     type: text
     enabled: true
   -
+    id: 5CfL7nl8
     type: image
     enabled: true
-    photo: NCal18-1621987864.jpg
+    photo:
+      - NCal18-1621987864.jpg
   -
-    photo: NCal19.jpg
-    type: image
-    enabled: true
-  -
-    type: image
-    enabled: true
-  -
-    photo: NCal20.jpg
+    id: yBPO3LqC
+    photo:
+      - NCal19.jpg
     type: image
     enabled: true
   -
+    id: unPEbCts
+    type: image
+    enabled: true
+  -
+    id: NGcUteR7
+    photo:
+      - NCal20.jpg
+    type: image
+    enabled: true
+  -
+    id: ZPAvLNUa
     text:
       -
         type: paragraph
@@ -113,48 +137,60 @@ main_content:
     type: text
     enabled: true
   -
-    photo: NCal21.jpg
+    id: RWcDLpfo
+    photo:
+      - NCal21.jpg
     type: image
     enabled: true
   -
-    photo: NCal22.jpg
+    id: RsPit5CE
+    photo:
+      - NCal22.jpg
     type: image
     enabled: true
   -
-    photo: NCal23.jpg
+    id: C6kPdPUN
+    photo:
+      - NCal23.jpg
     type: image
     enabled: true
   -
-    photo: NCal24.jpg
+    id: hpySgIxt
+    photo:
+      - NCal24.jpg
     type: image
     enabled: true
   -
-    photo: NCal25.jpg
+    id: pBS8fiH5
+    photo:
+      - NCal25.jpg
     type: image
     enabled: true
   -
-    photo: NCal26.jpg
+    id: a7kwxRsI
+    photo:
+      - NCal26.jpg
     type: image
     enabled: true
   -
-    photo: NCal27.jpg
+    id: USQYT6FU
+    photo:
+      - NCal27.jpg
     type: image
     enabled: true
   -
-    photo: NCal28.jpg
+    id: tORSGpvc
+    photo:
+      - NCal28.jpg
     type: image
     enabled: true
   -
-    photo: NCal29.jpg
+    id: nkndiXg5
+    photo:
+      - NCal29.jpg
     type: image
     enabled: true
 related_content:
   - b7499782-447f-4181-988f-f1a5578c2dff
   - d03cb039-6fe6-4786-91db-2a39af6fce0d
-thumbnail_slides:
-  - 22NOBARTcalPAGES.002.jpeg
-  - 22NOBARTcalPAGES.003.jpeg
-  - 22NOBARTcalPAGES.004.jpeg
-  - 22NOBARTcalPAGES.005.jpeg
-  - 22NOBARTcalPAGES.006.jpeg
 ---

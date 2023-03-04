@@ -3,10 +3,11 @@ id: ea761a7a-944c-4861-8498-f919e51683cf
 blueprint: content
 title: 'IPI (Interchem Printing Inks) Identity'
 parent: 1978f0df-de8c-4485-a491-39970172e573
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673322649
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675186213
 main_content:
   -
+    id: 6LWffDYq
     text:
       -
         type: paragraph
@@ -26,6 +27,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: mimyeBR8
     text:
       -
         type: paragraph
@@ -36,10 +38,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: IPI01-1621981228.jpg
+    id: z5KoxT1K
+    photo:
+      - IPI01-1621981228.jpg
     type: image
     enabled: true
   -
+    id: hOZwmsF1
     text:
       -
         type: paragraph
@@ -50,34 +55,49 @@ main_content:
     type: text
     enabled: true
   -
+    id: uiGrm85l
     type: image
     enabled: true
-    photo: IPI02-1621981263.jpg
+    photo:
+      - IPI02-1621981263.jpg
   -
-    photo: IPI03-1621981456.jpg
-    type: image
-    enabled: true
-  -
-    photo: IPI04-1621981470.jpg
-    type: image
-    enabled: true
-  -
-    photo: IPI05-1621981590.jpg
+    id: V4M6Fobd
+    photo:
+      - IPI03-1621981456.jpg
     type: image
     enabled: true
   -
-    photo: IPI06-1621981607.jpg
+    id: kwFLzpi3
+    photo:
+      - IPI04-1621981470.jpg
     type: image
     enabled: true
   -
-    photo: IPI07-1621981839.jpg
+    id: yWwt8vHL
+    photo:
+      - IPI05-1621981590.jpg
     type: image
     enabled: true
   -
-    photo: IPI08_p2-16a-1621981853.jpg
+    id: dOfltsgI
+    photo:
+      - IPI06-1621981607.jpg
     type: image
     enabled: true
   -
+    id: kaMKOEhn
+    photo:
+      - IPI07-1621981839.jpg
+    type: image
+    enabled: true
+  -
+    id: bNca14DQ
+    photo:
+      - IPI08_p2-16a-1621981853.jpg
+    type: image
+    enabled: true
+  -
+    id: 6cYFFmGT
     text:
       -
         type: paragraph
@@ -88,36 +108,38 @@ main_content:
     type: text
     enabled: true
   -
-    photo: IPI09_p2-17b-1621981671.jpg
+    id: Rvc2IVnL
+    photo:
+      - IPI09_p2-17b-1621981671.jpg
     type: image
     enabled: true
   -
-    photo: Tom_JKF5-1621981736.jpeg
+    id: zdca4480
+    photo:
+      - Tom_JKF5-1621981736.jpeg
     type: image
     enabled: true
   -
-    photo: Tom_JKF6-1621981749.jpeg
+    id: iYwGzFYl
+    photo:
+      - Tom_JKF6-1621981749.jpeg
     type: image
     enabled: true
   -
-    photo: Tom_JKF12-1621981770.jpeg
+    id: 4wJwMeIe
+    photo:
+      - Tom_JKF12-1621981770.jpeg
     type: image
     enabled: true
   -
-    photo: Tom_JKF8-1621981789.jpeg
+    id: 4G7fuuFg
+    photo:
+      - Tom_JKF8-1621981789.jpeg
     type: image
     enabled: true
-intro_movie: 21IPI_SHORT-2.50.m4v
+intro_movie: 23ipi.m4v
 related_content:
   - be421847-9999-4bce-bd7c-6c232e089044
   - abbabc97-d9ba-4835-ab66-406bdf431333
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
-thumbnail_slides:
-  - 22IPI_pages.001.jpeg
-  - 22IPI_pages.002.jpeg
-  - 22IPI_pages.003.jpeg
-  - 22IPI_pages.004.jpeg
-  - 22IPI_pages.005.jpeg
-  - 22IPI_pages.006.jpeg
-  - 22IPI_pages.007.jpeg
 ---

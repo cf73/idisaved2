@@ -3,11 +3,12 @@ id: 0f00953f-629e-48ee-9923-37737f60ba67
 blueprint: content
 title: 'INSEEING Krotona'
 parent: 96080c1f-5e62-4a12-951c-19c73f460c31
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1673324350
-intro_movie: 21_K-INSEEING-2.50.m4v
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1675190303
+intro_movie: 23inseeingkpage1.75s.m4v
 main_content:
   -
+    id: 8HFBlTje
     text:
       -
         type: paragraph
@@ -27,10 +28,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 01A.jpg
+    id: O5RAv8p2
+    photo:
+      - 01A.jpg
     type: image
     enabled: true
   -
+    id: 6VY7753h
     text:
       -
         type: paragraph
@@ -119,10 +123,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 01A-1623858561.jpg
+    id: P5Sf7FJR
+    photo:
+      - 01A-1623858561.jpg
     type: image
     enabled: true
   -
+    id: 2E3FIh2l
     text:
       -
         type: paragraph
@@ -133,14 +140,19 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 00H.jpg
+    id: kZ8rkMGq
+    photo:
+      - 00H.jpg
     type: image
     enabled: true
   -
-    photo: 00A.jpg
+    id: nwRgiZ5J
+    photo:
+      - 00A.jpg
     type: image
     enabled: true
   -
+    id: MvLdrUus
     text:
       -
         type: paragraph
@@ -151,10 +163,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 00F.jpg
+    id: 2htxWld9
+    photo:
+      - 00F.jpg
     type: image
     enabled: true
   -
+    id: S0cr3oLB
     text:
       -
         type: paragraph
@@ -165,10 +180,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 00D.jpg
+    id: iDT46N8c
+    photo:
+      - 00D.jpg
     type: image
     enabled: true
   -
+    id: eqoo3xjg
     text:
       -
         type: paragraph
@@ -179,10 +197,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 00Da.jpeg
+    id: oQJDVPyS
+    photo:
+      - 00Da.jpeg
     type: image
     enabled: true
   -
+    id: VhMLT9JZ
     text:
       -
         type: paragraph
@@ -193,10 +214,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 00E.jpg
+    id: lv0VqrLD
+    photo:
+      - 00E.jpg
     type: image
     enabled: true
   -
+    id: J80UeJMv
     text:
       -
         type: paragraph
@@ -207,10 +231,13 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 00B.jpg
+    id: dLPoPTo3
+    photo:
+      - 00B.jpg
     type: image
     enabled: true
   -
+    id: VpukGOuq
     text:
       -
         type: paragraph
@@ -299,22 +326,31 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 04B.jpeg
+    id: uGYALVaR
+    photo:
+      - 04B.jpeg
     type: image
     enabled: true
   -
-    photo: 21A.jpeg
+    id: jGHNvqdO
+    photo:
+      - 21A.jpeg
     type: image
     enabled: true
   -
-    photo: 23B.jpeg
+    id: PoicXJrl
+    photo:
+      - 23B.jpeg
     type: image
     enabled: true
   -
-    photo: 28A.jpeg
+    id: s1gp45zJ
+    photo:
+      - 28A.jpeg
     type: image
     enabled: true
   -
+    id: JA8gM94L
     text:
       -
         type: paragraph
@@ -337,22 +373,31 @@ main_content:
     type: text
     enabled: true
   -
-    photo: 11B.jpeg
+    id: HdrTPLun
+    photo:
+      - 11B.jpeg
     type: image
     enabled: true
   -
-    photo: 18B.jpeg
+    id: Jcrmbq3f
+    photo:
+      - 18B.jpeg
     type: image
     enabled: true
   -
-    photo: 30A.jpeg
+    id: RTFURvpN
+    photo:
+      - 30A.jpeg
     type: image
     enabled: true
   -
-    photo: 36B.jpeg
+    id: 2Y52XdPA
+    photo:
+      - 36B.jpeg
     type: image
     enabled: true
   -
+    id: dVrK2JsB
     text:
       -
         type: paragraph
@@ -363,6 +408,7 @@ main_content:
     type: text
     enabled: true
   -
+    id: MpAlGX8O
     text:
       -
         type: paragraph
@@ -379,13 +425,8 @@ main_content:
     type: text
     enabled: true
   -
+    id: UZswDJrj
     movie: K-INSEEING.mp4
     type: movie
     enabled: true
-thumbnail_slides:
-  - 22INSEEINGKpages.001.jpeg
-  - 22INSEEINGKpages.002.jpeg
-  - 22INSEEINGKpages.003.jpeg
-  - 22INSEEINGKpages.004.jpeg
-  - 22INSEEINGKpages.005.jpeg
 ---
