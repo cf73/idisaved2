@@ -17,7 +17,7 @@ summary:
     content:
       -
         type: text
-        text: "Since the beginning of his career as a graphic designer, “corporate identity” design (generalized today as “branding”) was a major design activity. That interest began during his studies at Yale University (1963-65), in courses with Norman Ives, Paul Rand, and Alvin Eisenman. After that this interest was particularly stimulated during his first job at J. K. Fogleman Associates in Morristown, NJ (1965-67).\_Jim Fogleman, following his long and illustrious career at CIBA and having pioneered CIBA’s corporate design standards, decided in 1965 to start his own design firm in his hometown of Morristown. His studio’s primary clients included various companies from the chemical industry (Ciba, Hoffman LaRoche, Interchem, Syntex), plus other corporations like the newly formed IPI (International Printing Ink) company.\_"
+        text: "Since the beginning of Tom's career as a graphic designer, “corporate identity” design (generalized today as “branding”) was a major design activity. That interest began during his studies at Yale University (1963-65), in courses with Norman Ives, Paul Rand, and Alvin Eisenman. After that this interest was particularly stimulated during his first job at J. K. Fogleman Associates in Morristown, NJ (1965-67).\_Jim Fogleman, following his long and illustrious career at CIBA and having pioneered CIBA’s corporate design standards, decided in 1965 to start his own design firm in his hometown of Morristown. His studio’s primary clients included various companies from the chemical industry (Ciba, Hoffman LaRoche, Interchem, Syntex), plus other corporations like the newly formed IPI (International Printing Ink) company.\_"
   -
     type: paragraph
     content:
@@ -68,6 +68,6 @@ summary:
         text: '. This video shares a selection of some of identity designs, mainly focused on logos, dating from 1965 through current times.'
 parent: 4805adfa-10e3-4dc1-938b-7444323a22f0
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1677780295
+updated_at: 1678050806
 intro_movie: 23branding-1677780281.m4v
 ---

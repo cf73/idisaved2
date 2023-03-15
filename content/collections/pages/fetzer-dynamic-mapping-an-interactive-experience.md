@@ -4,7 +4,7 @@ blueprint: content
 title: 'FETZER: Dynamic Mapping: an interactive experience'
 parent: 854b02bb-32ab-4aed-99ea-78c426a6e605
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675118879
+updated_at: 1678053416
 intro_movie: 23fetzer.m4v
 main_content:
   -

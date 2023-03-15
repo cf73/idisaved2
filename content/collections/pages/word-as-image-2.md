@@ -1,12 +1,12 @@
 ---
 id: 71112bc3-8e16-4952-af80-1b7342aa4bc9
 blueprint: content
-title: 'Word AS Image 2'
+title: 'Word AS Image: Concrete Poetry'
 main_content:
   -
     id: lehvj9mc
     photo:
-      - '-151013_u3intro.002-1677203396.jpg'
+      - wordasimage.001.jpeg
     type: image
     enabled: true
   -
@@ -17,7 +17,16 @@ main_content:
         content:
           -
             type: text
-            text: 'We will now continue the lecture on Word AS Image and the language as a systems that supports this.'
+            text: 'We will now continue the lecture on Word '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: AS
+          -
+            type: text
+            text: ' Image and the language as a systems that supports this.'
     type: text
     enabled: true
   -
@@ -489,5 +498,5 @@ main_content:
     enabled: true
 parent: f02ffe13-2cb1-4057-83fe-6a5195c5714c
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1677209400
+updated_at: 1678554659
 ---

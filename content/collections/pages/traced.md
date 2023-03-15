@@ -17,7 +17,7 @@ summary:
         text: Documentracings.
       -
         type: text
-        text: "\_"
+        text: "\_ Such "
       -
         type: text
         marks:
@@ -26,16 +26,30 @@ summary:
         text: Documentracing
       -
         type: text
-        text: "\_became a way to view the creative process from an\_"
+        text: "\_became Tom's "
       -
         type: text
         marks:
+          -
+            type: bold
+        text: "way to view the creative process from an\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
           -
             type: italic
         text: "objective\_"
       -
         type: text
-        text: "viewpoint.\_"
+        marks:
+          -
+            type: bold
+        text: viewpoint
+      -
+        type: text
+        text: ".\_"
       -
         type: text
         marks:
@@ -98,16 +112,48 @@ summary:
         text: Documentracing
       -
         type: text
-        text: "\_involves the documentation of an existing real time-space object or event via some technique or approach to trace and collect parts as fragments from a larger whole, placing these into a new symphonic configuration. The selection of fragments “traced” is always done by some systemic technique, to serve the purpose of removing our “subjective” tendencies as true creators of poetry and art. The systemic manner as a means for making selections includes “chance” to operate and interact with the existing time/space object. The most important aspect in this act of selection involves the maker to remain “objective” versus letting the common “subjective” tendencies toward “preferences” guide that process."
-  -
-    type: paragraph
-    content:
+        text: "\_involves the documentation of "
       -
         type: text
         marks:
           -
+            type: bold
+        text: 'an existing real time-space object or event'
+      -
+        type: text
+        text: ' via some technique to trace and collect parts as fragments from a larger whole, placing these into a new symphonic configuration. The selection of fragments “traced” is always done by some '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'systemic technique'
+      -
+        type: text
+        text: ', to serve the purpose of removing our '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+          -
             type: italic
-        text: "\_"
+        text: 'subjective tendencies'
+      -
+        type: text
+        text: ' as true creators of poetry and art. The systemic manner as a means for making selections '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'includes “chance” to operate'
+      -
+        type: text
+        text: ' and interact with the existing time/space object. The most important aspect in this act of selection involves the maker to remain “objective” versus letting the common “subjective” tendencies toward “preferences” guide that process.'
+  -
+    type: paragraph
+    content:
       -
         type: text
         text: 'Keeping this approach game-like challenged revealed a dynamic process that offered value to see this process as metaphor for life as “LIFE” comes to us from moment to moment and having to accept obstacles and our experience with an open mind. To reveal understanding. Thus, so-called “chance juxtapositions” of parts and wholes unfolded original means to interpret and fresh insight.'
@@ -116,7 +162,7 @@ summary:
     content:
       -
         type: text
-        text: "One can use just about anything to\_"
+        text: 'One can '
       -
         type: text
         marks:
@@ -125,9 +171,9 @@ summary:
         text: documentrace
       -
         type: text
-        text: ". This started with the television screen, then moved on to\_\_the use of printed matter (pages, texts, images, and whole magazines), and eventually to more complex situations like an environments and experiences.\_"
+        text: " just about anything. This started for me with the television screen, then moved on to printed matter (pages, texts, images, and whole magazines), and eventually to more environments and experiences.\_"
 parent: bc97c317-41c8-4472-83ce-73b65e3355f6
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675628904
+updated_at: 1678227677
 intro_movie: '-23tracedintro-2.0s.m4v'
 ---

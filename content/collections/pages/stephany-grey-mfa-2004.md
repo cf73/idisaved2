@@ -14,7 +14,7 @@ main_content:
             marks:
               -
                 type: bold
-            text: 'Stephany Grey: Stir, 2004.'
+            text: 'Stir, 2004.'
       -
         type: paragraph
         content:
@@ -25,6 +25,6 @@ main_content:
     enabled: true
 parent: 7df7e597-2987-46fc-b21d-acba6155d1c8
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1677806208
+updated_at: 1678233368
 intro_movie: 04_grey_steph-short-480p-3.0s.mov
 ---

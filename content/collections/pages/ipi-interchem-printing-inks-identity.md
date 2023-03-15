@@ -4,7 +4,7 @@ blueprint: content
 title: 'IPI (Interchem Printing Inks) Identity'
 parent: 1978f0df-de8c-4485-a491-39970172e573
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675186213
+updated_at: 1678155365
 main_content:
   -
     id: 6LWffDYq
@@ -41,6 +41,7 @@ main_content:
     id: z5KoxT1K
     photo:
       - IPI01-1621981228.jpg
+      - 2017-04-02-07.32.48-1678112732.jpg
     type: image
     enabled: true
   -
@@ -59,41 +60,15 @@ main_content:
     type: image
     enabled: true
     photo:
-      - IPI02-1621981263.jpg
-  -
-    id: V4M6Fobd
-    photo:
-      - IPI03-1621981456.jpg
-    type: image
-    enabled: true
-  -
-    id: kwFLzpi3
-    photo:
-      - IPI04-1621981470.jpg
-    type: image
-    enabled: true
+      - 2017-04-02-08.06.11s-1678112793.jpg
+      - 2017-04-02-08.44.41.jpg
+      - 2017-04-02-07.30.21.jpg
   -
     id: yWwt8vHL
     photo:
       - IPI05-1621981590.jpg
-    type: image
-    enabled: true
-  -
-    id: dOfltsgI
-    photo:
-      - IPI06-1621981607.jpg
-    type: image
-    enabled: true
-  -
-    id: kaMKOEhn
-    photo:
-      - IPI07-1621981839.jpg
-    type: image
-    enabled: true
-  -
-    id: bNca14DQ
-    photo:
-      - IPI08_p2-16a-1621981853.jpg
+      - 2017-04-02-08.43.27.jpg
+      - p2-16a.jpg
     type: image
     enabled: true
   -
@@ -104,37 +79,34 @@ main_content:
         content:
           -
             type: text
-            text: "One highlight for Tom was his design for the backdrops of IPI’s exhibit as part of an enormous industrial marketing event held in New York City, 1967. These backdrops were clearly inspired by the tutelage of his favorite faculty, Norman Ives, and his work during his recent studies at Yale.\_"
+            text: "IPI was part of an enormous industrial marketing event held in New York City in 1967. While Tom was involved with the entire exhibit's design the highlight for him were his designs for the backdrops of the exhibit booths. These backdrops were clearly inspired by the tutelage of his favorite faculty, Norman Ives, and his work during his recent studies at Yale.\_"
     type: text
     enabled: true
   -
     id: Rvc2IVnL
     photo:
-      - IPI09_p2-17b-1621981671.jpg
+      - p2-17a-1678113825.jpg
     type: image
     enabled: true
   -
     id: zdca4480
     photo:
-      - Tom_JKF5-1621981736.jpeg
+      - p2-19a-1678155113.jpg
+      - p2-18a-1678146047.jpg
     type: image
     enabled: true
   -
     id: iYwGzFYl
     photo:
+      - tom_jkf5-1621981736.jpeg
       - Tom_JKF6-1621981749.jpeg
     type: image
     enabled: true
   -
     id: 4wJwMeIe
     photo:
-      - Tom_JKF12-1621981770.jpeg
-    type: image
-    enabled: true
-  -
-    id: 4G7fuuFg
-    photo:
-      - Tom_JKF8-1621981789.jpeg
+      - tom_jkf12-1621981770.jpeg
+      - tom_jkf8.jpeg
     type: image
     enabled: true
 intro_movie: 23ipi.m4v

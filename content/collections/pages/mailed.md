@@ -8,7 +8,7 @@ summary:
     content:
       -
         type: text
-        text: "Experiments in Concretism in Mailart, a worldwide activity that intentionally operated via the postal system.\_It was a way for artists in the world to connect with each other and became an instrument to organize connectivity for the purpose to share ones work internationally without the limits of conventional outlets such as museums and galleries. Moreover, the exchange for anything to become organized (exhibited, documented as a book for exchange) it was an unwritten rule to be accepted and remain unedited. It was clearly a contradiction to the institutional world of art.\_"
+        text: "Experiments in Concretism for a worldwide activity called Mailart which intentionally operated via the postal system.\_It was a way for artists in the world to connect with each other and became an instrument to organize connectivity for the purpose to share ones work internationally without the limits of conventional outlets such as museums and galleries. Moreover, the exchange for anything to become organized (exhibited, documented as a book for exchange) it was an unwritten rule to be accepted and remain unedited. It was clearly a contradiction to the institutional world of art.\_"
   -
     type: paragraph
     content:
@@ -23,6 +23,6 @@ summary:
         text: 'Mail art also proved itself a vital networking to connect with others around in the world—literally predating the internet web capacities we have today! As a communication system for this world community of the arts (without any boundaries of type as well) it was used by hundreds of artists around the world, with its results as valid as anything we have of that sort today.'
 parent: bc97c317-41c8-4472-83ce-73b65e3355f6
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674943534
+updated_at: 1678050639
 intro_movie: 23mailartintro-1.5s.m4v
 ---

@@ -4,7 +4,7 @@ blueprint: content
 title: Covers
 parent: 85b88949-8012-4be5-87cd-1923c80e0bc4
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675102250
+updated_at: 1678051749
 intro_movie: 23covers.m4v
 main_content:
   -
@@ -15,7 +15,7 @@ main_content:
         content:
           -
             type: text
-            text: 'These sample covers were designed for a variety of published books, magazines, brochures, and other printed matter. '
+            text: 'These sample of covers Tom designed for a variety of published books, magazines, brochures, and other printed matter. '
     type: text
     enabled: true
   -

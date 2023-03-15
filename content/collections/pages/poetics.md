@@ -3,14 +3,14 @@ id: bc97c317-41c8-4472-83ce-73b65e3355f6
 blueprint: section
 title: Poetics
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674937863
+updated_at: 1678063743
 section_summary:
   -
     type: paragraph
     content:
       -
         type: text
-        text: "POETICS\_covers a broad scope of experiments that embrace the use of words, sounds, experiences and actions using the visual language to create poetic experiences. Works are based on the theories and principles of\_"
+        text: "POETICS\_covers a broad scope of experiments that embrace the use of words, sounds, experiences and actions using the visual language to create poetic experiences. All works are based on the theories and principles of\_"
       -
         type: text
         marks:
@@ -28,7 +28,16 @@ section_summary:
         text: Concretism
       -
         type: text
-        text: "\_in which the means serve to draw out the essence and spirit from what is presented and experienced. In this topic the nature of experiences such as\_"
+        text: "\_in wherein the means serve to "
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'draw out the essence and spirit '
+      -
+        type: text
+        text: "from what is presented to experience. In this topic the nature of experiences such as\_"
       -
         type: text
         marks:
@@ -165,7 +174,7 @@ section_summary:
         marks:
           -
             type: italic
-        text: Mailart
+        text: 'Mailart '
       -
         type: text
         text: "which purposely looked to break away from tradition, established conventions, habit and the limits of the conditioned mind.\_"
@@ -190,25 +199,53 @@ section_summary:
         text: CONCRETISM
       -
         type: text
-        text: ". This term was first formulated by\_Theo van Doesburg\_in 1930 as\_"
+        text: '. '
       -
         type: text
         marks:
+          -
+            type: bold
+        text: "This term was first formulated by\_Theo van Doesburg\_in 1930 as\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
           -
             type: italic
         text: 'Concrete Art'
       -
         type: text
+        marks:
+          -
+            type: bold
         text: ". Van Doesburg, as leader of the 1930s\_"
       -
         type: text
         marks:
           -
+            type: bold
+          -
             type: italic
         text: 'De Stijl'
       -
         type: text
-        text: "\_group in Holland that included Piet Mondrian, felt it necessary to differentiate between his vision of “abstract” art and that of other works, wherein artists of that time also used abstract shapes. He basically tried to clarify that the art the De Stijl group made was not merely based on the abstraction of shapes relative to forms seen in the external world; rather their abstract shapes were meant to represent the “invisible” or “spirit” that was felt to be within the objects viewed and experienced in the external world. (See\_"
+        marks:
+          -
+            type: bold
+        text: "\_group in Holland that included Piet Mondrian, felt it necessary to differentiate between his vision of “abstract” art and that of other works, wherein artists of that time also used abstract shapes."
+      -
+        type: text
+        text: ' Theo basically tried to clarify that the art the De Stijl group made was not merely based on the abstraction of shapes relative to forms seen in the external world; rather their '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'abstract shapes were meant to represent the “invisible” or “spirit”'
+      -
+        type: text
+        text: " that was felt to be within the objects viewed and experienced in the external world. (See\_"
       -
         type: text
         marks:

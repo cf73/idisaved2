@@ -8,7 +8,16 @@ summary:
     content:
       -
         type: text
-        text: "The theory of SEMIOTICS studies the principles of visual signs used for the communication of ideas.\_"
+        text: 'The theory of SEMIOTICS studies the principles of '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'signs used for the communication of ideas'
+      -
+        type: text
+        text: ".\_"
   -
     type: paragraph
     content:
@@ -20,13 +29,28 @@ summary:
         text: Semiotics
       -
         type: text
-        text: ", the theory\_that deals with questions concerning meaning, cognition, reference, truth, and reality, recognizes that there are degrees of involvement. Since communication depends entirely on the creation of “signs,” semiotics is the “theory of signs”.\_"
+        text: ", the theory\_that deals with questions concerning meaning, cognition, reference, truth, and reality, recognizes that there are degrees of involvement. "
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "Since communication depends entirely on the creation of “signs,” semiotics is the “theory of signs”.\_"
   -
     type: paragraph
     content:
       -
         type: text
-        text: "The philosopher-semiotician\_Charles Sanders Peirce defined the sign as something which stands to somebody for something in some respect or capacity:"
+        text: "The philosopher-semiotician\_Charles Sanders Peirce defined the "
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'sign as something which stands to somebody for something in some respect or capacity'
+      -
+        type: text
+        text: ':'
       -
         type: text
         marks:
@@ -83,6 +107,6 @@ summary:
         text: 'Designers can therefore think of the design process that creates a stage setting wherein all aspects will cause the interpreter to become “set up” to think about meaning in a particular respect, and wherein interpretation become an “internal” stimulant for right action; i.e., a stage setting designed to as the framework for communication wherein all aspects become the acting vehicles for building insight and depth, both immediate and beyond that.'
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674922076
+updated_at: 1678065271
 intro_movie: 23semiotics-2.5s.m4v
 ---

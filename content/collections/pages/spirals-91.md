@@ -4,7 +4,7 @@ blueprint: content
 title: 'SPIRALS 91'
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675124271
+updated_at: 1678053328
 intro_movie: 23spirals-2.75s.m4v
 main_content:
   -
@@ -17,6 +17,8 @@ main_content:
             type: text
             marks:
               -
+                type: bold
+              -
                 type: italic
             text: 'SPIRALS 91'
           -
@@ -27,7 +29,7 @@ main_content:
             text: "\_"
           -
             type: text
-            text: 'is a boxed set of eight booklets published in 1991, that'
+            text: 'is a boxed set of eight booklets published in 1991. These booklets'
           -
             type: text
             marks:
@@ -36,7 +38,7 @@ main_content:
             text: "\_"
           -
             type: text
-            text: "presents articles on the teaching and study of Graphic Design at the Rhode Island School of Design—the first since its1977 publication.\_"
+            text: "present articles on the teachings and studies for Graphic Design at the Rhode Island School of Design—the first since its1977 publication.\_"
           -
             type: text
             marks:

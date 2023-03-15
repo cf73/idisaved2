@@ -4,7 +4,7 @@ blueprint: content
 title: 'RISD Graphic Design 1977'
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675109341
+updated_at: 1678052694
 intro_movie: 23gdbk77-2.5s.m4v
 main_content:
   -
@@ -15,7 +15,7 @@ main_content:
         content:
           -
             type: text
-            text: 'The RISD Graphic Design Department organized an exhibition of student work in 1967. The exhibit intended to share the department’s vision of the relatively new field of graphic design and how to prepare students for this practice. This booklet documents the exhibition of works. Most importantly, it also shares the department’s vision for the field of practice.'
+            text: "The Graphic Design Department at RISD organized an exhibition of student work in 1967. The exhibit intended to share the department’s vision of the relatively new field of graphic design at that time, and publicly share how the department's curriculum prepared students for this practice. Having collected an immense amount of information about the substance of this curriculum's pedagogy Tom decided it was worth sharing in this booklet that documents the works in the exhibition. Most importantly, the booklet also shared the department’s vision for this new field of practice, and it allowed for a national and international distribution. The local printer that was most used by RISD its graphic design faculty, Foremost Printing, granted funding for this publication."
     type: text
     enabled: true
   -

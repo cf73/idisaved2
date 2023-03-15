@@ -8,7 +8,22 @@ summary:
     content:
       -
         type: text
-        text: 'The theory of SYSTEMS studies the nature of unity in diversity for design.'
+        text: T
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'he theory of SYSTEMS '
+      -
+        type: text
+        text: studies
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: ' the nature of unity in diversity for design.'
   -
     type: paragraph
     content:
@@ -50,6 +65,6 @@ summary:
         text: "In summary, systems thinking exists as a fundamental principle for all we do. While that may seem to instill in us some apprehension in appearing as a constraint, the truth that understanding the nature and possibilities of systems gives humanity a very liberating tool, becomes a way of looking at something that in return is also a way that tells us something, which can therefore influence and change one’s point of view.\_"
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1677088553
+updated_at: 1678065317
 intro_movie: 23systems-1.5s.m4v
 ---

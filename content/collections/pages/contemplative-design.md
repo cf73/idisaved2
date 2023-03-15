@@ -17,7 +17,13 @@ summary:
         text: 'contemplative design'
       -
         type: text
-        text: " studies\_how to stimulate one’s depth of consciousness."
+        text: " explores\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'how to stimulate one’s depth of consciousness.'
   -
     type: paragraph
     content:
@@ -29,7 +35,67 @@ summary:
         text: 'Design as contemplative practice'
       -
         type: text
-        text: "\_means to practice design via the gateway to consciousness. In short, contemplation involves paying attention, and attention nurtures the capacity for insight into the actions taken. This is only accomplished by means of the simultaneous act of the introspective and extrospective, an awareness of oneself and the activity involved. This means a practice of attention to give thought its right place."
+        text: "\_means to "
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'practice design via the gateway to consciousness'
+      -
+        type: text
+        text: '. In short, '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'contemplation involves paying attention'
+      -
+        type: text
+        text: ', and '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'attention nurtures the capacity for insight'
+      -
+        type: text
+        text: ' into the actions taken. This is only accomplished by means of the simultaneous act of the '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: introspective
+      -
+        type: text
+        text: ' and '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: extrospective
+      -
+        type: text
+        text: ', an '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'awareness of oneself'
+      -
+        type: text
+        text: ' and the activity involved. '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'This means a practice of attention to give thought its right place.'
   -
     type: paragraph
     content:
@@ -47,6 +113,6 @@ summary:
         text: "filters our perceptions that color our understanding and our projections. Knowing oneself means to become aware of that filter and its projections. Without this self-knowledge we can only perpetuate the past and limit ourselves from seeing anything new. In that sense we can say that\_the practice of contemplation is essential for digesting life."
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674856282
+updated_at: 1678402795
 intro_movie: 23contempl-3.0s.m4v
 ---

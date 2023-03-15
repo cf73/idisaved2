@@ -4,7 +4,7 @@ blueprint: content
 title: 'HUMANITY Design'
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675114069
+updated_at: 1678054191
 intro_movie: 23humanity-2.2s.m4v
 main_content:
   -
@@ -15,24 +15,43 @@ main_content:
         content:
           -
             type: text
-            text: "Three issues of HUMANITY magazine, designed for The Humanity Foundation and its mission of\_"
+            text: 'In 1987 '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Tony Balis'
+          -
+            type: text
+            text: ' established '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'The Humanity Foundation,'
+          -
+            type: text
+            text: ' with its mission of '
           -
             type: text
             marks:
               -
                 type: italic
             text: '“encouraging people to understand this planet as our common home.”'
-    type: text
-    enabled: true
-  -
-    id: JJYJLhPE
-    text:
-      -
-        type: paragraph
-        content:
           -
             type: text
-            text: "In 1987 Tony Balis established The Humanity Foundation, with its mission of “encouraging people to understand this planet as our common home.” To initiate “a conversation with the world,” he began publishing the journal\_"
+            text: ' To initiate '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: '“a conversation with the world,”'
+          -
+            type: text
+            text: " he began publishing the journal\_"
           -
             type: text
             marks:
@@ -41,7 +60,7 @@ main_content:
             text: humanity
           -
             type: text
-            text: ", two-thirds non-fiction, one-third photography. Three issues were produced: the preview in 1991; the premier in July 1996; the second issue in July 1997. Tom Ockerse became an integral partner in this effort and was responsible for formulating the magazine’s design,\_as well as participating in editorial strategy."
+            text: ", two-thirds non-fiction, one-third photography. Three issues were produced: the preview in 1991; the premier in July 1996; the second issue in July 1997. In this publishing effort Tom Ockerse became an integral partner in this effort and was responsible for formulating the magazine’s design,\_as well as participating in editorial strategy. Unfortunately due to the lack of funds the foundation was unable to keep this magazine going."
     type: text
     enabled: true
   -

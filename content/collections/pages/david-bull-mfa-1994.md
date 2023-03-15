@@ -14,7 +14,7 @@ main_content:
             marks:
               -
                 type: bold
-            text: 'David Bull, Metalanguage: Typography. 1994'
+            text: 'Metalanguage Typography. 1994'
       -
         type: paragraph
         content:
@@ -25,6 +25,6 @@ main_content:
     enabled: true
 parent: 79fd7061-8c11-4c3f-8ed6-204fb2d3a18a
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1677801223
+updated_at: 1678233283
 intro_movie: 94_bullmeta-short-480p-2.0s.mov
 ---

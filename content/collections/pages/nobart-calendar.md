@@ -4,7 +4,7 @@ blueprint: content
 title: 'Nobart Calendar'
 parent: 85b88949-8012-4be5-87cd-1923c80e0bc4
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675106388
+updated_at: 1678225239
 intro_movie: 23nobart-1.5.m4v
 main_content:
   -
@@ -15,7 +15,25 @@ main_content:
         content:
           -
             type: text
-            text: 'This unusual “June to May” calendar promoted both the new Zodiac paper by Kimberly Clark Co. and the annual Indianapolis 500 car race, held on Memorial Day. It also featured illustrators from the marketing firm Nobart Design.'
+            text: 'Tom was asked to design this unusual “June to May” calendar to promote both the new'
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: ' Zodiac paper'
+          -
+            type: text
+            text: ' by Kimberly Clark Co. and the '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'annual Indianapolis 500 car race,'
+          -
+            type: text
+            text: ' held on Memorial Day. The marketing firm that commissioned this design, Nobart Design, also published the calendar to feature their illustrators.'
     type: text
     enabled: true
   -
@@ -43,19 +61,14 @@ main_content:
         content:
           -
             type: text
-            text: 'The cover is a composite of race flags, which became the main design system throughout.'
+            text: 'The cover image is a composite of race flags, which became integral to the main design system throughout.'
     type: text
     enabled: true
   -
     id: JFcuXGKD
     photo:
       - NCal01.jpg
-    type: image
-    enabled: true
-  -
-    id: ufYBVXG4
-    photo:
-      - NCal16.jpg
+      - ncal16.jpg
     type: image
     enabled: true
   -
@@ -73,12 +86,8 @@ main_content:
     id: I0VZmAhj
     photo:
       - NCal02.jpg
-    type: image
-    enabled: true
-  -
-    id: LXACnRm1
-    photo:
-      - NCal03.jpg
+      - ncal03.jpg
+      - ncal07.jpg
     type: image
     enabled: true
   -
@@ -109,22 +118,8 @@ main_content:
     enabled: true
     photo:
       - NCal18-1621987864.jpg
-  -
-    id: yBPO3LqC
-    photo:
-      - NCal19.jpg
-    type: image
-    enabled: true
-  -
-    id: unPEbCts
-    type: image
-    enabled: true
-  -
-    id: NGcUteR7
-    photo:
-      - NCal20.jpg
-    type: image
-    enabled: true
+      - ncal19.jpg
+      - ncal20.jpg
   -
     id: ZPAvLNUa
     text:
@@ -140,54 +135,24 @@ main_content:
     id: RWcDLpfo
     photo:
       - NCal21.jpg
-    type: image
-    enabled: true
-  -
-    id: RsPit5CE
-    photo:
-      - NCal22.jpg
-    type: image
-    enabled: true
-  -
-    id: C6kPdPUN
-    photo:
-      - NCal23.jpg
+      - ncal22.jpg
+      - ncal23.jpg
     type: image
     enabled: true
   -
     id: hpySgIxt
     photo:
       - NCal24.jpg
-    type: image
-    enabled: true
-  -
-    id: pBS8fiH5
-    photo:
-      - NCal25.jpg
-    type: image
-    enabled: true
-  -
-    id: a7kwxRsI
-    photo:
-      - NCal26.jpg
+      - ncal25.jpg
+      - ncal26.jpg
     type: image
     enabled: true
   -
     id: USQYT6FU
     photo:
       - NCal27.jpg
-    type: image
-    enabled: true
-  -
-    id: tORSGpvc
-    photo:
-      - NCal28.jpg
-    type: image
-    enabled: true
-  -
-    id: nkndiXg5
-    photo:
-      - NCal29.jpg
+      - ncal28.jpg
+      - ncal29.jpg
     type: image
     enabled: true
 related_content:

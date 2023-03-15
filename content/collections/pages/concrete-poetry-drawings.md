@@ -1,10 +1,10 @@
 ---
 id: a9dcc3a7-5e9e-4f2d-8eca-03ab9e769713
 blueprint: content
-title: 'Concrete Poetry: Drawings'
+title: 'Concrete Poetry: Drawn Type'
 parent: 24e6f930-d256-4cc3-92b3-6b4479f72f6f
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675192636
+updated_at: 1678213013
 intro_movie: 23cpdrawn.m4v
 main_content:
   -

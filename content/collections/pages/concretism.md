@@ -8,19 +8,52 @@ summary:
     content:
       -
         type: text
-        text: 'The theory of CONCRETISM encourages the study of objects as dynamic systems for a depth of meaning and relational values revealing an inner world, considered “abstract” because invisible, that unfolds a network of relationships and values as a world of ONENESS, opposite to the ordinary sense of “reality” in the world of appearances.'
+        marks:
+          -
+            type: bold
+        text: 'The theory of CONCRETISM reflects the study of objects as dynamic systems for a depth of meaning and relational values revealing an inner world normally considered “abstract” because it is invisible'
+      -
+        type: text
+        text: ' (not "tangible"). Yet, a depth of meaning and value unfolds from a network of relationships and values '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'derived from a world of ONENESS as having a true sense of REALITY'
+      -
+        type: text
+        text: '—which only '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'appears opposite to the ordinary sense of “reality” in the world of appearances.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'In other words, this theory of inquiry overturns the generalized notion that the world around us is “real” and “concrete,” and designates the inner, intangible world as “abstract” by realizing that the hidden networking begins to reflect relationships of underlying principals directing values and meaning far beyond the limited factor of appearances and into a unity of wholeness or: Oneness. That unity of Oneness reveals the true “Concrete” world with a capital “C” for a true sense of Reality with a capital “R”!'
-  -
-    type: paragraph
-    content:
+        text: 'Examples of this are: discovering sacred geometry as the underlying principle for good form; learning the inner “character” of a person and a true sense of identity with that individual; gaining a sense of awe and wonder when brought into a relationship with a huge tree. In this sense, we perceive relationships being extracted from a deep sense of wholeness, from that ultimate truth of REALITY, that CONCRETE Reality. In other words, we derive a '
       -
         type: text
-        text: 'Examples of this are discovering sacred geometry as the underlying principle for good form, learning the inner “character” of a person and a true sense of identity with that individual, and gaining a sense of awe and wonder when brought into a relationship with a huge tree. In this sense, we perceive relationships as these, extracted from that deep sense of wholeness, from that REALITY, from that CONCRETE Reality, to derive a sense of true Poetic Essence, a knowing that is powerful, dynamic, and a truly living sense of CONCRETISM.'
+        marks:
+          -
+            type: bold
+        text: 'true sense of Poetic Essence'
+      -
+        type: text
+        text: ', which is a knowing that is powerful, dynamic, and alive in opening us up to a potentially endless sense of truth. Hence, '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'a living sense of CONCRETISM'
+      -
+        type: text
+        text: .
   -
     type: paragraph
     content:
@@ -35,25 +68,44 @@ summary:
         text: "De Stijl\_"
       -
         type: text
-        text: "group of artists and designers (e.g., Piet Mondrian, Gerrit Rietveld, and others) who sought to capture and express the “spiritual” in art. Their search led them to use visual abstractions thus avoiding mere repetition of the external world of objects. Also influencing the group was the deep interest from studies happening locally called\_"
+        text: 'group of artists and designers (e.g., Piet Mondrian, Gerrit Rietveld, and others) who sought to capture and express the “spiritual” in art. Their search led them to use visual abstractions thus avoiding mere repetition of the external world of objects. '
       -
         type: text
         marks:
           -
-            type: italic
-        text: "theosophy\_"
+            type: bold
+        text: "Also influencing the group was the deep interest from studies happening locally called\_"
       -
         type: text
+        marks:
+          -
+            type: bold
+          -
+            type: italic
+        text: "THEOSOPHY\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
         text: "that presented a scientific view to render life more intelligible by connecting us with wholeness. After studying\_"
       -
         type: text
         marks:
           -
+            type: bold
+          -
             type: italic
         text: "theosophy\_"
       -
         type: text
-        text: 'Theo van Doesburg concluded that their search, intended to express the spiritual in art, was a search to find that true sense of Reality at the heart of meaning and value. In other words, using the “abstract” means searching for truth with the creation of artifacts from which we gain a sense of wholeness. Theo decided that this creation is not limited to abstract shapes and colors but can also be found in other ways to serve the same purpose of inquiry in the search of Reality, hence a true sense of Reality from that principle of Oneness—which he called Concretism.'
+        marks:
+          -
+            type: bold
+        text: 'Theo van Doesburg concluded that their search, intended to express the spiritual in art, was a search to find that true sense of Reality at the heart of meaning and value. In other words, using the “abstract” means searching for truth with the creation of artifacts from which we gain a sense of wholeness.'
+      -
+        type: text
+        text: ' Theo decided that this creation is not limited to abstract shapes and colors but can also be found in other ways to serve the same purpose of inquiry in the search of Reality, hence a true sense of Reality from that principle of Oneness—which he called Concretism.'
   -
     type: paragraph
     content:
@@ -80,7 +132,25 @@ summary:
     content:
       -
         type: text
-        text: 'Therefore, we must learn to practice Right Action, action that comes with critical discernment, inseeing, contemplation, and mindfulness to bring about an inner, poetic, spiritual sense of mediation which stimulates within the designer the full nature of creative capacities. Only from that can the process truly become a purposeful act of DESIGN with a capital D.'
+        text: 'Therefore, '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'we must learn to practice Right Action'
+      -
+        type: text
+        text: ', action that comes with critical discernment, inseeing, contemplation, and mindfulness to bring about an inner, poetic, spiritual sense of mediation which stimulates within the designer the full nature of creative capacities. Only from that can the process truly become a purposeful act of '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'DESIGN with a capital D'
+      -
+        type: text
+        text: .
   -
     type: paragraph
     content:
@@ -98,9 +168,69 @@ summary:
     content:
       -
         type: text
-        text: 'Theosophy presents a body of knowledge that provides theory, practice, and techniques to enable us to free ourselves from the limitations of ordinary life. This knowledge is the Ancient Wisdom, the perennial philosophy, the wisdom tradition. Being universally true, it is found all over the world in many different forms, depending upon the time and circumstances and the people it is addressing. Theosophy is one version of this Ancient Wisdom in recent times. Derived from Greek roots meaning “divine wisdom,” it reveals a body of knowledge that tells us about our place in the universe and why the world is the way it is. Although it agrees in many respects with scientific theories, it goes beyond them in addressing unseen realities that we all experience, but often do not understand.'
+        marks:
+          -
+            type: bold
+        text: 'Theosophy presents a body of knowledge that provides theory, practice, and techniques to enable us to free ourselves from the limitations of ordinary life. '
+      -
+        type: text
+        text: 'This knowledge is derived from the '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Ancient Wisdom, the perennial philosophy, the wisdom tradition'
+      -
+        type: text
+        text: '. '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Being universally true'
+      -
+        type: text
+        text: ', it is found all over the world in many different forms, depending upon the time and circumstances and the people it is addressing. '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Theosophy is one version of this Ancient Wisdom in recent times. Derived from Greek roots meaning “divine wisdom,” '
+      -
+        type: text
+        text: 'it reveals a body of knowledge that tells us about our place in the universe and why the world is the way it is. Although it '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'agrees in many respects with scientific theories'
+      -
+        type: text
+        text: ', it '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'goes beyond them'
+      -
+        type: text
+        text: ' in addressing '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'unseen realities that we all experience'
+      -
+        type: text
+        text: ', but often do not understand.'
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674856269
+updated_at: 1678389618
 intro_movie: concretism-1.5s.m4v
 ---

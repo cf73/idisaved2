@@ -4,17 +4,6 @@ blueprint: content
 title: 'Ahn Sang Soo Calendar Page'
 main_content:
   -
-    id: qVsPamAW
-    text:
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "This calendar page is for September, the 9th month of the year. It was designed on invitation by Ahn Sang Soo (Ahn Graphics Ltd in Seoul, Korea) who invited designers from around the world for a 2005 calendar celebrating Ahn’s studio’s anniversary. Each designer was assigned one page.\_"
-    type: text
-    enabled: true
-  -
     id: 4d4kQG0c
     text:
       -
@@ -35,6 +24,7 @@ main_content:
     id: CQ45VIfs
     photo:
       - Ahnsketches---04-1622039777.jpg
+      - ahnsketches---01-1678148084.jpg
     type: image
     enabled: true
   -
@@ -91,21 +81,10 @@ main_content:
     type: text
     enabled: true
   -
-    id: Vyv5VTjj
-    photo:
-      - Ahnsketches---01-1622039827.jpg
-    type: image
-    enabled: true
-  -
     id: JiTOJULF
     photo:
       - Ahnsketches---02-1622039842.jpg
-    type: image
-    enabled: true
-  -
-    id: JFU30MaM
-    photo:
-      - Ahnsketches---03-1622039860.jpg
+      - ahnsketches---03.jpg
     type: image
     enabled: true
   -
@@ -116,7 +95,7 @@ main_content:
         content:
           -
             type: text
-            text: "These aspects in turn also came to represent and reflect my theoretical interests (see\_sketch notes):"
+            text: "These aspects in turn also came to represent and reflect Tom's theoretical interests (see\_sketch notes):"
       -
         type: paragraph
         content:
@@ -215,7 +194,7 @@ main_content:
         content:
           -
             type: text
-            text: "For content, Tom used a course assignment for my graduate students. As an inquiry into the nature of\_meaning\_kindled by design, the course explores how a designer might\_"
+            text: "For content, Tom used a course assignment for his graduate students. As an inquiry into the nature of\_meaning\_kindled by design, the course explores how a designer might\_"
           -
             type: text
             marks:
@@ -248,22 +227,36 @@ main_content:
         content:
           -
             type: text
-            text: 'Thus, Tom intuitively decided to make something via his hands and materials (versus the computer), to use student work for a'
+            text: 'Thus, Tom intuitively decided to make something via his hands and materials (versus the computer), to make a '
           -
             type: text
             marks:
               -
                 type: bold
-            text: "\_"
-          -
-            type: text
-            marks:
               -
                 type: italic
             text: collage
           -
             type: text
-            text: "! He took close-up photographs from the students’ reflective process documents and selected fragments for no other reason than their subjective, isolated and momentary interests. Since the calendar was limited to black and white, the collage images were also b/w.\_"
+            text: ' using student work! Therefore he took close-up photographs from the students’ reflective process documents and selected fragments for no other reason than their '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'subjective, isolated and momentary interests.'
+          -
+            type: text
+            text: ' Since the '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'calendar was limited to black and white'
+          -
+            type: text
+            text: ", the images were also b/w, as was the collage itself.\_"
       -
         type: paragraph
         content:
@@ -499,13 +492,8 @@ main_content:
   -
     id: yJBhAyUe
     photo:
+      - gadst_fall2004_projects_-page-2.6.jpg
       - HOPE-Diagram-1622049128.jpg
-    type: image
-    enabled: true
-  -
-    id: dppzqQDG
-    photo:
-      - GadSt_Fall2004_Projects_-page-2.6.jpg
     type: image
     enabled: true
   -
@@ -516,79 +504,67 @@ main_content:
         content:
           -
             type: text
-            text: "After Tom had decided on the generative means for the page itself, more aspects became reflected in the layout and proportional format (of two squares and their sub-grids of 18 squares).\_"
+            text: 'After Tom had decided on the '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'generative means for the page itself'
+          -
+            type: text
+            text: ", more aspects became reflected in the layout and proportional format (of two squares and their sub-grids of 18 squares).\_"
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'For example:'
-      -
-        type: paragraph
-        content:
+            text: "For example: aspects for the “word” (abstract) to\_mirror\_“image” (concrete), and “image” to\_mirror\_“word”; use the "
           -
             type: text
-            text: "• aspects for the “word” (abstract) to\_mirror\_“image” (concrete), and “image” to\_mirror\_“word”;"
-      -
-        type: paragraph
-        content:
+            marks:
+              -
+                type: bold
+            text: 'lower half of the page to represent “concrete” reality with recognizable images in what we have experience'
           -
             type: text
-            text: '• use the lower half of the page to represent “concrete” reality, using imaged forms we experience;'
-      -
-        type: paragraph
-        content:
+            text: ' with; use the '
           -
             type: text
-            text: "• use the upper half of the page to represent the\_“conceptual” and “inspirational” (abstract) world of\_imagination (verbally, mind-maps and diagrams) to represent the\_subtle/illusive sense of “reality”;\_"
-      -
-        type: paragraph
-        content:
+            marks:
+              -
+                type: bold
+            text: "upper half of the page to represent the\_“conceptual” and “inspirational” (abstract) world of\_imaginatio"
           -
             type: text
-            text: '• use the center of the page as the “heart” or place for the essence of life (= breath)'
+            text: "n (verbally, mental maps and diagrams) to represent the\_subtle/illusive sense of “reality”;\_use the "
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'center of the page as the “heart” or place for the essence of life (= breath)'
     type: text
     enabled: true
   -
     id: wtK2iC1o
     photo:
       - Calendar-Struct.png
-    type: image
-    enabled: true
-  -
-    id: eOjeu36l
-    photo:
-      - ahnCaldoct---02.jpg
+      - ahncaldoct---02.jpg
     type: image
     enabled: true
   -
     id: jw43TF9U
     photo:
+      - ahncaldoct---18-1.jpg
       - ahnCaldoct---16.jpg
-    type: image
-    enabled: true
-  -
-    id: KmET5TBe
-    photo:
-      - ahnCaldoct---18.jpg
     type: image
     enabled: true
   -
     id: zyePKGo0
     photo:
       - ahnCaldoct---24.jpg
-    type: image
-    enabled: true
-  -
-    id: hXaQR02o
-    photo:
-      - ahnCaldoct---35.jpg
-    type: image
-    enabled: true
-  -
-    id: 63guOLVS
-    photo:
-      - ahnCaldoct---37.jpg
+      - ahncaldoct---35.jpg
     type: image
     enabled: true
   -
@@ -599,10 +575,39 @@ main_content:
         content:
           -
             type: text
-            text: "From the ancient wisdom (mystical) tradition this layout reflects our nature of “being” and the full nature of one’s “consciousness”, with a dialogue between these\_"
+            text: 'From the '
           -
             type: text
             marks:
+              -
+                type: bold
+            text: 'ancient wisdom or mystical tradition'
+          -
+            type: text
+            text: ' this layout reflects our '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'nature of “being”'
+          -
+            type: text
+            text: ' and the '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'full nature of one’s “consciousness”'
+          -
+            type: text
+            text: ", with a dialogue between these\_"
+          -
+            type: text
+            marks:
+              -
+                type: bold
               -
                 type: italic
             text: concrete
@@ -613,29 +618,116 @@ main_content:
             type: text
             marks:
               -
+                type: bold
+              -
                 type: italic
             text: abstract
           -
             type: text
-            text: "\_domains or reality. However, in the eastern wisdom tradition\_what we call the concrete reality (versus the abstract sense of reality) is actually known as a\_false (illusionistic) reality called Maya; while on the other hand, what we consider the\_illusive, abstract sense of “knowing” is actually the deeper and True “Reality”—which in our human evolution we will gradually unfold into our conscious awareness. Tom mentions this only since these wisdom teachings became the very basis for\_Theo van Doesburg to declare (in 1930) that what had been labeled as “Abstract Art” should really be called “Concrete Art”, or Concretism. From that developed the idea of Concrete Poetry."
+            marks:
+              -
+                type: bold
+            text: "\_domains"
+          -
+            type: text
+            text: ' or what we cal '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: reality
+          -
+            type: text
+            text: '. However, what we call the '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'concrete reality '
+          -
+            type: text
+            text: "(versus the abstract sense of reality) is actually known in the eastern wisdom tradition as a\_"
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'false, illusionistic reality'
+          -
+            type: text
+            text: ' called '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: MAYA
+          -
+            type: text
+            text: '; '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'while on the other hand'
+          -
+            type: text
+            text: ", what we generally consider the\_illusive, abstract sense of “knowing” is actually the deeper and True “"
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: REALITY
+          -
+            type: text
+            text: '”—which we will gradually unfold into our conscious awareness as we continue in our human evolution. Tom mentions this partly because '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: "these wisdom teachings became the very basis for\_Theo van Doesburg to declare (in 1930) that what had been labeled as “ABSTRACT Art” should really be called “Concrete Art”"
+          -
+            type: text
+            text: ' or '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: CONCRETISM
+          -
+            type: text
+            text: '. From that the very idea of '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Concrete Poetry unfolded'
+          -
+            type: text
+            text: "—and it is from the same source that Tom applied his actions to the calendar's design process. "
     type: text
     enabled: true
   -
     id: rB08k2QY
     photo:
       - 21_AhnCadetails2-1622050515.png
-    type: image
-    enabled: true
-  -
-    id: Xj2byHYZ
-    photo:
-      - 21_AhnCadetails3.png
+      - 21_ahncadetails3.png
+      - 21_ahncadetails4.png
     type: image
     enabled: true
   -
     id: fvKNKqZ2
     photo:
       - ahnCaldoct---37-1622050349.jpg
+      - ahncaldoct---35-1678216930.jpg
+      - ahncaldoct---34.jpeg
     type: image
     enabled: true
   -
@@ -669,5 +761,5 @@ related_content:
 disciplines: posters
 parent: 27805ab3-e794-4def-ac9d-86e555df719b
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675028034
+updated_at: 1678218877
 ---

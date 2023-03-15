@@ -4,7 +4,7 @@ blueprint: content
 title: 'Theosophical Society in America Identity'
 parent: 1978f0df-de8c-4485-a491-39970172e573
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675020171
+updated_at: 1678147592
 main_content:
   -
     id: WZ9eqz6k
@@ -14,7 +14,7 @@ main_content:
         content:
           -
             type: text
-            text: 'Identity design for the Theosophical Society of America (TSA).'
+            text: 'An visual identity design for the Theosophical Society of America (TSA).'
     type: text
     enabled: true
   -
@@ -25,7 +25,7 @@ main_content:
         content:
           -
             type: text
-            text: "In 2005 Tom did a branding project for an organization called the Theosophical Society of America—the TSA for short. Briefly speaking, the TSA studies perennial wisdom from a modern, secular perspective.\_\_"
+            text: "In 2005 Tom did a branding project for an organization called the Theosophical Society of America—the TSA for short. Briefly speaking, the TSA studies perennial wisdom from a modern, secular perspective.\_\_Its mission is to encourage open-minded inquiry into world religions, philosophy, science, and the arts in order to understand the wisdom of the ages, respect the unity of all life, and help people explore spiritual self-transformation."
     type: text
     enabled: true
   -
@@ -52,13 +52,7 @@ main_content:
     enabled: true
     photo:
       - tsa-sketch1.jpg
-  -
-    id: rpOvlNbV
-    image: TSA_identity_01-copy.jpg
-    type: image
-    enabled: true
-    photo:
-      - TSA_identity_01-1621983254.jpg
+      - tsa_identity_01-1621983254.jpg
   -
     id: Qqvfi14B
     text:
@@ -67,7 +61,7 @@ main_content:
         content:
           -
             type: text
-            text: "While being open to many fonts, Tom used the Frutiger font called\_"
+            text: "While open to many fonts, Tom ended up using the Frutiger font called\_"
           -
             type: text
             marks:
@@ -75,19 +69,29 @@ main_content:
                 type: bold
               -
                 type: italic
+            text: Avenir.
+          -
+            type: text
+            text: ' '
+          -
+            type: text
+            marks:
+              -
+                type: italic
             text: Avenir
           -
             type: text
-            text: "\_because that font is very much based on “geometric” principles, while it also reflects “modernism” in its design. This search eventually led design to a configurative grouping that also sought to integrate the triangle with the words themselves:"
+            text: ' is a font is very much based on “geometric” principles, while it also reflects “modernism” in its design. This search eventually led design to a configurative grouping that also sought to integrate the triangle with the words themselves:'
     type: text
     enabled: true
   -
-    id: Hvbv1LnD
-    image: TSA-LOGO-REG.jpg
+    id: q4QiSfkj
+    image: TSA_identity_04.jpg
     type: image
     enabled: true
     photo:
-      - TSA_identity_02.jpg
+      - tsa_branding.002.jpeg
+      - TSA_identity_03.jpg
   -
     id: hL3T41eu
     text:
@@ -100,70 +104,13 @@ main_content:
     type: text
     enabled: true
   -
-    id: xqZQoYPt
-    text:
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Designers have discovered this phenomenon as something to work with consciously and as a purposeful tool. However, much is to be said for working with this intuitively since we sense we are part of this “relational” (proportional) values in all form, the visual parts, and the invisible whole. Thus, it’s important to let the design evolve naturally, because if the designer intuitively feels like it’s the right fit, the right action, the right relational value, and right proportion—then it is part of this invisible cosmic quality we are part of. All this translates into such familiar words as harmony, beauty, and that which arouses our senses in aesthetics experiences; and that not only with beauty of “visual form” but also beauty referring to an essential quality arousing some type of reaction in the human observer such as pleasure, calm, elevation, delight.'
-    type: text
-    enabled: true
-  -
-    id: 9YpsDmmD
-    text:
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "One example is by one of the great designers of our time generally known as\_"
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: 'Bucky Fuller'
-          -
-            type: text
-            text: "\_(Richard Buckminster Fuller). He used this system through all his work. If you’ve ever seen a geodesic dome construction, you know he was part of system that because he invented them. He was once asked about beauty in his work and he responded:\_"
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: "“When I am working on a problem, I never think of beauty. I think only\_"
-    type: text
-    enabled: true
-  -
-    id: 3dobl92S
-    image: TSA_identity_03.jpg
-    type: image
-    enabled: true
-    photo:
-      - TSA_identity_02-1621983410.jpg
-  -
-    id: q4QiSfkj
-    image: TSA_identity_04.jpg
-    type: image
-    enabled: true
-    photo:
-      - TSA_identity_03.jpg
-  -
     id: QEP6ZslL
     image: TSA_identity_06.jpg
     type: image
     enabled: true
     photo:
       - TSA_identity_04.jpg
-  -
-    id: MABNAAcO
-    image: TSA_identity_07.jpg
-    type: image
-    enabled: true
-    photo:
-      - TSA_identity_06.jpg
+      - tsa_branding.006.jpeg
   -
     id: IndadpWH
     image: TSA_identity_09.jpg
@@ -171,13 +118,7 @@ main_content:
     enabled: true
     photo:
       - TSA_identity_07.jpg
-  -
-    id: OoXafcDQ
-    image: TSA_identity_13.jpg
-    type: image
-    enabled: true
-    photo:
-      - TSA_identity_10.jpg
+      - tsa_branding.009.jpeg
   -
     id: 19gMvst5
     image: TSA_identity_14.jpg
@@ -185,13 +126,14 @@ main_content:
     enabled: true
     photo:
       - TSA_identity_13.jpg
+      - tsa_identity_14.jpg
   -
     id: Ciip7vye
     image: TSA_identity_15.jpg
     type: image
     enabled: true
     photo:
-      - TSA_identity_14.jpg
+      - tsa_branding.002-1678147324.jpeg
   -
     id: 1KXqFism
     image: TSA_identity_16.jpg
@@ -199,13 +141,7 @@ main_content:
     enabled: true
     photo:
       - TSA_identity_16.jpg
-  -
-    id: TvzPXspV
-    image: TSA_identity_17.jpg
-    type: image
-    enabled: true
-    photo:
-      - TSA_identity_17.jpg
+      - tsa_branding.017.jpeg
   -
     id: mTrIYZ2d
     type: text
@@ -291,11 +227,6 @@ main_content:
               -
                 type: italic
             text: 'We hope you like our more current fashion. It is only the beginning of exploring iterations of our new look as it will soon be translated into mailings, advertisements, website, and more. Tom will evaluate each aspect of our visual image as it comes up for review, in order to apply this new visual language as it unfolds in our many applications. Soon we will have a whole new wardrobe with a unified look that we hope will attract positive attention from interested seekers.'
-  -
-    id: nizcEY2H
-    image: MarkR_TSA-Logo_Blue-Background.jpg
-    type: image
-    enabled: true
   -
     id: fpUleCf6
     image: dalailama_ts.jpg
