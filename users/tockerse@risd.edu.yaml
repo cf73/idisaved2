@@ -9,6 +9,3 @@ preferences:
   assets:
     movies:
       per_page: 500
-  collections:
-    pages:
-      after_save: continue_editing

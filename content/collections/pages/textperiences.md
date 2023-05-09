@@ -17,7 +17,7 @@ main_content:
         content:
           -
             type: text
-            text: 'The following images are form the course TexTperience-TexTperiment.'
+            text: 'The following images are from the course TexTperience-TexTperiment.'
     type: text
     enabled: true
   -
@@ -99,5 +99,5 @@ main_content:
     enabled: true
 parent: bf86d11d-bd81-4f5e-8676-990756dc8aca
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1677210026
+updated_at: 1680027660
 ---

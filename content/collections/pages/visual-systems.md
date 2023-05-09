@@ -77,6 +77,6 @@ summary:
         text: 'how can we reveal the subtle in the obvious, the limitless in the limited?'
 parent: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674954621
+updated_at: 1679435128
 intro_movie: 22vissys-3.0s.m4v
 ---

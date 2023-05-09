@@ -29,7 +29,25 @@ summary:
     content:
       -
         type: text
-        text: 'Professional designers are truly called upon to serve humanity, with objects of design reflecting a critical role in serving human consciousness. In that sense the products created, while perhaps commercially motivated, can also function as the instruments to teach that the beauty of form and their motives will stimulate higher principles for thoughts and actions. Objectivity requires to be truly dedicated to the tasks, being at once detached and neutral to results and at the same time driven by compassion and unity to service on an archetypal endeavor. Only by paying dedicated and full attention in that process to determine the whole reflects Right Action as the fallout from the premise of right motives. From that disciplined approach emerges a full sense of order and harmony to achieve the goal for the highest quality for Design—hence, with a capital D.'
+        text: 'Professional designers are truly called upon to serve humanity, with objects of design reflecting a critical role in serving human consciousness. In that sense the products created, while perhaps commercially motivated, can also function as the instruments to teach that the beauty of form and their motives will stimulate higher principles for thoughts and actions. Objectivity requires to be truly dedicated to the tasks, being at once detached and neutral to results and at the same time driven by compassion and unity to service on an archetypal endeavor. Only by paying dedicated and full attention in that process to determine the whole reflects Right Action as the fallout from the premise of right motives. From that disciplined approach emerges a full sense of order and harmony to achieve the goal for the highest quality for '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Design
+      -
+        type: text
+        text: '—hence, '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'with a capital D'
+      -
+        type: text
+        text: .
   -
     type: paragraph
     content:
@@ -44,6 +62,6 @@ summary:
         text: 'In other words, that practice of right action enables the Designer to generate a multi-centered intelligence for a consciousness free from the constraints of pre-conditioned expectations and limited perspectives. From this enlightened process, stemming from an illuminated state of being, endless possibilities are made possible as truly creative results and a depth of value, as objects that become truly POETIC enrichments for society and humanity.'
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678065157
+updated_at: 1683054932
 intro_movie: 23rightact-2.25s.m4v
 ---

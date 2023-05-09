@@ -11,7 +11,7 @@ summary:
         marks:
           -
             type: bold
-        text: "The theory of PARALLAX studies ways for us to\_discover expressive options for the communication of ideas."
+        text: 'The theory of PARALLAX reflects a means for expressive options to communicate ideas.'
   -
     type: paragraph
     content:
@@ -86,6 +86,6 @@ summary:
         text: "\_(points at the same time). Once the basic idea to communicate is determined, representations for that idea can be expressed as a short narrative diachronically in three to five steps. That is followed by an inquiry of expressive options that represent parts of the idea from different points-of-view synchronically. This diachronic/synchronic matrix then becomes a system to select parts that serve as parallax views to express that idea. The narrative for that idea can be configured an a variety of ways—sequenced in time or as a single unit."
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678065123
+updated_at: 1683667043
 intro_movie: 23parallax-2.5s.m4v
 ---
