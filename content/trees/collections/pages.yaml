@@ -237,6 +237,9 @@ tree:
             entry: 6e795f0a-4993-4bbf-a975-47c3bd729a59
       -
         entry: 60c710ef-ebc0-4419-95ec-45ecf5b1a2ba
+        children:
+          -
+            entry: 806e8957-09e3-4c95-a0c0-69c235990338
       -
         entry: 2211bd74-89a6-4523-bc2a-8535f1464be8
       -
