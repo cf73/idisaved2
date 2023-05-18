@@ -11,10 +11,10 @@ summary:
         marks:
           -
             type: bold
-        text: 'PARALLAX is a system of inquiry for the expressive options to communicate ideas. The inquiry into parallax becomes a way to discover expressive options for ideas'
+        text: 'PARALLAX is a system'
       -
         type: text
-        text: ". A narrative can be done from two perspectives of time:\_"
+        text: "\_to consider the expression of ideas\_as visual narratives that operate either in a single whole (like a poster) or in the sequence of time ("
       -
         type: text
         marks:
@@ -23,7 +23,7 @@ summary:
         text: diachronically
       -
         type: text
-        text: "\_(as points in succession); and\_"
+        text: "\_and\_"
       -
         type: text
         marks:
@@ -32,9 +32,9 @@ summary:
         text: synchronically
       -
         type: text
-        text: "\_(as points at the same time). "
+        text: ).
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1683683145
-intro_movie: 23parallax-3s-480.mov
+updated_at: 1683907117
+intro_movie: 23parallax-2.5s480.mov
 ---
