@@ -1,9 +1,9 @@
 ---
 id: 4805adfa-10e3-4dc1-938b-7444323a22f0
 blueprint: section
-title: Practics
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674786756
+title: Practics1
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1685821086
 section_summary:
   -
     type: paragraph
