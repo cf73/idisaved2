@@ -4,7 +4,7 @@ blueprint: content
 title: 'word AS image'
 parent: e47dfa72-ebe3-4714-a5c4-b3482e6fb2e3
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1682944934
+updated_at: 1685743502
 main_content:
   -
     id: lh3wtilh
@@ -52,16 +52,19 @@ main_content:
             marks:
               -
                 type: bold
-            text: Summary
+            text: 'Project Summary'
           -
             type: text
-            text: ":\_\_\_\_\_\_\_\_\_\_\_"
-      -
-        type: paragraph
-        content:
+            text: ":\_In our engagement with the world and the routine to “make sense” of complexity, we take for granted the perceptual and holistic principles this interaction involves. Our perception of parts and their "
           -
             type: text
-            text: "In our engagement with the world and the routine to “make sense” of complexity, we take for granted the perceptual and holistic principles this interaction involves. Our perception of parts and configurations in a\_"
+            marks:
+              -
+                type: bold
+            text: configurations
+          -
+            type: text
+            text: " as a\_"
           -
             type: text
             marks:
@@ -127,52 +130,12 @@ main_content:
             text: 'visual delivery'
           -
             type: text
-            text: ".\_\_"
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'Learning objectives:'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: '— Develop visual sensibilities.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: '— Learn about “gestalt” principles and their holistic nature as a “language”.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: '— Observe the power of the visual to affect the non-visual toward its poetic potential.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: '— Develop mind-mapping skills.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: '— Become aware of the practice to design for experience.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: __________________________________________________________________________
+            text: ".\_\_\_"
+    type: text
+    enabled: true
+  -
+    id: lidhelef
+    text:
       -
         type: paragraph
         content:
@@ -187,7 +150,7 @@ main_content:
         content:
           -
             type: text
-            text: "After the unit’s introduction each participant receives an\_"
+            text: "Each participant receives an\_"
           -
             type: text
             marks:
@@ -196,16 +159,7 @@ main_content:
             text: object
           -
             type: text
-            text: "\_(same for all).\_In your studios\_"
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: 'first work individually'
-          -
-            type: text
-            text: "\_to\_"
+            text: "\_(same for all).\_\_"
           -
             type: text
             marks:
@@ -213,7 +167,7 @@ main_content:
                 type: bold
               -
                 type: italic
-            text: 'mind map'
+            text: 'Mind map'
           -
             type: text
             text: "* your identity with the object\_(what it means or can mean to you).\_After about 15 minutes of mind mapping\_"
@@ -225,13 +179,7 @@ main_content:
             text: 'select a single word from your map '
           -
             type: text
-            text: "(for whatever reason or interest you have to connect to the object).\_"
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "For the next two weeks\_"
+            text: "(for whatever reason or interest you have to connect to the object).\_For the next two weeks\_"
           -
             type: text
             marks:
@@ -241,6 +189,19 @@ main_content:
           -
             type: text
             text: .
+      -
+        type: paragraph
+    type: text
+    enabled: true
+  -
+    id: lif1wauw
+    photo:
+      - mindmapping-1685739797.jpg
+    type: image
+    enabled: true
+  -
+    id: lidhggzg
+    text:
       -
         type: paragraph
         content:
@@ -287,10 +248,7 @@ main_content:
             text: "\_your word"
           -
             type: text
-            text: .
-      -
-        type: paragraph
-        content:
+            text: '. '
           -
             type: text
             marks:
@@ -299,13 +257,7 @@ main_content:
             text: "NOTE:\_do NOT"
           -
             type: text
-            text: "\_START with the “mind map”!"
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "Rather:\_"
+            text: "\_START with the “mind map”! Rather:\_"
           -
             type: text
             marks:
@@ -434,8 +386,11 @@ main_content:
           -
             type: text
             text: "\_images or words, etc…..!"
-      -
-        type: paragraph
+    type: text
+    enabled: true
+  -
+    id: lidhi9d5
+    text:
       -
         type: paragraph
         content:
@@ -492,12 +447,11 @@ main_content:
           -
             type: text
             text: "\_and why."
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "\_"
+    type: text
+    enabled: true
+  -
+    id: lidhj7ps
+    text:
       -
         type: paragraph
         content:
@@ -587,30 +541,12 @@ main_content:
             text: 'harmonize meaning of concepts via visual means'
           -
             type: text
-            text: ".\_Consider: actions, visual expressions, configurations of parts,\_installation and placement, user interaction/experience (UI/UX), etc."
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'DUE October 4: PHASES 1-4'
-      -
-        type: paragraph
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "In class present your ideas and process of inquiry.\_Do so in an organized fashion (digital and print) to efficiently share with the class the breadth and depth of your work and value of your search to help them appreciate the results."
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "\_"
+            text: ". Consider: actions, visual expressions, configurations of parts,\_installation and placement, user interaction/experience (UI/UX), etc."
+    type: text
+    enabled: true
+  -
+    id: lidhlfw1
+    text:
       -
         type: paragraph
         content:
@@ -631,7 +567,7 @@ main_content:
             marks:
               -
                 type: bold
-            text: 'experiment with the means'
+            text: 'experiment WITH THE MEANS'
           -
             type: text
             text: "\_that can represent\_"
@@ -688,89 +624,10 @@ main_content:
               -
                 type: bold
             text: "\_"
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'DUE October 11'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: "Final product of optimized results.\_"
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: "Also:\_"
-          -
-            type: text
-            text: "a formal\_"
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'presentation of your process'
-          -
-            type: text
-            text: "\_for inquiry and experiments to let the class become informed and appreciate the value of your inquiries."
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: ________________________________________________________________________
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: "*\_"
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'The mind map'
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: "\_(or concept map) is merely a simple method to reveal the relational values of parts to other parts and groups as wholes.\_"
-          -
-            type: text
-            marks:
-              -
-                type: bold
-              -
-                type: italic
-            text: 'This represents a fundamental principle: meaning exists only from relationship.'
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: "\_By placing a word in the center helps you maintain awareness of the central idea along with the interactive nature of parts and wholes (vs. a “list” as linear path, wherein we tend to loose sight of source and value). The term “mind-map” was popularized by British psychologist Tony Buzan, in the late 1970s; and inspired by Alfred Korzybski’s General Semantics theory. However, the term “mind-map” is somewhat misleading since the system does not truly “map the mind”, but merely documents aspects of “thought” and insight. Actually, long before Buzan others used the same mapping system for similar purposes (e.g., 3rd cent. Greek philosopher, Porphyry, used it to map out Aristotle’s categories; Ernest Wood, 1930s, used this as a means to train concentration skills).\_"
-          -
-            type: text
-            text: "\_Thomas Ockerse"
+    type: text
+    enabled: true
+  -
+    id: lidhnez6
     type: text
     enabled: true
 ---

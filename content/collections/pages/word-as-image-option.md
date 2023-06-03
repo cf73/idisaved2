@@ -7,7 +7,6 @@ main_content:
     id: lh4u793c
     photo:
       - 8-wasi-assignment.002.jpeg
-      - 8-wasi-assignment.003-1682945532.jpeg
     type: image
     enabled: true
   -
@@ -30,6 +29,6 @@ main_content:
     enabled: true
 parent: e47dfa72-ebe3-4714-a5c4-b3482e6fb2e3
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1683050229
+updated_at: 1685743517
 intro_movie: 8-wasi-assign2.m4v
 ---
