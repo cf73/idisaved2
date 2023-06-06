@@ -6,6 +6,9 @@ body {
   color: #1f223e;
 }
 
+a {
+  color: #bd245f;
+}
 a:hover {
   text-decoration: none;
 }
@@ -24,7 +27,6 @@ h1 {
   letter-spacing: 0.06em;
   font-family: "Gill Sans MT W00 Medium";
 }
-
 .meta::before {
   content: "";
   display: block;
@@ -67,14 +69,12 @@ body {
   width: 100vh;
   z-index: 999;
 }
-
 .navigation a {
   color: #c5c2ca;
   transition: all 0.75s;
   margin: 0;
   padding: 30px;
 }
-
 .navigation a:hover {
   background-color: #9195b4;
   transition: all 0.75s;
@@ -101,7 +101,6 @@ body {
   -moz-box-shadow: 0 15px 51px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
 }
-
 .work:hover {
   transform: translateY(-2px);
   transition: all 0.3s;
@@ -182,9 +181,7 @@ body {
   opacity: 0.4;
   transition: all 0.5s;
 }
-
 .dimmed:hover {
   opacity: 1;
   transition: all 0.5s;
 }
-
