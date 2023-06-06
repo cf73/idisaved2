@@ -90,6 +90,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionChimeSDKMessaging(array $args = [])
  * @method \Aws\ChimeSDKVoice\ChimeSDKVoiceClient createChimeSDKVoice(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionChimeSDKVoice(array $args = [])
+ * @method \Aws\CleanRooms\CleanRoomsClient createCleanRooms(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionCleanRooms(array $args = [])
  * @method \Aws\Cloud9\Cloud9Client createCloud9(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionCloud9(array $args = [])
  * @method \Aws\CloudControlApi\CloudControlApiClient createCloudControlApi(array $args = [])
@@ -110,6 +112,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionCloudSearchDomain(array $args = [])
  * @method \Aws\CloudTrail\CloudTrailClient createCloudTrail(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionCloudTrail(array $args = [])
+ * @method \Aws\CloudTrailData\CloudTrailDataClient createCloudTrailData(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionCloudTrailData(array $args = [])
  * @method \Aws\CloudWatch\CloudWatchClient createCloudWatch(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionCloudWatch(array $args = [])
  * @method \Aws\CloudWatchEvents\CloudWatchEventsClient createCloudWatchEvents(array $args = [])
@@ -288,6 +292,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionHoneycode(array $args = [])
  * @method \Aws\IVS\IVSClient createIVS(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionIVS(array $args = [])
+ * @method \Aws\IVSRealTime\IVSRealTimeClient createIVSRealTime(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionIVSRealTime(array $args = [])
  * @method \Aws\Iam\IamClient createIam(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionIam(array $args = [])
  * @method \Aws\IdentityStore\IdentityStoreClient createIdentityStore(array $args = [])
@@ -298,6 +304,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionInspector(array $args = [])
  * @method \Aws\Inspector2\Inspector2Client createInspector2(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionInspector2(array $args = [])
+ * @method \Aws\InternetMonitor\InternetMonitorClient createInternetMonitor(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionInternetMonitor(array $args = [])
  * @method \Aws\IoT1ClickDevicesService\IoT1ClickDevicesServiceClient createIoT1ClickDevicesService(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionIoT1ClickDevicesService(array $args = [])
  * @method \Aws\IoT1ClickProjects\IoT1ClickProjectsClient createIoT1ClickProjects(array $args = [])
@@ -336,6 +344,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionKafka(array $args = [])
  * @method \Aws\KafkaConnect\KafkaConnectClient createKafkaConnect(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionKafkaConnect(array $args = [])
+ * @method \Aws\KendraRanking\KendraRankingClient createKendraRanking(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionKendraRanking(array $args = [])
  * @method \Aws\Keyspaces\KeyspacesClient createKeyspaces(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionKeyspaces(array $args = [])
  * @method \Aws\Kinesis\KinesisClient createKinesis(array $args = [])
@@ -418,6 +428,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionMediaLive(array $args = [])
  * @method \Aws\MediaPackage\MediaPackageClient createMediaPackage(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionMediaPackage(array $args = [])
+ * @method \Aws\MediaPackageV2\MediaPackageV2Client createMediaPackageV2(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionMediaPackageV2(array $args = [])
  * @method \Aws\MediaPackageVod\MediaPackageVodClient createMediaPackageVod(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionMediaPackageVod(array $args = [])
  * @method \Aws\MediaStore\MediaStoreClient createMediaStore(array $args = [])
@@ -450,6 +462,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionNimbleStudio(array $args = [])
  * @method \Aws\OAM\OAMClient createOAM(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionOAM(array $args = [])
+ * @method \Aws\OSIS\OSISClient createOSIS(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionOSIS(array $args = [])
  * @method \Aws\Omics\OmicsClient createOmics(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionOmics(array $args = [])
  * @method \Aws\OpenSearchServerless\OpenSearchServerlessClient createOpenSearchServerless(array $args = [])
@@ -630,12 +644,16 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionTimestreamQuery(array $args = [])
  * @method \Aws\TimestreamWrite\TimestreamWriteClient createTimestreamWrite(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionTimestreamWrite(array $args = [])
+ * @method \Aws\Tnb\TnbClient createTnb(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionTnb(array $args = [])
  * @method \Aws\TranscribeService\TranscribeServiceClient createTranscribeService(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionTranscribeService(array $args = [])
  * @method \Aws\Transfer\TransferClient createTransfer(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionTransfer(array $args = [])
  * @method \Aws\Translate\TranslateClient createTranslate(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionTranslate(array $args = [])
+ * @method \Aws\VPCLattice\VPCLatticeClient createVPCLattice(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionVPCLattice(array $args = [])
  * @method \Aws\VoiceID\VoiceIDClient createVoiceID(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionVoiceID(array $args = [])
  * @method \Aws\WAFV2\WAFV2Client createWAFV2(array $args = [])
@@ -677,7 +695,7 @@ namespace Aws;
  */
 class Sdk
 {
-    const VERSION = '3.255.11';
+    const VERSION = '3.271.9';
 
     /** @var array Arguments for creating clients */
     private $args;
@@ -743,7 +761,7 @@ class Sdk
         $namespace = $service['namespace'];
 
         $klass = "Aws\\{$namespace}\\{$namespace}MultiRegionClient";
-        $klass = class_exists($klass) ? $klass : 'Aws\\MultiRegionClient';
+        $klass = class_exists($klass) ? $klass : MultiRegionClient::class;
 
         return new $klass($this->mergeArgs($namespace, $service, $args));
     }

@@ -338,7 +338,7 @@ EOT
         try {
             $result = $this->doUpdate($input, $output, $io, $requirements, $requireKey, $removeKey);
             if ($result === 0 && count($requirementsToGuess) > 0) {
-                $this->updateRequirementsAfterResolution($requirementsToGuess, $requireKey, $removeKey, $sortPackages, $input->getOption('dry-run'));
+                $result = $this->updateRequirementsAfterResolution($requirementsToGuess, $requireKey, $removeKey, $sortPackages, $input->getOption('dry-run'), $input->getOption('fixed'));
             }
 
             return $result;
@@ -506,7 +506,7 @@ EOT
     /**
      * @param list<string> $requirementsToUpdate
      */
-    private function updateRequirementsAfterResolution(array $requirementsToUpdate, string $requireKey, string $removeKey, bool $sortPackages, bool $dryRun): void
+    private function updateRequirementsAfterResolution(array $requirementsToUpdate, string $requireKey, string $removeKey, bool $sortPackages, bool $dryRun, bool $fixed): int
     {
         $composer = $this->requireComposer();
         $locker = $composer->getLocker();
@@ -523,12 +523,25 @@ EOT
                 continue;
             }
 
-            $requirements[$packageName] = $versionSelector->findRecommendedRequireVersion($package);
+            if ($fixed) {
+                $requirements[$packageName] = $package->getPrettyVersion();
+            } else {
+                $requirements[$packageName] = $versionSelector->findRecommendedRequireVersion($package);
+            }
             $this->getIO()->writeError(sprintf(
                 'Using version <info>%s</info> for <info>%s</info>',
                 $requirements[$packageName],
                 $packageName
             ));
+
+            if (Preg::isMatch('{^dev-(?!main$|master$|trunk$|latest$)}', $requirements[$packageName])) {
+                $this->getIO()->warning('Version '.$requirements[$packageName].' looks like it may be a feature branch which is unlikely to keep working in the long run and may be in an unstable state');
+                if ($this->getIO()->isInteractive() && !$this->getIO()->askConfirmation('Are you sure you want to use this constraint (<comment>Y</comment>) or would you rather abort (<comment>n</comment>) the whole operation [<comment>Y,n</comment>]? ')) {
+                    $this->revertComposerFile();
+
+                    return 1;
+                }
+            }
         }
 
         if (!$dryRun) {
@@ -538,12 +551,19 @@ EOT
                 if (false === $contents) {
                     throw new \RuntimeException('Unable to read '.$this->json->getPath().' contents to update the lock file hash.');
                 }
-                $lock = new JsonFile(Factory::getLockFile($this->json->getPath()));
+                $lockFile = Factory::getLockFile($this->json->getPath());
+                $lockMtime = filemtime($lockFile);
+                $lock = new JsonFile($lockFile);
                 $lockData = $lock->read();
                 $lockData['content-hash'] = Locker::getContentHash($contents);
                 $lock->write($lockData);
+                if (is_int($lockMtime)) {
+                    @touch($lockFile, $lockMtime);
+                }
             }
         }
+
+        return 0;
     }
 
     /**
