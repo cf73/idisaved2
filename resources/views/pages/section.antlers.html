@@ -1,12 +1,12 @@
-<div class="left-col">
+<!-- <div class="left-col">
         {{ nav :from="uri" }}
             {{ unless no_results }}
                     <a href="{{ url }}"><h3>{{ title }}</h3></a>
             {{ /unless }}
         {{ /nav }}
-</div>
+</div> -->
 
-<div class="right-col">
+
     {{if intro_movie}}
     <video autoplay loop width="100%" src="{{intro_movie}}"></video>
     {{else}}
@@ -15,4 +15,3 @@
     <div class="text" style="max-width: 833px; margin: 0 auto;">
         <h2>{{ section_summary }}</h2>
     </div>
-</div>

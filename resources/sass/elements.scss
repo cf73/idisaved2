@@ -1,6 +1,11 @@
 .on {
     text-decoration: underline;
 }
+header {
+    position: fixed;
+    top: 45px;
+    left: 120px;
+}
 .work {
     width: 350px;
     padding: 15px;
@@ -70,6 +75,14 @@
 }
 .right-col {
     background-color: #e1e1e1; position: absolute; left: calc(30% + 69px); padding: 120px 60px; width: calc(70% - 69px); min-height: 100%; padding-bottom: 40vh;
+}
+.content {
+    position:fixed; left:0; top: 180px; width: 70%; padding: 120px 60px; margin-left: 70px;
+    height: 100vh;
+    overflow-x: auto;
+}
+.subnav {
+    background-color: #e1e1e1; position: absolute; left: calc(70% + 69px); padding: 120px 60px; width: calc(30% - 69px); min-height: 100%; padding-bottom: 40vh;
 }
 .dimmed {
     opacity: .4;
