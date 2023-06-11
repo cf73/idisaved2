@@ -188,19 +188,20 @@ header {
   position: fixed;
   left: 0;
   top: 180px;
-  width: 70%;
+  width: 66%;
   padding: 120px 60px;
   margin-left: 70px;
   height: 100vh;
   overflow-x: auto;
+  padding-bottom: 30vh;
 }
 
 .subnav {
   background-color: #e1e1e1;
   position: absolute;
-  left: calc(70% + 69px);
+  left: calc(66% + 69px);
   padding: 120px 60px;
-  width: calc(30% - 69px);
+  width: calc(34% - 69px);
   min-height: 100%;
   padding-bottom: 40vh;
 }
@@ -212,4 +213,25 @@ header {
 .dimmed:hover {
   opacity: 1;
   transition: all 0.5s;
+}
+
+.chapter {
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  cursor: w-resize;
+}
+
+a .chapter {
+  cursor: pointer;
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  transition: all 1s;
+}
+a .chapter:hover {
+  transform: translate(-5px);
+  transition: all 0.25s;
 }

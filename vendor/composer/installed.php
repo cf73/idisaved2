@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '12aad28e1cc46f694dd15c09fa925d731765bf2d',
+        'reference' => 'f1e2b2a3b5505c61dff110aa48b46b872cd120d2',
         'name' => 'statamic/statamic',
         'dev' => true,
     ),
@@ -954,8 +954,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -1228,7 +1228,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '12aad28e1cc46f694dd15c09fa925d731765bf2d',
+            'reference' => 'f1e2b2a3b5505c61dff110aa48b46b872cd120d2',
             'dev_requirement' => false,
         ),
         'statamic/stringy' => array(
