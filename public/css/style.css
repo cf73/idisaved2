@@ -1,17 +1,21 @@
 body {
-  font-family: "Gill Sans MT W03 Book";
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
   color: #5d5d5d;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 0.02em;
   color: #1f223e;
 }
 
+a {
+  color: #bd245f;
+}
 a:hover {
   text-decoration: none;
 }
 
 h1 {
-  font-family: "Gill Sans MT W03 Heavy";
+  font-weight: 700;
 }
 
 .title {
@@ -22,9 +26,8 @@ h1 {
   font-size: 14px;
   text-transform: lowercase;
   letter-spacing: 0.06em;
-  font-family: "Gill Sans MT W00 Medium";
+  font-weight: 500;
 }
-
 .meta::before {
   content: "";
   display: block;
@@ -38,7 +41,7 @@ h1 {
 }
 
 blockquote {
-  font-family: "Gill Sans MT W00 Medium";
+  font-weight: 500;
   font-size: 36px;
   margin-left: 40px;
   margin-bottom: 0;
@@ -67,14 +70,12 @@ body {
   width: 100vh;
   z-index: 999;
 }
-
 .navigation a {
   color: #c5c2ca;
   transition: all 0.75s;
   margin: 0;
   padding: 30px;
 }
-
 .navigation a:hover {
   background-color: #9195b4;
   transition: all 0.75s;
@@ -90,6 +91,12 @@ body {
   text-decoration: underline;
 }
 
+header {
+  position: fixed;
+  top: 45px;
+  left: 120px;
+}
+
 .work {
   width: 350px;
   padding: 15px;
@@ -101,7 +108,6 @@ body {
   -moz-box-shadow: 0 15px 51px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
 }
-
 .work:hover {
   transform: translateY(-2px);
   transition: all 0.3s;
@@ -178,13 +184,54 @@ body {
   padding-bottom: 40vh;
 }
 
+.content {
+  position: fixed;
+  left: 0;
+  top: 180px;
+  width: 66%;
+  padding: 120px 60px;
+  margin-left: 70px;
+  height: 100vh;
+  overflow-x: auto;
+  padding-bottom: 30vh;
+}
+
+.subnav {
+  background-color: #e1e1e1;
+  position: absolute;
+  left: calc(66% + 69px);
+  padding: 120px 60px;
+  width: calc(34% - 69px);
+  min-height: 100%;
+  padding-bottom: 40vh;
+}
+
 .dimmed {
   opacity: 0.4;
   transition: all 0.5s;
 }
-
 .dimmed:hover {
   opacity: 1;
   transition: all 0.5s;
 }
 
+.chapter {
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  cursor: w-resize;
+}
+
+a .chapter {
+  cursor: pointer;
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  transition: all 1s;
+}
+a .chapter:hover {
+  transform: translate(-5px);
+  transition: all 0.25s;
+}

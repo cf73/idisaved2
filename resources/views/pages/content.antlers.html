@@ -1,101 +1,106 @@
-<div style="background-color: green; position: relative;">
-    <div class="left-col">
-        <!-- <a href="{{parent:parent:url}}">
-            <p class="meta">{{parent:parent:title}}</p>
-        </a> -->
 
+<header>
+    <a href="{{parent:parent:uri}}">
+        <h2><svg style="transform:rotate(90deg)" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> {{parent:parent:title}}</h2>
+    </a>
+    
+    <h1>{{parent:title}}</h1>
+</header>
 
-
-        {{ nav :from="parent:parent:uri" }}
-        <div>
-            <a href="{{ url }}"{{ if is_current || is_parent }} style="display: none;" {{/if }}>
-                <h3 style="opacity: .4;">{{ title }}</h3>
-            </a>
-            {{ if is_current || is_parent }}
-            <ul>
-                <a href="{{parent:url}}">
-                    <h1>{{title}}</h1>
+<div class="content">
+    <!-- <div style="position: fixed; bottom: 0; width: 100%; background-color: black;">
+        {{ nav :from="parent:uri" }}
+            <div style="display: flex; align-items: center;">
+                <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #515261;" {{/if }}>
+                    
+                    {{ title }}
                 </a>
-                {{children}}
-                    <h4><a href="{{url}}" {{ if is_current || is_parent }} style="background-color: red;" {{/if }}>{{title}}</a></h4>
-                    <hr>
-                {{/children}}
-                <p style="margin-top: 30px;">{{summary}}</p>
-            </ul>
-            {{ /if }}
+                {{ if is_current || is_parent }}
+                    
+                {{ /if }}
+            </div>
+        {{ /nav }}
+    </div> -->
+    <h2 class="project-title">
+        {{title}}
+    </h2>
+
+    <div style="margin-bottom: 60px;">
+
+        <!-- {{if thumbnail_slides}}
+        <div class="splide">
+            <div class="splide__track">
+                    <div class="splide__list">
+                    {{thumbnail_slides}}                            
+                        <div class="splide__slide slide" style="background-image: url('{{url}}');"></div>
+                    {{/thumbnail_slides}}
+                    </div>
+            </div>
         </div>
-    {{ /nav }}
+        {{/if}} -->
+
+        {{if intro_movie}}
+        <video autoplay loop width="100%" src="{{intro_movie}}"></video>
+        {{/if}}
     </div>
 
-    <div class="right-col">
-        <!-- <div style="position: fixed; bottom: 0; width: 100%; background-color: black;">
-            {{ nav :from="parent:uri" }}
-                <div style="display: flex; align-items: center;">
-                    <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #515261;" {{/if }}>
-                        
-                        {{ title }}
-                    </a>
-                    {{ if is_current || is_parent }}
-                        
-                    {{ /if }}
-                </div>
-            {{ /nav }}
-        </div> -->
-        <h2 class="project-title">
+    {{main_content}}
+
+        {{ if type == "text" }}
+
+            <div class="text" style="max-width: 833px; margin: 0 auto;">
+                {{ text }}
+            </div>
+
+        {{ elseif type == "quote" }}
+
+            <div class="blockquote">
+                <blockquote>{{ quote }}</blockquote>
+                <p class="attribution">— {{ attribution }}</p>
+            </div>
+
+        {{ elseif type == "image" }}
+
+        <div class="row">
+            {{photo}}
+            <div class="col">
+                <figure style="margin: 60px 0;">
+                    <img src="{{ url }}" width="100%" alt="{{ caption }}" />
+                    <figcaption>{{ caption }}</figcaption>
+                </figure>
+            </div>
+            {{/photo}}
+        </div>
+
+        {{ /if }}
+
+    {{/main_content}}
+</div>
+
+<div class="subnav">
+    <!-- <a href="{{parent:parent:url}}">
+        <p class="meta">{{parent:parent:title}}</p>
+    </a> -->
+
+    Sections
+
+    {{ nav :from="parent:uri" }}
+    <a href="{{ url }}">
+        <div class="chapter" {{ if is_current || is_parent }} style="display: none;" {{/if }}>
+            {{ title }}
+        </div>
+    </a>
+        {{ if is_current || is_parent }}
+        <div class="chapter" style="margin-left: -30px;">
             {{title}}
-        </h2>
-    
-        <div style="margin-bottom: 60px;">
-
-            <!-- {{if thumbnail_slides}}
-            <div class="splide">
-                <div class="splide__track">
-                      <div class="splide__list">
-                        {{thumbnail_slides}}                            
-                            <div class="splide__slide slide" style="background-image: url('{{url}}');"></div>
-                        {{/thumbnail_slides}}
-                      </div>
-                </div>
-            </div>
-            {{/if}} -->
-
-            {{if intro_movie}}
-            <video autoplay loop width="100%" src="{{intro_movie}}"></video>
-            {{/if}}
         </div>
-    
-        {{main_content}}
-    
-            {{ if type == "text" }}
-    
-                <div class="text" style="max-width: 833px; margin: 0 auto;">
-                    {{ text }}
-                </div>
-    
-            {{ elseif type == "quote" }}
-    
-                <div class="blockquote">
-                    <blockquote>{{ quote }}</blockquote>
-                    <p class="attribution">— {{ attribution }}</p>
-                </div>
-    
-            {{ elseif type == "image" }}
-    
-            <div class="row">
-                {{photo}}
-                <div class="col">
-                    <figure style="margin: 60px 0;">
-                        <img src="{{ url }}" width="100%" alt="{{ caption }}" />
-                        <figcaption>{{ caption }}</figcaption>
-                    </figure>
-                </div>
-                {{/photo}}
-            </div>
-    
-            {{ /if }}
-    
-        {{/main_content}}
-    </div>
+            <!-- third level nav we don't need and shouldn't allow -->
+            <!-- {{children}}
+                <a href="{{url}}">{{title}}</a>
+                <hr>
+            {{/children}} -->
+        {{ /if }}
+    {{ /nav }}
 </div>
 
 <script>

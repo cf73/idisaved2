@@ -2,17 +2,17 @@
         {{ nav :from="uri" }}
             {{ unless no_results }}
                     <a href="{{ url }}"><h3>{{ title }}</h3></a>
+                    <p>{{summary}}</p>
             {{ /unless }}
         {{ /nav }}
 </div>
 
-<div class="right-col">
-    {{if intro_movie}}
+
+    <!-- {{if intro_movie}}
     <video autoplay loop width="100%" src="{{intro_movie}}"></video>
     {{else}}
     <div style="background-color: grey; height: 30vh; width: 100%; margin-bottom: 120px; text-align: center; color:white;">[intro movie should show here]</div>
     {{/if}}
     <div class="text" style="max-width: 833px; margin: 0 auto;">
         <h2>{{ section_summary }}</h2>
-    </div>
-</div>
+    </div> -->
