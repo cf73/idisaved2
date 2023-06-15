@@ -1,10 +1,14 @@
 body {
   font-family: "Geologica", sans-serif;
-  font-weight: 400;
-  color: #5d5d5d;
+  font-weight: 300;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #1f223e;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.faded {
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 a {
@@ -16,6 +20,13 @@ a:hover {
 
 h1 {
   font-weight: 700;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 400;
 }
 
 .title {
@@ -53,33 +64,33 @@ blockquote {
 }
 
 body {
-  background-color: #ebeef1;
-  padding-left: 100px;
+  background-color: #382743;
 }
 
 .navigation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #7c7091;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
   position: fixed;
-  left: 0;
-  top: 100vh;
-  width: 100vh;
+  top: 144px;
+  width: 100%;
   z-index: 999;
 }
 .navigation a {
-  color: #c5c2ca;
+  color: hsla(0, 0%, 100%, 0.6);
   transition: all 0.75s;
   margin: 0;
-  padding: 30px;
+  padding: 24px 30px;
+  border-radius: 10px;
 }
 .navigation a:hover {
-  background-color: #9195b4;
+  color: #FFFFFF;
   transition: all 0.75s;
   text-decoration: none;
+}
+.navigation a.active {
+  background-color: #2A1039;
+  color: #FFFFFF;
 }
 
 .main-content {
@@ -92,9 +103,10 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 45px;
-  left: 120px;
+  margin-top: 45px;
+  width: 100%;
+  border-bottom: solid 1px #FFFFFF;
+  margin-bottom: 90px;
 }
 
 .work {
@@ -185,25 +197,20 @@ header {
 }
 
 .content {
-  position: fixed;
-  left: 0;
-  top: 180px;
-  width: 66%;
-  padding: 120px 60px;
-  margin-left: 70px;
-  height: 100vh;
+  width: 100%;
+  padding: 24px 15px;
+  height: auto;
+  max-height: calc(100vh - 108px);
   overflow-x: auto;
   padding-bottom: 30vh;
+  border-radius: 10px;
+  background-color: #2A1039;
 }
 
 .subnav {
-  background-color: #e1e1e1;
-  position: absolute;
-  left: calc(66% + 69px);
-  padding: 120px 60px;
-  width: calc(34% - 69px);
-  min-height: 100%;
-  padding-bottom: 40vh;
+  background-color: #2A1039;
+  border-radius: 10px;
+  padding: 24px 15px;
 }
 
 .dimmed {
@@ -216,7 +223,8 @@ header {
 }
 
 .chapter {
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
+  color: #2A1039;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 16px;
@@ -225,7 +233,8 @@ header {
 
 a .chapter {
   cursor: pointer;
-  background-color: #F5F5F5;
+  background-color: #382743;
+  color: #FFFFFF;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 16px;

@@ -12,13 +12,15 @@ $Black: 900;
 
 body {
     font-family: $geologica;
-    font-weight: $Regular;
-    color: $charcoal;
+    font-weight: $Light;
     font-size: 14px;
     letter-spacing: 0.02em;
-    color: #1f223e;
+    line-height: 24px;
+    color: $light;
 }
-
+.faded {
+    color: $light60;
+}
 a {
     color: $blast;
     &:hover {
@@ -28,6 +30,13 @@ a {
 
 h1 {
     font-weight: $Bold;
+    font-size: 36px;
+
+}
+h2 {
+    font-size: 24px;
+    color: $light60;
+    font-weight: $Regular;
 }
 .title {
     font-size: 4em;
