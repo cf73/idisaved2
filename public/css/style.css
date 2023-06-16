@@ -65,6 +65,9 @@ blockquote {
 
 body {
   background-color: #382743;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navigation {
@@ -73,7 +76,6 @@ body {
   justify-content: space-between;
   position: fixed;
   top: 144px;
-  width: 100%;
   z-index: 999;
 }
 .navigation a {
@@ -106,7 +108,7 @@ header {
   margin-top: 45px;
   width: 100%;
   border-bottom: solid 1px #FFFFFF;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
 }
 
 .work {
@@ -223,12 +225,10 @@ header {
 }
 
 .chapter {
-  background-color: #FFFFFF;
   color: #2A1039;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 16px;
-  cursor: w-resize;
 }
 
 a .chapter {
@@ -242,5 +242,14 @@ a .chapter {
 }
 a .chapter:hover {
   transform: translate(-5px);
+  transition: all 0.25s;
+}
+a .chapter.active {
+  background-color: #FFFFFF;
+  color: #2A1039;
+  cursor: w-resize;
+}
+a .chapter.active:hover {
+  transform: translate(0px);
   transition: all 0.25s;
 }

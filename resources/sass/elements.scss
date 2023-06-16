@@ -5,7 +5,7 @@ header {
     margin-top: 45px;
     width: 100%;
     border-bottom: solid 1px $light;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
 }
 .work {
     width: 350px;
@@ -99,12 +99,10 @@ header {
     }
 }
 .chapter {
-    background-color: $light;
     color: $dark;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 16px;
-    cursor: w-resize;
 }
 a {
     .chapter {
@@ -118,6 +116,15 @@ a {
             &:hover{
             transform: translate(-5px);
             transition: all .25s;
+            }
+            &.active {
+                background-color: $light;
+                color: $dark;
+                cursor: w-resize;
+                &:hover {
+                    transform: translate(0px);
+                    transition: all .25s;
+                }
             }
         }
 }

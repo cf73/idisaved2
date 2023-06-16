@@ -1,5 +1,8 @@
 body {
     background-color: $mid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .navigation {
     display: flex;
@@ -7,7 +10,6 @@ body {
     justify-content:space-between;
     position: fixed;
     top: 144px;
-    width: 100%;
     z-index: 999;
     & a {
         color: $light60;
