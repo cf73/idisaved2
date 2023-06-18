@@ -1,10 +1,14 @@
 body {
   font-family: "Geologica", sans-serif;
-  font-weight: 400;
-  color: #5d5d5d;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #1f223e;
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 26px;
+  color: #E0F5FF;
+}
+
+.faded {
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 a {
@@ -16,6 +20,31 @@ a:hover {
 
 h1 {
   font-weight: 700;
+  font-size: 48px;
+  color: #16253C;
+  background-color: #E0F5FF;
+  display: inline-block;
+  padding: 8px 8px 0 8px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #E0F5FF;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+h3 {
+  font-size: 24px;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 18px;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 400;
+  margin: 0;
 }
 
 .title {
@@ -53,33 +82,36 @@ blockquote {
 }
 
 body {
-  background-color: #ebeef1;
-  padding-left: 100px;
+  background-color: #273856;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 15px;
 }
 
 .navigation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #7c7091;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
   position: fixed;
-  left: 0;
-  top: 100vh;
-  width: 100vh;
+  top: 164px;
   z-index: 999;
 }
 .navigation a {
-  color: #c5c2ca;
+  color: hsla(0, 0%, 100%, 0.6);
   transition: all 0.75s;
   margin: 0;
-  padding: 30px;
+  padding: 24px 30px;
+  border-radius: 10px;
 }
 .navigation a:hover {
-  background-color: #9195b4;
+  color: #E0F5FF;
   transition: all 0.75s;
   text-decoration: none;
+}
+.navigation a.active {
+  background-color: #16253C;
+  color: #E0F5FF;
 }
 
 .main-content {
@@ -92,9 +124,9 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 45px;
-  left: 120px;
+  margin-top: 45px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .work {
@@ -185,25 +217,19 @@ header {
 }
 
 .content {
-  position: fixed;
-  left: 0;
-  top: 180px;
-  width: 66%;
-  padding: 120px 60px;
-  margin-left: 70px;
-  height: 100vh;
+  width: 100%;
+  padding: 24px 45px;
+  height: auto;
+  max-height: calc(100vh - 180px);
   overflow-x: auto;
-  padding-bottom: 30vh;
+  border-radius: 10px;
+  background-color: #16253C;
 }
 
 .subnav {
-  background-color: #e1e1e1;
-  position: absolute;
-  left: calc(66% + 69px);
-  padding: 120px 60px;
-  width: calc(34% - 69px);
-  min-height: 100%;
-  padding-bottom: 40vh;
+  background-color: #16253C;
+  border-radius: 10px;
+  padding: 24px 15px;
 }
 
 .dimmed {
@@ -216,16 +242,16 @@ header {
 }
 
 .chapter {
-  background-color: #F5F5F5;
+  color: #16253C;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 16px;
-  cursor: w-resize;
 }
 
 a .chapter {
   cursor: pointer;
-  background-color: #F5F5F5;
+  background-color: #273856;
+  color: #E0F5FF;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 16px;
@@ -233,5 +259,14 @@ a .chapter {
 }
 a .chapter:hover {
   transform: translate(-5px);
+  transition: all 0.25s;
+}
+a .chapter.active {
+  background-color: #E0F5FF;
+  color: #16253C;
+  cursor: w-resize;
+}
+a .chapter.active:hover {
+  transform: translate(0px);
   transition: all 0.25s;
 }

@@ -2,9 +2,9 @@
     text-decoration: underline;
 }
 header {
-    position: fixed;
-    top: 45px;
-    left: 120px;
+    margin-top: 45px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 .work {
     width: 350px;
@@ -77,13 +77,16 @@ header {
     background-color: #e1e1e1; position: absolute; left: calc(30% + 69px); padding: 120px 60px; width: calc(70% - 69px); min-height: 100%; padding-bottom: 40vh;
 }
 .content {
-    position:fixed; left:0; top: 180px; width: 66%; padding: 120px 60px; margin-left: 70px;
-    height: 100vh;
+    width: 100%; 
+    padding: 24px 45px;
+    height: auto;
+    max-height: calc(100vh - 180px);
     overflow-x: auto;
-    padding-bottom: 30vh;
+    border-radius: 10px;
+    background-color: $dark;
 }
 .subnav {
-    background-color: #e1e1e1; position: absolute; left: calc(66% + 69px); padding: 120px 60px; width: calc(34% - 69px); min-height: 100%; padding-bottom: 40vh;
+    background-color: $dark; border-radius: 10px; padding: 24px 15px;
 }
 .dimmed {
     opacity: .4;
@@ -94,16 +97,16 @@ header {
     }
 }
 .chapter {
-    background-color: $light;
+    color: $dark;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 16px;
-    cursor: w-resize;
 }
 a {
     .chapter {
         cursor: pointer;
-        background-color: $light;
+        background-color: $mid;
+        color: $light;
         padding: 20px;
         border-radius: 10px;
         margin-bottom: 16px;
@@ -111,6 +114,15 @@ a {
             &:hover{
             transform: translate(-5px);
             transition: all .25s;
+            }
+            &.active {
+                background-color: $light;
+                color: $dark;
+                cursor: w-resize;
+                &:hover {
+                    transform: translate(0px);
+                    transition: all .25s;
+                }
             }
         }
 }

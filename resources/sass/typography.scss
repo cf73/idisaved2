@@ -12,13 +12,15 @@ $Black: 900;
 
 body {
     font-family: $geologica;
-    font-weight: $Regular;
-    color: $charcoal;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: #1f223e;
+    font-weight: $ExtraLight;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 26px;
+    color: $light;
 }
-
+.faded {
+    color: $light60;
+}
 a {
     color: $blast;
     &:hover {
@@ -28,6 +30,28 @@ a {
 
 h1 {
     font-weight: $Bold;
+    font-size: 48px;
+    color: $dark;
+    background-color: $light;
+    display: inline-block;
+    padding: 8px 8px 0 8px;
+}
+h2 {
+    font-size:36px;
+    color: $light;
+    font-weight: $Regular;
+    letter-spacing: 0.06em;
+}
+h3 {
+    font-size: 24px;
+    color: $light60;
+    font-weight: $Regular;
+}
+h4 {
+    font-size: 18px;
+    color: $light60;
+    font-weight: $Regular;
+    margin: 0;
 }
 .title {
     font-size: 4em;

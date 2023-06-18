@@ -1,11 +1,16 @@
-<div class="left-col">
-        {{ nav :from="uri" }}
-            {{ unless no_results }}
-                    <a href="{{ url }}"><h3>{{ title }}</h3></a>
-                    <p>{{summary}}</p>
-            {{ /unless }}
-        {{ /nav }}
+
+<div class="col-lg-10" style="margin-top: 72px;">
+
+    <h1 style="margin-bottom: 3rem;">{{title}}</h1>
+
+    {{ nav :from="uri" }}
+        {{ unless no_results }}
+                <a href="{{ url }}"><h3>{{ title }}</h3></a>
+                <p>{{summary}}</p>
+        {{ /unless }}
+    {{ /nav }}
 </div>
+
 
 
     <!-- {{if intro_movie}}
