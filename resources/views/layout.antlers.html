@@ -14,7 +14,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
-    <body style="background-image: url('/assets/swirl.svg');">
+    <body>
+        <!-- style="background-image: url('/assets/swirl.svg');" -->
                 <!-- <div class="quote" style="margin-bottom: 60px; margin-top: 30px;">
                     {{collection:quotes sort="random" limit="1" }}
                         {{quote}}
@@ -33,8 +34,10 @@
                             {{ nav :from="/" }}
                                 <div style="display: flex; align-items: center;">
                                     <a href="{{ url }}"{{ if is_current || is_parent }} class="active" {{/if }}>
-                
-                                        {{ title }}
+                                        <h3 style="margin: 0;">
+                                            <img src="{{icon}}" alt="{{title}}" width="48px" style="margin-right: 12px;">
+                                            {{ title }}
+                                        </h3>
                                     </a>
                                     {{ if is_current || is_parent }}
                 

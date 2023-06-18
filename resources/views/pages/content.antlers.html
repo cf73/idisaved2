@@ -1,13 +1,32 @@
 <div class="row">
     <div class="col-md-12">
         <header>
-            <a href="{{parent:parent:uri}}">
-                <h2><svg style="transform:rotate(90deg)" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> {{parent:parent:title}}</h2>
-            </a>
-            <h1>{{parent:title}}</h1>
-            <!-- <div class="faded" style="max-height: 120px; overflow: hidden;">
-                <p>{{parent:summary}}</p>
-            </div> -->
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div>
+                    <a href="{{parent:parent:uri}}">
+                        <h3><svg style="transform:rotate(90deg)" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> {{parent:parent:title}}</h3>
+                    </a>
+                    <h2>{{parent:title}}</h2>
+                </div>
+                <div class="faded" style="display: flex; flex-direction: row; column-gap: 30px;">
+                    <div>
+                        <p style="margin-bottom: -6px;">Previous Topic:</p>
+                        <a style="color: inherit; border-bottom: solid 1px;" href="">Visual Systems</a>
+                    </div>
+                    
+                    <div>
+                        <p style="margin-bottom: -6px;">Next Topic:</p>
+                        {{ nav from="{parent:parent:uri}" }}
+
+
+        <li><a href="{{ prev.url }}">{{ prev.title }}</a></li>
+
+
+    
+{{ /nav }}
+                    </div>
+                </div>
+            </div>
         </header>
     </div>
 </div>
@@ -28,12 +47,9 @@
                     </div>
                 {{ /nav }}
             </div> -->
-            <h2 class="project-title">
-                {{title}}
-            </h2>
     
             {{if intro_movie}}
-                <div style="margin-bottom: 60px;">
+                <div>
         
                     <!-- {{if thumbnail_slides}}
                     <div class="splide">
@@ -51,6 +67,10 @@
                     
                 </div>
             {{/if}}
+
+            <h1 class="project-title" style="position: relative; top:-1em; left: .5em;">
+                {{title}}
+            </h1>
     
             {{main_content}}
     
@@ -69,7 +89,7 @@
     
                 {{ elseif type == "image" }}
     
-                <div class="row">
+                <div class="row" style="align-items: center;">
                     {{photo}}
                     <div class="col">
                         <figure style="margin: 24px 0;">

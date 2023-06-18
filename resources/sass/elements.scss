@@ -4,7 +4,6 @@
 header {
     margin-top: 45px;
     width: 100%;
-    border-bottom: solid 1px $light;
     margin-bottom: 30px;
 }
 .work {
@@ -81,9 +80,8 @@ header {
     width: 100%; 
     padding: 24px 15px;
     height: auto;
-    max-height: calc(100vh - 108px);
+    max-height: calc(100vh - 204px);
     overflow-x: auto;
-    padding-bottom: 30vh;
     border-radius: 10px;
     background-color: $dark;
 }

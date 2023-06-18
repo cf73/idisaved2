@@ -1,10 +1,10 @@
 body {
   font-family: "Geologica", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  line-height: 24px;
-  color: #FFFFFF;
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 30px;
+  color: #E0F5FF;
 }
 
 .faded {
@@ -20,10 +20,21 @@ a:hover {
 
 h1 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 48px;
+  color: #16253C;
+  background-color: #E0F5FF;
+  display: inline-block;
+  padding: 8px 8px 0 8px;
 }
 
 h2 {
+  font-size: 36px;
+  color: #E0F5FF;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+h3 {
   font-size: 24px;
   color: hsla(0, 0%, 100%, 0.6);
   font-weight: 400;
@@ -64,10 +75,11 @@ blockquote {
 }
 
 body {
-  background-color: #382743;
+  background-color: #273856;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0 15px;
 }
 
 .navigation {
@@ -86,13 +98,13 @@ body {
   border-radius: 10px;
 }
 .navigation a:hover {
-  color: #FFFFFF;
+  color: #E0F5FF;
   transition: all 0.75s;
   text-decoration: none;
 }
 .navigation a.active {
-  background-color: #2A1039;
-  color: #FFFFFF;
+  background-color: #16253C;
+  color: #E0F5FF;
 }
 
 .main-content {
@@ -107,7 +119,6 @@ body {
 header {
   margin-top: 45px;
   width: 100%;
-  border-bottom: solid 1px #FFFFFF;
   margin-bottom: 30px;
 }
 
@@ -202,15 +213,14 @@ header {
   width: 100%;
   padding: 24px 15px;
   height: auto;
-  max-height: calc(100vh - 108px);
+  max-height: calc(100vh - 204px);
   overflow-x: auto;
-  padding-bottom: 30vh;
   border-radius: 10px;
-  background-color: #2A1039;
+  background-color: #16253C;
 }
 
 .subnav {
-  background-color: #2A1039;
+  background-color: #16253C;
   border-radius: 10px;
   padding: 24px 15px;
 }
@@ -225,7 +235,7 @@ header {
 }
 
 .chapter {
-  color: #2A1039;
+  color: #16253C;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 16px;
@@ -233,8 +243,8 @@ header {
 
 a .chapter {
   cursor: pointer;
-  background-color: #382743;
-  color: #FFFFFF;
+  background-color: #273856;
+  color: #E0F5FF;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 16px;
@@ -245,8 +255,8 @@ a .chapter:hover {
   transition: all 0.25s;
 }
 a .chapter.active {
-  background-color: #FFFFFF;
-  color: #2A1039;
+  background-color: #E0F5FF;
+  color: #16253C;
   cursor: w-resize;
 }
 a .chapter.active:hover {
