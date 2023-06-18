@@ -78,9 +78,9 @@ header {
 }
 .content {
     width: 100%; 
-    padding: 24px 15px;
+    padding: 24px 45px;
     height: auto;
-    max-height: calc(100vh - 204px);
+    max-height: calc(100vh - 180px);
     overflow-x: auto;
     border-radius: 10px;
     background-color: $dark;

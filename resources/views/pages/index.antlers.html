@@ -29,7 +29,6 @@
             </div> -->
     
             {{if intro_movie}}
-                <div style="margin-bottom: 60px;">
         
                     <!-- {{if thumbnail_slides}}
                     <div class="splide">
@@ -45,7 +44,14 @@
                     
                     <video autoplay loop width="100%" src="{{intro_movie}}"></video>
                     
-                </div>
+
+                <h1 class="project-title" style="position: relative; top:-1em; left: .5em;">
+                    Introduction
+                </h1>
+                {{else}}
+                <h1 class="project-title" style="position: relative; left: .5em;">
+                    Introduction
+                </h1>
             {{/if}}
     
             {{summary}}
@@ -58,8 +64,11 @@
                 <p class="meta">{{parent:parent:title}}</p>
             </a> -->
     
-            Sections
-
+            <div style="display: flex; flex-direction: row; align-items: center;">
+                <img src="/assets/icons/Sections.svg" width="24px" alt="Sections" style="margin-right: 12px;">
+                <h4>Sections</h4>
+            </div>
+            <br>
             <a href="#">
                 <div class="chapter active">
                     Introduction

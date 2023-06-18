@@ -14,17 +14,12 @@
                         <a style="color: inherit; border-bottom: solid 1px;" href="">Visual Systems</a>
                     </div>
                     
-                    <div>
+                    <!-- <div>
                         <p style="margin-bottom: -6px;">Next Topic:</p>
                         {{ nav from="{parent:parent:uri}" }}
-
-
-        <li><a href="{{ prev.url }}">{{ prev.title }}</a></li>
-
-
-    
-{{ /nav }}
-                    </div>
+                            <li><a href="{{ prev.url }}">{{ prev.title }}</a></li>
+                        {{ /nav }}
+                    </div> -->
                 </div>
             </div>
         </header>
@@ -49,7 +44,6 @@
             </div> -->
     
             {{if intro_movie}}
-                <div>
         
                     <!-- {{if thumbnail_slides}}
                     <div class="splide">
@@ -65,12 +59,17 @@
                     
                     <video autoplay loop width="100%" src="{{intro_movie}}"></video>
                     
-                </div>
+
+                <h1 class="project-title" style="position: relative; top:-1em; left: .5em;">
+                    {{title}}
+                </h1>
+                {{else}}
+                <h1 class="project-title" style="position: relative; left: .5em;">
+                    {{title}}
+                </h1>
             {{/if}}
 
-            <h1 class="project-title" style="position: relative; top:-1em; left: .5em;">
-                {{title}}
-            </h1>
+            
     
             {{main_content}}
     
@@ -111,9 +110,11 @@
             <!-- <a href="{{parent:parent:url}}">
                 <p class="meta">{{parent:parent:title}}</p>
             </a> -->
-    
-            Sections
-            
+            <div style="display: flex; flex-direction: row; align-items: center;">
+                <img src="/assets/icons/Sections.svg" width="24px" alt="Sections" style="margin-right: 12px;">
+                <h4>Sections</h4>
+            </div>
+            <br>
             <a href="{{parent:uri}}">
                 <div class="chapter">
                     Introduction

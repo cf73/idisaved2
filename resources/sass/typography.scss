@@ -15,7 +15,7 @@ body {
     font-weight: $ExtraLight;
     font-size: 16px;
     letter-spacing: 0.04em;
-    line-height: 30px;
+    line-height: 26px;
     color: $light;
 }
 .faded {
@@ -46,6 +46,12 @@ h3 {
     font-size: 24px;
     color: $light60;
     font-weight: $Regular;
+}
+h4 {
+    font-size: 18px;
+    color: $light60;
+    font-weight: $Regular;
+    margin: 0;
 }
 .title {
     font-size: 4em;

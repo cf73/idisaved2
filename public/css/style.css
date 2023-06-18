@@ -3,7 +3,7 @@ body {
   font-weight: 200;
   font-size: 16px;
   letter-spacing: 0.04em;
-  line-height: 30px;
+  line-height: 26px;
   color: #E0F5FF;
 }
 
@@ -38,6 +38,13 @@ h3 {
   font-size: 24px;
   color: hsla(0, 0%, 100%, 0.6);
   font-weight: 400;
+}
+
+h4 {
+  font-size: 18px;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 400;
+  margin: 0;
 }
 
 .title {
@@ -87,7 +94,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  top: 144px;
+  top: 164px;
   z-index: 999;
 }
 .navigation a {
@@ -211,9 +218,9 @@ header {
 
 .content {
   width: 100%;
-  padding: 24px 15px;
+  padding: 24px 45px;
   height: auto;
-  max-height: calc(100vh - 204px);
+  max-height: calc(100vh - 180px);
   overflow-x: auto;
   border-radius: 10px;
   background-color: #16253C;
