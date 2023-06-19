@@ -13,19 +13,22 @@ body {
     top: 164px;
     z-index: 999;
     & a {
-        color: $light60;
         transition: all .75s;
         margin: 0;
         padding: 24px 30px;
         border-radius: 10px;
-        &:hover {
-            color: $light;
-            transition: all .75s;
-            text-decoration: none;
+        & h3 {
+            &:hover {
+                color: $light;
+                transition: all .25s;
+                text-decoration: none;
+            }
         }
         &.active {
             background-color: $dark;
-            color: $light;
+            & h3 {
+                color: $light;
+            }
         }
     }
 }
