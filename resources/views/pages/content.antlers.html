@@ -1,3 +1,13 @@
+<div class="section-splash">
+    {{if intro_movie}}
+    <div class="sectionMovie">
+        <video autoplay loop width="100%" src="{{parent:intro_movie}}"></video>
+    </div>
+        {{else}}
+        <div style="background-color: grey; height: 30vh; width: 100%; margin-bottom: 120px; text-align: center; color:white;">[intro movie should show here]</div>
+    {{/if}}
+    
+</div>
 <div class="row">
     <div class="col-md-12">
         <header>
