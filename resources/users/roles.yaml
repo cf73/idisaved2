@@ -75,3 +75,4 @@ editor:
     - 'move movies assets'
     - 'rename movies assets'
     - 'delete movies assets'
+    - 'access default site'
