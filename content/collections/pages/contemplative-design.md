@@ -8,27 +8,6 @@ summary:
     content:
       -
         type: text
-        text: 'The theory of '
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: 'contemplative design'
-      -
-        type: text
-        text: " explores\_"
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: 'how to stimulate one’s depth of consciousness.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
         marks:
           -
             type: bold
@@ -44,7 +23,7 @@ summary:
         text: 'practice design via the gateway to consciousness'
       -
         type: text
-        text: '. In short, '
+        text: '. In other words, '
       -
         type: text
         marks:
@@ -89,30 +68,33 @@ summary:
         text: 'awareness of oneself'
       -
         type: text
-        text: ' and the activity involved. '
+        text: '  and the activity involved. '
       -
         type: text
         marks:
           -
             type: bold
-        text: 'This means a practice of attention to give thought its right place.'
-  -
-    type: paragraph
-    content:
+        text: 'This means a practice of attention to give thought its right place. '
       -
         type: text
-        text: "While science has long rejected introspection when studying consciousness, it has begun to acknowledge that cognitive control and attention are essential to understanding—and understanding means first to understand oneself. Behavioral science and psychology confirm that\_who we are"
+        text: 'Therefore, the theory of '
       -
         type: text
         marks:
           -
             type: bold
-        text: "\_"
+        text: 'contemplative design'
       -
         type: text
-        text: "filters our perceptions that color our understanding and our projections. Knowing oneself means to become aware of that filter and its projections. Without this self-knowledge we can only perpetuate the past and limit ourselves from seeing anything new. In that sense we can say that\_the practice of contemplation is essential for digesting life."
+        text: " explores\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'how to stimulate one’s depth of consciousness.'
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678402795
-intro_movie: 23contempl-3.0s.m4v
+updated_at: 1695512869
+intro_movie: 23contempla-480.mov
 ---

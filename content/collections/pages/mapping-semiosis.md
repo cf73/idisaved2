@@ -1133,6 +1133,6 @@ main_content:
     enabled: true
 parent: 5f4e18ff-4cb1-48d8-a39e-20d64823fa66
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1685646306
+updated_at: 1692389974
 intro_movie: 23mappingsemiotics.m4v
 ---

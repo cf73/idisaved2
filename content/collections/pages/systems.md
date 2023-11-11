@@ -1,7 +1,7 @@
 ---
 id: 9e5ee82e-03bf-4b85-b141-e5b377401f94
 blueprint: index
-title: 'VISUAL SYSTEMS'
+title: SYSTEMS
 summary:
   -
     type: paragraph
@@ -29,7 +29,7 @@ summary:
     content:
       -
         type: text
-        text: "A system, an abstraction arising from identifiable patterns, relates parts to a whole as a special way of looking at an object.\_This view can compare to the nature of language as the grammar of parts and how they operate in the whole. As the philosopher Charles Morris once said:\_"
+        text: "A system is an abstraction of identifiable patterns that relates parts to a whole as a certain way of looking at an object.\_This view can compare to the nature of language as the grammar of parts and how they operate in the whole. As the philosopher Charles Morris once said:\_"
       -
         type: text
         marks:
@@ -44,13 +44,40 @@ summary:
     content:
       -
         type: text
-        text: "A system, a special way of looking at an object, encompasses abstraction arising from identifiable patterns for and within a whole. The key word is pattern. Human beings, intrinsically organizers, become for that reason “pattern seekers”. Partly the basis for design, along with a basic human desire to organize, order, and seek harmony in wholeness, pattern seeking reveals a natural phenomenon for the mechanisms of mind. Perception and thinking reflect the relational phenomena that are essential to the search for meaning, and without relationship meaning is not possible. The more we become aware of relationship the more we come to understand.\_\_"
+        text: 'The key word for system is the principle of '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: pattern
+      -
+        type: text
+        text: '. Human beings having the intrinsic need for organizing, become for that reason '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'pattern seekers'
+      -
+        type: text
+        text: ". As such this basic human desire to organize, order, and seek harmony in wholeness, pattern seeking reveals a natural phenomenon for the mechanisms of mind. Perception and thinking reflect the relational phenomena that are essential to the search for meaning since without relationship meaning is not possible. The more we become aware of relationship the more we come to understand.\_\_Hence this becomes the basis for design."
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'This inherent organizational phenomenon is recognized by psychologists as a “gestalt” principle, hence Gestalt Psychology. In other words, in our search for meaning understanding the patterns or systems help illuminate complexity. Thus, meaning depends on our capacity to see the operating patterns of cause and effect. The more we can take in from this relational dynamic the more we come to understand.'
+        text: 'This inherent organizational phenomenon is recognized by psychologists as a “gestalt” principle, hence '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Gestalt Psychology'
+      -
+        type: text
+        text: '. In other words, in our search for meaning understanding the patterns or systems help illuminate complexity. Thus, meaning depends on our capacity to see the operating patterns of cause and effect. The more we can take in from this relational dynamic the more we come to understand.'
   -
     type: paragraph
     content:
@@ -65,6 +92,6 @@ summary:
         text: "In summary, systems thinking exists as a fundamental principle for all we do. While that may seem to instill in us some apprehension in appearing as a constraint, the truth that understanding the nature and possibilities of systems gives humanity a very liberating tool, becomes a way of looking at something that in return is also a way that tells us something, which can therefore influence and change one’s point of view.\_"
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678065317
-intro_movie: 23systems-1.5s.m4v
+updated_at: 1695574666
+intro_movie: 23systemsshort480.mov
 ---

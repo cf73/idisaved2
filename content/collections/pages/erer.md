@@ -3,8 +3,8 @@ id: 31b3086a-affa-4fbf-83e4-5eb1f3ec95a8
 blueprint: homepage
 template: default
 title: 'Incite Design Insight'
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1687111348
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1695575756
 short_description: 'IDI, short for InciteDesignInsight.com, is a comprehensive website that presents an archive of design work under the actions and auspices of Tom Ockerse since 1965.'
 description:
   -
@@ -57,5 +57,23 @@ description:
             content:
               -
                 type: text
-                text: 'THEORETICS: represents the broader categories for inquiries stimulated by the work itself and/or by literary and scholarly sources also in search of the principles for meaning, ethics, and value. • TOETICS: represents self-published books and documentations to share work that conventional outlets (publishers, galleries, etc.) found inappropriate.'
+                text: 'THEORETICS: represents the broader categories for inquiries stimulated by the work itself and/or by literary and scholarly sources also in search of the principles for meaning, ethics, and value. '
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'LINKTICS: contains a variety of influential facets that proved significant to the unfolding of all that is presented in IDI.'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'TOETICS: represents self-published books and documentations to share work that conventional outlets (publishers, galleries, etc.) found inappropriate.'
 ---

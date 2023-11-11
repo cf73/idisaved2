@@ -4,7 +4,7 @@ blueprint: content
 title: SILHOUETTES
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678055104
+updated_at: 1694984293
 intro_movie: 23kisilhou-2.25s.m4v
 main_content:
   -
@@ -15,7 +15,13 @@ main_content:
         content:
           -
             type: text
-            text: 'This is '
+            marks:
+              -
+                type: bold
+            text: 'SILHOUETTES '
+          -
+            type: text
+            text: 'is '
           -
             type: text
             marks:

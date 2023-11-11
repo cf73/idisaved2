@@ -4,10 +4,6 @@ blueprint: content
 title: 'PARALLAX: narratives'
 main_content:
   -
-    id: lhh1hui0
-    type: image
-    enabled: true
-  -
     id: lhkuogmj
     photo:
       - parallax-synchr-diachr.001.jpeg
@@ -800,6 +796,6 @@ main_content:
     type: movie
     enabled: true
 parent: 60c710ef-ebc0-4419-95ec-45ecf5b1a2ba
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1684423609
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1692389055
 ---

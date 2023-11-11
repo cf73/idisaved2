@@ -17,7 +17,7 @@ summary:
         text: CONCRETISM
       -
         type: text
-        text: " studies the relationships of parts and wholes wherein we come to view that parts offer a depth of value\_and meaning while they exist in this network of holism. On the one hand "
+        text: " studies the relationships of parts and wholes wherein we come to view that parts offer a depth of value\_and meaning gained from their dynamic relationships in this network of holism. On the one hand "
       -
         type: text
         marks:
@@ -63,10 +63,10 @@ summary:
         marks:
           -
             type: bold
-        text: 'serves a unity of ONENESS'
+        text: 'serves an overall unity of ONENESS'
       -
         type: text
-        text: ' wherein the so-called abstract dimension becomes associated with permanence while the tangible dimension is always impermanence or being in flux. This represents a significant '
+        text: ' wherein the so-called abstract dimension becomes associated with permanence while the tangible dimension is always impermanent by being in flux. In other words, this represents a significant '
       -
         type: text
         marks:
@@ -96,6 +96,6 @@ summary:
         text: '.  '
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1684020318
+updated_at: 1695501918
 intro_movie: 23concr-3.2s480.mov
 ---

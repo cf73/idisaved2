@@ -8,7 +8,13 @@ summary:
     content:
       -
         type: text
-        text: "The theory of LANGUAGE\_studies the systemic ordering of relationships to serve communication."
+        marks:
+          -
+            type: bold
+        text: "The theory of LANGUAGE\_"
+      -
+        type: text
+        text: 'studies the systemic ordering of relationships for communication.'
   -
     type: paragraph
     content:
@@ -129,7 +135,7 @@ summary:
         text: practical
       -
         type: text
-        text: "\_serves to communicate with a singleness of meaning, characteristic of informational clarity and directness. The"
+        text: "\_serves to communicate with a singleness of meaning for the purpose of informational clarity and directness. The "
       -
         type: text
         marks:
@@ -138,7 +144,7 @@ summary:
         text: dialectical
       -
         type: text
-        text: "\_use of language serves to communicate rhetorically, meaning to encourage, council, or persuade, having some ulterior motive typical of advertising, propaganda, and political speeches. The\_"
+        text: "\_use of language serves to communicate rhetorically, meaning to encourage, council, or persuade, having some ulterior motive. This typically serves the needs of advertising, propaganda, and political speeches. The "
       -
         type: text
         marks:
@@ -147,9 +153,9 @@ summary:
         text: poetical
       -
         type: text
-        text: "\_use of language intends to inspire and deepen consciousness to expand and broaden understanding.\_These three uses relate in a concentric relationship, starting in the center with the immediate need to represent, and then expands to color information subjectively, or then to objectively stimulate expanded perceptions. As a concentric dynamic this also means the basic need to communicate is present in all three.\_"
+        text: "\_use of language serves to inspire and deepen consciousness to expand and broaden understanding.\_These three uses relate in a concentric relationship, starting in the center with the immediate need to represent, and then expands to color information subjectively, or then to objectively stimulate expanded perceptions. As a concentric dynamic this also means the basic need to communicate is present in all three.\_"
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678065030
-intro_movie: 23language-1.5s.m4v
+updated_at: 1695512942
+intro_movie: 23lang-480.mov
 ---
