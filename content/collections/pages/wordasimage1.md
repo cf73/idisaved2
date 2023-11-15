@@ -288,6 +288,7 @@ main_content:
     type: text
     enabled: true
 parent: f02ffe13-2cb1-4057-83fe-6a5195c5714c
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1685740431
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1699900915
+thumbnail_image: _dsc4551_1.jpg
 ---

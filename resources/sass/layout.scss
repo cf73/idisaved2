@@ -1,36 +1,9 @@
 body {
-    background-color: $mid;
+    background-color: $light;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 15px;
-}
-.navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    position: fixed;
-    top: 164px;
-    z-index: 999;
-    & a {
-        transition: all .75s;
-        margin: 0;
-        padding: 24px 30px;
-        border-radius: 10px;
-        & h3 {
-            &:hover {
-                color: $light;
-                transition: all .25s;
-                text-decoration: none;
-            }
-        }
-        &.active {
-            background-color: $dark;
-            & h3 {
-                color: $light;
-            }
-        }
-    }
 }
 .main-content {
     width: auto;
