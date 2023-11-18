@@ -3,8 +3,8 @@ id: 0f00953f-629e-48ee-9923-37737f60ba67
 blueprint: content
 title: 'INSEEING Krotona'
 parent: 96080c1f-5e62-4a12-951c-19c73f460c31
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675190303
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1700240724
 intro_movie: 23inseeingkpage1.75s.m4v
 main_content:
   -
@@ -429,4 +429,5 @@ main_content:
     movie: K-INSEEING.mp4
     type: movie
     enabled: true
+thumbnail_image: _dsc5368_1.jpg
 ---

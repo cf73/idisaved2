@@ -8,7 +8,7 @@
     {{/if}}
     
 </div> -->
-<div class="row">
+<div class="row" style="margin-top: -100vh;">
     <div class="col-md-12">
         <header>
             <div style="display: flex; flex-direction: row; justify-content: space-between;">
@@ -115,14 +115,13 @@
         </div>
     </div>
     
-    <div class="col-lg-4">
+    <div style="width: 20vw; display: flex; flex-direction: column; justify-content: center; height: 100vh; position: fixed; top: 0; right: 2.5vw;">
         <div class="subnav">
             <!-- <a href="{{parent:parent:url}}">
                 <p class="meta">{{parent:parent:title}}</p>
             </a> -->
-            <div style="display: flex; flex-direction: row; align-items: center;">
-                <img src="/assets/icons/Sections.svg" width="24px" alt="Sections" style="margin-right: 12px;">
-                <h4>Sections</h4>
+            <div style="display: flex; flex-direction: column; align-items: left;">
+                <h4><img src="/assets/icons/Sections.svg" width="24px" alt="Sections" style="margin-right: 12px;">{{parent:parent:title}} / {{parent:title}}</h4>
             </div>
             <br>
             <a href="{{parent:uri}}">

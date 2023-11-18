@@ -13,9 +13,9 @@ $Black: 900;
 body {
     font-family: $geologica;
     font-weight: $ExtraLight;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.04em;
-    line-height: 26px;
+    line-height: 24px;
     color: $mid;
 }
 .faded {
@@ -32,24 +32,20 @@ h1 {
     font-weight: $Bold;
     font-size: 48px;
     color: $dark;
-    background-color: $light;
     display: inline-block;
     padding: 8px 8px 0 8px;
 }
 h2 {
     font-size:36px;
-    color: $light;
     font-weight: $Regular;
     letter-spacing: 0.06em;
 }
 h3 {
     font-size: 24px;
-    color: $light60;
     font-weight: $Regular;
 }
 h4 {
     font-size: 18px;
-    color: $light60;
     font-weight: $Regular;
     margin: 0;
 }

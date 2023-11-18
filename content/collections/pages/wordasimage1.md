@@ -289,6 +289,6 @@ main_content:
     enabled: true
 parent: f02ffe13-2cb1-4057-83fe-6a5195c5714c
 updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1699900915
-thumbnail_image: _dsc4551_1.jpg
+updated_at: 1700163015
+thumbnail_image: 1-wordasimage.005.jpeg
 ---
