@@ -30,6 +30,19 @@ tabs:
               hide_display: false
               container: assets
           -
+            handle: thumbnail_caption
+            field:
+              character_limit: '500'
+              antlers: false
+              type: textarea
+              display: 'Thumbnail caption'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: thumbnail_slides
             field:
               mode: list

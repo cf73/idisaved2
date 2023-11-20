@@ -34,10 +34,18 @@
                     {{if children}}
                     <div class="row">
                         {{children}}
-                            <div class="col-md-4">
+                            <div class="col-md-12">
                                 <a href="{{url}}">
-                                    <p>{{title}}</p>
-                                    <img src="{{thumbnail_image}}" width="100%" alt="">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p>{{title}}</p>
+                                            <img src="{{thumbnail_image}}" width="100%" alt="">
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p>{{thumbnail_caption}}</p>
+                                        </div>
+                                    </div>
+                                    
                                 </a>
                             </div>
                         {{/children}}
