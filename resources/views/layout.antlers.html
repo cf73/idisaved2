@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title ?? site:name }}</title>
         <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/splide.min.css">
+        <link rel="stylesheet" href="/css/style.css">
         <script src="https://kit.fontawesome.com/4481495b8f.js" crossorigin="anonymous"></script>
         <script src="/js/splide.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!-- style="background-image: url('/assets/swirl.svg');" -->
@@ -22,34 +23,12 @@
                         — {{attribution}}
                     {{/collection:quotes}}
                 </div> -->
-                
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3" style="position: relative;">
-                    <a href="/" style="z-index: 9999999999; position: fixed; top: 36px; left: 30px;">
-                        <h1>idi</h1>
-                    </a>
-                    <div class="navigation">
-                        <div style="display: flex; flex-direction: column; justify-content: space-between;">
-                            {{ nav :from="/" }}
-                                <div style="display: flex; align-items: center;">
-                                    <a href="{{ url }}"{{ if is_current || is_parent }} class="active" {{/if }}>
-                                        <h3 style="margin: 0;">
-                                            <img src="{{icon}}" alt="{{title}}" width="48px" style="margin-right: 12px;">
-                                            {{ title }}
-                                        </h3>
-                                    </a>
-                                    {{ if is_current || is_parent }}
-                
-                                    {{ /if }}
-                                </div>
-                            {{ /nav }}
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9">{{ template_content }}</div>
-            </div>
-        </div>
+
+
+        <div class="launcher"></div>  
+        <div class="ticsmenu hide">{{partial:nav}}</div>
+
+        <div class="col-lg-10 offset-lg-2">{{ template_content }}</div>
                 
         <script src="{{ mix src='/js/site.js' }}"></script>
 
@@ -57,7 +36,20 @@
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/bs-init.js"></script>
 
-
+        <script>
+            $(document).ready(function() {
+                $('.launcher').click(function() {
+                    $(this).toggleClass('expand');
+                    $('body').toggleClass('fixed');
+                    $('.ticsmenu').toggleClass('hide');
+                });
+                $('.close').click(function() {
+                    $('.launcher').toggleClass('expand');
+                    $('body').toggleClass('fixed');
+                    $('.ticsmenu').toggleClass('hide');
+                });
+            });
+        </script>
 
     </body>
 </html>

@@ -23,6 +23,7 @@ main_content:
       - 5.-red-dot-as-1680025083.jpg
       - dacp031-1680025149.jpeg
 parent: e0caf69b-5e01-4f32-bbca-819cfe510a0f
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1680025449
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1700498813
+thumbnail_image: dacp031-1680025149.jpeg
 ---

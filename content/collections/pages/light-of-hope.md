@@ -3,8 +3,8 @@ id: e59c8bda-d8bb-48ab-bdb5-8cae34d4f3fe
 blueprint: content
 title: 'Light of Hope'
 parent: 27805ab3-e794-4def-ac9d-86e555df719b
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678224182
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1700499051
 main_content:
   -
     id: q4HpNGVp
@@ -215,4 +215,5 @@ related_content:
   - d03cb039-6fe6-4786-91db-2a39af6fce0d
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
 intro_movie: 23lofhope-1.25s.m4v
+thumbnail_image: 150104_tockerse_lofhope-low.jpeg
 ---
