@@ -37,7 +37,7 @@
 </div>
 
 <div class="row">
-    <div class="col-lg-8">
+    <div class="col-lg-8 offset-lg-2">
         <div class="content">
             <!-- <div style="position: fixed; bottom: 0; width: 100%; background-color: black;">
                 {{ nav :from="parent:uri" }}
@@ -115,7 +115,7 @@
         </div>
     </div>
     
-    <div style="width: 20vw; display: flex; flex-direction: column; justify-content: center; height: 100vh; position: fixed; top: 0; right: 2.5vw;">
+    <div style="width: 20vw; display: flex; flex-direction: column; justify-content: center; height: 100vh; position: fixed; top: 0; left: 2.5vw;">
         <div class="subnav">
             <!-- <a href="{{parent:parent:url}}">
                 <p class="meta">{{parent:parent:title}}</p>
@@ -131,10 +131,17 @@
             </a>
     
             {{ nav :from="parent:uri" }}
-            <a href="{{ url }}">
-                <div class="chapter {{ if is_current || is_parent }} active {{/if }}">
-                    {{ title }}
+            <a href="{{url}}">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>{{title}}</p>
+                        <img src="{{thumbnail_image}}" width="100%" alt="">
+                    </div>
+                    <div class="col-lg-12">
+                        <p>{{thumbnail_caption}}</p>
+                    </div>
                 </div>
+                
             </a>
                 
             {{ /nav }}
