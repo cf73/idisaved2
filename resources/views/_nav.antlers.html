@@ -10,7 +10,7 @@
     <div class="close">X</div>
     {{nav:collection:pages}}
     <div class="tab-pane fade show" style="height: 100vh; overflow-y: auto;" id="tab{{increment:3}}" role="tabpanel" aria-labelledby="{{increment:1}}">
-        <div style="max-width: 320px; margin-left: 30px; padding-top: 20px; padding-right: 30px;">
+        <div class="section-summary">
             <h2 style="color: red;">{{title}}</h2>
             {{section_summary}}
         </div>
@@ -18,7 +18,7 @@
         <ul class="nav nav-tabs" id="sections" role="tablist">
             {{ children }}
             <li class="nav-item" role="presentation">
-                <button class="nav-link" style="height: auto; width: 350px; padding: 2em 3em; text-align: left; border-bottom: solid 2px white; outline: none;" id="{{increment:5}}" data-bs-toggle="tab" data-bs-target="#tab2{{increment:6}}" type="button" role="tab" aria-controls="tab2{{increment:7}}" aria-selected="true">
+                <button class="nav-link section-link" id="{{increment:5}}" data-bs-toggle="tab" data-bs-target="#tab2{{increment:6}}" type="button" role="tab" aria-controls="tab2{{increment:7}}" aria-selected="true">
                     <h5>{{title}}</h5>
                 </button>
             </li>
