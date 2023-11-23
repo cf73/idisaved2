@@ -91,9 +91,9 @@ body {
 }
 
 .launcher {
-  background-color: rgba(255, 255, 255, 0.79);
-  -webkit-backdrop-filter: blur(18px);
-          backdrop-filter: blur(18px);
+  background-color: rgba(255, 255, 255, 0.59);
+  -webkit-backdrop-filter: blur(38px);
+          backdrop-filter: blur(38px);
   position: fixed;
   z-index: 9;
   height: 217px;
@@ -109,6 +109,20 @@ body {
   height: 600vh;
   left: -100vw;
   top: -100vh;
+}
+
+.section-summary {
+  max-width: 320px;
+  margin-left: 10px;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 5px 30px 30px 5px;
+}
+
+button {
+  background-color: white;
+  border-radius: 5px 30px 30px 5px;
+  overflow: hidden;
 }
 
 .square {
@@ -131,9 +145,12 @@ body {
   position: relative;
   z-index: 99;
   transition: all 0.5s;
-  left: 0px;
-  top: 0px;
+  left: 30px;
+  top: 30px;
   opacity: 1;
+  border-radius: 30px;
+  overflow: hidden;
+  height: calc(100vh - 60px);
 }
 
 .hide {
@@ -147,7 +164,7 @@ body {
   width: 105vw;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 60px);
   justify-content: space-evenly;
 }
 
@@ -160,8 +177,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #85a1c4;
-  color: white;
+  background-color: white;
+  color: #667b89;
   height: 100%;
   min-height: 3em;
   width: 150px;
@@ -181,8 +198,8 @@ body {
 
 #topnavContent {
   position: fixed;
-  left: 150px;
-  top: 0px;
+  left: 180px;
+  top: 30px;
   width: calc(100% - 150px);
 }
 
@@ -207,6 +224,16 @@ body {
 .nav-tabs .nav-link {
   border-radius: 0;
   border: none;
+}
+
+.nav-tabs .nav-link .section-link {
+  height: auto;
+  width: 350px;
+  padding: 2em 3em;
+  text-align: left;
+  border-bottom: solid 2px white;
+  outline: none;
+  border-radius: 5px 30px 30px 5px;
 }
 
 .navigation {
