@@ -40,17 +40,17 @@ summary:
         type: text
         text: '• to develop a project that reflects the theory and/or practice of the graphic design field;'
       -
-        type: hard_break
+        type: hardBreak
       -
         type: text
         text: '• to emphasize visual search, with visual experimentation particularly encouraged;'
       -
-        type: hard_break
+        type: hardBreak
       -
         type: text
         text: '• to take responsibility for all phases and aspects of the project with professional care.'
 parent: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1677874882
+updated_at: 1700154666
 intro_movie: 23bfadp-3.0s-1674840165.m4v
 ---

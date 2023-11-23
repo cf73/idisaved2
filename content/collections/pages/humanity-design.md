@@ -4,7 +4,7 @@ blueprint: content
 title: 'HUMANITY Design'
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678054191
+updated_at: 1700764860
 intro_movie: 23humanity-2.2s.m4v
 main_content:
   -
@@ -185,4 +185,6 @@ main_content:
             text: "\_in 1998, concentrating instead on other initiatives, such as the challenge of building this web site (www.humanity.org), launched in\_1994"
     type: text
     enabled: true
+thumbnail_image: 22humanpages.001.jpeg
+thumbnail_caption: 'In 1987 Tony Balis established The Humanity Foundation. Its mission was “encouraging people to understand this planet as our common home.” To initiate “a conversation with the world,” he published three issues of the journal HUMANITY.'
 ---

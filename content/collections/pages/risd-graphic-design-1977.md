@@ -4,7 +4,7 @@ blueprint: content
 title: 'RISD Graphic Design 1977'
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678052694
+updated_at: 1700765503
 intro_movie: 23gdbk77-2.5s.m4v
 main_content:
   -
@@ -41,4 +41,6 @@ main_content:
             text: 'The booklet’s design was by Tom Ockerse, who led the philosophical and practical efforts for the department’s curriculum and continued to do so until he stepped down as department head in 1991.'
     type: text
     enabled: true
+thumbnail_image: 21_gdbk77pages.001.jpeg
+thumbnail_caption: 'This booklet documents the 1976 exhibition of the RISD Graphic Design Department’s BFA degree program. It defines the practice of graphic design and the pedagogical requirements to educate students for this practice.'
 ---

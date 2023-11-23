@@ -4,7 +4,7 @@ blueprint: content
 title: 'SPIRALS 91'
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678053328
+updated_at: 1700766129
 intro_movie: 23spirals-2.75s.m4v
 main_content:
   -
@@ -50,4 +50,6 @@ main_content:
             text: 'grew out of a need to share the department’s rich learning experience in the education of future designers.'
     type: text
     enabled: true
+thumbnail_image: 22spiralspages.002.jpeg
+thumbnail_caption: 'SPIRALS 91 is a boxed set of eight booklets published in 1991 that contain a variety of topics relating to the teaching and study of graphic design at RISD. The publication grew out of a need to share the department’s education of future designers.'
 ---

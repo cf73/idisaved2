@@ -4,7 +4,7 @@ blueprint: content
 title: 'Aperture Magazine Issue #93'
 parent: 27805ab3-e794-4def-ac9d-86e555df719b
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678052910
+updated_at: 1700765425
 main_content:
   -
     id: OEMU9Hvm
@@ -61,4 +61,6 @@ main_content:
     type: text
     enabled: true
 intro_movie: 23ap91intro-2s.m4v
+thumbnail_image: 24-aperture.jpg
+thumbnail_caption: 'Design for the special issue of Aperture Magazine #93, to present Aperture’s Photography 1982 symposium held at Esalen Institute, Big Sur, California. This issue offers transcriptions of talks and discussions, and new directions for Photography.'
 ---

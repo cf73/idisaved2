@@ -4,7 +4,7 @@ blueprint: content
 title: SILHOUETTES
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1694984293
+updated_at: 1700765879
 intro_movie: 23kisilhou-2.25s.m4v
 main_content:
   -
@@ -306,4 +306,6 @@ main_content:
       - Silhouettes_cover.jpg
     type: image
     enabled: true
+thumbnail_image: 22kisilhpages.001.jpeg
+thumbnail_caption: 'A book of poems by Kirsten Ockerse submitted in partial fulfillment of her BA degree requirements for the Department of English, Northwestern University. This booklet was published posthumously in celebration of Kirsten’s life, 1965–1989.'
 ---
