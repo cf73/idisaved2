@@ -4,8 +4,8 @@ blueprint: content
 title: 'RISD Graphic Design 1977'
 parent: f608e43b-2a6e-4d47-be0b-56dff0d1a413
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1700765503
-intro_movie: 23gdbk77-2.5s.m4v
+updated_at: 1701133290
+intro_movie: 23gdbk77pages1-480.mov
 main_content:
   -
     id: BdIHieCV

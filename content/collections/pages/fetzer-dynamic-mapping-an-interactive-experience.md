@@ -4,7 +4,7 @@ blueprint: content
 title: 'FETZER: Dynamic Mapping: an interactive experience'
 parent: 854b02bb-32ab-4aed-99ea-78c426a6e605
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1694984385
+updated_at: 1701133770
 intro_movie: 23fetzer.m4v
 main_content:
   -
@@ -104,5 +104,7 @@ main_content:
     movie: HOPE_ProjectorScreenSnapz002.mov
     type: movie
     enabled: true
+thumbnail_image: fetzer-process---17.jpg
+thumbnail_caption: 'Dynamic Mapping is an interactive experience of the Collective Wisdom Field. This project’s design responds to the central question “How do we come together in order to touch, or be touched by, the intelligence we need?”— a question vital to the efforts of a Fetzer Institute sponsored group called The Collective Wisdom Initiative.'
 ---
 ---

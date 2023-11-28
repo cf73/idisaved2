@@ -4,8 +4,8 @@ blueprint: content
 title: 'Ferens Gallery Poster'
 parent: 27805ab3-e794-4def-ac9d-86e555df719b
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678220341
-intro_movie: 23ferens-2.0s.m4v
+updated_at: 1701128247
+intro_movie: 23ferenspage3-1.5-20.-480.mov
 main_content:
   -
     id: Nq2gXJ7T
@@ -43,5 +43,7 @@ main_content:
     enabled: true
     photo:
       - ferensag-posterweb.jpg
+thumbnail_image: 22ferenspage.006.jpeg
+thumbnail_caption: "Design of a poster for work by Ockerse at the Ferens Art Gallery, Kingston upon Hull, England. The low budget poster was limited to a one-color (black) and was designed to express the principles of design embedded in the process. It used Tom's notes to plan the exhibit with intentions to become a narrative for the audience to experience."
 ---
 ---

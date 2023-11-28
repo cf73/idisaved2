@@ -4,7 +4,7 @@ blueprint: content
 title: 'IPI (Interchem Printing Inks) Identity'
 parent: 1978f0df-de8c-4485-a491-39970172e573
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678155365
+updated_at: 1701124549
 main_content:
   -
     id: 6LWffDYq
@@ -98,7 +98,6 @@ main_content:
   -
     id: iYwGzFYl
     photo:
-      - tom_jkf5-1621981736.jpeg
       - Tom_JKF6-1621981749.jpeg
     type: image
     enabled: true
@@ -106,7 +105,6 @@ main_content:
     id: 4wJwMeIe
     photo:
       - tom_jkf12-1621981770.jpeg
-      - tom_jkf8.jpeg
     type: image
     enabled: true
 intro_movie: 23ipi.m4v
@@ -114,4 +112,6 @@ related_content:
   - be421847-9999-4bce-bd7c-6c232e089044
   - abbabc97-d9ba-4835-ab66-406bdf431333
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
+thumbnail_image: 22ipi_pages.001.jpeg
+thumbnail_caption: 'Interchem Printing Inks / IPI, was part of the Interchem Corporation, a major client for J. K. Fogleman Associates in Morristown, NJ (1965-67). Tom became a major contributor to this identity design starting with the logo, followed by many of its applications. One highlight was his designs created for the exhibit backdrops when IPI participated in a huge industrial event in New York City, 1967.'
 ---

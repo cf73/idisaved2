@@ -4,7 +4,7 @@ blueprint: content
 title: 'Theosophical Society in America Identity'
 parent: 1978f0df-de8c-4485-a491-39970172e573
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678147592
+updated_at: 1701125512
 main_content:
   -
     id: WZ9eqz6k
@@ -52,7 +52,6 @@ main_content:
     enabled: true
     photo:
       - tsa-sketch1.jpg
-      - tsa_identity_01-1621983254.jpg
   -
     id: Qqvfi14B
     text:
@@ -126,7 +125,6 @@ main_content:
     enabled: true
     photo:
       - TSA_identity_13.jpg
-      - tsa_identity_14.jpg
   -
     id: Ciip7vye
     image: TSA_identity_15.jpg
@@ -237,4 +235,6 @@ related_content:
   - abbabc97-d9ba-4835-ab66-406bdf431333
   - caaa9841-0fa0-41fc-88a5-b6097c05138a
 intro_movie: 23tsa.m4v
+thumbnail_image: tsa_identity_10.jpg
+thumbnail_caption: 'The identity design for the Theosophical Society of America (TSA).'
 ---

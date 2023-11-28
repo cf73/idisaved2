@@ -4,8 +4,8 @@ blueprint: content
 title: 'Graduate Program Posters'
 parent: 27805ab3-e794-4def-ac9d-86e555df719b
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678222655
-intro_movie: 23gradposters-1.75s.m4v
+updated_at: 1701128624
+intro_movie: 23gradpostpage1.25-0-480.mov
 main_content:
   -
     id: kDnTcQXl
@@ -44,45 +44,32 @@ main_content:
     enabled: true
   -
     id: elj4DTLj
-    photo:
-      - 05.cleanedresampledresized.jpg
-      - 06.cleanedresampledresized.jpg
     type: image
     enabled: true
   -
     id: GE5WHKrr
     photo:
       - 08.cleaned-1678221104.jpg
-      - 22gradpostpage.005.jpeg
-      - 10.cleanedresampledresized.jpg
     type: image
     enabled: true
   -
     id: poV0NggU
-    photo:
-      - 09.cleanedresampledresized.jpg
-      - 11.cleanedresampledresized.jpg
     type: image
     enabled: true
   -
     id: oyMBMvn1
     photo:
       - 12.CleanedResampledResized.jpg
-      - 13.cleanedresampledresized.jpg
     type: image
     enabled: true
   -
     id: yICHnWYL
     photo:
-      - 14.cleanedresampledresized.jpg
       - 11.cleanedresampledresized-1678222127.jpg
     type: image
     enabled: true
   -
     id: TfreYxUf
-    photo:
-      - 18.cleanedresampledresized.jpg
-      - 16.cleanedresampledresized.jpg
     type: image
     enabled: true
   -
@@ -105,14 +92,10 @@ main_content:
     enabled: true
   -
     id: y6UAklWF
-    photo:
-      - 13.CleanedResampledResized.jpg
     type: image
     enabled: true
   -
     id: 6esf2T95
-    photo:
-      - 14.CleanedResampledResized.jpg
     type: image
     enabled: true
   -
@@ -123,8 +106,6 @@ main_content:
     enabled: true
   -
     id: JZQTXxbr
-    photo:
-      - 16.CleanedResampledResized.jpg
     type: image
     enabled: true
   -
@@ -135,8 +116,6 @@ main_content:
     enabled: true
   -
     id: 2jFyexX7
-    photo:
-      - 18.CleanedResampledResized.jpg
     type: image
     enabled: true
   -
@@ -145,5 +124,7 @@ main_content:
       - 19.black-background-1622052567.jpg
     type: image
     enabled: true
+thumbnail_image: 22gradpostpage.002.jpeg
+thumbnail_caption: 'Two posters designed for the 1984 and 1988 graduate programs at the Rhode Island School of Design.'
 ---
 ---
