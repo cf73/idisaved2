@@ -2,7 +2,7 @@
 id: 6fa93495-31fd-4feb-ba09-8f21e86170d4
 blueprint: content
 title: 'Dieter Roth'
-intro_movie: '-23-roth,-dieter-1.75s-480.mov'
+intro_movie: '-23-roth,-dieter-1.75s-480-1701136842.mov'
 main_content:
   -
     id: lmnw09mz
@@ -38,5 +38,7 @@ main_content:
     enabled: true
 parent: 353756eb-9feb-4d2d-bb36-3c4adbd155f2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1695164367
+updated_at: 1701137017
+thumbnail_image: '-23-roth,-dieter-1.001.jpeg'
+thumbnail_caption: 'Dieter Roth was born in Hanover, Germany, but moved with his family to Bern Switzerland in 1947. In Bern he was trained as a skilled draftsman and printmaker. Eventually he left all that to become an artist working with the avant-garde trends which included concrete poetry, mail-art, Fluxus, performance, and installations. He is world-renowned for his experiments with bookworks and for his biodegradable art works made of rotting foods.'
 ---

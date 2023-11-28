@@ -1,10 +1,10 @@
 ---
 id: 80e5ba23-251d-46a3-9789-e6f2928a1278
 blueprint: content
-title: 'RIHT Identity!'
+title: 'RIHT Identity'
 parent: 1978f0df-de8c-4485-a491-39970172e573
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1683670863
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1701125256
 main_content:
   -
     id: dKkwG5W1
@@ -42,7 +42,6 @@ main_content:
     photo:
       - 01-RIHT.jpg
       - 02-riht-1678117918.jpg
-      - 06-riht.jpg
     type: image
     enabled: true
   -
@@ -131,5 +130,7 @@ related_content:
   - 3a4a20a8-e175-45b9-8541-585f250c0189
   - 3ee5e983-99a5-4c52-bcc7-a52f78508efb
 intro_movie: '-23riht-2-0.5.m4v'
+thumbnail_image: riht-brand.jpg
+thumbnail_caption: 'This was a brand design for the RIHT Corporation, a major bank in Providence, RI, which took on its new name and then required a design to implement its new name publicly. Only an Interim Phase standards manual was developed in 1983, since the bank abandoned its new name. Soon after all the identity standards were completed the company again changed hands again, used a new name and contracted with an advertising agency in New York—and all design efforts went out the window.'
 ---
 ---

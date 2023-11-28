@@ -84,7 +84,6 @@ main_content:
     id: JiTOJULF
     photo:
       - Ahnsketches---02-1622039842.jpg
-      - ahnsketches---03.jpg
     type: image
     enabled: true
   -
@@ -492,7 +491,6 @@ main_content:
   -
     id: yJBhAyUe
     photo:
-      - gadst_fall2004_projects_-page-2.6.jpg
       - HOPE-Diagram-1622049128.jpg
     type: image
     enabled: true
@@ -550,7 +548,6 @@ main_content:
     id: wtK2iC1o
     photo:
       - Calendar-Struct.png
-      - ahncaldoct---02.jpg
     type: image
     enabled: true
   -
@@ -564,7 +561,6 @@ main_content:
     id: zyePKGo0
     photo:
       - ahnCaldoct---24.jpg
-      - ahncaldoct---35.jpg
     type: image
     enabled: true
   -
@@ -718,7 +714,6 @@ main_content:
     id: rB08k2QY
     photo:
       - 21_AhnCadetails2-1622050515.png
-      - 21_ahncadetails3.png
       - 21_ahncadetails4.png
     type: image
     enabled: true
@@ -761,5 +756,7 @@ related_content:
 disciplines: posters
 parent: 27805ab3-e794-4def-ac9d-86e555df719b
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678218877
+updated_at: 1701127674
+thumbnail_image: ahncaldoct---34-cropped.jpeg
+thumbnail_caption: 'In 2005 Ahn Sang Soo (Ahn Graphics Ltd in Seoul, Korea) invited designers from around the world for a 2005 calendar celebrating Ahn’s studio’s anniversary. Each designer was assigned one page. This is the calendar page is for September, the 9th month of the year.'
 ---

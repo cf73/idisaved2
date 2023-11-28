@@ -4,8 +4,8 @@ blueprint: content
 title: 'Nobart Calendar'
 parent: 85b88949-8012-4be5-87cd-1923c80e0bc4
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678225239
-intro_movie: 23nobart-1.5.m4v
+updated_at: 1701132973
+intro_movie: 23nobartcal0.6-480.mov
 main_content:
   -
     id: cZT4kCD8
@@ -68,7 +68,6 @@ main_content:
     id: JFcuXGKD
     photo:
       - NCal01.jpg
-      - ncal16.jpg
     type: image
     enabled: true
   -
@@ -86,7 +85,6 @@ main_content:
     id: I0VZmAhj
     photo:
       - NCal02.jpg
-      - ncal03.jpg
       - ncal07.jpg
     type: image
     enabled: true
@@ -118,8 +116,6 @@ main_content:
     enabled: true
     photo:
       - NCal18-1621987864.jpg
-      - ncal19.jpg
-      - ncal20.jpg
   -
     id: ZPAvLNUa
     text:
@@ -135,27 +131,23 @@ main_content:
     id: RWcDLpfo
     photo:
       - NCal21.jpg
-      - ncal22.jpg
-      - ncal23.jpg
     type: image
     enabled: true
   -
     id: hpySgIxt
     photo:
       - NCal24.jpg
-      - ncal25.jpg
-      - ncal26.jpg
     type: image
     enabled: true
   -
     id: USQYT6FU
     photo:
       - NCal27.jpg
-      - ncal28.jpg
-      - ncal29.jpg
     type: image
     enabled: true
 related_content:
   - b7499782-447f-4181-988f-f1a5578c2dff
   - d03cb039-6fe6-4786-91db-2a39af6fce0d
+thumbnail_image: 22nobartcalpages.001.jpeg
+thumbnail_caption: 'A calendar promoting the new Zodiac paper by Kimberly Clark Co. and the annual Indianapolis 500 car race, held on Memorial Day. Illustrators from the marketing firm Nobart Design were also used.'
 ---

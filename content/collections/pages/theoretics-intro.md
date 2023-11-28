@@ -16,6 +16,8 @@ main_content:
     enabled: true
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1695575226
+updated_at: 1700770759
 intro_movie: 23theo-intro.-480mov.mov
+thumbnail_image: 23theo2.001.jpeg
+thumbnail_caption: 'THEORETICS presents an overview of underlying principles gleaned from design practices design education, and experiments with visual language systems. THEORY de-mystifies the complex by classifying principles in action and demonstrating interrelations.'
 ---

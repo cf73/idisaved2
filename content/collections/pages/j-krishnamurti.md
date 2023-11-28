@@ -23,5 +23,7 @@ main_content:
     enabled: true
 parent: 353756eb-9feb-4d2d-bb36-3c4adbd155f2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1695063097
+updated_at: 1701134308
+thumbnail_image: kirshnamurti_-space.jpg
+thumbnail_caption: 'Jiddu Krishnamurti was an Indian philosopher, speaker, and writer. Supported by the international theosophical organization he became a remarkable teacher and spiritual leader.'
 ---

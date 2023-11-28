@@ -4,8 +4,8 @@ blueprint: content
 title: Covers
 parent: 85b88949-8012-4be5-87cd-1923c80e0bc4
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678051749
-intro_movie: 23covers.m4v
+updated_at: 1701132607
+intro_movie: 22coverspages1.25-480.mov
 main_content:
   -
     id: rjCBsMPY
@@ -29,5 +29,7 @@ main_content:
             text: "These sample covers were designed for a variety of published books, magazines, brochures, and other printed matter.\_These projects started during the early part of Tom’s career\_(since 1968)\_and continued throughout his career as a practical designer\_while teaching as part of his freelance design work, especially for Houghton Mifflin Publishers in Boston, MA."
     type: text
     enabled: true
+thumbnail_image: 22coverspages.001.jpeg
+thumbnail_caption: 'Some covers designed for a variety of published books, magazines, brochures, and other printed matter.'
 ---
 ---

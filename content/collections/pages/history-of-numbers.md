@@ -4,7 +4,7 @@ blueprint: content
 title: 'History of Numbers'
 parent: 27805ab3-e794-4def-ac9d-86e555df719b
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678223636
+updated_at: 1701129083
 main_content:
   -
     id: cQEsZR2D
@@ -47,5 +47,7 @@ main_content:
     enabled: true
     photo:
       - hist_of_numb_100606-low.jpeg
-intro_movie: '--22histnumpages3.m4v'
+intro_movie: 22histnumpages3-480.mov
+thumbnail_image: '--22histnumpages.001.jpeg'
+thumbnail_caption: 'A graphic interpretation of the history of numbers originally designed to accompany the article written by Ramon Cardenas and published in the 1971 issue of PMM (a quarterly magazine by the firm Peat, Marwick, Mitchell & Co.). The graphic interpretation for the article became an huge attraction that caused readers to request extra copies of that issue. With none left soon after PMM published a poster version of it.'
 ---
