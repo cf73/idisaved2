@@ -42,6 +42,8 @@ main_content:
     type: text
     enabled: true
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1690437335
+updated_at: 1701152865
 intro_movie: 23silhouettes-2.5s-480.mov
+thumbnail_image: silh_0.jpg
+thumbnail_caption: 'A book of poems by Kirsten Ockerse. Untitled and Thoughts were written in 1989. All other poems were written in 1986-87 and were submitted in partial fulfillment of the degree requirements for the Bachelor of Arts, Department of English, Northwestern University. This booklet was published posthumously in celebration of Kirsten’s life, 1965–1989.'
 ---

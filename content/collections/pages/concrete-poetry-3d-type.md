@@ -4,7 +4,7 @@ blueprint: content
 title: 'Concrete Poetry: 3D Type'
 parent: 24e6f930-d256-4cc3-92b3-6b4479f72f6f
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675192651
+updated_at: 1701149467
 intro_movie: 23cp3d.m4v
 main_content:
   -
@@ -47,4 +47,6 @@ main_content:
             text: "When the experiencer becomes truly one with a “concrete poem” this experience naturally draws out a full sense of being with a depth of awareness that is both externally aware yet also implicitly one with the Spirit within the poem and the person. This “atomization of meaning” derives from a total awareness of the smallest parts within its own “world” of constituent aspects, the values brought out by seeing their relationships to the ever growing dynamic for interconnection and relational values based on the doctrine of shells.\_"
     type: text
     enabled: true
+thumbnail_image: cp3d.001.jpeg
+thumbnail_caption: 'Experiments with Concrete Poetry in 3D space.'
 ---

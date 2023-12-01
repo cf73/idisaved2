@@ -37,5 +37,7 @@ main_content:
     enabled: true
 parent: 154c9e0b-c1f9-4005-8d39-5654179f6fb2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1690253297
+updated_at: 1701150514
+thumbnail_image: 26poems.001.jpeg
+thumbnail_caption: 'This bookwork presents the twenty-six letters of the (Latin) alphabet, each conceived as a concrete poem. These poems were originally produced for Dana Ashley’s 1971 Space Trunk Mail Art Exhibition at the California College of Arts and Crafts by mailing one letter of the alphabet each day during the exhibit’s first 26 days. This edition also adds another concrete poem uniquely produced for this bookwork based on the “alphabet” theme.'
 ---

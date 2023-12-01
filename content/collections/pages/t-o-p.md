@@ -77,5 +77,7 @@ main_content:
     enabled: true
 parent: 154c9e0b-c1f9-4005-8d39-5654179f6fb2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1689550580
+updated_at: 1701150913
+thumbnail_image: top_1210.jpeg
+thumbnail_caption: 'T.O.P. is a boxed set of 50 concrete poems as an edition of 500 numbered copies. The edition is offset printed in black but also includes four serigraphs in full color. These poems are Tom’s early experiments in concrete poetry from the period 1967-1970. The distinguished Danish poet Vagn Steen, one of the first Danish poets to work with concrete poetry and systems poetry, wrote an introduction to T.O.P. with his expanded insights into the nature of visual poetry.'
 ---

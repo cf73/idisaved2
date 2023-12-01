@@ -4,7 +4,7 @@ blueprint: content
 title: 'Son of Fury'
 parent: fb6f64d1-d0ba-4e5a-8f12-43c59625ce42
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678232200
+updated_at: 1701144720
 intro_movie: 23_sonoffury_short-3.25.m4v
 main_content:
   -
@@ -59,4 +59,6 @@ main_content:
             text: ".\_"
     type: text
     enabled: true
+thumbnail_image: sonoffury.001.jpeg
+thumbnail_caption: 'This documentracing is an original bookwork using the 1942, two-hour adventure movie Son of Fury: The Story of Benjamin Blake, as the documentraced object.'
 ---

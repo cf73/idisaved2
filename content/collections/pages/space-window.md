@@ -4,7 +4,7 @@ blueprint: content
 title: 'Space Window'
 parent: 2f363af1-9821-4dfb-924b-c946454cd035
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674948273
+updated_at: 1701148236
 intro_movie: 23spwind.m4v
 main_content:
   -
@@ -189,4 +189,6 @@ main_content:
             text: "\_event!"
     type: text
     enabled: true
+thumbnail_image: 22spwind-thumbn.001.jpeg
+thumbnail_caption: 'This experiment in Concretism is a bookwork generated for and by the Space Window mail art event in 1977. The event was devoted to “man in space and space in art”. That included a mail art exhibit in the gallery space of Market House, featuring ninety artists from twenty different countries aided by the postal system. Each submission of work was documented in a bookwork catalogue called Space Window honoring the mail art principles.'
 ---

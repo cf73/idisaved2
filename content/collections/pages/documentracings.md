@@ -95,5 +95,7 @@ main_content:
     enabled: true
 parent: 154c9e0b-c1f9-4005-8d39-5654179f6fb2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1690501251
+updated_at: 1701151775
+thumbnail_image: documtrs.jpeg
+thumbnail_caption: 'Documentracing is a means to make poetry without a "need" for inspiration. TOETICS published three books of documentracings: Documentracings Printed Matter, TV Documentracings, and Son of Fury. Each nook documents a series of drawings made for a particular reason, or using a special source for its tracings.'
 ---

@@ -15,6 +15,8 @@ main_content:
     type: text
     enabled: true
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1690484490
+updated_at: 1701152645
 intro_movie: spirals91-2.5s-480.mov
+thumbnail_image: spirals91.jpeg
+thumbnail_caption: 'SPIRALS 91 is a boxed set of eight booklets published in 1991 (A-4 format, 21 cm x 29.3 cm / 8.3”x11.7”, total 368 pages). SPIRALS 91 contains information that documents or presents a variety of topics relating to the teaching and study of graphic design at the Rhode Island School of Design. The publication grew out of a need to share the department’s rich learning experience in the education of future designers.'
 ---

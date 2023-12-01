@@ -4,7 +4,7 @@ blueprint: content
 title: SP-VI
 parent: 778c2d3f-cb6f-4c72-8eb0-14ad98d4b863
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675118914
+updated_at: 1701143594
 intro_movie: 23spvi-1.5s.m4v
 main_content:
   -
@@ -61,4 +61,6 @@ main_content:
     id: 8C1DioAt
     type: text
     enabled: true
+thumbnail_image: 22spvi.007.jpeg
+thumbnail_caption: 'SP-VI is a portfolio of 15 serigraphs selected from experiments in Concretism with two visual spirals and their sub-spirals.'
 ---

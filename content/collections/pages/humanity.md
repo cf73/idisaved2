@@ -34,6 +34,8 @@ main_content:
     enabled: true
 parent: 35457bfa-05d6-40fd-99af-0b221c475a15
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1690463021
+updated_at: 1701153096
 intro_movie: toetics_hum_181228b-480.mov
+thumbnail_image: hum_01.jpg
+thumbnail_caption: "In 1987 Tony Balis established The Humanity Foundation with its mission of “encouraging people to understand this planet as our common home.” To initiate “a conversation with the world,” he began with publishing the journal\_humanity, two-thirds non-fiction, one-third photography. Three issues were produced: the preview in 1991; the premier in July 1996; the second issue in July 1997."
 ---

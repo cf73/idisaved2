@@ -3,8 +3,8 @@ id: 541df00a-8b33-4923-aacd-74daf195d861
 blueprint: content
 title: 'RIGHT ACTION (Yucca Plant)'
 parent: 96080c1f-5e62-4a12-951c-19c73f460c31
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1700499613
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1701147239
 intro_movie: 23yuccapages-1.5.m4v
 main_content:
   -
@@ -153,5 +153,5 @@ related_content:
   - 614baba2-8922-43cb-bb4a-07aa02e06ab0
   - 71b196fd-bde8-4d6b-905e-87da7c7dd9c5
 thumbnail_image: RA00.jpg
-thumbnail_caption: "I often sat near a large yucca plant next to the house I stayed in, and then soak up some of the California sun during our breaks.\LWhile doing this I started to become more and more aware of this enormous plant, being much bigger and taller than me.\LAnd as I sat there admiring it, we developed an interesting communion that became the impulse for an idea to relate the plant to the Mahatma letters – somehow."
+thumbnail_caption: "While on a retreat in Krotona I often sat near a large yucca plant next to the guest house I stayed.\L Over time I became more and more aware of this enormous plant, much taller than me. \LFrom that an interesting communion with the plant sparked the idea to relate the \"leaves\" of plant to the Mahatma letters we were studying. This became a video on the Buddhist theme of \"Right Action.\""
 ---

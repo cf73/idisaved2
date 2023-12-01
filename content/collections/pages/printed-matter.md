@@ -4,7 +4,7 @@ blueprint: content
 title: 'Printed Matter'
 parent: 88bb9ac6-4436-47a6-8cf6-befd119dbe4a
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675628981
+updated_at: 1701148422
 intro_movie: 23pmdocutracings.m4v
 main_content:
   -
@@ -53,4 +53,6 @@ main_content:
             text: "\_system defined for that object. All pages of the object’s printed pages were simply “read” from front to back, including the cover. In this sequence of time single “units” were extracted from each page via a predetermined system. That so-called “unit” was determined at the very point of engagement with a page. The “unit” could be a single image outline, a group of marks (e.g. all comas within a body of text), a group of words, or any other group of relational parts. Each unit in the composition of the drawing was always in the relative position of the original printed page it was traced from."
     type: text
     enabled: true
+thumbnail_image: pmdocutracings.jpeg
+thumbnail_caption: 'Documentracings: Printed Matter are a series of documentracings drawing extracted from various printed objects such as magazines, bulletins, and catalogues. Each object was spontaneously approached and recorded via documentracings according to the documentracing system defined for that object.'
 ---

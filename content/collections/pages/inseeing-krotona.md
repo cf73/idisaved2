@@ -3,8 +3,8 @@ id: 0f00953f-629e-48ee-9923-37737f60ba67
 blueprint: content
 title: 'INSEEING Krotona'
 parent: 96080c1f-5e62-4a12-951c-19c73f460c31
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1700240724
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1701146615
 intro_movie: 23inseeingkpage1.75s.m4v
 main_content:
   -
@@ -429,5 +429,6 @@ main_content:
     movie: K-INSEEING.mp4
     type: movie
     enabled: true
-thumbnail_image: _dsc5368_1.jpg
+thumbnail_image: 11b-low.jpeg
+thumbnail_caption: 'This experiment in Concretism is a documentracing of an actual space in Ojai, CA. The space is called Krotona, where a community of people live with a common interest in theosophy. Some buildings and spaces are used for public events that share this interest.'
 ---

@@ -4,7 +4,7 @@ blueprint: content
 title: CIRCLE
 parent: 96080c1f-5e62-4a12-951c-19c73f460c31
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675190789
+updated_at: 1701146015
 intro_movie: 23hqcircle-2.0s.m4v
 main_content:
   -
@@ -45,4 +45,6 @@ main_content:
             text: "\_is the publisher’s synonym for “Heidelberg Quality”, being a showcase for the Heidelberg printing equipment as well as for graphic designers. Edited by Rolf Muller, one section in the magazine explores a particular theme. For this issue #19 the theme was CIRCLE, and Tom was one of the designers invited to contribute to that issue’s theme."
     type: text
     enabled: true
+thumbnail_image: circle__1311.jpg
+thumbnail_caption: "A project created on invitation for the German design magazine HQ, issue #19. HQ19's theme was “CIRCLE” and this contribution documents a special walk on the island of Vinalhaven in Maine. The results create three spreads for the magazine."
 ---

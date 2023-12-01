@@ -17,5 +17,7 @@ main_content:
     enabled: true
 parent: 154c9e0b-c1f9-4005-8d39-5654179f6fb2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1690227317
+updated_at: 1701150268
+thumbnail_image: chaonice_0.jpg
+thumbnail_caption: 'This is an original bookwork made as a contribution to the 1988 exhibit at the University of the Arts, Philadelphia, titled “universal/Unique.” The booklet hung between two press sheets hanging on the wall. The work uses concretism as a principle means to re-present the ideas that unfolded based on the exhibit’s theme and the creative process for this work itself.'
 ---

@@ -4,7 +4,7 @@ blueprint: content
 title: 'Connecting 2007'
 parent: 2f363af1-9821-4dfb-924b-c946454cd035
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674951182
+updated_at: 1701147842
 main_content:
   -
     id: ldgia8xz
@@ -93,4 +93,6 @@ main_content:
     type: text
     enabled: true
 intro_movie: 23conn1.5.m4v
+thumbnail_image: connecting-2007.jpeg
+thumbnail_caption: 'CONNECTING was an experiment in Concretism created for the invitation to contribute to Jennifer Magathan’s Mail Art project in 2007.'
 ---

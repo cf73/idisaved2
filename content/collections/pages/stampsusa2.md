@@ -27,6 +27,10 @@ main_content:
     enabled: true
 parent: 154c9e0b-c1f9-4005-8d39-5654179f6fb2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1690493129
+updated_at: 1701154167
 intro_movie: stam-ps-usa-1.5s-480.mov
+thumbnail_image: stam-ps-usa.001.jpeg
+thumbnail_caption: |-
+  An original bookwork edition developed from a series of overprinted proof sheets from
+  the STAMPS-TO serigraphs. The original mono-copy from 1968 was published in 1976 using the newly developed electrostatic color-Xerox technology. The color xerox machine did not always work well and created printing glitches—but these were embraced as these accidents became an integral part of the book. The bookwork was produced as a limited paperback edition of 50 numbered copies: 18 x 19 cm, 46 pages.
 ---

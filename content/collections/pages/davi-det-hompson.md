@@ -40,6 +40,8 @@ main_content:
     enabled: true
 parent: 353756eb-9feb-4d2d-bb36-3c4adbd155f2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1694982185
+updated_at: 1701137561
 intro_movie: '-23-det.-480.mov'
+thumbnail_image: det.jpg
+thumbnail_caption: 'Davi Det Hompson was an artist/poet working in mixed media. He was active contributor to Fluxus and similar international mail art activities that used the commercial postal system. David’s works are especially known for their contribution to concrete poetry, bookworks, and performance events.'
 ---

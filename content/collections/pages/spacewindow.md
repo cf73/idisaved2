@@ -34,6 +34,8 @@ main_content:
     enabled: true
 parent: 154c9e0b-c1f9-4005-8d39-5654179f6fb2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1690488741
+updated_at: 1701153581
 intro_movie: spwi_cofpst-2.0s480.mov
+thumbnail_image: spwind_cofp_02.jpg
+thumbnail_caption: 'This experiment in Concretism is a bookwork generated for and by the Space Window mail art event in 1977.  It is a set of 44 cards published as a limited edition of 300 numbered copies, 10 x 14.5 cm, printed offset in black on white stock with hole punched out to relate front and back of each card.'
 ---

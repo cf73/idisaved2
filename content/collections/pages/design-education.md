@@ -28,5 +28,7 @@ main_content:
     type: text
     enabled: true
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1690497903
+updated_at: 1701152395
+thumbnail_image: gd77.jpeg
+thumbnail_caption: 'This booklet is a documentation of the RISD Graphic Design Department BFA program via the 1976 exhibit. It defined the field of graphic design and how to prepare students for this practice.'
 ---

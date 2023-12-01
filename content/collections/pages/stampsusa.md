@@ -4,7 +4,7 @@ blueprint: content
 title: stamPSusa
 parent: fb6f64d1-d0ba-4e5a-8f12-43c59625ce42
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1675188489
+updated_at: 1701145197
 intro_movie: 23stampsusa-1.75.m4v
 main_content:
   -
@@ -49,4 +49,6 @@ main_content:
             text: 'The color xerox machine did not always work that well and presented glitches in the printing—but these “mistakes” were then embraced as added value and became an integral part of the book, which after all was a kind of “PS” (postscript) result caused by “chance” operations. Hence the book’s title.'
     type: text
     enabled: true
+thumbnail_image: 22stampsusa.001.jpeg
+thumbnail_caption: 'stamPSusa is an original bookwork developed from a series of overprinted proof sheets from STAMPS-TO serigraphs. And edition was produced using an early color Xerox machine. The machine created printing glitches—but these were embraced and became an integral part of the book. Caused by “chance” the project became a postscript of sorts gave the book the “PS” title.'
 ---

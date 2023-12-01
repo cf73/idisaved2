@@ -51,5 +51,7 @@ main_content:
     enabled: true
 parent: 154c9e0b-c1f9-4005-8d39-5654179f6fb2
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1690407611
+updated_at: 1701152007
+thumbnail_image: time.jpeg
+thumbnail_caption: "TIME is an original bookwork using documentracing\_as the means for its creation. This bookwork records verbivisual parts and wholes of Time Magazine traced from the issue dated 29 October, 1973. The result was a text produced by chance operations of images and words that reflect a powerful statement of the world at that “time”... A limited edition of 1,000 numbered copies; 14 x 16.5 cm, printed offset, 116 pages plus cover."
 ---
