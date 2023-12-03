@@ -98,6 +98,9 @@ button {
     // height: 100vh;
     // overflow-y: hidden;
 }
+#sections {
+    margin: 10px 0 10px 10px;
+}
 #sectionsContent {
     position: fixed;
     left: 500px;
@@ -109,6 +112,7 @@ button {
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active  {
     outline: none;
+    background-color: #f1f3f5;
 }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     border: none;
@@ -116,16 +120,20 @@ button {
 .nav-tabs .nav-link {
     border-radius: 0;
     border: none;
+    // & .section-link {
+    //     border-radius: 10px;
+    //     margin: 5px 0;
+    // }
+    
 }
-.nav-tabs .nav-link .section-link {
-    height: auto; 
-    width: 350px; 
-    padding: 2em 3em; 
-    text-align: left; 
-    border-bottom: solid 2px white; 
-    outline: none;
-    border-radius: 5px 30px 30px 5px;
-}
+// .nav-tabs .nav-link .section-link {
+//     height: auto; 
+//     width: 350px; 
+//     padding: 2em 3em; 
+//     text-align: left; 
+//     outline: none;
+//     border-radius: 5px 30px 30px 5px;
+// }
 .navigation {
     display: flex;
     flex-direction: column;
