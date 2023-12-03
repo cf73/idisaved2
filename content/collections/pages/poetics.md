@@ -2,8 +2,8 @@
 id: bc97c317-41c8-4472-83ce-73b65e3355f6
 blueprint: section
 title: Poetics
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1688516043
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1701623752
 section_summary:
   -
     type: paragraph
@@ -40,4 +40,5 @@ section_summary:
         text: 'from what is presented to be experienced.'
 intro_movie: '-23poeticsintro2-1.25s.m4v'
 icon: girl.png
+section_color: '#f6f1ed'
 ---

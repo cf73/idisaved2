@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.04em;
   line-height: 21px;
-  color: #85a1c4;
+  color: #475f7c;
 }
 
 .faded {
@@ -27,9 +27,10 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 26px;
+  line-height: 40px;
   font-weight: 400;
-  letter-spacing: 0.06em;
+  letter-spacing: -0.001em;
 }
 
 h3 {
@@ -219,7 +220,7 @@ button {
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   outline: none;
-  background-color: #f1f3f5;
+  background-color: #f6f1ed;
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
@@ -471,7 +472,7 @@ header {
 
 a .chapter {
   cursor: pointer;
-  background-color: #85a1c4;
+  background-color: #475f7c;
   color: #d9d9d9;
   padding: 20px;
   border-radius: 10px;
