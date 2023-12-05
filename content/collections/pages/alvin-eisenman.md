@@ -30,8 +30,8 @@ main_content:
     type: text
     enabled: true
 parent: 353756eb-9feb-4d2d-bb36-3c4adbd155f2
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1701134630
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1701793470
 intro_movie: '-23eisenman-2.25s-480-1701134625.mov'
 thumbnail_image: alvin-eisenman.jpg
 thumbnail_caption: 'Alvin Eisenman was an American Graphic Designer and educator especially notable for establishing in 1951 and heading the first graduate program of Graphic Design in the USA at Yale University. He continued to teach in Yale’s graduate program throughout the 1990s.'

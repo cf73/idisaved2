@@ -446,12 +446,22 @@ header {
 
 .content {
   width: 100%;
+  padding: 0 90px;
 }
 
 .subnav {
-  background-color: #16253C;
-  border-radius: 10px;
-  padding: 24px 15px;
+  padding: 30px;
+  height: 100vh;
+  /* border-radius: 20px; */
+  background-color: rgba(255, 255, 255, 0.59);
+  overflow-y: scroll;
+  position: fixed;
+  margin-right: 0;
+  top: 0;
+  bottom: 0;
+}
+.subnav a {
+  color: inherit;
 }
 
 .dimmed {

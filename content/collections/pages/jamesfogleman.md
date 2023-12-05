@@ -60,8 +60,8 @@ main_content:
     type: text
     enabled: true
 parent: 353756eb-9feb-4d2d-bb36-3c4adbd155f2
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1701137230
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1701793485
 intro_movie: '-23-fogleman-480.mov'
 thumbnail_image: jkf4web.jpg
 thumbnail_caption: 'Jim Fogelman was a graduate of Yale University where he also studied business. Jim was hired fresh out of school by two other former Yale students, Ivan Chermayeff and Tom Geismar, who had established a well-known design agency in Chicago. After Chermayeff and Geismar opened up in New York, Jim moved there as well but soon after that he became the director of communication at the New Jersey branch of the Swiss pharmaceutical company CIBA.'

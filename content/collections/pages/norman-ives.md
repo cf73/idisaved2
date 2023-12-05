@@ -4,8 +4,8 @@ blueprint: content
 title: 'Norman Ives'
 intro_movie: '23ives,norman-1.75s-480.mov'
 parent: 353756eb-9feb-4d2d-bb36-3c4adbd155f2
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1701135198
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1701793475
 main_content:
   -
     id: lmniq5nq

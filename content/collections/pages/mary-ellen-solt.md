@@ -58,8 +58,8 @@ main_content:
     type: text
     enabled: true
 parent: 353756eb-9feb-4d2d-bb36-3c4adbd155f2
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1701137445
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1701793490
 intro_movie: '-23-solt2.2s-1.s-480.mov'
 thumbnail_image: 03solt.jpg.webp
 thumbnail_caption: 'Mary Ellen Solt was professor of Comparative Literature at Indiana University, Bloomington, where she had taught from 1967 to 1991. She developed an interest in concrete poetry in the early 1960s and published her work called Flowers in Concrete in the letter press shop of the Indiana University Graphic Design program. Solt then edited Concrete Poetry: A World View (Indiana University Press, 1968), which remains one of the major anthologies on concrete poetry.'
