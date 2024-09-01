@@ -4,7 +4,7 @@ blueprint: content
 title: CHaoniCE
 parent: fb6f64d1-d0ba-4e5a-8f12-43c59625ce42
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1701144005
+updated_at: 1725201059
 intro_movie: 23chaonicepages2.0.m4v
 main_content:
   -
@@ -19,6 +19,13 @@ main_content:
           -
             type: text
             marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::a9350fce-99f4-4c7d-b124-adb5b3f29f1c'
+                  rel: null
+                  target: null
+                  title: null
               -
                 type: bold
               -

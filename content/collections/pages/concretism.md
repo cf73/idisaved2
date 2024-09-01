@@ -63,7 +63,20 @@ summary:
         marks:
           -
             type: bold
-        text: 'serves an overall unity of ONENESS'
+        text: 'serves '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'statamic://entry::d646c9f5-7271-43eb-860f-fc56f0101a01'
+              rel: null
+              target: null
+              title: null
+          -
+            type: bold
+        text: 'an overall unity of ONENESS'
       -
         type: text
         text: ' wherein the so-called abstract dimension becomes associated with permanence while the tangible dimension is always impermanent by being in flux. In other words, this represents a significant '
@@ -96,6 +109,6 @@ summary:
         text: '.  '
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1695501918
+updated_at: 1725200868
 intro_movie: 23concr-3.2s480.mov
 ---

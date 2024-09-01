@@ -15,8 +15,11 @@ main_content:
     type: text
     enabled: true
 parent: 353756eb-9feb-4d2d-bb36-3c4adbd155f2
-updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
-updated_at: 1701793499
+updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
+updated_at: 1725135571
 intro_movie: werkplaats-intro480.mov
 thumbnail_caption: 'The Werkplaats (workplace) children''s community is a school in Bilthoven, The Netherlands. It was founded in 1926 by Kees Boeke, a Dutch reformist who advocated pacifism, respect for others, and "sociocracy" in which individuals in a community should have equal roles in decision making. The school relies on a Progressive Education concept based on Montessori principles and known for making students and teachers co-responsible for the curriculum. The school still operates today.'
+thumbnail_image: kboekeschool10-kb-1725135566.jpeg
+thumbnail_slides:
+  - kboekeschool11-kb-1725135549.jpg
 ---
