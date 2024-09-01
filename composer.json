@@ -14,7 +14,7 @@
         "laravel/framework": "^10.31",
         "laravel/tinker": "^2.8",
         "league/flysystem-aws-s3-v3": "^3.0",
-        "statamic/cms": "^4.0"
+        "statamic/cms": "^5.0" 
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",
