@@ -9,113 +9,98 @@
     
 </div> -->
 
+<div class="container mx-auto space-y-6">
+    {{partial:header}}
 
-<div class="row" style="margin-top: -90vh;">
-    <div class="col-lg-8">
-        <div class="content">
-            <!-- <div style="position: fixed; bottom: 0; width: 100%; background-color: black;">
-                {{ nav :from="parent:uri" }}
-                    <div style="display: flex; align-items: center;">
-                        <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #515261;" {{/if }}>
-    
-                            {{ title }}
-                        </a>
-                        {{ if is_current || is_parent }}
-    
-                        {{ /if }}
-                    </div>
-                {{ /nav }}
-            </div> -->
-    
-            {{if intro_movie}}
-        
-                    <!-- {{if thumbnail_slides}}
-                    <div class="splide">
-                        <div class="splide__track">
-                                <div class="splide__list">
-                                {{thumbnail_slides}}
-                                    <div class="splide__slide slide" style="background-image: url('{{url}}');"></div>
-                                {{/thumbnail_slides}}
-                                </div>
-                        </div>
-                    </div>
-                    {{/if}} -->
-                    
-                    <video autoplay loop width="100%" src="{{intro_movie}}"></video>
-                    
+    <!-- <div style="position: fixed; bottom: 0; width: 100%; background-color: black;">
+        {{ nav :from="parent:uri" }}
+            <div style="display: flex; align-items: center;">
+                <a href="{{ url }}"{{ if is_current || is_parent }} style="background-color: #515261;" {{/if }}>
 
-                <h1 class="project-title" style="position: relative; top:-1em; left: .5em;">
-                    {{title}}
-                </h1>
-                {{else}}
-                <h1 class="project-title" style="position: relative; left: .5em;">
-                    {{title}}
-                </h1>
-            {{/if}}
+                    {{ title }}
+                </a>
+                {{ if is_current || is_parent }}
 
-            {{main_content}}
-    
-                {{ if type == "text" }}
-    
-                    <div class="text" style="max-width: 80%; margin: 0 auto;">
-                        {{ text }}
-                    </div>
-    
-                {{ elseif type == "quote" }}
-    
-                    <div class="blockquote">
-                        <blockquote>{{ quote }}</blockquote>
-                        <p class="attribution">— {{ attribution }}</p>
-                    </div>
-    
-                {{ elseif type == "image" }}
-    
-                <div class="row" style="align-items: center;">
-                    {{photo}}
-                    <div class="col">
-                        <figure style="margin: 24px 0;">
-                            <img src="{{ url }}" width="100%" alt="{{ caption }}" />
-                            <figcaption>{{ caption }}</figcaption>
-                        </figure>
-                    </div>
-                    {{/photo}}
-                </div>
-    
                 {{ /if }}
-    
-            {{/main_content}}
-        </div>
-    </div>
-    
-    <div class="col-lg-4">
-        <div class="subnav">
-            <!-- <a href="{{parent:parent:url}}">
-                <p class="meta">{{parent:parent:title}}</p>
-            </a> -->
-            <div style="display: flex; flex-direction: column; align-items: left;">
-                <h4><img src="/assets/icons/Sections.svg" width="24px" alt="Sections" style="margin-right: 12px;">{{parent:parent:title}} / {{parent:title}}</h4>
             </div>
-            
-    
-            {{ nav :from="parent:uri" }}
-            <a href="{{url}}">
-                <div class="row" style="margin-top: 30px;">
-                    <div class="col-lg-4">
-                        <img src="{{thumbnail_image}}" width="100%" alt="">
-                    </div>
-                    <div class="col-lg-8">
-                        <h3>{{title}}</h3>
-                        <p>{{thumbnail_caption}}</p>
-                    </div>
+        {{ /nav }}
+    </div> -->
+
+    {{if intro_movie}}
+            <!-- {{if thumbnail_slides}}
+            <div class="splide">
+                <div class="splide__track">
+                        <div class="splide__list">
+                        {{thumbnail_slides}}
+                            <div class="splide__slide slide" style="background-image: url('{{url}}');"></div>
+                        {{/thumbnail_slides}}
+                        </div>
                 </div>
-                
-            </a>
-                
-            {{ /nav }}
+            </div>
+            {{/if}} -->
+            
+        <video autoplay loop width="100%" src="{{intro_movie}}"></video>
+    {{/if}}
+
+    {{main_content}}
+
+        {{ if type == "text" }}
+
+            <div class="prose mx-auto">
+                {{ text }}
+            </div>
+
+        {{ elseif type == "quote" }}
+
+            <div class="blockquote">
+                <blockquote>{{ quote }}</blockquote>
+                <p class="attribution">— {{ attribution }}</p>
+            </div>
+
+        {{ elseif type == "image" }}
+
+        <div class="row" style="align-items: center;">
+            {{photo}}
+            <div class="col">
+                <figure style="margin: 24px 0;">
+                    <img src="{{ url }}" width="100%" alt="{{ caption }}" />
+                    <figcaption>{{ caption }}</figcaption>
+                </figure>
+            </div>
+            {{/photo}}
         </div>
+
+        {{ /if }}
+
+    {{/main_content}}
+</div>
+    
+<div class="subnav hidden">
+    <!-- <a href="{{parent:parent:url}}">
+        <p class="meta">{{parent:parent:title}}</p>
+    </a> -->
+    <div style="display: flex; flex-direction: column; align-items: left;">
+        <h4><img src="/assets/icons/Sections.svg" width="24px" alt="Sections" style="margin-right: 12px;">{{parent:parent:title}} / {{parent:title}}</h4>
     </div>
     
+
+    {{ nav :from="parent:uri" }}
+    <a href="{{url}}">
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-lg-4">
+                <img src="{{thumbnail_image}}" width="100%" alt="">
+            </div>
+            <div class="col-lg-8">
+                <h3>{{title}}</h3>
+                <p>{{thumbnail_caption}}</p>
+            </div>
+        </div>
+        
+    </a>
+        
+    {{ /nav }}
 </div>
+    
 
 
 <script>

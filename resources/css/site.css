@@ -3,3 +3,9 @@
 @import "tailwindcss/utilities";
 
 /* This is all you. */
+
+@layer base {
+    h1 {
+        @apply text-6xl;
+    }
+}
