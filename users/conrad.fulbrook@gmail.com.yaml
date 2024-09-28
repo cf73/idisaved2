@@ -9,3 +9,5 @@ preferences:
     assets:
       mode: table
       per_page: 500
+    movies:
+      per_page: 500

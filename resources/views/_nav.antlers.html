@@ -1,10 +1,80 @@
-<ul class="nav nav-tabs" id="topnav" role="tablist">
-    {{nav:collection:pages}}
-    <li class="nav-item" role="presentation">
-        <div class="nav-link box" id="{{increment}}" data-bs-toggle="tab" data-bs-target="#tab{{increment:2}}" type="button" role="tab" aria-controls="tab{{increment:4}}" aria-selected="true"><h5 style="margin: 0;">{{title}}</h5></div>
-    </li>
-    {{/nav:collection:pages}}
-</ul>
+<div class="w-full h-24 bg-blue-200 flex flex-row items-center fixed top-0 z-50">
+    <div class="container mx-auto flex flex-row justify-between items-center">
+        <a href="/">
+            <h1>idi</h1>
+        </a>
+        <i class="fa-solid fa-bars hover:cursor-pointer" id="menuButton"></i>
+    </div>
+</div>
+
+<div id="menuSheet" class="bg-blue-100/90 backdrop-blur-sm w-full h-screen overflow-y-scroll fixed -top-[100vh] z-40 pb-32">
+    <div class="accordion container mx-auto pt-36">
+        <style>
+            .accordion-item.active .accordion-icon {
+            transform: rotate(90deg);
+            }
+        </style>
+        {{nav:collection:pages}}
+        <div class="accordion-item border-b border-[#ccc] ">
+            <div class="accordion-header cursor-pointer flex items-center justify-between p-3 font-inter font-medium hover:text-red-400 duration-200 ease-out text-2xl">
+                {{title}}<span class="accordion-icon inline-block rotate-0 duration-200 ease-out"><i class="fa-solid fa-chevron-down accordion-icon"></i></span>
+            </div>
+            <div style="height: 0;" class="accordion-content bg-gray-100/40 overflow-hidden duration-200 ease-out">
+                <div class="prose mx-auto my-8">
+                {{section_summary}} 
+                <a href="{{url}}"><button>More</button></a>
+                </div>
+                <div class="grid grid-cols-5 gap-8 px-16 mb-16">
+                {{ children }}  
+                <a href="{{ url }}">
+                    <div class="flex flex-col items-center">
+                        <video src="{{intro_movie}}" autoplay loop class="rounded overflow-hidden"></video>
+                        <h3>{{ title }}</h3>
+                    </div>
+                </a>
+                {{ /children }}
+                </div>
+            </div>
+        </div>
+        {{/nav:collection:pages}}
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const accordionItems = document.querySelectorAll(".accordion-item");
+
+        accordionItems.forEach((item) => {
+        const header = item.querySelector(".accordion-header");
+        const content = item.querySelector(".accordion-content");
+
+        header.addEventListener("click", () => {
+
+            // close other items
+            accordionItems.forEach((otherItem) => {
+            if (otherItem !== item && otherItem.classList.contains("active")) {
+                otherItem.classList.remove("active");
+                otherItem.querySelector(".accordion-content").style.height = 0;
+            }
+            });
+
+            item.classList.toggle("active");
+
+            if (item.classList.contains("active")) {
+            content.style.height = `${content.scrollHeight}px`;
+            } else {
+            content.style.height = 0;
+            }
+        });
+        });
+    });        
+</script>
+
+
+
+
+
 
 <div class="tab-content hidden" id="topnavContent">
     <div class="close">X</div>

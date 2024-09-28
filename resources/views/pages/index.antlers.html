@@ -9,9 +9,7 @@
     
 </div> -->
 
-
-
-<div class="container mx-auto">
+<div class="container mx-auto space-y-6">
     {{partial:header}}
 
     <!-- <div style="position: fixed; bottom: 0; width: 100%; background-color: black;">
@@ -42,16 +40,9 @@
             </div>
             {{/if}} -->
             
+        <div class="w-2/3 mx-auto">
             <video autoplay loop width="100%" src="{{intro_movie}}"></video>
-            
-
-        <h1 class="project-title" style="position: relative; top:-1em; left: .5em;">
-            Introduction
-        </h1>
-        {{else}}
-        <h1 class="project-title" style="position: relative; left: .5em;">
-            Introduction
-        </h1>
+        </div>
     {{/if}}
 
     <div class="prose mx-auto">{{summary}}</div>

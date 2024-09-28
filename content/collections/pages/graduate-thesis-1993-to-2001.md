@@ -151,7 +151,7 @@ summary:
         type: text
         text: 'The Graduate Thesis is a RISD general requirement. Hence, as and MFA requirement in Graphic Design this reflects the thesis work from its beginning on, in 1979—when Tom Ockerse initiated and headed the program. Tom continued his leading role in that program until 2003, when he stepped down as Graduate Program Head. However, he continued to engage as Primary Thesis Advisor for many students until his retirement in 2018. While many students have attended the MFA program ever since 1979, this website only shares Graduate Thesis projects in which Tom Ockerse played the role as Primary Advisor. However, the Graduate Thesis always involves team of faculty as advisors, ranging from primary to general roles (including members from programs outside the major), and these teams are noted relative to the samples.'
 parent: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1677854118
-intro_movie: 23grdthb93-01-3.25s.m4v
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726421498
+intro_movie: 23grdthb93-01-3.25s.mp4
 ---

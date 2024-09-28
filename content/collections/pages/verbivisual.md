@@ -78,7 +78,7 @@ summary:
         type: text
         text: "\_characterizes a means for making “poetry” by combining the verbal (written) language with visual (formal) language for an “atomization” of ideas wherein\_parts relate holistically toward an infinity of ideas derived from their synthesis.\_This holistic union is derived from the engagement with the time and space the poetic object offers."
 parent: bc97c317-41c8-4472-83ce-73b65e3355f6
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678212972
-intro_movie: 23wordingsintro-2s.m4v
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726425806
+intro_movie: 23wordingsintro-2s.mp4
 ---

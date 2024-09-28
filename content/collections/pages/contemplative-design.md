@@ -94,7 +94,7 @@ summary:
             type: bold
         text: 'how to stimulate one’s depth of consciousness.'
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1695512869
-intro_movie: 23contempla-480.mov
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726367509
+intro_movie: 23contempla-480_1.mp4
 ---
