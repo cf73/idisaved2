@@ -51,7 +51,7 @@ summary:
         type: text
         text: '” to determine what was to be extracted (according to some systemic principle), and the objective extractions themselves (versus our usual subjective tendency to achieve projected results).'
 parent: bc97c317-41c8-4472-83ce-73b65e3355f6
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674939674
-intro_movie: 23events-2.0s.m4v
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726424328
+intro_movie: 23events-2.0s.mp4
 ---

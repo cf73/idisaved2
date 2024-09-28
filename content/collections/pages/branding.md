@@ -67,7 +67,7 @@ summary:
         type: text
         text: '. This video shares a selection of some of identity designs, mainly focused on logos, dating from 1965 through current times.'
 parent: 4805adfa-10e3-4dc1-938b-7444323a22f0
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1678050806
-intro_movie: 23branding-1677780281.m4v
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726425911
+intro_movie: 23branding-1677780281.mp4
 ---

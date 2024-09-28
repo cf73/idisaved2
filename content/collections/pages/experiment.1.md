@@ -2,7 +2,7 @@
 id: 40ece33e-8e43-409f-bd39-ca4802a85feb
 blueprint: index
 title: EXPERIMENT
-intro_movie: '-23experim-480.mov'
+intro_movie: '-23experim-480.mp4'
 summary:
   -
     type: paragraph
@@ -37,6 +37,7 @@ summary:
       -
         type: text
         text: ' we are having—hence the word EXPERIMENT.'
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1695510820
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726367752
+parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
 ---

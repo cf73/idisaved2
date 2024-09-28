@@ -2,7 +2,7 @@
 id: 22d75a16-a492-4b32-8c4d-161e2367b6cc
 blueprint: content
 title: CHaoniCE
-intro_movie: chaonice2_23-1.75s-480.mov
+intro_movie: chaonice2_23-1.75s-480.mp4
 main_content:
   -
     id: lk4h0lup
@@ -16,8 +16,8 @@ main_content:
     type: text
     enabled: true
 parent: 154c9e0b-c1f9-4005-8d39-5654179f6fb2
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1701150268
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726426500
 thumbnail_image: chaonice_0.jpg
 thumbnail_caption: 'This is an original bookwork made as a contribution to the 1988 exhibit at the University of the Arts, Philadelphia, titled “universal/Unique.” The booklet hung between two press sheets hanging on the wall. The work uses concretism as a principle means to re-present the ideas that unfolded based on the exhibit’s theme and the creative process for this work itself.'
 ---

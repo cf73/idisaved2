@@ -155,7 +155,7 @@ summary:
         type: text
         text: "\_use of language serves to inspire and deepen consciousness to expand and broaden understanding.\_These three uses relate in a concentric relationship, starting in the center with the immediate need to represent, and then expands to color information subjectively, or then to objectively stimulate expanded perceptions. As a concentric dynamic this also means the basic need to communicate is present in all three.\_"
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1695512942
-intro_movie: 23lang-480.mov
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726367799
+intro_movie: 23lang-480.mp4
 ---

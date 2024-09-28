@@ -100,7 +100,7 @@ summary:
         type: text
         text: 'As a studio course making and visual thinking are emphasized. Topics for inquiry can range from the practical to the poetical to the pure experimental. Course work can supplement other course interests (such as thesis work and degree projects). Not forgetting that letters serve the purpose to make words visible, we consider how the visual form can serve that purpose to help frame, engage, narrate and inspire the depth and breadth of meaning. The focus is on in-depth inquiry and experimentation to liberate & empower our interests.'
 parent: f3a6c2ab-c70d-45bb-a237-1ca51b9f49d2
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1674852827
-intro_movie: 23textperim-1.75s.m4v
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726422011
+intro_movie: 23textperim-1.75s.mp4
 ---

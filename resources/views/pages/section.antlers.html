@@ -9,20 +9,24 @@
     
 </div> -->
 
-    <h2 class="hangline">{{ section_summary }}</h2>
+<div class="container mx-auto space-y-6">
+    <h1>{{title}}</h1>
+    <div class="prose">{{ section_summary }}</div>
 
-
-
-
-
-
-    {{ nav :from="uri" }}
-        {{ unless no_results }}
-                <a href="{{ url }}"><h3>{{ title }}</h3></a>
-                <p>{{summary}}</p>
-        {{ /unless }}
-    {{ /nav }}
-
-
-
+    <div class="">
+        <div class="grid grid-cols-4 gap-6">
+            {{ nav :from="uri" }}
+                {{ unless no_results }}
+                    <a href="{{ url }}">
+                        <div class="flex flex-col items-center">
+                            <video src="{{intro_movie}}" autoplay loop class="rounded overflow-hidden"></video>
+                            <h3>{{ title }}</h3>
+                        </div>
+                    </a>
+                    <!-- <p>{{summary}}</p> -->
+                {{ /unless }}
+            {{ /nav }}
+        </div>
+    </div>
+</div>
 

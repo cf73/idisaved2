@@ -34,7 +34,7 @@ summary:
         type: text
         text: ).
 parent: dbd1153f-3f19-41bb-b311-8d6df1059f80
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1695512973
-intro_movie: 23parallax-2.5s480.mov
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726367845
+intro_movie: 23parallax-2.5s480.mp4
 ---

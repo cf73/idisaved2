@@ -2,8 +2,8 @@
 id: 154c9e0b-c1f9-4005-8d39-5654179f6fb2
 blueprint: section
 title: Toetics
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1692458328
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726426266
 icon: pay-per-click.png
 section_summary:
   -
@@ -85,5 +85,7 @@ section_summary:
       -
         type: text
         text: ', which now also makes these private publishing available as well as other works designed by Tom.'
-intro_movie: toetics2-480p.mov
+intro_movie: toetics2-480p.mp4
+section_color: '#36d3b4'
+parent: 31b3086a-affa-4fbf-83e4-5eb1f3ec95a8
 ---

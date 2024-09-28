@@ -15,9 +15,9 @@ main_content:
     type: text
     enabled: true
 parent: 154c9e0b-c1f9-4005-8d39-5654179f6fb2
-updated_by: a726f1e0-85b0-48e3-939b-db6b8482c1d0
-updated_at: 1701150108
-intro_movie: az-2bk-480.mov
+updated_by: 241dc15f-5b2a-47ac-9111-7bcf1230f589
+updated_at: 1726426327
+intro_movie: az-2bk-480.mp4
 thumbnail_image: az_0.jpg
 thumbnail_caption: 'The A-Z Book is a boxed book of 52 bound pages, using the (Latin) alphabet as content. Letters are partly printed or reveal themselves as the user experiences the turning the pages via die cuts and partial pages. It played a major role during the worldwide “concrete poetry” movement.'
 ---
