@@ -1,0 +1,19 @@
+{
+    "migration_summary": {
+        "total_objects": 1031,
+        "processed_count": 1031,
+        "error_count": 0,
+        "success_rate": 100,
+        "start_time": "2025-08-09 20:56:13",
+        "end_time": "2025-08-09 20:56:27",
+        "total_duration_seconds": 13.89
+    },
+    "next_steps": [
+        "1. Set up Supabase project and get credentials",
+        "2. Add SUPABASE_URL and SUPABASE_ANON_KEY to .env",
+        "3. Run the migration again to actually insert data into Supabase",
+        "4. Set up React frontend using the provided guide",
+        "5. Test data consumption from Supabase",
+        "6. Deploy React app and switch over from Statamic"
+    ]
+}

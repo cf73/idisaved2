@@ -1,5 +1,5 @@
 title: Movies
-disk: s3
+disk: assets
 allow_uploads: true
 allow_downloading: true
 allow_renaming: true
