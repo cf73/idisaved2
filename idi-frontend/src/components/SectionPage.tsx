@@ -7,6 +7,7 @@ interface Section {
   title: string;
   slug: string;
   intro_movie: string | null;
+  section_summary: string | null;
 }
 
 interface Index {
@@ -188,9 +189,58 @@ const SectionPage: React.FC = () => {
     buildPublicUrl('videos', filename),  // videos/
   ];
 
+  // Parse Statamic Bard content to readable text
+  const parseBardContent = (content: string | any): string => {
+    if (!content) return '';
+
+    let parsedContent: any;
+    if (typeof content === 'string') {
+      try {
+        parsedContent = JSON.parse(content);
+      } catch (e) {
+        // If parsing fails, it's just a plain string, return it
+        return content;
+      }
+    } else {
+      parsedContent = content;
+    }
+
+    // If it's an array (Bard format), parse it
+    if (Array.isArray(parsedContent)) {
+      return parsedContent
+        .map((node: any) => {
+          if (node.type === 'paragraph' && Array.isArray(node.content)) {
+            return node.content
+              .map((item: any) => {
+                if (item.type === 'text') {
+                  return item.text || '';
+                }
+                return '';
+              })
+              .join('');
+          }
+          return '';
+        })
+        .join(' ')
+        .trim();
+    }
+
+    // Fallback for any other unexpected format, or if it was a simple string initially
+    return typeof parsedContent === 'string' ? parsedContent : '';
+  };
+
   return (
     <div>
       <h1 className="text-4xl font-bold mb-4">{section.title}</h1>
+      
+      {/* Section Summary */}
+      {section.section_summary && (
+        <div className="mb-6">
+          <p className="text-lg text-gray-700 leading-relaxed">
+            {parseBardContent(section.section_summary)}
+          </p>
+        </div>
+      )}
 
       {/* Render intro movie if it exists */}
       {section.intro_movie && (

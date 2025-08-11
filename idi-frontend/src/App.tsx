@@ -1,19 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import SectionsList from './components/SectionsList';
+import SectionsCarousel from './components/SectionsCarousel';
 import SectionPage from './components/SectionPage';
 import ContentPage from './components/ContentPage';
 import './App.css';
 
-// Placeholder components - we will create these properly later
+// HomePage now uses the immersive 3D carousel
 const HomePage = () => {
-  return (
-    <div>
-      <h1 className="text-3xl font-bold mb-6">IDI Frontend</h1>
-      <p className="mb-8">Welcome to the new frontend for the IDI project.</p>
-      <SectionsList />
-    </div>
-  );
+  return <SectionsCarousel />;
 };
 
 const SectionPagePlaceholder = () => {
@@ -34,23 +28,13 @@ const NotFoundPage = () => {
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50 text-gray-800">
-        <header className="bg-white shadow-sm">
-          <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <Link to="/" className="text-xl font-bold">IDI</Link>
-            <div>
-              {/* Navigation links will go here */}
-            </div>
-          </nav>
-        </header>
-        <main className="container mx-auto px-4 py-8">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/section/:slug" element={<SectionPage />} />
-            <Route path="/page/:slug" element={<ContentPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </main>
+      <div className="min-h-screen text-gray-800">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/section/:slug" element={<SectionPage />} />
+          <Route path="/page/:slug" element={<ContentPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
       </div>
     </Router>
   );
