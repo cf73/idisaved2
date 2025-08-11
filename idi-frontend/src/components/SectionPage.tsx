@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { supabase } from '../lib/supabase';
+import { supabase, SUPABASE_URL } from '../lib/supabase';
 
 interface Section {
   id: string;
@@ -97,6 +97,13 @@ const SectionPage: React.FC = () => {
   // Build a map of filename -> public URL using `assets` table when possible
   useEffect(() => {
     const filenames = new Set<string>();
+    
+    // Collect intro movie filename
+    if (section?.intro_movie) {
+      const filename = section.intro_movie.split('/').pop() || section.intro_movie;
+      filenames.add(filename);
+    }
+    
     const collect = (list: ContentPage[]) => {
       for (const p of list) {
         const key = (p.thumbnail_image || '').toString();
@@ -111,6 +118,7 @@ const SectionPage: React.FC = () => {
 
     const resolve = async () => {
       const list = Array.from(filenames);
+      console.log('SectionPage: Looking up assets for filenames:', list);
       const { data, error } = await supabase
         .from('assets')
         .select('filename, file_url')
@@ -127,11 +135,12 @@ const SectionPage: React.FC = () => {
           }
         }
       }
+      console.log('SectionPage: Asset URL mapping:', map);
       setAssetUrlByFilename(prev => ({ ...prev, ...map }));
       setAssetsBucket(detected);
     };
     resolve();
-  }, [pages, topLevelPages]);
+  }, [pages, topLevelPages, section]);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -160,6 +169,25 @@ const SectionPage: React.FC = () => {
     return data?.publicUrl || '';
   };
 
+  const getMovieUrl = (filename?: string | null) => {
+    if (!filename) return '';
+    const base = filename.split('/').pop() || filename;
+    const mapped = assetUrlByFilename[base];
+    if (mapped) return mapped; // prefer mapped (currently S3 for videos)
+    const { data } = supabase.storage.from(assetsBucket).getPublicUrl(`videos/${encodeURIComponent(base)}`);
+    return data?.publicUrl || '';
+  };
+
+  const buildPublicUrl = (...segments: string[]) => {
+    const encoded = segments.map(seg => encodeURIComponent(seg)).join('/');
+    return `${SUPABASE_URL}/storage/v1/object/public/${assetsBucket}/${encoded}`;
+  };
+
+  const fallbackVideoUrls = (filename: string) => [
+    buildPublicUrl(filename),            // root
+    buildPublicUrl('videos', filename),  // videos/
+  ];
+
   return (
     <div>
       <h1 className="text-4xl font-bold mb-4">{section.title}</h1>
@@ -167,10 +195,35 @@ const SectionPage: React.FC = () => {
       {/* Render intro movie if it exists */}
       {section.intro_movie && (
         <div className="mb-8">
-          <video controls className="w-full max-w-2xl mx-auto rounded-lg shadow-lg">
-            <source src={getPublicUrl(section.intro_movie)} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {(() => {
+            const movieUrl = getMovieUrl(section.intro_movie);
+            const fallbackUrls = fallbackVideoUrls(section.intro_movie);
+            const hasValidUrl = movieUrl || fallbackUrls.some(url => url);
+            
+            console.log('SectionPage: Intro movie URLs:', {
+              original: section.intro_movie,
+              mapped: movieUrl,
+              fallbacks: fallbackUrls,
+              hasValidUrl
+            });
+            
+            if (!hasValidUrl) {
+              return <div className="w-full max-w-2xl mx-auto rounded-lg shadow-lg bg-gray-200 h-64 flex items-center justify-center">Loading video...</div>;
+            }
+            
+            return (
+              <video 
+                key={`${movieUrl}-${fallbackUrls.join('-')}`}
+                controls 
+                className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+              >
+                <source src={movieUrl} type="video/mp4" />
+                <source src={fallbackUrls[0]} type="video/mp4" />
+                <source src={fallbackUrls[1]} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            );
+          })()}
         </div>
       )}
 

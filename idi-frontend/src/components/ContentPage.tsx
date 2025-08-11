@@ -6,6 +6,7 @@ import { supabase, SUPABASE_URL } from '../lib/supabase';
 interface ContentPageRec {
   id: string;
   title: string;
+  intro_movie?: string | null;
   [key: string]: any;
 }
 
@@ -29,11 +30,15 @@ const ContentPage: React.FC = () => {
     const fetchPageData = async () => {
       if (!slug) return;
       try {
+        console.log('Fetching page with slug:', slug);
         const { data: pageData, error: pageError } = await supabase
           .from('content_pages')
           .select('*')
           .eq('slug', slug)
           .single();
+        
+        console.log('Page query result:', { pageData, pageError });
+        
         if (pageError) throw pageError;
         setPage(pageData as ContentPageRec);
 
@@ -42,9 +47,13 @@ const ContentPage: React.FC = () => {
           .select('id, type, json_content, sort_order')
           .eq('page_id', (pageData as any).id)
           .order('sort_order', { ascending: true });
+        
+        console.log('Blocks query result:', { blocksData, blocksError });
+        
         if (blocksError) throw blocksError;
         setBlocks((blocksData as ContentBlockRec[]) || []);
       } catch (err: any) {
+        console.error('Error fetching page data:', err);
         setError(err.message);
       } finally {
         setLoading(false);
@@ -62,6 +71,13 @@ const ContentPage: React.FC = () => {
       }
       return v;
     };
+    
+    // Collect intro movie filename
+    if (page?.intro_movie) {
+      const filename = page.intro_movie.split('/').pop() || page.intro_movie;
+      filenames.add(filename);
+    }
+    
     for (const b of blocks) {
       const t = (b.type || '').toLowerCase();
       const jc = safeParse(b.json_content) || {};
@@ -80,10 +96,13 @@ const ContentPage: React.FC = () => {
 
     const resolve = async () => {
       const list = Array.from(filenames);
+      console.log('Looking up assets for filenames:', list);
       const { data } = await supabase
         .from('assets')
         .select('filename, file_url')
         .in('filename', list);
+
+      console.log('Asset lookup result:', data);
 
       const map: Record<string, string> = {};
       let detected = assetsBucket;
@@ -96,11 +115,12 @@ const ContentPage: React.FC = () => {
           }
         }
       }
+      console.log('Asset URL mapping:', map);
       setAssetUrlByFilename((prev) => ({ ...prev, ...map }));
       setAssetsBucket(detected);
     };
     resolve();
-  }, [blocks]);
+  }, [blocks, page]);
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div className="text-red-500">Error: {error}</div>;
@@ -122,6 +142,15 @@ const ContentPage: React.FC = () => {
     buildPublicUrl(filename),            // root
     buildPublicUrl('videos', filename),  // videos/
   ];
+
+  const getMovieUrl = (filename?: string | null) => {
+    if (!filename) return '';
+    const base = filename.split('/').pop() || filename;
+    const mapped = assetUrlByFilename[base];
+    if (mapped) return mapped; // prefer mapped (currently S3 for videos)
+    const { data } = supabase.storage.from(assetsBucket).getPublicUrl(`videos/${encodeURIComponent(base)}`);
+    return data?.publicUrl || '';
+  };
 
   const firstNonEmpty = (obj: any, keys: string[]): any => {
     for (const k of keys) {
@@ -236,6 +265,42 @@ const ContentPage: React.FC = () => {
   return (
     <article>
       <h1 className="text-4xl font-bold mb-6">{page.title}</h1>
+      
+      {/* Render intro movie if it exists */}
+      {page.intro_movie && (
+        <div className="mb-8">
+          {(() => {
+            const movieUrl = getMovieUrl(page.intro_movie);
+            const fallbackUrls = fallbackVideoUrls(page.intro_movie);
+            const hasValidUrl = movieUrl || fallbackUrls.some(url => url);
+            
+            console.log('Intro movie URLs:', {
+              original: page.intro_movie,
+              mapped: movieUrl,
+              fallbacks: fallbackUrls,
+              hasValidUrl
+            });
+            
+            if (!hasValidUrl) {
+              return <div className="w-full max-w-2xl mx-auto rounded-lg shadow-lg bg-gray-200 h-64 flex items-center justify-center">Loading video...</div>;
+            }
+            
+            return (
+              <video 
+                key={`${movieUrl}-${fallbackUrls.join('-')}`}
+                controls 
+                className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+              >
+                <source src={movieUrl} type="video/mp4" />
+                <source src={fallbackUrls[0]} type="video/mp4" />
+                <source src={fallbackUrls[1]} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            );
+          })()}
+        </div>
+      )}
+      
       {bodyHtml && (
         <div className="prose lg:prose-xl max-w-none mb-8" dangerouslySetInnerHTML={{ __html: bodyHtml }} />
       )}
