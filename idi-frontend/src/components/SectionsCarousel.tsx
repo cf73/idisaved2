@@ -10,7 +10,11 @@ interface Section {
   section_summary: string | null;
 }
 
-const SectionsCarousel: React.FC = () => {
+interface SectionsCarouselProps {
+  shouldStartEmerging?: boolean;
+}
+
+const SectionsCarousel: React.FC<SectionsCarouselProps> = ({ shouldStartEmerging = false }) => {
   const location = useLocation();
   const [sections, setSections] = useState<Section[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,9 +25,11 @@ const SectionsCarousel: React.FC = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [currentX, setCurrentX] = useState(0);
-     const [isMobile, setIsMobile] = useState(false);
-   const [transitionsEnabled, setTransitionsEnabled] = useState(true);
-   const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
+         const [isMobile, setIsMobile] = useState(false);
+    const [transitionsEnabled, setTransitionsEnabled] = useState(true);
+         const [isEmerging, setIsEmerging] = useState(true); // Start hidden
+     const [hasStartedEmerging, setHasStartedEmerging] = useState(false);
+    const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
 
   // Restore carousel position from location state or sessionStorage
   useEffect(() => {
@@ -244,7 +250,16 @@ const SectionsCarousel: React.FC = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-     // Control video playback when currentIndex changes
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               // Handle emerging from mist effect
+         useEffect(() => {
+           if (!loading && sections.length > 0 && shouldStartEmerging && !hasStartedEmerging) {
+             // Start emerging animation immediately when intro completes
+             setHasStartedEmerging(true);
+             setIsEmerging(false);
+           }
+         }, [loading, sections.length, shouldStartEmerging, hasStartedEmerging]);
+
+   // Control video playback when currentIndex changes
    useEffect(() => {
      sections.forEach((section, index) => {
        const isActive = index === currentIndex;
@@ -267,34 +282,31 @@ const SectionsCarousel: React.FC = () => {
    }, [nextSection, prevSection]);
 
   if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-        <div className="text-slate-600 text-lg">Loading sections...</div>
-      </div>
-    );
+    return null; // Don't show loading state when carousel is hidden
   }
 
   if (error) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-        <div className="text-red-500">Error: {error}</div>
-      </div>
-    );
+    return null; // Don't show error state when carousel is hidden
   }
 
   if (sections.length === 0) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-        <div className="text-slate-600">No sections found.</div>
-      </div>
-    );
+    return null; // Don't show empty state when carousel is hidden
   }
 
   const totalSections = sections.length;
 
   return (
-    <div 
-      className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden relative"
+                                       <div 
+                className={`
+            min-h-screen overflow-hidden relative
+            ${isEmerging ? 'pointer-events-none' : 'pointer-events-auto'}
+          `}
+                   style={{
+            transition: 'all 12s ease-out',
+            opacity: isEmerging ? 0 : 1,
+            transform: isEmerging ? 'scale(0.3)' : 'scale(1)',
+            filter: isEmerging ? 'blur(20px) brightness(0.3)' : 'blur(0px) brightness(1)',
+          }}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}

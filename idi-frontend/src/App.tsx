@@ -1,13 +1,46 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import SectionsCarousel from './components/SectionsCarousel';
 import SectionPage from './components/SectionPage';
 import ContentPage from './components/ContentPage';
+import IntroSequence from './components/IntroSequence';
+import Logo from './components/Logo';
 import './App.css';
 
-// HomePage now uses the immersive 3D carousel
+// HomePage with intro sequence logic
 const HomePage = () => {
-  return <SectionsCarousel />;
+  const location = useLocation();
+  const [showIntro, setShowIntro] = useState(false);
+  const [shouldStartEmerging, setShouldStartEmerging] = useState(false);
+
+  useEffect(() => {
+    // Check if this is a fresh visit or hard navigation to root
+    const hasSeenIntro = sessionStorage.getItem('introSeen');
+    const isHardNavigation = location.state?.from === 'logo' || !hasSeenIntro;
+    
+    if (isHardNavigation) {
+      setShowIntro(true);
+      sessionStorage.setItem('introSeen', 'true');
+    }
+  }, [location]);
+
+  const handleIntroComplete = () => {
+    setShowIntro(false);
+  };
+
+  const handleStartEmerging = () => {
+    setShouldStartEmerging(true);
+  };
+
+  return (
+    <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      {/* Carousel always loads in background */}
+      <SectionsCarousel shouldStartEmerging={shouldStartEmerging || !showIntro} />
+      
+      {/* Intro sequence */}
+      {showIntro && <IntroSequence onComplete={handleIntroComplete} onStartEmerging={handleStartEmerging} />}
+    </div>
+  );
 };
 
 const SectionPagePlaceholder = () => {
@@ -29,6 +62,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen text-gray-800">
+        <Logo />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/section/:slug" element={<SectionPage />} />
