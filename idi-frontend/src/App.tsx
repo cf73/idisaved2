@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import SectionsCarousel from './components/SectionsCarousel';
 import SectionPage from './components/SectionPage';
+import IndexPage from './components/IndexPage';
 import ContentPage from './components/ContentPage';
 import IntroSequence from './components/IntroSequence';
 import Logo from './components/Logo';
@@ -66,6 +67,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/section/:slug" element={<SectionPage />} />
+          <Route path="/index/:slug" element={<IndexPage />} />
           <Route path="/page/:slug" element={<ContentPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
