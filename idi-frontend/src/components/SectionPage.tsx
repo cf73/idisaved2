@@ -20,6 +20,8 @@ interface ContentPage {
   title: string;
   slug: string;
   index_id: string;
+  thumbnail_image?: string | null;
+  thumbnail_caption?: string | null;
 }
 
 const SectionPage: React.FC = () => {
@@ -30,6 +32,8 @@ const SectionPage: React.FC = () => {
   const [topLevelPages, setTopLevelPages] = useState<ContentPage[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [assetUrlByFilename, setAssetUrlByFilename] = useState<Record<string, string>>({});
+  const [assetsBucket, setAssetsBucket] = useState<string>('assets');
 
   useEffect(() => {
     const fetchSectionData = async () => {
@@ -90,6 +94,45 @@ const SectionPage: React.FC = () => {
     fetchSectionData();
   }, [slug]);
 
+  // Build a map of filename -> public URL using `assets` table when possible
+  useEffect(() => {
+    const filenames = new Set<string>();
+    const collect = (list: ContentPage[]) => {
+      for (const p of list) {
+        const key = (p.thumbnail_image || '').toString();
+        if (!key) continue;
+        const filename = key.split('/').pop() || key;
+        if (filename) filenames.add(filename);
+      }
+    };
+    collect(pages);
+    collect(topLevelPages);
+    if (filenames.size === 0) return;
+
+    const resolve = async () => {
+      const list = Array.from(filenames);
+      const { data, error } = await supabase
+        .from('assets')
+        .select('filename, file_url')
+        .in('filename', list);
+      if (error) return;
+      const map: Record<string, string> = {};
+      let detected = assetsBucket;
+      for (const row of data || []) {
+        if (row.file_url) {
+          map[row.filename] = row.file_url;
+          if (row.file_url.includes('supabase.co/storage')) {
+            const m = String(row.file_url).match(/\/storage\/v1\/object\/public\/([^/]+)\//);
+            if (m && m[1]) detected = m[1];
+          }
+        }
+      }
+      setAssetUrlByFilename(prev => ({ ...prev, ...map }));
+      setAssetsBucket(detected);
+    };
+    resolve();
+  }, [pages, topLevelPages]);
+
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -105,6 +148,15 @@ const SectionPage: React.FC = () => {
   const getPublicUrl = (path: string | undefined | null) => {
     if (!path) return '';
     const { data } = supabase.storage.from('assets').getPublicUrl(path);
+    return data?.publicUrl || '';
+  };
+
+  const getThumbUrl = (filename?: string | null) => {
+    if (!filename) return '';
+    const base = filename.split('/').pop() || filename;
+    const mapped = assetUrlByFilename[base];
+    if (mapped && mapped.includes('supabase.co/storage')) return mapped;
+    const { data } = supabase.storage.from(assetsBucket).getPublicUrl(`images/${encodeURIComponent(base)}`);
     return data?.publicUrl || '';
   };
 
@@ -126,16 +178,27 @@ const SectionPage: React.FC = () => {
         {topLevelPages.length > 0 && (
           <div>
             <h2 className="text-2xl font-semibold mb-2">Pages</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {topLevelPages.map(page => (
-                <Link
-                  key={page.id}
-                  to={`/page/${page.slug}`}
-                  className="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow"
-                >
-                  {page.title}
-                </Link>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {topLevelPages.map(page => {
+                const url = getThumbUrl(page.thumbnail_image);
+                return (
+                  <Link
+                    key={page.id}
+                    to={`/page/${page.slug}`}
+                    className="block bg-white rounded-lg shadow hover:shadow-md transition-shadow overflow-hidden"
+                  >
+                    {url && (
+                      <img src={url} alt={page.title} className="w-full h-48 object-cover" />
+                    )}
+                    <div className="p-4">
+                      <h3 className="text-lg font-semibold mb-2">{page.title}</h3>
+                      {page.thumbnail_caption && (
+                        <p className="text-sm text-gray-600">{page.thumbnail_caption}</p>
+                      )}
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}
@@ -143,16 +206,27 @@ const SectionPage: React.FC = () => {
         {indices.map(index => (
           <div key={index.id}>
             <h2 className="text-2xl font-semibold mb-2">{index.title}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {pages.filter(p => p.index_id === index.id).map(page => (
-                <Link
-                  key={page.id}
-                  to={`/page/${page.slug}`}
-                  className="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow"
-                >
-                  {page.title}
-                </Link>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {pages.filter(p => p.index_id === index.id).map(page => {
+                const url = getThumbUrl(page.thumbnail_image);
+                return (
+                  <Link
+                    key={page.id}
+                    to={`/page/${page.slug}`}
+                    className="block bg-white rounded-lg shadow hover:shadow-md transition-shadow overflow-hidden"
+                  >
+                    {url && (
+                      <img src={url} alt={page.title} className="w-full h-48 object-cover" />
+                    )}
+                    <div className="p-4">
+                      <h3 className="text-lg font-semibold mb-2">{page.title}</h3>
+                      {page.thumbnail_caption && (
+                        <p className="text-sm text-gray-600">{page.thumbnail_caption}</p>
+                      )}
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         ))}
